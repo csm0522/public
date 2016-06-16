@@ -1,0 +1,454 @@
+﻿body {
+	font-family: "Hiragino Sans GB", "Helvetica Neue", "Helvetica", "Microsoft Yahei", "\5FAE\8F6F\96C5\9ED1", "tahoma", "simsun", "arial", "Verdana", "sans-serif", "WenQuanYi Micro Hei", "\5B8B\4F53";
+	-webkit-font-smoothing: antialiased;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	background: none;
+}
+
+input {
+	border: none;
+	outline: none;
+}
+
+li {
+	list-style: none;
+}
+
+#body {
+	width: 100%;
+}
+
+body {
+	background: #f4f4f4;
+}
+
+
+
+
+#dynamic {
+	width: 100%;
+	right: 0px;
+	background: url(../image/index/bg0.jpg) no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	-webkit-animation: myfirst 5s infinite;
+	-webkit-animation-direction: alternate;
+}
+
+.dynamic_1 {
+	padding-top: 5.5%;
+	height: 400px;
+}
+
+#worker {
+	height: 80px;
+	width: 80px;
+	margin: auto;
+	background: url(../image/index/worker.png) no-repeat;
+	float: bottom;
+	position: relative;
+}
+
+#worker_name1 {
+	height: 80px;
+	width: 80px;
+	margin: auto;
+	background: url(../image/index/worker_name.png) no-repeat;
+}
+
+.search {
+	width: 51%;
+	margin: auto;
+	margin-top: 0.5%;
+	height: 25%;
+	z-index: 100;
+}
+
+.s_text1 {
+	width: 100%;
+	height: 45px;
+}
+
+.s_text {
+	width: 100%;
+	height: 100%;
+	border-style: none;
+	background: url(../image/index/search.PNG) no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+.ind {
+	width: 480px;
+	height: 150px;
+	margin: auto;
+	margin-top: 5%;
+	background: url(../image/index/ind.PNG) no-repeat;
+	text-align: center;
+}
+
+.gonggao {
+	width: 500px;
+	height: 25px;
+	margin: auto;
+	background-color: #472b18;
+	border-radius: 10px;
+	opacity: 0.8;
+	border: 1px solid #aaa;
+	text-align: center;
+	font-size: 14px;
+	color: #8e8e8e;
+	padding-top: 5px;
+}
+
+.gonggao.a {}
+
+.ind_title {
+	margin-top: 20px;
+	margin-top: 40%;
+	font-size: 36px;
+	font-weight: bolder;
+	color: #666;
+	text-decoration: none;
+}
+
+.ind_title2 {
+	float: top;
+	margin-top: 40%;
+	font-size: 24px;
+	font-weight: bolder;
+	color: #666;
+	text-decoration: none;
+}
+
+.dynamic_2 {
+	float: bottom;
+	position: relative;
+	background: url(../image/index/bg2.png);
+	background-size: 100% 100%;
+}
+
+.nice {
+	height: 20px;
+	width: 1000px;
+	border-style: none;
+	margin: auto;
+}
+
+.nice_left,
+.nice_right {
+	height: 22px;
+	width: 1000px;
+	border-radius: 5px;
+}
+
+.title_img {
+	margin: auto;
+	padding-top: 5px;
+	width: 100px;
+	height: 50px;
+	background: url(../image/index/title.png) no-repeat;
+}
+
+.dianji {
+	height: 20px;
+	width: 25px;
+	float: right;
+	margin-left: 10px;
+	margin-top: 5px;
+	border-style: none;
+	background: url(../image/index/top.png) no-repeat;
+}
+
+.kind {
+	height: 120px;
+	background-color: #eee;
+	margin-top: 10px;
+	border-style: none;
+}
+
+.kind_1 {
+	width: 10%;
+	height: 60%;
+	float: left;
+	text-align: center;
+	position: relative;
+}
+
+.kind_img {
+	position: center;
+	margin-top: 20%;
+}
+
+.kind_2 {
+	width: 10%;
+	height: 20%;
+	float: left;
+	text-align: center;
+	position: relative;
+	padding-top: 0.5%;
+}
+
+.kind_text {
+	position: center;
+	padding-top: 10%;
+	font-size: 14px;
+	font-weight: lighter;
+	color: #666;
+	text-decoration: none;
+}
+
+.recommend-line {
+	position: relative;
+	padding: 10px 0px;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	text-align: center;
+	font-size: 14px;
+	color: #B4B4B4;
+}
+
+.recommend-line>a:hover {
+	text-decoration: none;
+	display: inline-block;
+	font-family: "微软雅黑";
+}
+
+.recommend-line::before {
+	left: 0px;
+	display: block;
+	position: absolute;
+	top: 10px;
+	width: 44%;
+	content: "";
+	border-top: 1px solid #D7D7D7;
+	z-index: ;
+}
+
+.recommend-line::after {
+	right: 0px;
+	display: block;
+	position: absolute;
+	top: 10px;
+	width: 44%;
+	content: "";
+	border-top: 1px solid #D7D7D7;
+	z-index: ;
+}
+
+.category {
+	height: auto;
+	text-align: center;
+	border-style: none;
+	background-color: #fff;
+}
+
+div#job_main {
+	width: 1180px;
+	height: 1500px;
+	margin: 0 auto;
+	margin-top: 80px;
+	position: relative;
+}
+
+div.left_200 {
+	float: left;
+	width: 200px;
+	position: fixed;
+}
+
+div.middle_760 {
+	position: absolute;
+	right:10%;
+	width: 64%;
+	margin-right: 20px;
+}
+
+div.right_180 {
+	float: right;
+	width: 180px;
+}
+
+div.left_200>ul {
+	margin-top: 20px;
+	background: white;
+}
+
+div.left_200 ul li a {
+	display: block;
+	height: 60px;
+	line-height: 60px;
+	width: 100%;
+	padding-left: 30px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #f4f4f4;
+}
+
+div.left_200 ul li a:hover {
+	background: #FAFAFA;
+	COLOR: deepskyblue;
+}
+
+div.seletion_1 a {
+	display: block;
+	height: 60px;
+	line-height: 60px;
+	width: 100%;
+	padding-left: 30px;
+	box-sizing: border-box;
+	background: white;
+	border-bottom: 1px solid #f4f4f4;
+	position: relative;
+}
+
+div.seletion_1 ul {
+	display: none;
+}
+
+div.seletion_1 ul li {
+	background: white;
+	border-top: 1px solid #f4f4f4;
+}
+
+div.seletion_1 a:hover {
+	background: #FAFAFA;
+	COLOR: deepskyblue;
+}
+
+div.seletion_1 a i {
+	display: block;
+	background-image: url(../image/job/iconpic-arrow-right.png);
+	background-repeat: no-repeat;
+	width: 8px;
+	height: 13px;
+	position: absolute;
+	border-width: 0;
+	padding: 0;
+	top: auto;
+	left: auto;
+	top: 22px;
+	right: 20px;
+	;
+}
+
+div#job_list {
+	width: 100%;
+	background: white;
+	margin-top: 20px;
+}
+
+div#job_list div.job_list_title {
+	height: 60px;
+	line-height: 60px;
+	font-size: 24px;
+	font-weight: 800;
+	padding-left: 20px;
+	box-sizing: border-box;
+	width: 100%;
+	border-bottom: 1px solid #f4f4f4;
+}
+
+div.zxzpitem {
+	padding: 20px;
+	border-bottom: 1px solid #f4f4f4;
+	position: relative;
+	height: 120px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+div.zxzpitem a.item_link {
+	position: absolute;
+	z-index: 1;
+	height: 120px;
+	left: 0;
+	top: 0;
+	right: 0;
+}
+
+div.zxzpitem:hover {
+	background: #fafafa;
+}
+
+div.pic_box {
+	z-index: 2;
+	float: left;
+	width: 78px;
+	height: 78px;
+	margin-right: 20px;
+	position: relative;
+}
+
+div.pic_box a img {
+	width: 78px;
+	height: 78px;
+	border-radius: 4px;
+}
+
+div.text_box {
+	width: 380px;
+	float: left;
+	overflow: hidden;
+}
+
+div.text_box p.title_bar span {
+	font-size: 18px;
+}
+
+div.text_box p.title_bar span.title2 {
+	text-decoration: underline;
+}
+
+p.salary_bar {
+	margin-top: 6px;
+	color: rgb(200, 200, 200);
+}
+
+p.salary_bar strong {
+	color: #ff7800;
+}
+
+p.scale_bar {
+	margin-top: 4px;
+	color: rgb(200, 200, 200);
+	font-size: 16px;
+	;
+}
+
+div.right_180 {
+	padding: 10px;
+	box-sizing: border-box;
+	background: white;
+}
+
+div.box-title {
+	height: 40px;
+	line-height: 30px;
+	border-bottom: 1px solid #f4f4f4;
+	padding-left: 10px;
+	font-weight: 800;
+}
+
+div.qiye_img_list img {
+	width: 100%;
+	height: 140px;
+	margin-bottom: 10px;
+}
+
+div.qiye_img_list img:first-child {
+	margin-top: 10px;
+}

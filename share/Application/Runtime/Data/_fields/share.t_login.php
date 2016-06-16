@@ -1,0 +1,1 @@
+a:7:{i:0;s:7:"LoginId";i:1;s:9:"LoginName";i:2;s:8:"LoginPwd";i:3;s:11:"LoginStatus";i:4;s:8:"LoginTag";s:3:"_pk";s:7:"LoginId";s:5:"_type";a:5:{s:7:"LoginId";s:7:"int(11)";s:9:"LoginName";s:8:"char(20)";s:8:"LoginPwd";s:9:"char(200)";s:11:"LoginStatus";s:6:"int(4)";s:8:"LoginTag";s:6:"int(4)";}}

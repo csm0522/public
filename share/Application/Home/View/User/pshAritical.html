@@ -1,0 +1,212 @@
+<include file="Public/header" title="Login" />
+<link href="__HomeCSS__/punlish.css" rel="stylesheet" media="all" />
+ <js href="__PUBLIC__/Home/js/jquery-2.0.2.js" />
+ <js href="__PUBLIC__/Home/ueditor/ueditor.config.js" />
+ <js href="__PUBLIC__/Home/ueditor/ueditor.all.min.js" />
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".nice_left").click(function() {
+                    $(".nice_right").slideToggle(100);
+                });
+                $(".nice_right").click(function() {
+                    $(".nice_left").slideToggle(500);
+                });
+                $(".nice_right").click(function() {
+                    $(".nice_right").slideToggle(100);
+                });
+                $(".nice_left").click(function() {
+                    $(".nice_left").slideToggle(500);
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            function show(i) {
+                var layer1 = document.getElementById("layer1");
+                layer1.style.display = "none";
+                var img1 = document.getElementById("img1");
+                img1.style.display = "none";
+                var title = document.getElementById("title1");
+                title1.style.color = "#8e8e8e";
+                var layer2 = document.getElementById("layer2");
+                layer2.style.display = "none";
+                var img2 = document.getElementById("img2");
+                img2.style.display = "none";
+                var title = document.getElementById("title2");
+                title2.style.color = "#8e8e8e";
+                var layer3 = document.getElementById("layer3");
+                layer3.style.display = "none";
+                var img3 = document.getElementById("img3");
+                img3.style.display = "none";
+                var title = document.getElementById("title3");
+                title3.style.color = "#8e8e8e";
+                var layer4 = document.getElementById("layer4");
+                layer4.style.display = "none";
+                var img4 = document.getElementById("img4");
+                img4.style.display = "none";
+                var title = document.getElementById("title4");
+                title4.style.color = "#8e8e8e";
+                var layer = document.getElementById("layer" + i);
+                $("#layer" + i).slideDown().fadeIn("slow");
+                var title = document.getElementById("title" + i);
+                title.style.color = "#e52938";
+                var img = document.getElementById("img" + i);
+                img.style.display = "block";
+            }
+
+            function sss(i) {
+                var more1 = document.getElementById("more1");
+                more1.style.display = "none";
+                var more2 = document.getElementById("more2");
+                more2.style.display = "none";
+                var more = document.getElementById("more" + i);
+                $("#more" + i).slideDown().fadeIn("slow");
+            }
+
+            function like_show(i) {
+                var like = document.getElementById("like" + i);
+                like.style.display = "block";
+            }
+
+            function like_back(i) {
+                var like = document.getElementById("like" + i);
+                like.style.display = "none";
+            }
+
+            function like_article_show(i) {
+                var like_article = document.getElementById("like_article" + i);
+                like_article.style.display = "block";
+            }
+
+            function like_article_back(i) {
+                var like_article = document.getElementById("like_article" + i);
+                like_article.style.display = "none";
+            }
+
+            function worker_show(i) {
+                var worker_name = document.getElementById("worker_name" + i);
+                worker_name.style.display = "block";
+            }
+
+            function worker_back(i) {
+                var worker_name = document.getElementById("worker_name" + i);
+                worker_name.style.display = "none";
+            }
+        </script>
+        <style type="text/css">
+            div.nice_right {
+                display: none;
+            }
+
+            input {
+                border: none;
+                outline: none;
+            }
+        </style>
+
+
+            <script language="JavaScript">
+                var s1 = 0;
+                var s2 = 0;
+
+                function show1() {
+                    if (s1 == 0) {
+                        document.getElementById('hangye').style.display = "block";
+                        s1 = 1;
+                    } else {
+                        document.getElementById('hangye').style.display = "none";
+                        s1 = 0;
+                    }
+                }
+
+                function show2() {
+                    if (s2 == 0) {
+                        document.getElementById('diqu').style.display = "block";
+                        s2 = 1;
+                    } else {
+                        document.getElementById('diqu').style.display = "none";
+                        s2 = 0;
+                    }
+                }
+            </script>
+
+            <!--内容主题 -->
+            <div id="main_punlish">
+            <div class="title_p">
+            <ul>
+            <li ><a href="{:U('User/pshWorksPag')}">作品发布</a></li>
+             <li style="border-top: 3px solid #96424a;background:white;"><a href="{:U('User/pshArtPag')}">文章发表</a></li>
+            </ul>
+            </div>
+            <form action="{:U('User/pubAritical')}" id="pubArtical" name="pubArtical" method="POST" enctype="multipart/form-data">
+
+            <div class="punlish_d">
+            <table>
+            <tr>
+                <th style="height:70px;" >文章名称</th>
+                <td style="height:70px;"><input maxlength="50" type="text" value="" class="newTxt" name="Articalname">
+                <span>最多只能输入50个字</span></td>
+            </tr>
+             <tr>
+                <th style="height:70px;" >文章分类</th>
+                <td style="height:70px;">
+                <select name="fenlei" style="font-size:14px;font-family:幼圆;color:#666">
+                    <option value="JC">原创教程</option>
+                    <option value="GD">观点/经验</option>
+                    <option value="SJ">设计资讯/资料</option>
+                    <option value="OTHERS">其他</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <th style="height:70px;vertical-align: top;padding-top:22px;" >文章内容</th>
+                <td style="height:70px; padding:20px 25px;">
+                	<script type="text/plain" id="content" style="width:900px;height:500px;"></script>
+                	<!--<script id="editor" name="ArticalContent" type="text/plain" style="width:900px;height:500px;"></script>-->
+                	<!--<textarea name="ArticalContent" class="newArea " placeholder="正文内容"></textarea>-->
+               </td>
+            </tr>
+            <!--<tr>
+                <th style="height:70px;" >上传图片</th>
+                <td style="height:70px;"><input  type="file" name="ArticalImg" style="cursor: pointer; opacity:100;height:20px;"/>
+                <span style="width:400px;font-size:14px;">支持jpg/gif/png格式,</span></td>
+            </tr>-->
+            <input type="hidden" value="2" class="newTxt" name="upLoadType">
+            </table>
+
+            <div class="Punlish"><input type="button" id="fsub" name="" value="发布" placeholder=""></div>
+            </div>
+            </form>
+
+
+</div>
+<script type="text/javascript">
+ 			 var editor = new baidu.editor.ui.Editor({
+    			toolbars:[  ['fullscreen', 'source', '|', 'undo', 'redo', '|',
+                'bold', 'italic', 'underline', 'fontborder', 'strikethrough', 'superscript', 'subscript', 'removeformat', 'formatmatch', 'autotypeset', 'blockquote', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist', 'selectall', 'cleardoc', '|',
+                'rowspacingtop', 'rowspacingbottom', 'lineheight', '|',
+                'customstyle', 'paragraph', 'fontfamily', 'fontsize', '|',
+                'directionalityltr', 'directionalityrtl', 'indent', '|',
+                'justifyleft', 'justifycenter', 'justifyright', 'justifyjustify', '|', 'touppercase', 'tolowercase', '|',
+                'link', 'unlink', 'anchor', '|', 'imagenone', 'imageleft', 'imageright', 'imagecenter', '|',
+                'insertimage', 'emotion', 'scrawl', 'insertvideo', 'music', 'attachment', 'map', 'gmap', 'insertframe','insertcode', 'webapp', 'pagebreak', 'template', 'background', '|',
+                'horizontal', 'date', 'time', 'spechars', 'snapscreen', 'wordimage', '|',
+                'inserttable', 'deletetable', 'insertparagraphbeforetable', 'insertrow', 'deleterow', 'insertcol', 'deletecol', 'mergecells', 'mergeright', 'mergedown', 'splittocells', 'splittorows', 'splittocols', 'charts', '|',
+                'print', 'preview', 'searchreplace', 'help', 'drafts']  ],//自定义ueditor工具栏
+    			autoFloatEnabled: true,//工具栏自动浮动-》关闭
+     			//关闭elementPath
+                elementPathEnabled:false,
+    			textarea:'myVent'//form表单将通过该参数获得表单提交的数据
+  				});
+  editor.render("content");
+
+
+			window.onload = function(){
+
+				document.getElementById('fsub').onclick=function(){
+					document.getElementById('pubArtical').submit();
+				};
+			}
+
+			</script>
+        <div class="clear"></div>
+<include file="Public/footer" title="Index" />

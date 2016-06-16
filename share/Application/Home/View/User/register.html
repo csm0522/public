@@ -1,0 +1,29 @@
+﻿<include file="Public/header" title="Login" />
+<link href="__HomeCSS__/loginAndRegister.css" rel="stylesheet" media="all" />
+
+		<div id="logReg">
+			<div class="LGbtn">
+				<a href="{:U('User/loginPage')}"><span id="Lbtn1" class="Lbtn1">登陆</span></a>
+				<a href="{:U('User/register')}"><span id="Rbtn1" class="Rbtn1">注册</span></a>
+			</div>
+			<div class="regMain">
+				<form action="{:U('User/register',array())}" onsubmit="return submit_reg()" method='POST'>
+					<input type="text" id="Reg_un" name="Reg_un" placeholder="用户名" required="required" onblur="check_username_len(this)" />
+					<input type="password" id="Reg_pwd" name="Reg_pwd" placeholder="密码" required="required" onblur="check_len(this)" />
+					<select class="UserTag" id="UserTag" name="UserTag">
+						<option value="per">个人</option>
+						<option value="bus">商家</option>
+					</select>
+					<div class="Reg_verify_box"><input type="text" id="Reg_verify" name="Reg_verify" placeholder="验证码" required="required" />
+						<img src="{:U('User/verify',array())}" alt="" /></div>
+					<div id="RemiRMes"></div>
+					<input type="submit" value="注  册" />
+				</form>
+			</div>
+		</div>
+		<!--<div class="dynamic_bottom">
+			<img src="__HomeIMG__/index/bg2.png" />
+		</div>-->
+	</body>
+
+</html>

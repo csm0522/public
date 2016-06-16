@@ -1,0 +1,248 @@
+<include file="Public/header" title="Login" />
+<link href="__HomeCSS__/information-edit.css" rel="stylesheet" media="all" />
+		<script type="text/javascript" language="javascript">
+			function btn_color(i) {
+				var btn = document.getElementById("btn" + i);
+				btn.style.color = "#e52938";
+			}
+
+			function btn_back(i) {
+				var btn = document.getElementById("btn" + i);
+				btn.style.color = "#533333";
+			}
+
+			function title_color(i) {
+				var title = document.getElementById("title" + i);
+				title.style.color = "#e52938";
+			}
+
+			function title_back(i) {
+				var title = document.getElementById("title" + i);
+				title.style.color = "#8e8e8e";
+			}
+
+			function show(i) {
+				var layer = document.getElementById("layer" + i);
+				layer.style.display = "block";
+			}
+
+			function search_btn() {
+				var search_btn1 = document.getElementById("search_btn1");
+				search_btn1.style.color = "#e52938";
+			}
+		</script>
+		<script type="text/javascript">
+
+			$(document).ready(function() {
+				$(".nice_left").click(function() {
+					$(".nice_right").slideToggle(100);
+				});
+				$(".nice_right").click(function() {
+					$(".nice_left").slideToggle(500);
+				});
+				$(".nice_right").click(function() {
+					$(".nice_right").slideToggle(100);
+				});
+				$(".nice_left").click(function() {
+					$(".nice_left").slideToggle(500);
+				});
+			});
+		</script>
+
+		<script type="text/javascript">
+			function show(i) {
+				if(i==1)
+				{
+					$('#box1').show();
+					$('#box3').hide();
+				}
+				if(i==3)
+				{
+					$('#box1').hide();
+					$('#box3').show();
+				}
+			}
+			function sss(i) {
+				var more1 = document.getElementById("more1");
+				more1.style.display = "none";
+				var more2 = document.getElementById("more2");
+				more2.style.display = "none";
+				var more = document.getElementById("more" + i);
+				$("#more" + i).slideDown().fadeIn("slow");
+			}
+		</script>
+
+		<script type="text/javascript">
+		window.onload=function(){
+			var area = [
+				["职位1", "职位2", "职位3", "职位3", "职位3", "职位3", "职位3"],
+				["专业1", "专业2", "专业3", "专业3", "专业3", "专业3"]
+			]
+
+			function selecttxt() {
+				var strcity = document.getElementById("zhiwei");
+				var strca = area[strcity.selectedIndex - 1];
+				strarea.length = 1;
+				for (var x = 0; x < strca.length; x++) {
+					strarea[x] = new Option(strca[x], strca[x]);
+				}
+			}
+
+		}
+		</script>
+		<style type="text/css">
+			div.nice_right {
+				display: none;
+			}
+		</style>
+
+
+		<div id="layer1" style="margin-top:70px;background-color: white;">
+			<div class="layer_left">
+				<a href="#set_1" style="text-decoration:none">
+					<div class="option" onclick="show(1)">
+						<div class="option_1"><img src="__HomeIMG__/index/user.png" height="15" width="13" /></div>
+						<div class="option_2" id="title1">个人信息</div>
+					</div>
+				</a				<a href="#set_3" style="text-decoration:none">
+					<div class="option" onclick="show(3)">
+						<div class="option_1"><img src="__HomeIMG__/index/user.png" height="15" width="13" /></div>
+						<div class="option_2" id="title3">通知/留言</div>
+					</div>
+				</a>
+
+				<div class="save">
+					<a href="{:U('Index/index')}"><input type="button" class="s_cancle" value="取消"></a>
+					<input type="submit" class="s_save" value="保存" id="s_save" />
+				</div>
+			</div>
+
+
+			<form method='post' id="form123" name="form1" action="{:U('User/Editinfo')}">
+			<div class="layer_right" style="margin-bottom:180px;">
+
+
+				<div class="r_1" id="box1" style="display:block;margin-top:0">
+
+					<div class="r_title">
+						<h style="color:#e52938;padding-top:4%;margin-left:3%;">个人信息</h>
+					</div>
+					<div class="r_form">
+						<div class="f_left">昵称：</div>
+						<div class="f_right"><input type="text" name="UserName" class="f_text" value="{$userInfo.username}"/></div>
+					</div>
+
+					<div class="r_form">
+						<div class="f_left">头像：</div>
+						<div class="f_right">
+							<img src="__HomeIMG__/index/person_1.png" weight="50px" height="50px" />
+							<input type="file" name="" value="选择图片" placeholder="" class="f_touxiang" />
+						</div>
+					</div>
+
+					<div class="r_form">
+						<div class="f_left">性别：</div>
+						<div class="f_right">
+							<input type="radio" id="nan" checked="checked" name="Sex" value="male" /><label for="nan">男</label>
+							<input type="radio" id="nv" name="Sex" value="female" /><label for="nv">女</label>
+							<input type="radio" id="null" name="Sex" value="null" /><label for="null">不告诉你</label>
+						</div>
+					</div>
+					<div class="r_form">
+						<div class="f_left">联系方式：</div>
+						<div class="f_right"><input type="text" maxlength="12" name="userConnect" class="f_text"  value="{$userInfo.userphone}"/></div>
+					</div>
+					<div class="r_form">
+						<div class="f_left">电子邮箱：</div>
+						<div class="f_right"><input type="email" name="userEmail" class="f_text" value="{$userInfo.useremail}"/></div>
+					</div>
+					<div class="r_form">
+						<div class="f_left">身份：</div>
+						<div class="f_right">
+							<select onselect="checktxt()" name="zhiwei" id="zhiwei" onchange="selecttxt()">
+                                        <option value="0">请选择职位</option>
+                                        <option value="peo">校外人士</option>
+                                        <option value="stu">在校学生</option>
+                                  </select>
+						</div>
+					</div>
+					<div class="r_form">
+						<div class="f_left">身份证明：</div>
+						<div class="f_right">
+							<img src="__HomeIMG__/index/user.png" weight="50px" height="50px" />
+							<input type="file" name="" value="选择图片" placeholder="" class="f_touxiang" />
+						</div>
+					</div>
+					<div class="r_form" style="height: 90px;">
+						<div class="f_left">个人简介：</div>
+						<div class="f_right">
+							<textarea id="content" placeholder="说点什么.." name="Resume" value="" style="color:black;">{$userInfo.userintro}</textarea>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="r_1" id="box3" style="display:none;margin-top:0">
+					<div class="r_title">
+						<h style="color:#e52938;padding-top:4%;margin-left:3%;">通知</h>
+					</div>
+					<div id="notices">
+						<ul>
+							<li>
+								<div class="NameTime">
+									<span class="MesName">管理员</span>
+									<span class="MesTime">2016-05-01</span>
+								</div>
+								<div class="content">
+									珍惜过往，记录点滴，试着用照片去讲述属于你的2015故事， 让影像伴随你生活的每一天。新版咔嚓日记值此圣诞前夕，珍惜过往，记录点滴.
+								</div>
+							</li>
+							<li>
+								<div class="NameTime">
+									<span class="MesName">管理员</span>
+									<span class="MesTime">2016-05-01</span>
+								</div>
+								<div class="content">
+									珍惜过往，去讲述属于你的20去讲述属于你的20去讲述属于你的20去讲述属于你的20，去讲述属于你于你于你的20， 让影像伴随你生活的每一天。新版咔嚓日记值此圣诞前夕，珍惜过往，记录点滴.
+								</div>
+							</li>
+							<li>
+								<div class="NameTime">
+									<span class="MesName">管理员</span>
+									<span class="MesTime">2016-05-01</span>
+								</div>
+								<div class="content">
+									珍惜过往，记录点滴，试着用照片去讲述属于你的2015故事， 让影像伴随你生活的每一天。新版咔嚓日记值此圣诞前夕，珍惜过往，记录点滴.
+								</div>
+							</li>
+							<li>
+								<div class="NameTime">
+									<span class="MesName">管理员</span>
+									<span class="MesTime">2016-05-01</span>
+								</div>
+								<div class="content">
+									珍惜过往，去讲述属于你的20去讲述属于你的20去讲述属于你的20去讲述属于你的20，去讲述属于你于你于你的20， 让影像伴随你生活的每一天。新版咔嚓日记值此圣诞前夕，珍惜过往，记录点滴.
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+
+
+			</div>
+			</form>
+		</div>
+
+		<script>
+			window.onload = function(){
+					document.getElementById('s_save').onclick=function(){
+					document.getElementById('form123').submit();
+				};
+			}
+		</script>
+
+
+				<div class="clear"></div>
+		<include file="Public/footer" title="Index" />

@@ -1,0 +1,193 @@
+<include file="Public/header" title="Login" />
+<link href="__HomeCSS__/punlish.css" rel="stylesheet" media="all" />
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".nice_left").click(function() {
+                    $(".nice_right").slideToggle(100);
+                });
+                $(".nice_right").click(function() {
+                    $(".nice_left").slideToggle(500);
+                });
+                $(".nice_right").click(function() {
+                    $(".nice_right").slideToggle(100);
+                });
+                $(".nice_left").click(function() {
+                    $(".nice_left").slideToggle(500);
+                });
+            });
+        </script>
+
+        <script type="text/javascript">
+            function show(i) {
+                var layer1 = document.getElementById("layer1");
+                layer1.style.display = "none";
+                var img1 = document.getElementById("img1");
+                img1.style.display = "none";
+                var title = document.getElementById("title1");
+                title1.style.color = "#8e8e8e";
+                var layer2 = document.getElementById("layer2");
+                layer2.style.display = "none";
+                var img2 = document.getElementById("img2");
+                img2.style.display = "none";
+                var title = document.getElementById("title2");
+                title2.style.color = "#8e8e8e";
+                var layer3 = document.getElementById("layer3");
+                layer3.style.display = "none";
+                var img3 = document.getElementById("img3");
+                img3.style.display = "none";
+                var title = document.getElementById("title3");
+                title3.style.color = "#8e8e8e";
+                var layer4 = document.getElementById("layer4");
+                layer4.style.display = "none";
+                var img4 = document.getElementById("img4");
+                img4.style.display = "none";
+                var title = document.getElementById("title4");
+                title4.style.color = "#8e8e8e";
+                var layer = document.getElementById("layer" + i);
+                $("#layer" + i).slideDown().fadeIn("slow");
+                var title = document.getElementById("title" + i);
+                title.style.color = "#e52938";
+                var img = document.getElementById("img" + i);
+                img.style.display = "block";
+            }
+
+            function sss(i) {
+                var more1 = document.getElementById("more1");
+                more1.style.display = "none";
+                var more2 = document.getElementById("more2");
+                more2.style.display = "none";
+                var more = document.getElementById("more" + i);
+                $("#more" + i).slideDown().fadeIn("slow");
+            }
+
+            function like_show(i) {
+                var like = document.getElementById("like" + i);
+                like.style.display = "block";
+            }
+
+            function like_back(i) {
+                var like = document.getElementById("like" + i);
+                like.style.display = "none";
+            }
+
+            function like_article_show(i) {
+                var like_article = document.getElementById("like_article" + i);
+                like_article.style.display = "block";
+            }
+
+            function like_article_back(i) {
+                var like_article = document.getElementById("like_article" + i);
+                like_article.style.display = "none";
+            }
+
+            function worker_show(i) {
+                var worker_name = document.getElementById("worker_name" + i);
+                worker_name.style.display = "block";
+            }
+
+            function worker_back(i) {
+                var worker_name = document.getElementById("worker_name" + i);
+                worker_name.style.display = "none";
+            }
+        </script>
+        <style type="text/css">
+            div.nice_right {
+                display: none;
+            }
+
+            input {
+                border: none;
+                outline: none;
+            }
+        </style>
+
+
+            <script language="JavaScript">
+                var s1 = 0;
+                var s2 = 0;
+
+                function show1() {
+                    if (s1 == 0) {
+                        document.getElementById('hangye').style.display = "block";
+                        s1 = 1;
+                    } else {
+                        document.getElementById('hangye').style.display = "none";
+                        s1 = 0;
+                    }
+                }
+
+                function show2() {
+                    if (s2 == 0) {
+                        document.getElementById('diqu').style.display = "block";
+                        s2 = 1;
+                    } else {
+                        document.getElementById('diqu').style.display = "none";
+                        s2 = 0;
+                    }
+                }
+            </script>
+
+            <!--内容主题 -->
+            <div id="main_punlish">
+            <div class="title_p">
+            <ul>
+            <li style="border-top: 3px solid #96424a;background:white;"><a href="{:U('User/pshWorksPag')}">作品发布</a></li>
+             <li><a href="{:U('User/pshArtPag')}">文章发表</a></li>
+            </ul>
+            </div>
+            <form action="{:U('User/pubWorks')}" id="pubWorks" name="pubWorks" method="POST" enctype="multipart/form-data">
+            <div class="punlish_d">
+            <table>
+            <tr>
+                <th style="height:70px;" >作品名称<span style="color:red">*</span></th>
+                <td style="height:70px;"><input maxlength="50" type="text" value="" class="newTxt" name="worksname">
+                <span>最多只能输入50个字</span></td>
+            </tr>
+             <tr>
+                <th style="height:70px;" >作品分类<span style="color:red">*</span></th>
+                <td style="height:70px;">
+                <select name="fenlei" style="font-size:14px;font-family:幼圆;color:#666">
+                    <option value="UI">UI/UX</option>
+                    <option value="PM">平面设计</option>
+                    <option value="MH">漫画/插画</option>
+                    <option value="WY">网页设计</option>
+                    <option value="MD">3D模型</option>
+                    <option value="DP">创意短片</option>
+                    <option value="PT">摄影</option>
+                    <option value="OTHER">其他</option>
+
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <th style="height:70px;vertical-align: top;padding-top:22px;" >作品说明<span style="color:red">*</span></th>
+                <td style="height:70px;"><textarea maxlength="2000" name="worksIntro" class="newArea " placeholder="准确到位的作品说明（创作背景、设计思路、团队成员等）有助于其他会员进一步了解并与您一起探讨您设计作品。除案例相关信息，请勿填写设计师商业推广信息"></textarea>
+            </tr>
+            <tr>
+                <th style="height:70px;" >上传照片</th>
+                <td style="height:70px;">
+                	<input  type="file" name="worksImg" style="cursor: pointer; opacity:100;height:20px;"/>
+                <span style="width:400px;font-size:14px;">支持图片jpg/gif/png格式</span></td>
+            </tr>
+            <tr>
+                <th style="height:70px;" >外链地址</th>
+                <td style="height:70px;"><input type="text" value="" class="newTxt" name="worksLink">
+            </tr>
+                <input type="hidden" value="1" class="newTxt" name="upLoadType">
+            </table>
+
+            <div class="Take"><input type="submit"  id="fsub" value="确认"></div>
+            </div>
+</form>
+
+</div>
+			<script type="text/javascript">
+			window.onload = function(){
+				document.getElementById('fsub').onclick=function(){
+					document.getElementById('pubWorks').submit();
+				};
+			}
+
+			</script>
+      <div class="clear"></div>
+<include file="Public/footer" title="Index" />

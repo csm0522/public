@@ -1,0 +1,239 @@
+/* CSS Document */
+
+.tit{
+    font-size:14px;
+    padding:0;
+    margin:0;
+    height:15%;
+    background-color: #6a2f1d;
+    opacity:0.8;
+    border-radius: 5px 5px 0 0;
+}
+.tit b{
+    float:left;
+    margin-left:5%;
+    margin-top:2%;
+    color:#fff;
+    font-family: "Microsoft YaHei";
+}
+.tit a{ float:right; margin-right:5px; margin-top:6px; display:inline;}
+a.cls{height:18px; width:18px;display:block; overflow:hidden; line-height:200px;}
+.nr{padding:10px; text-align:left;}
+a.cls,a.cls:link,a.cls:visited{background:url(cls.gif) center 0 no-repeat;}
+a.cls:hover{background:url(cls.gif) center -20px no-repeat;}
+.box{
+    border:none;
+    border-radius: 10px;
+    background:#FFF;
+}
+/*圆角边框*/
+.lt,.rt,.lb,.rb{ background-image:url(abg.png);filter:alpha(opacity=10);-moz-opacity:.1;opacity:.1;line-height:0;}
+.lt,.rt,.lb,.rb{ height:6px;width:6px;}.t,.b,.l,.r{ background:#000000;filter:alpha(opacity=10);-moz-opacity:.1;opacity:.1;line-height:0;}
+.l,.r{width:6px;}.t,.b{height:6px;}.lt{ background-position:0 0;}.rt{ background-position:right 0;}.lb{ background-position:0 bottom;}.rb{ background-position:right bottom;}
+/*小三角*/
+s{position:absolute;top:-13px;*top:-13px;left:50px;display:block;height:0;width:0;font-size:0; line-height: 0;border-color:transparent transparent #666 transparent;border-style:dashed dashed solid dashed;border-width:10px;}
+i{position:absolute;top:-9px;*top:-9px;left:-10px;display:block;height:0;width:0;font-size: 0;border-width:10px;
+line-height: 0;border-color:transparent transparent #FFF transparent;border-style:dashed dashed solid dashed;}
+
+.open{ position:relative; width:150px; height:25px;line-height:180%; border:1px solid #FF9900; background:#FFCC00;margin:12% auto 0 400px; text-align:center;}
+.open span{cursor:pointer; display:block; width:100%;}
+.odiv{
+float:right;
+position:absolute;
+margin-top: 1%;
+border:none;
+border-radius: 5px;
+width:350px;
+height:300px;
+}
+.category_title
+{
+    width:100%;
+    height:100%;
+    border:none;
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+
+}
+
+.about
+{
+    width:100%;
+    height:20%;
+    float:bottom;
+    position:relative;
+    border:none;
+    background-color: #eee;
+    border:none;
+    border-radius: 0 0 5px 5px;
+}
+
+.about_1
+{
+    width:20%;
+    height:70%;
+    padding-left: 3%;
+    padding-top: 5%;
+
+    float:left;
+    position:relative;
+    border:none;
+    background-color: #eee;
+    font-size: 14px;
+    font-weight: lighter;
+    color:#8e8e8e;
+    font-family: "微软雅黑";
+}
+
+.box2{
+    border:none;
+    border-radius: 10px;
+    background:#FFF;
+}
+
+.box_2{
+    border:none;
+    border-radius: 10px;
+    background:#FFF;
+}
+
+.odiv2{
+float:right;
+position:relative;
+margin-top: 5%;
+border:none;
+border-radius: 5px;
+width:200px;
+height:200px;
+box-shadow: 0 1px 1px 1px #aaa;
+
+
+}
+
+.tit2{
+    font-size:14px;
+    padding:0;
+    margin:0;
+    height:20%;
+    background-color: #fff;
+
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px #aaa solid;
+    float:top;
+    position: relative;
+}
+
+#more1{
+    font-size:14px;
+    padding:0;
+    margin:0;
+    height:80%;
+    background-color: #f5f5f5;
+    border-bottom: 1px #aaa solid;
+
+    float:top;
+    position: relative;
+}
+
+.more_box
+{
+    width:80%;
+    margin:auto;
+    padding:5%;
+
+}
+
+.sss
+{
+    width:100%;
+    height:50px;
+    float:top;
+    position:relative;
+
+}
+
+.more_btn
+{
+    width:60%;
+    float:left;
+    position:relative;
+    height:30px;
+   background-color: #f5f5f5;
+   border:none;
+    text-align: left;
+    cursor:pointer;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color:#aaa;
+
+}
+
+#more2{
+    font-size:14px;
+    padding:0;
+    margin:0;
+    height:80%;
+    background-color: #f5f5f5;
+    border-bottom: 1px #aaa solid;
+
+    float:top;
+    position: relative;
+}
+
+.sss_img
+{
+    width:30px;
+    height:30px;
+    float:left;
+    position:relative;
+}
+
+.sss_r
+{
+    float:left;
+    position: relative;
+    width:16px;
+    height:16px;
+    border-radius: 10px;
+    background-color: #e52938;
+    text-align: center;
+    color:#fff;
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+.odiv3{
+float:top;
+float:right;
+position:relative;
+
+border:none;
+border-radius: 5px;
+width:100px;
+height:160px;
+box-shadow: 0 1px 1px 1px #aaa;
+background:#FFF;
+padding:10px;
+
+}
+
+
+.box3{
+    border:none;
+    border-radius: 10px;
+    background:#FFF;
+}
+
+.edit_box
+{
+    height:40px;
+    border:none;
+    width:100px;
+
+    text-align: left;
+    color:#8e8e8e;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.edit_box:hover, .edit_box:focus, .edit_box.disabled, .edit_box[disabled] {  background-color: #f5f5f5;color:#e52938;}

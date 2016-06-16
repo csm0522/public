@@ -1,0 +1,189 @@
+/*2016-05-06*/
+*{
+	margin: 0;
+	padding: 0;
+	text-shadow: none;
+}
+/**::selection{
+	background:lightpink;
+}*/
+a {
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+input[type="submit"],
+ input[type="reset"],
+ input[type="button"],
+ button { -webkit-appearance: none; }
+
+/* 重置 hr */
+
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+body{
+	background:rgb(240,240,240);
+}
+/* 重置表格元素 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+div#main{
+	width: 1080px;
+	background: white;
+	margin: 100px auto;
+}
+div#main_body{
+	width: 100%;;
+	display: -webkit-box;
+}
+div#main_head{
+	height:40px;
+	line-height:40px;;
+	width: 100%;
+	border-bottom: 1px solid lightgray;
+	color:rgb(200,200,200);
+	padding-left: 10px;;
+	box-sizing: border-box;
+
+}
+div#main_head a{
+	color:lightskyblue;
+}
+div#main_left{
+	-webkit-box-flex:2;
+	border-right: 1px solid #f4f4f4;
+}
+div#main_right{
+	width: 280px;;
+}
+div.borderTop div.sort{
+	padding:10px;
+	box-sizing: border-box;
+	border-bottom:1px solid #f4f4f4;
+}
+div.borderTop div.sort dl{
+	display: inline-block;
+    padding: 5px 0;
+    width: 100%;
+}
+div.borderTop div.sort dl dt{
+	float: left;
+    width: 65px;
+    padding-left: 10px;
+    line-height: 22px;
+    text-align: left;
+    color: #2d2d2d;
+}
+div.borderTop div.sort dl dd{
+	margin-left:50px;
+}
+div.borderTop div.sort dl dd a{
+	color: #2d2d2d;
+    margin-right: 10px;
+    display: inline-block;
+    font-size: 12px;;
+}
+div.borderTop div.sort dl dd a.select{
+	color: red;
+	font-weight: 800;
+}
+div#main_left ul li{
+	padding:10px;
+	box-sizing: border-box;
+	display: -webkit-box;
+	border-bottom:1px solid #f4f4f4;
+}
+div#main_left ul li a.userAImg{
+	display:block;
+	width: 260px;
+}
+div#main_left ul li div:last-child{
+	display: block;
+	-webkit-box-flex: 1;
+}
+div.userAInfo div.userATitle a{
+	font-weight: 800;
+}
+div.userAInfo div.userATitle a:hover{
+	color:red;
+	text-decoration: underline;
+}
+div.userAInfo div.userAupTime{
+	margin:10px 0;
+	color:#656F79;
+}
+div.userAInfo div.userAupTime span.cf30{
+	color:red;
+}
+div.userAInfo div.userAintro{
+	color:rgb(180,180,180);
+	margin-top:10px;
+	font-size: 14px;;
+
+}
+div.sortCo{
+	margin-top:10px;
+}
+div.sortCo span:first-child{
+	color:yellowgreen;
+}
+div#main_right_title{
+	height:40px;
+	font-size: 20px;
+	line-height: 40px;
+	font-weight: 800;
+	background: black;;
+	color:white;
+	text-align: center;
+}
+div#main_right_container{
+	padding:4px;
+	box-sizing: border-box;
+}
+div#main_right_container ul li{
+	padding:4px;
+	border-bottom:1px solid #f4f4f4
+}
+div#main_right_container ul li a{
+	display: inline-block;
+	width: 45%;
+}
+div#main_right_container ul li a img{
+	width: 100%;
+	height:auto;
+}
+div#main_right_container ul li div{
+	width: 45%;;
+	display: inline-block;
+	padding-left:4px ;
+	box-sizing: border-box;
+	vertical-align: top;
+}
+div#main_right_container ul li div p:first-child{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp:2;
+	-webkit-box-orient: vertical;
+	color:rgb(160,160,160);
+
+}
+div#main_right_container ul li div p:last-child{
+	margin-top:20px;
+	color:rgb(180,180,180);
+}

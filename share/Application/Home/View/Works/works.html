@@ -1,0 +1,155 @@
+﻿<include file="Public/header" title="Login" />
+<link href="__HomeCSS__/work.css" rel="stylesheet" media="all" />
+<script type="text/javascript">
+	window.onload=function(){
+		document.getElementById('subCom').click=function() {
+			var now = new Date();
+			var layer = document.getElementById("layer");
+			var divlayer = document.createElement("div");
+			var con = document.getElementById("content").value;
+			con = con.replace(/\n/g, "<br />");
+			divlayer.innerHTML = "<img src='__HomeIMG__/index/person_2.png' width='40px' class='header'/>" + con + "<div class='stime'>" + now.toLocaleString() + "</div><div class='clear'></div>";
+			divlayer.className = "content";
+			layer.appendChild(divlayer);
+			document.getElementById("content").value = "";
+		}
+	}
+
+	</script>
+		<div id="container" class="container-min-width" style="display: block;">
+			<div class="dynamic">
+				<div class="background_top"></div>
+				<div class="background_middle">
+
+
+
+					<div class="content2">
+
+						<div class="author">
+							<a href="">
+								<img src="__HomeIMG__/index/person_1.png" width="100%" />
+							</a>
+						</div>
+
+						<div class="author_name">
+							<h>Sonia</h>
+						</div>
+
+						<div class="work_bottom">
+						<div class="bottom_1"></div>
+						<div class="bottom_2"></div>
+						</div>
+
+						<div class="author_title">
+							<h>Title</h>
+						</div>
+
+						<div class="author_content">
+							<h>Very cute! love the little details put into the image, Not much of a light source which helps keep the illustration so simple. Nice touch of playfulness with the singing cat and the purple fence. </h>
+						</div>
+
+						<div>
+							<img src="__HomeIMG__/work/collect_1.jpg" alt=""  style="width: 600px;height:auto;margin:20px 0;"/>
+							<img src="__HomeIMG__/work/work_2.jpg" alt=""  style="width: 600px;height:auto;margin:20px 0;"/>
+							<img src="__HomeIMG__/work/work_3.jpg" alt=""  style="width: 600px;height:auto;margin:20px 0;"/>
+						</div>
+
+						<div class="follower">
+								<input type="button" class="follower_btn" onclick="alert('赞');" /><span>55</span>
+						</div>
+
+					</div>
+
+					<div class="recommend-line">
+						<a>评论</a>
+					</div>
+
+					<div class="view">
+
+						<div class="view_me">
+							<a href="">
+								<img src="__HomeIMG__/index/person_1.png" width="80%" />
+							</a>
+						</div>
+
+						<textarea id="content" rows="1" cols="100" placeholder="添加评论" name="caption" style="runat：server；"></textarea>
+
+						<div id="view_submit" >
+							<input type="button" value="提交" class="submit" id="subCom"/>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="view_more">
+
+
+					<div class="view_others">
+
+						<div class="other">
+							<div class="view_top">
+								<div class="view_l">
+									<a href=""><img src="__HomeIMG__/index/person_2.png" width="40px" /></a>
+								</div>
+
+								<div class="other_name">
+									<h style="font-size:14px;color:#aaa;">haifn-</h>
+									<a href="" style="text-decoration:none;font-size:18px">
+										<h id="identity1" onmousemove="identity_color(1)" onmouseout="identity_back(1)">设计师</h>
+									</a>
+								</div>
+							</div>
+
+							<div class="view_m">
+								<h style="font-size:14px;color:#aaa;">猴赛雷猴赛雷猴赛雷猴赛雷猴赛雷猴赛雷</h>
+							</div>
+
+						</div>
+
+						<div class="other">
+							<div class="view_top">
+								<div class="view_l">
+									<a href=""><img src="__HomeIMG__/index/person_1.png" width="40px" /></a>
+								</div>
+
+								<div class="other_name">
+									<h style="font-size:14px;color:#aaa;">xuxin-</h>
+									<a href="" style="text-decoration:none;font-size:18px">
+										<h id="identity2" onmousemove="identity_color(2)" onmouseout="identity_back(2)">党员</h>
+									</a>
+								</div>
+							</div>
+
+							<div class="view_m">
+								<h style="font-size:14px;color:#aaa;">6666666666666666666666</h>
+							</div>
+
+						</div>
+
+						<div class="other">
+							<div class="view_top">
+								<div class="view_l">
+									<a href=""><img src="__HomeIMG__/index/person_2.png" width="40px" /></a>
+								</div>
+
+								<div class="other_name">
+									<h style="font-size:14px;color:#aaa;">shaomin-</h>
+									<a href="" style="text-decoration:none;font-size:18px">
+										<h id="identity3" onmousemove="identity_color(3)" onmouseout="identity_back(3)">学霸</h>
+									</a>
+								</div>
+							</div>
+
+							<div class="view_m">
+								<h style="font-size:14px;color:#aaa;">赞赞赞赞赞赞赞</h>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+
+							<div class="clear"></div>
+		<include file="Public/footer" title="Index" />
+

@@ -1,0 +1,42 @@
+#container{
+    right:0px;
+    top:0px;
+    min-width: 300px;
+    margin:auto;
+    background-color: #fff;
+    background-image: none;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+}
+
+.container-min-width {
+    width:300px;
+    min-width: 960px;
+    margin:auto;
+    background-color: #fff;
+}
+
+.category
+{
+    width:50%;
+    height:25px;
+    float:left;
+    position:relative;
+    background-color: #fff;
+    text-align: center;
+    font-weight: b;
+    font-size: 14px;
+    color:#aaa;
+    font-family: "微软雅黑";
+}
+
+.category:hover, .category:focus, .category.disabled, .category[disabled] { color: #e52938;background-color: #f5f5f5;}
+
+.clear{
+    clear:both;
+}
+
