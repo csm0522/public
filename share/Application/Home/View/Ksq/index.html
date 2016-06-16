@@ -10,11 +10,19 @@
 
  </div>
  <div class="take">
-  				<form id="searchform " class="in"  method="get " action="# " style="height:143px;margin-bottom:20px;">
-                    <input class="search-term required"  style="width:800px;height:45px;margin-top:20px;padding-left:35px;" type="text " id="s " name="s " placeholder="请输入你想说的 " title="* Please enter a search term! "/>
-                    <input class="search-btn "  style="width:70px;height:40px;margin-top:46px;text-align:center;" type="submit " value="发送 " />
-
-                </form>
+     <form id="searchform " class="in"  method="Post" action="{:U('Ksq/addTopic')}" style="height:143px;margin-bottom:20px;">
+         <select class="search-select" style="width:10%;height: 45px;background-color: #923030;color:white;padding-left:10px;outline:none;text-align: center;" name="types">
+             <option value="0">学校生活</option>
+             <option value="1">八卦新闻</option>
+             <option value="2">闲谈闲聊</option>
+             <option value="3">失物招领</option>
+             <option value="4">比赛宣传</option>
+             <option value="5">寻求伙伴</option>
+             <option value="6">寻找兼职</option>
+         </select>
+         <input class="search-term required"  style="width:70%;height:45px;margin-top:20px;padding-left:35px;" type="text " id="s " name="sword" placeholder="请输入你想说的 " title="* Please enter a search term! "/>
+         <input class="search-btn "  style="width:70px;height:40px;margin-top:46px;text-align:center;" type="submit" value="发送 " />
+     </form>
  </div>
      <div class ="main4">
      <div class="leftpart">
