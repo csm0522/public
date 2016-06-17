@@ -32,7 +32,7 @@ class UserModel extends Model{
         $condition['LoginId']=$data['id'];
         $userid=M('user')->where($condition)->getfield(UserId);
         $datas['UserId']=$userid;
-        $datas['title']=$data['word'];
+        $datas['content']=$data['word'];
         $datas['CreatTime']=$data['time'];
         $datas['type']=$data['type'];
         $datas['ReportTag']=0;
