@@ -116,169 +116,75 @@
 			</div>
 		</div>
 
-<link href="/share/Public/Home/css/word.css" rel="stylesheet" type="text/css" />
+<link href="/share/Public/Home/css/word.css" rel="stylesheet" type="text/css"/>
 
- <div class="Search">
-    		<div class="search-area container ">
-                <p style="padding-top:100px;letter-spacing:18px;font-size:40px; color:#434345;" >口水区，欢迎你</p>
-                <p style="margin-top:24px;font-size:20px; color:#434345;">有问题，有话说，有时间，你都可以来这里！</p>
+<div class="Search">
+    <div class="search-area container ">
+        <p style="padding-top:100px;letter-spacing:18px;font-size:40px; color:#434345;">口水区，欢迎你</p>
+        <p style="margin-top:24px;font-size:20px; color:#434345;">有问题，有话说，有时间，你都可以来这里！</p>
 
-            </div>
+    </div>
 
- </div>
- <div class="take">
-     <form id="searchform " class="in"  method="Post" action="<?php echo U('Ksq/addTopic');?>" style="height:143px;margin-bottom:20px;">
-         <select class="search-select" style="width:10%;height: 45px;background-color: #923030;color:white;padding-left:10px;outline:none;text-align: center;" name="types">
-             <option value="0">学校生活</option>
-             <option value="1">八卦新闻</option>
-             <option value="2">闲谈闲聊</option>
-             <option value="3">失物招领</option>
-             <option value="4">比赛宣传</option>
-             <option value="5">寻求伙伴</option>
-             <option value="6">寻找兼职</option>
-         </select>
-         <input class="search-term required"  style="width:70%;height:45px;margin-top:20px;padding-left:35px;" type="text " id="s " name="sword" placeholder="请输入你想说的 " title="* Please enter a search term! "/>
-         <input class="search-btn "  style="width:70px;height:40px;margin-top:46px;text-align:center;" type="submit" value="发送 " />
-     </form>
- </div>
-     <div class ="main4">
-     <div class="leftpart">
-    <p>话题分类</p>
-     <div id="trid">
-     <ul>
-       <li><img src="/share/Public/Home/image/word/standard.png"alt=""><a href="# " title="Lorem ipsum dolor sit amet, ">学校生活</a> </li>
-       <hr>
-       <li><img src="/share/Public/Home/image/word/standard.png"alt=""><a href="# " title="Lorem ipsum dolor sit amet, ">八卦新闻</a></li>
-       <hr>
-       <li><img src="/share/Public/Home/image/word/standard.png"alt=""><a href="# " title="Lorem ipsum dolor sit amet, ">闲谈闲聊</a></li>
-       <hr>
-       <li><img src="/share/Public/Home/image/word/standard.png"alt=""><a href="# " title="Lorem ipsum dolor sit amet, ">失物招领</a></li>
-       <hr>
-       <li><img src="/share/Public/Home/image/word/standard.png"alt=""><a href="# " title="Lorem ipsum dolor sit amet, ">比赛宣传</a></li>
-       <hr>
-       <li><img src="/share/Public/Home/image/word/standard.png"alt=""><a href="# " title="Lorem ipsum dolor sit amet, ">寻求伙伴</a></li>
-       <hr>
-       <li><img src="/share/Public/Home/image/word/standard.png"alt=""><a href="# " title="Lorem ipsum dolor sit amet, ">寻找兼职</a></li>
-       <hr>
-     </ul>
-     </div>
-     </div>
-     <div class="rightpart">
-        <article class="format-standard type-post hentry clearfix " style="padding-left:50px;padding-top:38px;padding-bottom:25px;height:auto;background:white;margin-top:5px;">
+</div>
+<div class="take">
+    <form id="searchform " class="in" method="Post" action="<?php echo U('Ksq/addTopic');?>" target="_blank" style="height:143px;margin-bottom:20px;">
+        <select class="search-select"
+                style="width:10%;height: 45px;background-color: #923030;color:white;padding-left:10px;outline:none;text-align: center;"
+                name="types">
+            <option value="0">学校生活</option>
+            <option value="1">八卦新闻</option>
+            <option value="2">闲谈闲聊</option>
+            <option value="3">失物招领</option>
+            <option value="4">比赛宣传</option>
+            <option value="5">寻求伙伴</option>
+            <option value="6">寻找兼职</option>
+        </select>
+        <input class="search-term required" style="width:70%;height:45px;margin-top:20px;padding-left:35px;"
+               type="text " id="s " name="sword" placeholder="请输入你想说的 " title="* Please enter a search term! "/>
+        <input class="search-btn " style="width:70px;height:40px;margin-top:46px;text-align:center;" type="submit"
+               value="发送 "/>
+    </form>
+</div>
+<div class="main4">
+    <div class="leftpart">
+        <p>话题分类</p>
+        <div id="trid">
+            <ul>
+                <li><img src="/share/Public/Home/image/word/standard.png" alt="" style="margin-bottom: 10px;"><a href="/share/index.php/Home/Ksq/showtype/id/0" style="margin-top: 23px;">学校生活</a></li><hr>
+                <li><img src="/share/Public/Home/image/word/standard.png" alt="" style="margin-bottom: 10px;"><a href="/share/index.php/Home/Ksq/showtype/id/1" style="margin-top: 23px;">八卦新闻</a></li><hr>
+                <li><img src="/share/Public/Home/image/word/standard.png" alt="" style="margin-bottom: 10px;"><a href="/share/index.php/Home/Ksq/showtype/id/2" style="margin-top: 23px;">闲谈闲聊</a></li><hr>
+                <li><img src="/share/Public/Home/image/word/standard.png" alt="" style="margin-bottom: 10px;"><a href="/share/index.php/Home/Ksq/showtype/id/3" style="margin-top: 23px;">失物招领</a></li><hr>
+                <li><img src="/share/Public/Home/image/word/standard.png" alt="" style="margin-bottom: 10px;"><a href="/share/index.php/Home/Ksq/showtype/id/4" style="margin-top: 23px;">比赛宣传</a></li><hr>
+                <li><img src="/share/Public/Home/image/word/standard.png" alt="" style="margin-bottom: 10px;"><a href="/share/index.php/Home/Ksq/showtype/id/5" style="margin-top: 23px;">寻求伙伴</a></li><hr>
+                <li><img src="/share/Public/Home/image/word/standard.png" alt="" style="margin-bottom: 10px;"><a href="/share/index.php/Home/Ksq/showtype/id/6" style="margin-top: 23px;">寻找兼职</a></li><hr>
+                <li><img src="/share/Public/Home/image/word/standard.png" alt="" style="margin-bottom: 10px;"><a href="/share/index.php/Home/Ksq/index" style="margin-top: 23px;">暂不分类</a></li><hr>
+            </ul>
+        </div>
+    </div>
+    <div class="rightpart">
+        <!--<?php dump($topis) ?>-->
+        <?php if(is_array($topis)): $i = 0; $__LIST__ = $topis;if( count($__LIST__)==0 ) : echo "暂无数据" ;else: foreach($__LIST__ as $key=>$datas): $mod = ($i % 2 );++$i;?><article class="format-standard type-post hentry clearfix " style="padding-left:50px;padding-top:38px;padding-bottom:25px;height:auto;background:white;margin-top:5px;">
 
-           <header class="clearfix ">
+                <header class="clearfix ">
 
-               <h3 class="post-title ">
-               <a href="detailed.html" style="sincolor: #814e51;color: #814e51; ">北师珠有什么美食吗，求介绍？</a>
-                </h3>
+                    <h3 class="post-title ">
+                        <a href="#" style="sincolor: #814e51;color: #814e51; "><?php echo ($datas['content']); ?></a>
+                        <a href="#" style="color:#814e51;font-size: 14px;float:right;margin-bottom:5px;margin-right: 5%;"><?php echo ($datas['username']); ?></a>
+                        <div class="clear"></div>
+                    </h3>
+                    <div class="post-meta clearfix ">
+                        <span class="date" style="color:#814e51;"><?php echo ($datas['creattime']); ?></span>
+                        <span class="category"><a href="# " ><?php echo ($datas['type']); ?></a></span>
+                        <!--<span class="comments"><a href="# " ><?php echo ($datas['topicid']); ?> 回复</a></span>-->
+                        <span class="like-count">66</span>
+                    </div>
+                </header>
+            </article><?php endforeach; endif; else: echo "暂无数据" ;endif; ?>
 
-               <div class="post-meta clearfix ">
-                   <span class="date"style="color:#814e51;">2 4月, 2016</span>
-                   <span class="category "><a href="# " title="View all posts in Server &amp; Database " >美食 &amp; 北师珠</a></span>
-                   <span class="comments " ><a href="# " title="Comment on Integrating WordPress with Your Website " >3 回复</a></span>
-                   <span class="like-count ">66</span>
-               </div>
+    </div>
+</div>
+<div class="clear"></div>
 
-
-           </header>
-
-           <p style="width:700px;margin-left:35px;">北师珠最美的山谷学校，不但有颜值，而且还有美食，有详细的介绍吗？<br><a class="readmore-link " href=" "style="color:#814e51">...更多</a></p>
-
-    </article>
-
-     <article class="format-standard type-post hentry clearfix " style="padding-left:50px;padding-top:38px;padding-bottom:25px;height:auto;background:white;margin-top:5px;">
-
-           <header class="clearfix ">
-
-               <h3 class="post-title ">
-               <a href="detailed.html" style="sincolor: #814e51;color: #814e51; ">北师珠有什么美食吗，求介绍？</a>
-                </h3>
-
-               <div class="post-meta clearfix ">
-                   <span class="date"style="color:#814e51;">2 4月, 2016</span>
-                   <span class="category "><a href="# " title="View all posts in Server &amp; Database " >美食 &amp; 北师珠</a></span>
-                   <span class="comments " ><a href="# " title="Comment on Integrating WordPress with Your Website " >3 回复</a></span>
-                   <span class="like-count ">66</span>
-               </div>
-
-
-           </header>
-
-           <p style="width:700px;margin-left:35px;">北师珠最美的山谷学校，不但有颜值，而且还有美食，有详细的介绍吗？<br><a class="readmore-link " href=" "style="color:#814e51">...更多</a></p>
-
-    </article>
-
-
-     <article class="format-standard type-post hentry clearfix " style="padding-left:50px;padding-top:38px;padding-bottom:25px;height:auto;background:white;margin-top:5px;">
-
-           <header class="clearfix ">
-
-               <h3 class="post-title ">
-               <a href="detailed.html" style="sincolor: #814e51;color: #814e51; " >北师珠有什么美食吗，求介绍？</a>
-                </h3>
-
-               <div class="post-meta clearfix ">
-                   <span class="date">2 4月, 2016</span>
-                   <span class="category "><a href="# " title="View all posts in Server &amp; Database ">美食 &amp; 北师珠</a></span>
-                   <span class="comments " ><a href="# " title="Comment on Integrating WordPress with Your Website " >3 回复</a></span>
-                   <span class="like-count ">66</span>
-               </div>
-
-
-           </header>
-
-           <p style="width:700px;margin-left:35px;">北师珠最美的山谷学校，不但有颜值，而且还有美食，有详细的介绍吗？<br><a class="readmore-link " href=" "style="color:#814e51">...更多</a></p>
-
-    </article>
- <article class="format-standard type-post hentry clearfix " style="padding-left:50px;padding-top:38px;padding-bottom:25px;height:auto;background:white;margin-top:5px;">
-
-           <header class="clearfix ">
-
-               <h3 class="post-title ">
-               <a href="detailed.html" style="sincolor: #814e51;color: #814e51; ">北师珠有什么美食吗，求介绍？</a>
-                </h3>
-
-               <div class="post-meta clearfix ">
-                   <span class="date"style="color:#814e51;">2 4月, 2016</span>
-                   <span class="category "><a href="# " title="View all posts in Server &amp; Database " >美食 &amp; 北师珠</a></span>
-                   <span class="comments " ><a href="# " title="Comment on Integrating WordPress with Your Website " >3 回复</a></span>
-                   <span class="like-count ">66</span>
-               </div>
-
-
-           </header>
-
-           <p style="width:700px;margin-left:35px;">北师珠最美的山谷学校，不但有颜值，而且还有美食，有详细的介绍吗？<br><a class="readmore-link " href=" "style="color:#814e51">...更多</a></p>
-
-    </article>
-
-
-        <article class="format-standard type-post hentry clearfix " style="padding-left:50px;padding-top:38px;padding-bottom:25px;height:auto;background:white;margin-top:5px;">
-
-           <header class="clearfix ">
-
-               <h3 class="post-title ">
-               <a href="detailed.html" style="sincolor: #814e51;color: #814e51; ">北师珠有什么美食吗，求介绍？</a>
-                </h3>
-
-               <div class="post-meta clearfix ">
-                   <span class="date"style="color:#814e51;">2 4月, 2016</span>
-                   <span class="category "><a href="# " title="View all posts in Server &amp; Database " >美食 &amp; 北师珠</a></span>
-                   <span class="comments " ><a href="# " title="Comment on Integrating WordPress with Your Website " >3 回复</a></span>
-                   <span class="like-count ">66</span>
-               </div>
-
-
-           </header>
-
-           <p style="width:700px;margin-left:35px;">北师珠最美的山谷学校，不但有颜值，而且还有美食，有详细的介绍吗？<br><a class="readmore-link " href=" "style="color:#814e51">...更多</a></p>
-
-    </article>
-
-     </div>
-
-     </div>
-       <div class="clear"></div>
 			<div class="clear"></div>
 			<div id="footer">
 				<div class="wrapper">
