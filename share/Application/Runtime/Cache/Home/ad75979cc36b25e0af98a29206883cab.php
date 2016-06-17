@@ -117,6 +117,9 @@
 		</div>
 
 <link href="/share/Public/Home/css/punlish.css" rel="stylesheet" media="all" />
+ <script type="text/javascript" src="/share/Public/Home/js/jquery-2.0.2.js"></script>
+ <script type="text/javascript" src="/share/Public/Home/ueditor/ueditor.config.js"></script>
+ <script type="text/javascript" src="/share/Public/Home/ueditor/ueditor.all.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
                 $(".nice_left").click(function() {
@@ -243,7 +246,30 @@
                     }
                 }
             </script>
-
+<!--注册百度ueditor-->
+<script type="text/javascript">
+  var editor = new baidu.editor.ui.Editor({
+  	//PUBLIC HOME UEDITOR PHP CONFIG.JSON修改图片路径
+    toolbars:[['fullscreen', 'source', '|', 'undo', 'redo', '|',
+            'bold', 'italic', 'underline', 'fontborder', 'strikethrough', 'superscript', 'subscript', 'removeformat', 'formatmatch', 'autotypeset', 'blockquote', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist', 'selectall', 'cleardoc', '|',
+            'rowspacingtop', 'rowspacingbottom', 'lineheight', '|',
+            'customstyle', 'paragraph', 'fontfamily', 'fontsize', '|',
+            'directionalityltr', 'directionalityrtl', 'indent', '|',
+            'justifyleft', 'justifycenter', 'justifyright', 'justifyjustify', '|', 'touppercase', 'tolowercase', '|',
+            'link', 'unlink', 'anchor', '|', 'imagenone', 'imageleft', 'imageright', 'imagecenter', '|',
+            'simpleupload', 'insertimage', 'emotion', 'scrawl', 'insertvideo', 'music', 'attachment', 'map', 'gmap', 'insertframe', 'insertcode', 'webapp', 'pagebreak', 'template', 'background', '|',
+            'horizontal', 'date', 'time', 'spechars', 'snapscreen', 'wordimage', '|',
+            'inserttable', 'deletetable', 'insertparagraphbeforetable', 'insertrow', 'deleterow', 'insertcol', 'deletecol', 'mergecells', 'mergeright', 'mergedown', 'splittocells', 'splittorows', 'splittocols', 'charts', '|',
+            'print', 'preview', 'searchreplace', 'drafts', 'help']],//自定义ueditor工具栏
+    initialContent: '<span style="color:#ccc"></span>',
+    minFrameHeight: 100,//初始化框架大小
+    zIndex:10,
+    autoFloatEnabled: false,//工具栏自动浮动-》关闭
+    textarea:'content'//form表单将通过该参数获得表单提交的数据
+  });
+  editor.render("Vent");
+</script>
+<!--百度Ueditor注册完毕-->
             <!--内容主题 -->
             <div id="main_punlish">
             <div class="title_p">
@@ -257,7 +283,7 @@
             <table>
             <tr>
                 <th style="height:70px;" >作品名称<span style="color:red">*</span></th>
-                <td style="height:70px;"><input maxlength="50" type="text" value="" class="newTxt" name="worksname">
+                <td style="height:70px;"><input maxlength="50" type="text" value="" class="newTxt" name="worksname" >
                 <span>最多只能输入50个字</span></td>
             </tr>
              <tr>
@@ -277,14 +303,16 @@
                 </td>
             </tr>
             <tr>
-                <th style="height:70px;vertical-align: top;padding-top:22px;" >作品说明<span style="color:red">*</span></th>
-                <td style="height:70px;"><textarea maxlength="2000" name="worksIntro" class="newArea " placeholder="准确到位的作品说明（创作背景、设计思路、团队成员等）有助于其他会员进一步了解并与您一起探讨您设计作品。除案例相关信息，请勿填写设计师商业推广信息"></textarea>
+                <th style="height:70px;" >封面图片</th>
+                <td style="height:70px;"><input  type="file" name="worksImg" style="cursor: pointer; opacity:100;height:20px;"/>
+                <span style="width:400px;font-size:14px;">支持jpg/gif/png格式,</span></td>
             </tr>
+
             <tr>
-                <th style="height:70px;" >上传照片</th>
+                <th style="height:70px;vertical-align: top;padding-top:22px;" >作品说明<span style="color:red">*</span></th>
                 <td style="height:70px;">
-                	<input  type="file" name="worksImg" style="cursor: pointer; opacity:100;height:20px;"/>
-                <span style="width:400px;font-size:14px;">支持图片jpg/gif/png格式</span></td>
+                	<script type="text/plain" id="Vent" style="width:800px;height:400px;"></script>
+                </td>
             </tr>
             <tr>
                 <th style="height:70px;" >外链地址</th>

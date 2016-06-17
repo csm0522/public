@@ -3,6 +3,7 @@
  <js href="__PUBLIC__/Home/js/jquery-2.0.2.js" />
  <js href="__PUBLIC__/Home/ueditor/ueditor.config.js" />
  <js href="__PUBLIC__/Home/ueditor/ueditor.all.min.js" />
+
         <script type="text/javascript">
             $(document).ready(function() {
                 $(".nice_left").click(function() {
@@ -128,7 +129,30 @@
                     }
                 }
             </script>
-
+<!--注册百度ueditor-->
+<script type="text/javascript">
+  var editor = new baidu.editor.ui.Editor({
+  	//PUBLIC HOME UEDITOR PHP CONFIG.JSON修改图片路径
+    toolbars:[['fullscreen', 'source', '|', 'undo', 'redo', '|',
+            'bold', 'italic', 'underline', 'fontborder', 'strikethrough', 'superscript', 'subscript', 'removeformat', 'formatmatch', 'autotypeset', 'blockquote', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist', 'selectall', 'cleardoc', '|',
+            'rowspacingtop', 'rowspacingbottom', 'lineheight', '|',
+            'customstyle', 'paragraph', 'fontfamily', 'fontsize', '|',
+            'directionalityltr', 'directionalityrtl', 'indent', '|',
+            'justifyleft', 'justifycenter', 'justifyright', 'justifyjustify', '|', 'touppercase', 'tolowercase', '|',
+            'link', 'unlink', 'anchor', '|', 'imagenone', 'imageleft', 'imageright', 'imagecenter', '|',
+            'simpleupload', 'insertimage', 'emotion', 'scrawl', 'insertvideo', 'music', 'attachment', 'map', 'gmap', 'insertframe', 'insertcode', 'webapp', 'pagebreak', 'template', 'background', '|',
+            'horizontal', 'date', 'time', 'spechars', 'snapscreen', 'wordimage', '|',
+            'inserttable', 'deletetable', 'insertparagraphbeforetable', 'insertrow', 'deleterow', 'insertcol', 'deletecol', 'mergecells', 'mergeright', 'mergedown', 'splittocells', 'splittorows', 'splittocols', 'charts', '|',
+            'print', 'preview', 'searchreplace', 'drafts', 'help']],//自定义ueditor工具栏
+    initialContent: '<span style="color:#ccc"></span>',
+    minFrameHeight: 100,//初始化框架大小
+    zIndex:10,
+    autoFloatEnabled: false,//工具栏自动浮动-》关闭
+    textarea:'content'//form表单将通过该参数获得表单提交的数据
+  });
+  editor.render("Vent");
+</script>
+<!--百度Ueditor注册完毕-->
             <!--内容主题 -->
             <div id="main_punlish">
             <div class="title_p">
@@ -146,6 +170,7 @@
                 <td style="height:70px;"><input maxlength="50" type="text" value="" class="newTxt" name="Articalname">
                 <span>最多只能输入50个字</span></td>
             </tr>
+
              <tr>
                 <th style="height:70px;" >文章分类</th>
                 <td style="height:70px;">
@@ -158,18 +183,18 @@
                 </td>
             </tr>
             <tr>
-                <th style="height:70px;vertical-align: top;padding-top:22px;" >文章内容</th>
-                <td style="height:70px; padding:20px 25px;">
-                	<script type="text/plain" id="content" style="width:900px;height:500px;"></script>
-                	<!--<script id="editor" name="ArticalContent" type="text/plain" style="width:900px;height:500px;"></script>-->
-                	<!--<textarea name="ArticalContent" class="newArea " placeholder="正文内容"></textarea>-->
-               </td>
-            </tr>
-            <!--<tr>
-                <th style="height:70px;" >上传图片</th>
+                <th style="height:70px;" >封面图片</th>
                 <td style="height:70px;"><input  type="file" name="ArticalImg" style="cursor: pointer; opacity:100;height:20px;"/>
                 <span style="width:400px;font-size:14px;">支持jpg/gif/png格式,</span></td>
-            </tr>-->
+            </tr>
+            <tr>
+                <th style="height:70px;vertical-align: top;padding-top:22px;" >文章内容</th>
+                <td style="height:70px; padding:20px 25px;">
+                	<script type="text/plain" id="Vent" style="width:800px;height:400px;"></script>
+                	<!--<textarea name="ArticalContent" class="newArea "  id="EditorId" placeholder="正文内容"></textarea>-->
+               </td>
+            </tr>
+
             <input type="hidden" value="2" class="newTxt" name="upLoadType">
             </table>
 
@@ -179,33 +204,20 @@
 
 
 </div>
-<script type="text/javascript">
- 			 var editor = new baidu.editor.ui.Editor({
-    			toolbars:[  ['fullscreen', 'source', '|', 'undo', 'redo', '|',
-                'bold', 'italic', 'underline', 'fontborder', 'strikethrough', 'superscript', 'subscript', 'removeformat', 'formatmatch', 'autotypeset', 'blockquote', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist', 'selectall', 'cleardoc', '|',
-                'rowspacingtop', 'rowspacingbottom', 'lineheight', '|',
-                'customstyle', 'paragraph', 'fontfamily', 'fontsize', '|',
-                'directionalityltr', 'directionalityrtl', 'indent', '|',
-                'justifyleft', 'justifycenter', 'justifyright', 'justifyjustify', '|', 'touppercase', 'tolowercase', '|',
-                'link', 'unlink', 'anchor', '|', 'imagenone', 'imageleft', 'imageright', 'imagecenter', '|',
-                'insertimage', 'emotion', 'scrawl', 'insertvideo', 'music', 'attachment', 'map', 'gmap', 'insertframe','insertcode', 'webapp', 'pagebreak', 'template', 'background', '|',
-                'horizontal', 'date', 'time', 'spechars', 'snapscreen', 'wordimage', '|',
-                'inserttable', 'deletetable', 'insertparagraphbeforetable', 'insertrow', 'deleterow', 'insertcol', 'deletecol', 'mergecells', 'mergeright', 'mergedown', 'splittocells', 'splittorows', 'splittocols', 'charts', '|',
-                'print', 'preview', 'searchreplace', 'help', 'drafts']  ],//自定义ueditor工具栏
-    			autoFloatEnabled: true,//工具栏自动浮动-》关闭
-     			//关闭elementPath
-                elementPathEnabled:false,
-    			textarea:'myVent'//form表单将通过该参数获得表单提交的数据
-  				});
-  editor.render("content");
 
+
+<script type="text/javascript">
 
 			window.onload = function(){
 
 				document.getElementById('fsub').onclick=function(){
 					document.getElementById('pubArtical').submit();
 				};
+
+
 			}
+
+
 
 			</script>
         <div class="clear"></div>

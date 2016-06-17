@@ -116,73 +116,30 @@
 		<div class="worksList">
 			<div class="allBox">
 				<ul class="allBoxUI">
-					<li>
-						<a href="#" class="a-block"><img src="__HomeIMG__/index/bg0.jpg" width="380px" height="200px" class="u_post_img"/></a>
+
+					<volist name="Workslist" id="vo">
+
+						<li>
+						<a href="#" class="a-block"><img src="__PUBLIC__/{$vo.indeximgpath}" width="380px" height="200px" class="u_post_img"/></a>
 						<div class="a-title">
 							<div class="a-info">
-								<h2><a href="">标题标题标题标题</a></h2>
+								<h2><a href="">{$vo.title|htmlspecialchars_decode}</a></h2>
 								<div class="works-info">
 									<span class="works-author">
-										<a href="">用户名称</a> /
+										<a href="">{$vo.username}</a>&nbsp;/&nbsp;
 									</span>
 									<span class="works-time">
-										2016-06-07 /
+										{$vo.createtime|substr=0,10}
 									</span>
-									<span class="works-like">
-										<img src="__HomeIMG__/index/love.png" alt="" /> 6
+									&nbsp;/&nbsp;
+									<span class="works-like"><img src="__HomeIMG__/index/love.png" alt="" /> 6 &nbsp;
 									</span>
 								</div>
 							</div>
 						</div>
 					</li>
-					<li>
-						<a href="#" class="a-block"><img src="__HomeIMG__/index/bg0.jpg" width="380px" height="200px" class="u_post_img"/></a>
-						<div class="a-title">
-							<div class="a-info"></div>
-						</div>
-					</li>
-					<li>
-						<a href="#" class="a-block"><img src="__HomeIMG__/index/bg0.jpg" width="380px" height="200px" class="u_post_img"/></a>
-						<div class="a-title">
-							<div class="a-info"></div>
-						</div>
-					</li>
-					<li>
-						<a href="#" class="a-block"><img src="__HomeIMG__/index/bg0.jpg" width="380px" height="200px" class="u_post_img"/></a>
-						<div class="a-title">
-							<div class="a-info"></div>
-						</div>
-					</li>
-					<li>
-						<a href="#" class="a-block"><img src="__HomeIMG__/index/bg0.jpg" width="380px" height="200px" class="u_post_img"/></a>
-						<div class="a-title">
-							<div class="a-info"></div>
-						</div>
-					</li>
-					<li>
-						<a href="#" class="a-block"><img src="__HomeIMG__/index/bg0.jpg" width="380px" height="200px" class="u_post_img"/></a>
-						<div class="a-title">
-							<div class="a-info"></div>
-						</div>
-					</li>
-					<li>
-						<a href="#" class="a-block"><img src="__HomeIMG__/index/bg0.jpg" width="380px" height="200px" class="u_post_img"/></a>
-						<div class="a-title">
-							<div class="a-info"></div>
-						</div>
-					</li>
-					<li>
-						<a href="#" class="a-block"><img src="__HomeIMG__/index/bg0.jpg" width="380px" height="200px" class="u_post_img"/></a>
-						<div class="a-title">
-							<div class="a-info"></div>
-						</div>
-					</li>
-					<li>
-						<a href="#" class="a-block"><img src="__HomeIMG__/index/bg0.jpg" width="380px" height="200px" class="u_post_img"/></a>
-						<div class="a-title">
-							<div class="a-info"></div>
-						</div>
-					</li>
+
+					</volist>
 				</ul>
 			</div>
 		</div>
@@ -193,7 +150,34 @@
 		<div class="artcle">
 			<div class="artical-info">
 				<ul>
+					<volist name="Articallist" id="vo">
+
 					<li>
+						<empty name="$vo.indeximgpath">
+						<a href="" class="userAImg">
+							<img src="__PUBLIC__/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="100%" />
+							</a>
+						<else />
+						<a href="" class="userAImg">
+							<img src="{$vo.indeximgpath}" alt="" />
+						</a>
+						</empty>
+						<div class="userAInfo">
+							<div class="userATitle">
+									<a href="">{$vo.title}</a>
+							</div>
+							<div  class="sortCo">
+								<span>{$vo.ArticalType}</span>
+							</div>
+							<div class="userAupTime"><span class="userA_Name">{$vo.username}</span> / {$vo.createtime}</div>
+							<div class="userAintro">
+								{$vo.content|htmlspecialchars_decode}
+							</div>
+						</div>
+					</li>
+
+					</volist>
+					<!--<li>
 						<a href="" class="userAImg"><img src="__HomeIMG__/essay/1.png" alt="" /></a>
 						<div class="userAInfo">
 							<div class="userATitle">
@@ -209,58 +193,7 @@
 								中,慢慢找到真实的自己.
 							</div>
 						</div>
-					</li>
-					<li>
-						<a href="" class="userAImg"><img src="__HomeIMG__/essay/1.png" alt="" /></a>
-						<div class="userAInfo">
-							<div class="userATitle">
-									<a href="">最终，你成为了具有“独立思考”能力的人</a>
-							</div>
-							<div  class="sortCo">
-								<span>设计文章</span>
-							</div>
-							<div class="userAupTime"><span class="userA_Name">用户昵称</span> / 2016-06-05</div>
-							<div class="userAintro">
-								人天生就渴求信息，像需要空气和水一样。信息也的确像空气和水一样包裹着我们.我
-								们吸入，我们呼出.我们无法造一个玻璃盒子来屏蔽这一切.只能身处于这个庞大的体系
-								中,慢慢找到真实的自己.
-							</div>
-						</div>
-					</li>
-					<li>
-						<a href="" class="userAImg"><img src="__HomeIMG__/essay/1.png" alt="" /></a>
-						<div class="userAInfo">
-							<div class="userATitle">
-									<a href="">最终，你成为了具有“独立思考”能力的人</a>
-							</div>
-							<div  class="sortCo">
-								<span>设计文章</span>
-							</div>
-							<div class="userAupTime"><span class="userA_Name">用户昵称</span> / 2016-06-05</div>
-							<div class="userAintro">
-								人天生就渴求信息，像需要空气和水一样。信息也的确像空气和水一样包裹着我们.我
-								们吸入，我们呼出.我们无法造一个玻璃盒子来屏蔽这一切.只能身处于这个庞大的体系
-								中,慢慢找到真实的自己.
-							</div>
-						</div>
-					</li>
-					<li>
-						<a href="" class="userAImg"><img src="__HomeIMG__/essay/1.png" alt="" /></a>
-						<div class="userAInfo">
-							<div class="userATitle">
-									<a href="">最终，你成为了具有“独立思考”能力的人</a>
-							</div>
-							<div  class="sortCo">
-								<span>设计文章</span>
-							</div>
-							<div class="userAupTime"><span class="userA_Name">用户昵称</span> / 2016-06-05</div>
-							<div class="userAintro">
-								人天生就渴求信息，像需要空气和水一样。信息也的确像空气和水一样包裹着我们.我
-								们吸入，我们呼出.我们无法造一个玻璃盒子来屏蔽这一切.只能身处于这个庞大的体系
-								中,慢慢找到真实的自己.
-							</div>
-						</div>
-					</li>
+					</li>-->
 				</ul>
 			</div>
 		</div>

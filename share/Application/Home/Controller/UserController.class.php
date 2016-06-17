@@ -160,10 +160,6 @@ class UserController extends Controller {
 	}
 
 	function pubWorks(){
-//		$arr['addtime'] = Date('Y-m-d H:i:s');
-//		var_dump($arr['addtime']);exit;
-//		$res = M('login');
-//		show_bug($_POST);exit;
 		$title = $_POST['worksname'];
 		if($_POST['fenlei']){
 			switch($_POST['fenlei']){
@@ -177,10 +173,14 @@ class UserController extends Controller {
 				default :  $type = 8;break;
 			}
 		}
-		$content = $_POST['worksIntro'];$sessid = session('userInfo.UId');
+		$content = htmlspecialchars(stripslashes($_POST['content']));
+		$sessid = session('userInfo.UId');
+		$upLoadType = $_POST['upLoadType'];
+		$arr['addtime'] = Date('Y-m-d H:i:s');
+
 		$config = array(
 			'rootPath' => './Public/',
-			'savePath' => './upload/',
+			'savePath' => 'upload/ArticalIndexImg/',
 		);
 		$ULImg = new\Think\Upload($config);
 		$re = $ULImg -> uploadOne($_FILES['worksImg']);
@@ -189,21 +189,18 @@ class UserController extends Controller {
 		}
 		else{
 			$UPImgPath = $re['savepath'].$re['savename'];
-			$_POST['ReferenceImg'] = $UPImgPath;
+			$_POST['IndexImgPath'] = $UPImgPath;
 		}
-		$upLoadType = $_POST['upLoadType'];
-		$arr['addtime'] = Date('Y-m-d H:i:s');
+
 		if($title != '')
 		{
 			$checkUser = M('user')-> where("loginid = '$sessid'")-> find();
 			$Userid = M('user')-> where("loginid = '$sessid'")-> getfield('userid');
 			if(!empty($checkUser)){
 
-				$data = array('Title'=>$title,'type'=>$type,'UserId'=>$Userid,'ReferenceImg'=>$UPImgPath,'Content'=>$content,'upLoadType'=>$upLoadType,'CreateTime'=>$arr['addtime']);
-//				$data = array('userid'=>$sessid);
+				$data = array('Title'=>$title,'IndexImgPath'=>$UPImgPath,'type'=>$type,'UserId'=>$Userid,'Content'=>$content,'upLoadType'=>$upLoadType,'CreateTime'=>$arr['addtime']);
 				$push = M('artical');
 				$res = $push->add($data);
-//				var_dump($res);exit;
 				if($res)
 				{
 					$this -> success('psh success', U('Index/index'));
@@ -218,8 +215,6 @@ class UserController extends Controller {
 		}
 	}
 	function pubAritical(){
-		var_dump($_POST);
-		exit;
 		$title = $_POST['Articalname'];
 		if($_POST['fenlei']){
 			switch($_POST['fenlei']){
@@ -229,7 +224,8 @@ class UserController extends Controller {
 				default :  $ArticalType = 4;break;
 			}
 		}
-		$content = $_POST['ArticalContent'];$sessid = session('userInfo.UId');
+		$content =  htmlspecialchars(stripslashes($_POST['content']));
+		$sessid = session('userInfo.UId');
 		$upLoadType = $_POST['upLoadType'];
 		$arr['addtime'] = Date('Y-m-d H:i:s');
 		if($title != '')
@@ -255,10 +251,6 @@ class UserController extends Controller {
 			}
 		}
 	}
-	public function ueditor(){
-        $data = new \Org\Util\Ueditor();
-        echo $data->output();
-    }
 //	function pubAritical(){
 //		$title = $_POST['Articalname'];
 //		if($_POST['fenlei']){
