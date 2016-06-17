@@ -168,15 +168,15 @@
 					<ul>
 
 						<?php if(is_array($Articallist)): $i = 0; $__LIST__ = $Articallist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
-						<?php if(empty($vo["indeximgpath"])): ?><a href="http://localhost:8080/share/index.php/Home/essay/essay/id/<?php echo ($vo["ariticalid"]); ?>" class="userAImg"><img src="/share/Public/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="260px" height="auto" /></a>
+						<?php if(empty($vo["indeximgpath"])): ?><a href="" class="userAImg"><img src="/share/Public/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="260px" height="auto" /></a>
 						<?php else: ?>
-						<a href="http://localhost:8080/share/index.php/Home/essay/essay/id/<?php echo ($vo["ariticalid"]); ?>" class="userAImg">
+						<a href="" class="userAImg">
 							<img src="/share/Public/<?php echo ($vo["indeximgpath"]); ?>" alt="" width="260px" height="auto" />
 						</a><?php endif; ?>
 
 						<div class="userAInfo" style="padding:0px 10px 10px 10px;box-sizing: border-box;">
 							<div class="userATitle" style="margin-top: 8px;">
-									<a href="http://localhost:8080/share/index.php/Home/essay/essay/id/<?php echo ($vo["ariticalid"]); ?>">
+									<a href="">
 										<?php echo ($vo["title"]); ?>
 
 									</a>

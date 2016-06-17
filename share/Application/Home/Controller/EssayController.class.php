@@ -7,12 +7,4 @@ class EssayController extends Controller {
 		$this->assign("Articallist",$Artical);
     	$this->display('');
     }
-	public function essay(){
-		$id=$_GET['id'];
-    	$Artical = M('artical') -> join('t_user on t_artical.userid = t_user.userid') -> where("ariticalid = '$id'") ->select();
-		$this->assign("ArticalMain",$Artical);
-//		var_dump($Works);exit;
-    	$this->display();
-	}
-
 }

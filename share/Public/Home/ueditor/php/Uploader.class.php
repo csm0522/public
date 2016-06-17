@@ -7,11 +7,6 @@
  * Time: 上午11: 32
  * UEditor编辑器通用上传类
  */
-
-
- ///113row
-
-
 class Uploader
 {
     private $fileField; //文件域名
@@ -116,7 +111,7 @@ class Uploader
         //创建目录失败
         if (!file_exists($dirname) && !mkdir($dirname, 0777, true)) {
 //          $this->stateInfo = $this->getStateInfo("ERROR_CREATE_DIR");
-			$this->stateInfo = $dirname;
+$this->stateInfo = $dirname;
             return;
         } else if (!is_writeable($dirname)) {
             $this->stateInfo = $this->getStateInfo("ERROR_DIR_NOT_WRITEABLE");
