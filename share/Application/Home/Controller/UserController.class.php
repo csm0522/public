@@ -61,27 +61,77 @@ class UserController extends Controller {
 	/*
 	 * 用户注册
 	 */
-	public function register() {
+
+	function CheckExist($username)
+	{
+		$model = M('login');
+		$condition['LoginName'] = $username;
+		if ($model->where($condition)->count() > 0) {
+			$flag = true;
+		} else {
+			$flag = false;
+		}
+		return $flag;
+	}
+	public function register()
+	{
+
+		$model = new \Think\Model();
+		$model->startTrans();//事务开始
 
 		$xinxi = M('login');
 		$verify = new \Think\Verify();
-		$v = $verify -> check($_POST['Reg_verify']);
+		$v = $verify->check($_POST['Reg_verify']);
 		if ($_POST) {
 			if ($v) {
-				if (I('UserTag') == 'per') {
-					$LoginTag = 1;
-				} else if (I('UserTag') == 'bus') {
-					$LoginTag = 2;
+				if (!$this->CheckExist(I('Reg_un'))) {
+					switch (I('UserTag')) {
+						case 'per':
+							$LoginTag = 1;
+							break;
+						case 'bus':
+							$LoginTag = 2;
+							break;
+					}
+					$arr['addtime'] = Date('Y-m-d H:i:s');
+					$data = array('LoginName' => I('Reg_un'), 'LoginPwd' => md5(I('Reg_pwd')), 'LoginStatus' => 0, 'LoginTag' => $LoginTag, 'regDate' => $arr['addtime']);
+					if ($xinxi->data($data)->add()) {
+						$model->commit();
+						$condition['LoginName'] = I('Reg_un');
+						$loginid = M('Login')->where($condition)->getField(LoginId);
+						$datas['LoginId'] = $loginid;
+						switch ($LoginTag) {
+							case 1:
+								if (M('user')->add($datas)) {
+									$model->commit();
+									$this->success('register success', U('loginPage'));
+								} else {
+									$model->rollback();
+									$this->error('网络错误请稍后再试。', U('User/register'));
+								}
+								break;
+							case 2:
+								if (M('company')->add($datas)) {
+									$model->commit();
+									$this->success('register success', U('loginPage'));
+								} else {
+									$model->rollback();
+									$this->error('网络错误请稍后再试。', U('User/register'));
+								}
+								break;
+						}
+					}
 				}
-				$arr['addtime'] = Date('Y-m-d H:i:s');
-				$data = array('LoginName' => I('Reg_un'), 'LoginPwd' => md5(I('Reg_pwd')), 'LoginStatus' => 0, 'LoginTag' => $LoginTag,'regDate'=>$arr['addtime']);
-				$xinxi -> data($data) -> add();
-				$this -> success('register success', U('loginPage'));
+				else{
+					echo "<script>alert('"."用户名已经存在"."');</script>";
+					echo '<script>window.history.go(-1); </script>';
+				}
 			} else {
-				$this -> error('验证码错误', U('User/register'));
+				echo "<script>alert('"."验证码错误"."');</script>";
+				echo '<script>window.history.go(-1); </script>';
 			}
 		} else {
-			$this -> display();
+			$this->display();
 		}
 	}
 
