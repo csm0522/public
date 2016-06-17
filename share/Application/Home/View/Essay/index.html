@@ -54,16 +54,16 @@
 
 					<li>
 						<empty name="vo.indeximgpath">
-							<a href="" class="userAImg"><img src="__PUBLIC__/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="260px" height="auto" /></a>
+							<a href="http://localhost:8080/share/index.php/Home/essay/essay/id/{$vo.ariticalid}" class="userAImg"><img src="__PUBLIC__/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="260px" height="auto" /></a>
 						<else />
-						<a href="" class="userAImg">
+						<a href="http://localhost:8080/share/index.php/Home/essay/essay/id/{$vo.ariticalid}" class="userAImg">
 							<img src="__PUBLIC__/{$vo.indeximgpath}" alt="" width="260px" height="auto" />
 						</a>
 						</empty>
 
 						<div class="userAInfo" style="padding:0px 10px 10px 10px;box-sizing: border-box;">
 							<div class="userATitle" style="margin-top: 8px;">
-									<a href="">
+									<a href="http://localhost:8080/share/index.php/Home/essay/essay/id/{$vo.ariticalid}">
 										{$vo.title}
 
 									</a>

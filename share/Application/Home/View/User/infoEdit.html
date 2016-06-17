@@ -118,7 +118,7 @@
 			</div>
 
 
-			<form method='post' id="form123" name="form1" action="{:U('User/Editinfo')}">
+			<form method='post' id="form123" name="form1" action="{:U('User/Editinfo')}" enctype="multipart/form-data">
 			<div class="layer_right" style="margin-bottom:180px;">
 
 
@@ -135,8 +135,7 @@
 					<div class="r_form">
 						<div class="f_left">头像：</div>
 						<div class="f_right">
-							<img src="__HomeIMG__/index/person_1.png" weight="50px" height="50px" />
-							<input type="file" name="" value="选择图片" placeholder="" class="f_touxiang" />
+							<input type="file" name="userTX" value="选择图片" />
 						</div>
 					</div>
 

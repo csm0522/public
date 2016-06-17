@@ -76,9 +76,9 @@
 							<span  name="outA" href="#" id="btn_1">
 								<div type="button" id="btn11" onclick="showM();">作品</div>
 								<ul id="mean2">
-									<a href="<?php echo U('Works/showUi');?>"><li>UI/UX</li></a>
-									<a href="<?php echo U('Works/showGDesign');?>"><li>平面设计</li></a>
-									<a href="<?php echo U('Works/showCartoon');?>"><li>漫画/插画</li></a>
+									<a href="/share/index.php/Home/Works/showList/type/1"><li>UI/UX</li></a>
+									<a href="/share/index.php/Home/Works/showList/type/2"><li>平面设计</li></a>
+									<a href="/share/index.php/Home/Works/showList/type/3"><li>漫画/插画</li></a>
 									<a href=""><li>网页设计</li></a>
 									<a href=""><li>3D模型</li></a>
 									<a href=""><li>创意短片</li></a>
@@ -168,15 +168,15 @@
 					<ul>
 
 						<?php if(is_array($Articallist)): $i = 0; $__LIST__ = $Articallist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
-						<?php if(empty($vo["indeximgpath"])): ?><a href="" class="userAImg"><img src="/share/Public/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="260px" height="auto" /></a>
+						<?php if(empty($vo["indeximgpath"])): ?><a href="http://localhost:8080/share/index.php/Home/essay/essay/id/<?php echo ($vo["ariticalid"]); ?>" class="userAImg"><img src="/share/Public/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="260px" height="auto" /></a>
 						<?php else: ?>
-						<a href="" class="userAImg">
+						<a href="http://localhost:8080/share/index.php/Home/essay/essay/id/<?php echo ($vo["ariticalid"]); ?>" class="userAImg">
 							<img src="/share/Public/<?php echo ($vo["indeximgpath"]); ?>" alt="" width="260px" height="auto" />
 						</a><?php endif; ?>
 
 						<div class="userAInfo" style="padding:0px 10px 10px 10px;box-sizing: border-box;">
 							<div class="userATitle" style="margin-top: 8px;">
-									<a href="">
+									<a href="http://localhost:8080/share/index.php/Home/essay/essay/id/<?php echo ($vo["ariticalid"]); ?>">
 										<?php echo ($vo["title"]); ?>
 
 									</a>

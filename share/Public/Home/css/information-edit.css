@@ -444,6 +444,7 @@ input {
 }
 input[class="f_touxiang"] {
 	height: 40px;
+	width: auto;
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;

@@ -76,9 +76,9 @@
 							<span  name="outA" href="#" id="btn_1">
 								<div type="button" id="btn11" onclick="showM();">作品</div>
 								<ul id="mean2">
-									<a href="<?php echo U('Works/showUi');?>"><li>UI/UX</li></a>
-									<a href="<?php echo U('Works/showGDesign');?>"><li>平面设计</li></a>
-									<a href="<?php echo U('Works/showCartoon');?>"><li>漫画/插画</li></a>
+									<a href="/share/index.php/Home/Works/showList/type/1"><li>UI/UX</li></a>
+									<a href="/share/index.php/Home/Works/showList/type/2"><li>平面设计</li></a>
+									<a href="/share/index.php/Home/Works/showList/type/3"><li>漫画/插画</li></a>
 									<a href=""><li>网页设计</li></a>
 									<a href=""><li>3D模型</li></a>
 									<a href=""><li>创意短片</li></a>
@@ -200,7 +200,7 @@
 
 	<a href="<?php echo U('User/personal');?>">
 		<div id="worker">
-			<img src="/share/Public/Home/image/index/worker.png" alt="" />
+			<img src="/share/Public<?php echo ($userTX); ?>" alt="" style="width: 76px;height:76px;border-radius: 90px;"/>
 		</div>
 	</a>
 
@@ -245,7 +245,7 @@
 						</a><?php endif; ?>
 						<div class="a-title">
 							<div class="a-info">
-								<h2><a href=""><?php echo (htmlspecialchars_decode($vo["title"])); ?></a></h2>
+								<h2><a href="http://localhost:8080/share/index.php/Home/Works/works/id/<?php echo ($vo["ariticalid"]); ?>"><?php echo (htmlspecialchars_decode($vo["title"])); ?></a></h2>
 								<div class="works-info">
 									<span class="works-author">
 										<a href=""><?php echo ($vo["username"]); ?></a>&nbsp;/&nbsp;
@@ -271,21 +271,21 @@
 			<div class="artical-info">
 				<ul>
 					<?php if(is_array($Articallist)): $i = 0; $__LIST__ = $Articallist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
-						<?php if(empty($vo["indeximgpath"])): ?><a href="" class="userAImg">
+						<?php if(empty($vo["indeximgpath"])): ?><a href="http://localhost:8080/share/index.php/Home/essay/essay/id/<?php echo ($vo["ariticalid"]); ?>" class="userAImg">
 							<img src="/share/Public/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="260px" height="auto" />
 							</a>
 						<?php else: ?>
-						<a href="" class="userAImg">
+						<a href="http://localhost:8080/share/index.php/Home/essay/essay/id/<?php echo ($vo["ariticalid"]); ?>" class="userAImg">
 							<img src="/share/Public/<?php echo ($vo["indeximgpath"]); ?>" alt="" width="260px" height="auto" />
 						</a><?php endif; ?>
 						<div class="userAInfo">
 							<div class="userATitle">
-									<a href=""><?php echo ($vo["title"]); ?></a>
+									<a href="http://localhost:8080/share/index.php/Home/essay/essay/id/<?php echo ($vo["ariticalid"]); ?>"><?php echo ($vo["title"]); ?></a>
 							</div>
 							<div  class="sortCo">
 								<span><?php echo ($vo["ArticalType"]); ?></span>
 							</div>
-							<div class="userAupTime"><span class="userA_Name"><?php echo ($vo["username"]); ?></span> / <?php echo ($vo["createtime"]); ?></div>
+							<div class="userAupTime"><span class="userA_Name" style="color:pink"><?php echo ($vo["username"]); ?></span> / <span style="color:brown"><?php echo ($vo["createtime"]); ?></span></div>
 							<span class="userAintro">
 								<?php echo (htmlspecialchars_decode($vo["intro"])); ?>
 							</span>

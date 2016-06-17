@@ -9,13 +9,13 @@ class WorksController extends Controller {
 //		var_dump($Works);exit;
     	$this->display();
     }
-	 public function showUi(){
-    	$this->display();
-    }
-	 public function showGdesign(){
-    	$this->display();
-    }
-	 public function showCaitoon(){
-    	$this->display();
-    }
+
+	public function showList(){
+		$type = $_GET['type'];
+		$Works = M('artical') -> join('t_user on t_artical.userid = t_user.userid') -> where("type = $type") ->select();
+		$this->assign("WorksMain",$Works);
+		$this->assign("type",$type);
+    	$this->display('showUi');
+	}
+
 }

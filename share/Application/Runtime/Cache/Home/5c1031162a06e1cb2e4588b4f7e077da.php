@@ -116,26 +116,89 @@
 			</div>
 		</div>
 
-<link href="/share/Public/Home/css/loginAndRegister.css" rel="stylesheet" media="all" />
-		<div id="logReg">
-			<div class="LGbtn">
-				<a href="<?php echo U('User/loginPage');?>"><span id="Lbtn" class="Lbtn">登录</span></a>
-				<a href="<?php echo U('User/register');?>"><span id="Rbtn" class="Rbtn">注册</span></a>
-			</div>
-			<div class="LoginMain">
-				<form action="<?php echo U('User/login',array());?>" onsubmit="return submit_login()" method="post">
-					<input type="text" value="admin123" id="login_un" name="login_un" placeholder="用户名" required="required" onblur="check_login(this)" />
-					<input type="password" id="login_pwd" value="admin123"  name="login_pwd" placeholder="密码" required="required"  onblur="check_login_pwd(this)" />
-					<div>
-						<p id="Rem-login"><input type="checkbox" name="checkbox" id="un-login" class="un-login" /><label for="un-login">记住密码</label></p>
-						<span class="FindPwd"><a href="">忘记密码?</a></span>
+<link href="/share/Public/Home/css/work.css" rel="stylesheet" media="all" />
+<script type="text/javascript">
+	window.onload=function(){
+		document.getElementById('subCom').click=function() {
+			var now = new Date();
+			var layer = document.getElementById("layer");
+			var divlayer = document.createElement("div");
+			var con = document.getElementById("content").value;
+			con = con.replace(/\n/g, "<br />");
+			divlayer.innerHTML = "<img src='/share/Public/Home/image/index/person_2.png' width='40px' class='header'/>" + con + "<div class='stime'>" + now.toLocaleString() + "</div><div class='clear'></div>";
+			divlayer.className = "content";
+			layer.appendChild(divlayer);
+			document.getElementById("content").value = "";
+		}
+	}
+
+	</script>
+		<div id="container" class="container-min-width" style="display: block;">
+			<div class="dynamic">
+				<div class="background_top"></div>
+				<div class="background_middle">
+
+
+					<?php if(is_array($ArticalMain)): $i = 0; $__LIST__ = $ArticalMain;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="content2">
+
+						<div class="author">
+							<a href="">
+								<img src="/share/Public/Home/image/index/person_1.png" width="100%" />
+							</a>
+						</div>
+
+						<div class="author_name">
+							<h><?php echo ($vo["username"]); ?></h>
+						</div>
+
+						<div class="work_bottom">
+						<div class="bottom_1"></div>
+						<div class="bottom_2"></div>
+						</div>
+
+						<div class="author_title">
+							<h style="color: black!important;"><?php echo ($vo["title"]); ?></h>
+						</div>
+
+						<div class="author_content">
+							<?php echo (htmlspecialchars_decode($vo["content"])); ?>
+						</div>
+
+						<div class="follower">
+								<input type="button" class="follower_btn" onclick="alert('赞');" /><span>55</span>
+						</div>
+
+						</div><?php endforeach; endif; else: echo "" ;endif; ?>
+					<div class="recommend-line">
+						<a>评论</a>
 					</div>
-					<div style="clear: both;"></div>
-					<div id="RemiLMes"></div>
-					<input type="submit" value="登  录" /></form>
+
+					<div class="view">
+
+						<div class="view_me">
+							<a href="">
+								<img src="/share/Public/Home/image/index/person_1.png" width="80%" />
+							</a>
+						</div>
+
+						<textarea id="content" rows="1" cols="100" placeholder="添加评论" name="caption" style="runat：server；"></textarea>
+
+						<div id="view_submit" >
+							<input type="button" value="提交" class="submit" id="subCom"/>
+						</div>
+					</div>
+
+				</div>
+
+
+
+							<div class="clear"></div>
+					<div class="clear"></div>
+			<div id="footer">
+				<div class="wrapper">
+					版权所有：大学生作品发布平台
+				</div>
 			</div>
-			<div class="clear"></div>
-		</div>
 
 	</body>
 </html>

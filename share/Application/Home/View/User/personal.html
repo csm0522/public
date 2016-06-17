@@ -125,9 +125,8 @@
 		</script>
 				<div class="dynamic">
 					<div class="dynamic_1">
-						<div class="d_left"></div>
-						<div class="d_head">
-							<img src="__HomeIMG__/personal/person_1.png" width="110">
+						<div class="d_head" style="width: 110px;height:110px;margin:0 auto;">
+							<img src="__PUBLIC__{$userTX}" width="110px" height="110px" style="border-radius: 90px;">
 						</div>
 
 					</div>
@@ -166,14 +165,14 @@
 						<div class="c_title">
 							<div class="t_1" id="title1" onclick="show(1)">
 
-								<input type="button" class="c_btn" value="{$userInfo.loginid}" />
+								<input type="button" class="c_btn" value="{$userWorksNum}" />
 								<h class="c_text" id="title1">作品</h>
 
 							</div>
 
 							<div class="t_1" id="title2" onclick="show(2)">
 
-								<input type="button" class="c_btn" value="{$use[0].regdate}" />
+								<input type="button" class="c_btn" value="{$userArticalNum}" />
 								<h class="c_text" id="title2">文章</h>
 
 							</div>
@@ -195,61 +194,59 @@
 
 					<div id="layer1">
 
-						<a href="" style="text-decoration: none;">
-							<div class="work_add">
-								<div class="add"></div>
-								<div class="add_text">上传作品</div>
-							</div>
+
+							<volist name="userWorks" id="vo">
+
+						<li style="width: 380px;height:290px;display: inline-block;margin:0 20px 20px 0;">
+
+						<empty name="vo.indeximgpath">
+						<a href="http://localhost:8080/share/index.php/Home/Works/works/id/{$vo.ariticalid}" class="userAImg">
+							<img src="__PUBLIC__/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="380px" height="200px" />
+							</a>
+						<else />
+						<a href="http://localhost:8080/share/index.php/Home/Works/works/id/{$vo.ariticalid}" class="a-block">
+							<img src="__PUBLIC__/{$vo.indeximgpath}" width="380px" height="200px" class="u_post_img"/>
 						</a>
-
-
-						<div class="work">
-							<div class="work_img" style="background: url(__HomeIMG__/index/work_img1.jpg) no-repeat" onmouseover="
-                        like_show(1)" onmouseout="like_back(1)">
-								<div id="like1" class="likepin" style="display:none">
-									<div class="like_1"></div>
-									<div class="like_2"></div>
-									<div class="like_3"></div>
-
+						</empty>
+						<div class="a-title">
+							<div class="a-info">
+								<h2><a href="http://localhost:8080/share/index.php/Home/Works/works/id/{$vo.ariticalid}">{$vo.title|htmlspecialchars_decode}</a></h2>
+								<div class="works-info">
+									<span class="works-author">
+										<a href="">{$vo.username}</a>&nbsp;/&nbsp;
+									</span>
+									<span class="works-time">
+										{$vo.createtime|substr=0,10}
+									</span>
+									&nbsp;/&nbsp;
+									<span class="works-like"><img src="__HomeIMG__/index/love.png" alt="" /> 6 &nbsp;
+									</span>
 								</div>
-
-							</div>
-							<div class="work_title">
-								<div class="title_1">
-									<a href="" style="text-decoration: none;color:#000">
-										<h style="font-size:18px;margin-left:10px;font-weight:bolder;">Title</h>
-									</a>
-								</div>
-								<div class="title_2">
-									<h style="font-size:12px;margin-left:10px;color:#808080;">describedescribedescribedesc</h>
-								</div>
-								<div class="title_3">
-									<img src="__HomeIMG__/index/pint.png" height="13" width="13" />
-									<h style="font-size:12px;color:#808080;">111</h>
-									<img src="__HomeIMG__/index/love.png" height="8" width="13" style="margin-left:20px;" />
-									<h style="font-size:12px;color:#808080;">234</h>
-								</div>
-							</div>
-							<div class="work_p">
-								<a href="" style="text-decoration: none;">
-									<div class="p_1">
-										<img src="__HomeIMG__/index/touxiang.png" height="40" width="40" style="margin-top:5px;" />
-									</div>
-									<div class="p_2">
-										<h style="font-size:14px;color:#3a3a3a;margin-left:10px">Sonia</h><br/>
-										<h style="font-size:12px;color:#808080;margin-left:10px">程序猿</h>
-									</div>
-								</a>
-								<a href="" style="text-decoration: none;">
-									<div class="p_3">
-										<h style="font-size:12px;color:#808080;margin-left:10px">插画</h>
-									</div>
-								</a>
-
 							</div>
 						</div>
+					</li>
+
+					</volist>
+<div class="work_add"  style="text-decoration: none;display: inline-block;"><a href="{:U('User/pshWorksPag')}">
+								<div class="add"></div>
+								<div class="add_text">上传作品</div></a>
+							</div>
 
 					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 					<div id="layer2" style="display:none;">
 
@@ -357,10 +354,5 @@
 					</div>
 
 				</div>
-
-				<div class="clear"></div>
-
-
-	</body>
-
-</html>
+	<div class="clear"></div>
+		<include file="Public/footer" title="Index" />

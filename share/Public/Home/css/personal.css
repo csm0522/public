@@ -41,7 +41,7 @@ input{
     width:100%;
     right:0px;
     top:0px;
-    height:250px;
+    height:350px;
     padding:0px;
     background: url(../image/index/bg0.jpg) no-repeat left top;
     background-size:100%;
@@ -51,26 +51,14 @@ input{
  .dynamic_1
  {
   width:90%;
-  padding-top: 7%;
+  padding-top:160px;
   height:35%;
   margin:auto;
  }
 
-  .d_left
- {
-  width:40%;
-  height:100%;
-  float:left;
-  position: relative;
-
- }
 
  .d_head
  {
-  width:20%;
-  height:100%;
-  float:left;
-  position: relative;
 
  }
 
@@ -354,13 +342,10 @@ input{
 
 #layer1
 {
-  width:85%;
-  margin-top:50px;
+  width:100%;
   background-color: #fff;
-  text-align: center;
-  margin:auto;
   margin-top: 10px;
-
+  padding:20px 0;
 }
 
 #layer2
@@ -549,15 +534,12 @@ margin-top: 10px;
 .work_add
 {
 
-  width:200px;
-  height:380px;
+  width:380px;
+  height:290px;
+  margin:0 20px 20px 0;
   background-color: #fff;
   border-radius:5px;
-  border:#aaa dashed 2px;
-  float:left;
-  position:relative;
-  margin-left: 1.5%;
-  margin-top: 1%;
+  border:#aaa dashed 1px;
   box-sizing:border-box;
 
 }
@@ -567,7 +549,7 @@ margin-top: 10px;
   width:50px;
   height:50px;
   margin:auto;
-  margin-top: 50%;
+  margin-top: 25%;
   border-radius: 25px;
   background-color: #eee;
 
@@ -914,17 +896,10 @@ margin-top: 10px;
 .clear{
     clear:both;
 }
-#footer {
-	width: 100%;
-	height: 150px;
-	text-align: center;
-}
 
 .wrapper {
 	background-color: #d1d1d1;
-	height: 120px;
 	padding: 25px 0px 15px;
-	margin-top:100px;
 }
 div.dynamic_2 div.more a span{
 	display: block;

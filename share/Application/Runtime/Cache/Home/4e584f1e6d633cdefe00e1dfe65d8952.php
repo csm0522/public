@@ -76,9 +76,9 @@
 							<span  name="outA" href="#" id="btn_1">
 								<div type="button" id="btn11" onclick="showM();">作品</div>
 								<ul id="mean2">
-									<a href="<?php echo U('Works/showUi');?>"><li>UI/UX</li></a>
-									<a href="<?php echo U('Works/showGDesign');?>"><li>平面设计</li></a>
-									<a href="<?php echo U('Works/showCartoon');?>"><li>漫画/插画</li></a>
+									<a href="/share/index.php/Home/Works/showList/type/1"><li>UI/UX</li></a>
+									<a href="/share/index.php/Home/Works/showList/type/2"><li>平面设计</li></a>
+									<a href="/share/index.php/Home/Works/showList/type/3"><li>漫画/插画</li></a>
 									<a href=""><li>网页设计</li></a>
 									<a href=""><li>3D模型</li></a>
 									<a href=""><li>创意短片</li></a>

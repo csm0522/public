@@ -76,9 +76,9 @@
 							<span  name="outA" href="#" id="btn_1">
 								<div type="button" id="btn11" onclick="showM();">作品</div>
 								<ul id="mean2">
-									<a href="<?php echo U('Works/showUi');?>"><li>UI/UX</li></a>
-									<a href="<?php echo U('Works/showGDesign');?>"><li>平面设计</li></a>
-									<a href="<?php echo U('Works/showCartoon');?>"><li>漫画/插画</li></a>
+									<a href="/share/index.php/Home/Works/showList/type/1"><li>UI/UX</li></a>
+									<a href="/share/index.php/Home/Works/showList/type/2"><li>平面设计</li></a>
+									<a href="/share/index.php/Home/Works/showList/type/3"><li>漫画/插画</li></a>
 									<a href=""><li>网页设计</li></a>
 									<a href=""><li>3D模型</li></a>
 									<a href=""><li>创意短片</li></a>
@@ -242,9 +242,8 @@
 		</script>
 				<div class="dynamic">
 					<div class="dynamic_1">
-						<div class="d_left"></div>
-						<div class="d_head">
-							<img src="/share/Public/Home/image/personal/person_1.png" width="110">
+						<div class="d_head" style="width: 110px;height:110px;margin:0 auto;">
+							<img src="/share/Public<?php echo ($userTX); ?>" width="110px" height="110px" style="border-radius: 90px;">
 						</div>
 
 					</div>
@@ -276,14 +275,14 @@
 						<div class="c_title">
 							<div class="t_1" id="title1" onclick="show(1)">
 
-								<input type="button" class="c_btn" value="<?php echo ($userInfo["loginid"]); ?>" />
+								<input type="button" class="c_btn" value="<?php echo ($userWorksNum); ?>" />
 								<h class="c_text" id="title1">作品</h>
 
 							</div>
 
 							<div class="t_1" id="title2" onclick="show(2)">
 
-								<input type="button" class="c_btn" value="<?php echo ($use[0]["regdate"]); ?>" />
+								<input type="button" class="c_btn" value="<?php echo ($userArticalNum); ?>" />
 								<h class="c_text" id="title2">文章</h>
 
 							</div>
@@ -305,61 +304,53 @@
 
 					<div id="layer1">
 
-						<a href="" style="text-decoration: none;">
-							<div class="work_add">
-								<div class="add"></div>
-								<div class="add_text">上传作品</div>
-							</div>
-						</a>
 
+							<?php if(is_array($userWorks)): $i = 0; $__LIST__ = $userWorks;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li style="width: 380px;height:290px;display: inline-block;margin:0 20px 20px 0;">
 
-						<div class="work">
-							<div class="work_img" style="background: url(/share/Public/Home/image/index/work_img1.jpg) no-repeat" onmouseover="
-                        like_show(1)" onmouseout="like_back(1)">
-								<div id="like1" class="likepin" style="display:none">
-									<div class="like_1"></div>
-									<div class="like_2"></div>
-									<div class="like_3"></div>
-
+						<?php if(empty($vo["indeximgpath"])): ?><a href="http://localhost:8080/share/index.php/Home/Works/works/id/<?php echo ($vo["ariticalid"]); ?>" class="userAImg">
+							<img src="/share/Public/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="380px" height="200px" />
+							</a>
+						<?php else: ?>
+						<a href="http://localhost:8080/share/index.php/Home/Works/works/id/<?php echo ($vo["ariticalid"]); ?>" class="a-block">
+							<img src="/share/Public/<?php echo ($vo["indeximgpath"]); ?>" width="380px" height="200px" class="u_post_img"/>
+						</a><?php endif; ?>
+						<div class="a-title">
+							<div class="a-info">
+								<h2><a href="http://localhost:8080/share/index.php/Home/Works/works/id/<?php echo ($vo["ariticalid"]); ?>"><?php echo (htmlspecialchars_decode($vo["title"])); ?></a></h2>
+								<div class="works-info">
+									<span class="works-author">
+										<a href=""><?php echo ($vo["username"]); ?></a>&nbsp;/&nbsp;
+									</span>
+									<span class="works-time">
+										<?php echo (substr($vo["createtime"],0,10)); ?>
+									</span>
+									&nbsp;/&nbsp;
+									<span class="works-like"><img src="/share/Public/Home/image/index/love.png" alt="" /> 6 &nbsp;
+									</span>
 								</div>
-
-							</div>
-							<div class="work_title">
-								<div class="title_1">
-									<a href="" style="text-decoration: none;color:#000">
-										<h style="font-size:18px;margin-left:10px;font-weight:bolder;">Title</h>
-									</a>
-								</div>
-								<div class="title_2">
-									<h style="font-size:12px;margin-left:10px;color:#808080;">describedescribedescribedesc</h>
-								</div>
-								<div class="title_3">
-									<img src="/share/Public/Home/image/index/pint.png" height="13" width="13" />
-									<h style="font-size:12px;color:#808080;">111</h>
-									<img src="/share/Public/Home/image/index/love.png" height="8" width="13" style="margin-left:20px;" />
-									<h style="font-size:12px;color:#808080;">234</h>
-								</div>
-							</div>
-							<div class="work_p">
-								<a href="" style="text-decoration: none;">
-									<div class="p_1">
-										<img src="/share/Public/Home/image/index/touxiang.png" height="40" width="40" style="margin-top:5px;" />
-									</div>
-									<div class="p_2">
-										<h style="font-size:14px;color:#3a3a3a;margin-left:10px">Sonia</h><br/>
-										<h style="font-size:12px;color:#808080;margin-left:10px">程序猿</h>
-									</div>
-								</a>
-								<a href="" style="text-decoration: none;">
-									<div class="p_3">
-										<h style="font-size:12px;color:#808080;margin-left:10px">插画</h>
-									</div>
-								</a>
-
 							</div>
 						</div>
+					</li><?php endforeach; endif; else: echo "" ;endif; ?>
+<div class="work_add"  style="text-decoration: none;display: inline-block;"><a href="<?php echo U('User/pshWorksPag');?>">
+								<div class="add"></div>
+								<div class="add_text">上传作品</div></a>
+							</div>
 
 					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 					<div id="layer2" style="display:none;">
 
@@ -467,10 +458,13 @@
 					</div>
 
 				</div>
-
-				<div class="clear"></div>
-
+	<div class="clear"></div>
+					<div class="clear"></div>
+			<div id="footer">
+				<div class="wrapper">
+					版权所有：大学生作品发布平台
+				</div>
+			</div>
 
 	</body>
-
 </html>

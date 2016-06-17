@@ -327,13 +327,20 @@ input{
 }
 
 #layer1 {
-	width: 85%;
-	margin-top: 50px;
+	width: 100%;
 	background-color: #fff;
-	text-align: center;
-	margin: auto;
+	padding:0;
+	text-align: justify;
+	margin:0 auto;
 }
-
+ul.allBoxUI{
+	margin:0 auto;
+	width: 1220px;;
+}
+ul.allBoxUI li{
+	float:none;
+	display: inline-block;
+}
 #layer2 {
 	width: 85%;
 	margin-top: 50px;

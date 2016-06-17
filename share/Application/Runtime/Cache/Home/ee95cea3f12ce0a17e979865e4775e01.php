@@ -76,9 +76,9 @@
 							<span  name="outA" href="#" id="btn_1">
 								<div type="button" id="btn11" onclick="showM();">作品</div>
 								<ul id="mean2">
-									<a href="<?php echo U('Works/showUi');?>"><li>UI/UX</li></a>
-									<a href="<?php echo U('Works/showGDesign');?>"><li>平面设计</li></a>
-									<a href="<?php echo U('Works/showCartoon');?>"><li>漫画/插画</li></a>
+									<a href="/share/index.php/Home/Works/showList/type/1"><li>UI/UX</li></a>
+									<a href="/share/index.php/Home/Works/showList/type/2"><li>平面设计</li></a>
+									<a href="/share/index.php/Home/Works/showList/type/3"><li>漫画/插画</li></a>
 									<a href=""><li>网页设计</li></a>
 									<a href=""><li>3D模型</li></a>
 									<a href=""><li>创意短片</li></a>
@@ -235,7 +235,7 @@
 			</div>
 
 
-			<form method='post' id="form123" name="form1" action="<?php echo U('User/Editinfo');?>">
+			<form method='post' id="form123" name="form1" action="<?php echo U('User/Editinfo');?>" enctype="multipart/form-data">
 			<div class="layer_right" style="margin-bottom:180px;">
 
 
@@ -252,8 +252,7 @@
 					<div class="r_form">
 						<div class="f_left">头像：</div>
 						<div class="f_right">
-							<img src="/share/Public/Home/image/index/person_1.png" weight="50px" height="50px" />
-							<input type="file" name="" value="选择图片" placeholder="" class="f_touxiang" />
+							<input type="file" name="userTX" value="选择图片" />
 						</div>
 					</div>
 
