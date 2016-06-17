@@ -150,27 +150,13 @@
         <p>话题分类</p>
         <div id="trid">
             <ul>
-                <li><img src="/share/Public/Home/image/word/standard.png" alt=""><a href="# " title="Lorem ipsum dolor sit amet, ">学校生活</a>
-                </li>
-                <hr>
-                <li><img src="/share/Public/Home/image/word/standard.png" alt=""><a href="# " title="Lorem ipsum dolor sit amet, ">八卦新闻</a>
-                </li>
-                <hr>
-                <li><img src="/share/Public/Home/image/word/standard.png" alt=""><a href="# " title="Lorem ipsum dolor sit amet, ">闲谈闲聊</a>
-                </li>
-                <hr>
-                <li><img src="/share/Public/Home/image/word/standard.png" alt=""><a href="# " title="Lorem ipsum dolor sit amet, ">失物招领</a>
-                </li>
-                <hr>
-                <li><img src="/share/Public/Home/image/word/standard.png" alt=""><a href="# " title="Lorem ipsum dolor sit amet, ">比赛宣传</a>
-                </li>
-                <hr>
-                <li><img src="/share/Public/Home/image/word/standard.png" alt=""><a href="# " title="Lorem ipsum dolor sit amet, ">寻求伙伴</a>
-                </li>
-                <hr>
-                <li><img src="/share/Public/Home/image/word/standard.png" alt=""><a href="# " title="Lorem ipsum dolor sit amet, ">寻找兼职</a>
-                </li>
-                <hr>
+                <li><img src="/share/Public/Home/image/word/standard.png" alt="" style="margin-bottom: 10px;"><a href="/share/index.php/Home/Ksq/showtype/id/0" style="margin-top: 23px;">学校生活</a></li><hr>
+                <li><img src="/share/Public/Home/image/word/standard.png" alt="" style="margin-bottom: 10px;"><a href="/share/index.php/Home/Ksq/showtype/id/1" style="margin-top: 23px;">八卦新闻</a></li><hr>
+                <li><img src="/share/Public/Home/image/word/standard.png" alt="" style="margin-bottom: 10px;"><a href="/share/index.php/Home/Ksq/showtype/id/2" style="margin-top: 23px;">闲谈闲聊</a></li><hr>
+                <li><img src="/share/Public/Home/image/word/standard.png" alt="" style="margin-bottom: 10px;"><a href="/share/index.php/Home/Ksq/showtype/id/3" style="margin-top: 23px;">失物招领</a></li><hr>
+                <li><img src="/share/Public/Home/image/word/standard.png" alt="" style="margin-bottom: 10px;"><a href="/share/index.php/Home/Ksq/showtype/id/4" style="margin-top: 23px;">比赛宣传</a></li><hr>
+                <li><img src="/share/Public/Home/image/word/standard.png" alt="" style="margin-bottom: 10px;"><a href="/share/index.php/Home/Ksq/showtype/id/5" style="margin-top: 23px;">寻求伙伴</a></li><hr>
+                <li><img src="/share/Public/Home/image/word/standard.png" alt="" style="margin-bottom: 10px;"><a href="/share/index.php/Home/Ksq/showtype/id/6" style="margin-top: 23px;">寻找兼职</a></li><hr>
             </ul>
         </div>
     </div>
@@ -181,8 +167,9 @@
             <header class="clearfix ">
 
                 <h3 class="post-title ">
-                    <!--detailed.html-->
                     <a href="#" style="sincolor: #814e51;color: #814e51; "><?php echo ($datas['content']); ?></a>
+                    <a href="#" style="color:#814e51;font-size: 14px;float:right;margin-bottom:5px;margin-right: 5%;"><?php echo ($datas['username']); ?></a>
+                    <div class="clear"></div>
                 </h3>
                 <div class="post-meta clearfix ">
                     <span class="date" style="color:#814e51;"><?php echo ($datas['creattime']); ?></span>
@@ -190,16 +177,13 @@
                     <span class="comments"><a href="# " ><?php echo ($datas['topicid']); ?> 回复</a></span>
                     <span class="like-count">66</span>
                 </div>
-
-
             </header>
-
         </article><?php endforeach; endif; else: echo "暂无数据" ;endif; ?>
 
     </div>
-
 </div>
 <div class="clear"></div>
+
 			<div class="clear"></div>
 			<div id="footer">
 				<div class="wrapper">

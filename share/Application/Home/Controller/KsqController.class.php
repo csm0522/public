@@ -8,8 +8,14 @@ class KsqController extends Controller
     public function index()
     {
         $ksq = M('topic');
-        $data = $ksq->field('topicId,content,type,CreatTime')->order("topicId DESC")->select();
+        $data = $ksq->field('topicId,userId,content,type,CreatTime')->order("topicId DESC")->select();
+        
         for ($i = 0; $i < count($data); $i++) {
+            $con2['UserId']=$data[$i]['userid'];
+            $data[$i]['username']=M('user')->where($con2)->getField(UserName);
+            if(empty($data[$i]['username'])){
+                $data[$i]['username']="游客";
+            }
             $data[$i]['type'] = $this->getType($data[$i]['type']);
         }
         $this->assign('topis', $data);
@@ -50,9 +56,23 @@ class KsqController extends Controller
         }
     }
 
-    public function showtype($id)
+    public function showtype()
     {
+        $ksq = M('topic');
+        $id=$_GET[id];
+        $cons['type']=$id;
+        $data = $ksq->where($cons)->field('topicId,userId,content,type,CreatTime')->order("topicId DESC")->select();
 
+        for ($i = 0; $i < count($data); $i++) {
+            $con2['UserId']=$data[$i]['userid'];
+            $data[$i]['username']=M('user')->where($con2)->getField(UserName);
+            if(empty($data[$i]['username'])){
+                $data[$i]['username']="游客";
+            }
+            $data[$i]['type'] = $this->getType($data[$i]['type']);
+        }
+        $this->assign('topis', $data);
+        $this->display('index');
     }
 
     function getType($typeid)
