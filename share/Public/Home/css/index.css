@@ -831,7 +831,7 @@ div.artcle {
     display: -webkit-box;
 }
 div.artical-info ul li{
-	width: 1000px;
+	width: 880px;
 	border-bottom:1px solid #cccccc;
 	padding:10px;
 	margin-bottom:10px;
@@ -840,15 +840,17 @@ div.artical-info ul li{
 
 div.artical-info ul li a.userAImg{
 	display:inline-block;
-	width: 260px;
 	vertical-align: top;
+}
+div.artical-info ul li a.userAImg img{
+	border:1px solid #eee;
 }
 div.userAInfo div.userATitle a{
 	font-weight: 800;
 }
 div.artical-info ul li div:last-child {
     display: inline-block;
-    width: 720px;
+    width: 600px;
     padding:0 20px;
     box-sizing: border-box;
 }
@@ -872,7 +874,7 @@ div.userAInfo span.userAintro{
 	display: -moz-box;
 	color:rgb(180,180,180);
 	margin-top:20px;
-	width: 600px;
+	width: 560px;
 	font-size:20px;
 	-webkit-line-clamp: 3;
 	text-indent: 2rem;

@@ -9,13 +9,33 @@ class WorksController extends Controller {
 //		var_dump($Works);exit;
     	$this->display();
     }
-	 public function showUi(){
+
+	public function showList(){
+		$type = $_GET['type'];
+		$Works = M('artical') -> join('t_user on t_artical.userid = t_user.userid') -> where("type = $type") ->select();
+		$this->assign("WorksMain",$Works);
+		var_dump($Works);exit;
     	$this->display();
-    }
-	 public function showGdesign(){
-    	$this->display();
-    }
-	 public function showCaitoon(){
-    	$this->display();
-    }
+	}
+//	 public function showUi(){
+//  	$Works = M('artical') -> join('t_user on t_artical.userid = t_user.userid') -> where("type = 1") ->select();
+//		$this->assign("WorksMain",$Works);
+//		var_dump($Works);exit;
+//
+//  	$this->display();
+//  }
+//	 public function showGdesign(){
+//  	$Works = M('artical') -> join('t_user on t_artical.userid = t_user.userid') -> where("type = 2") ->select();
+//		$this->assign("WorksMain",$Works);
+//		var_dump($Works);exit;
+//
+//  	$this->display();
+//  }
+//	 public function showCaitoon(){
+//  	$Works = M('artical') -> join('t_user on t_artical.userid = t_user.userid') -> where("type = 3") ->select();
+//		$this->assign("WorksMain",$Works);
+//		var_dump($Works);exit;
+//
+//  	$this->display();
+//  }
 }

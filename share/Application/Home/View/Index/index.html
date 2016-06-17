@@ -132,7 +132,7 @@
 						</empty>
 						<div class="a-title">
 							<div class="a-info">
-								<h2><a href="">{$vo.title|htmlspecialchars_decode}</a></h2>
+								<h2><a href="http://localhost:8080/share/index.php/Home/Works/works/id/{$vo.ariticalid}">{$vo.title|htmlspecialchars_decode}</a></h2>
 								<div class="works-info">
 									<span class="works-author">
 										<a href="">{$vo.username}</a>&nbsp;/&nbsp;
@@ -163,22 +163,22 @@
 
 					<li>
 						<empty name="vo.indeximgpath">
-						<a href="" class="userAImg">
+						<a href="http://localhost:8080/share/index.php/Home/essay/essay/id/{$vo.ariticalid}" class="userAImg">
 							<img src="__PUBLIC__/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="260px" height="auto" />
 							</a>
 						<else />
-						<a href="" class="userAImg">
+						<a href="http://localhost:8080/share/index.php/Home/essay/essay/id/{$vo.ariticalid}" class="userAImg">
 							<img src="__PUBLIC__/{$vo.indeximgpath}" alt="" width="260px" height="auto" />
 						</a>
 						</empty>
 						<div class="userAInfo">
 							<div class="userATitle">
-									<a href="">{$vo.title}</a>
+									<a href="http://localhost:8080/share/index.php/Home/essay/essay/id/{$vo.ariticalid}">{$vo.title}</a>
 							</div>
 							<div  class="sortCo">
 								<span>{$vo.ArticalType}</span>
 							</div>
-							<div class="userAupTime"><span class="userA_Name">{$vo.username}</span> / {$vo.createtime}</div>
+							<div class="userAupTime"><span class="userA_Name" style="color:pink">{$vo.username}</span> / <span style="color:brown">{$vo.createtime}</span></div>
 							<span class="userAintro">
 								{$vo.intro|htmlspecialchars_decode}
 							</span>
