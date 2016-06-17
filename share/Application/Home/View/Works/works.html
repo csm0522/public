@@ -22,6 +22,8 @@
 				<div class="background_middle">
 
 
+					<volist name="WorksMain" id="vo">
+
 
 					<div class="content2">
 
@@ -32,7 +34,7 @@
 						</div>
 
 						<div class="author_name">
-							<h>Sonia</h>
+							<h>{$vo.username}</h>
 						</div>
 
 						<div class="work_bottom">
@@ -41,25 +43,19 @@
 						</div>
 
 						<div class="author_title">
-							<h>Title</h>
+							<h>{$vo.title}</h>
 						</div>
 
 						<div class="author_content">
-							<h>Very cute! love the little details put into the image, Not much of a light source which helps keep the illustration so simple. Nice touch of playfulness with the singing cat and the purple fence. </h>
-						</div>
-
-						<div>
-							<img src="__HomeIMG__/work/collect_1.jpg" alt=""  style="width: 600px;height:auto;margin:20px 0;"/>
-							<img src="__HomeIMG__/work/work_2.jpg" alt=""  style="width: 600px;height:auto;margin:20px 0;"/>
-							<img src="__HomeIMG__/work/work_3.jpg" alt=""  style="width: 600px;height:auto;margin:20px 0;"/>
+							{$vo.content}
 						</div>
 
 						<div class="follower">
 								<input type="button" class="follower_btn" onclick="alert('赞');" /><span>55</span>
 						</div>
 
-					</div>
-
+						</div>
+					</volist>
 					<div class="recommend-line">
 						<a>评论</a>
 					</div>

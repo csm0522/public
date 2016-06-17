@@ -158,7 +158,10 @@ class UserController extends Controller {
 			$this -> display();
 		}
 	}
-
+ public function ueditor(){
+    	$data = new \Org\Util\Ueditor();
+		echo $data->output();
+    }
 	function pubWorks(){
 		$title = $_POST['worksname'];
 		if($_POST['fenlei']){
@@ -174,31 +177,34 @@ class UserController extends Controller {
 			}
 		}
 		$content = htmlspecialchars(stripslashes($_POST['content']));
+		$content = $_POST['content'];
 		$sessid = session('userInfo.UId');
 		$upLoadType = $_POST['upLoadType'];
 		$arr['addtime'] = Date('Y-m-d H:i:s');
 
 		$config = array(
 			'rootPath' => './Public/',
-			'savePath' => 'upload/ArticalIndexImg/',
+			'savePath' => './upload/ArticalIndexImg/',
 		);
 		$ULImg = new\Think\Upload($config);
 		$re = $ULImg -> uploadOne($_FILES['worksImg']);
-		if(!$re){
-			show_bug($ULImg -> getError());
-		}
-		else{
+		if($re){
 			$UPImgPath = $re['savepath'].$re['savename'];
 			$_POST['IndexImgPath'] = $UPImgPath;
 		}
-
 		if($title != '')
 		{
 			$checkUser = M('user')-> where("loginid = '$sessid'")-> find();
 			$Userid = M('user')-> where("loginid = '$sessid'")-> getfield('userid');
 			if(!empty($checkUser)){
+				if(empty($_POST['IndexImgPath']))
+				{
+					$data = array('Title'=>$title,'type'=>$type,'UserId'=>$Userid,'Content'=>$content,'upLoadType'=>$upLoadType,'CreateTime'=>$arr['addtime']);
+				}
+				else{
+					$data = array('Title'=>$title,'IndexImgPath'=>$UPImgPath,'type'=>$type,'UserId'=>$Userid,'Content'=>$content,'upLoadType'=>$upLoadType,'CreateTime'=>$arr['addtime']);
+				}
 
-				$data = array('Title'=>$title,'IndexImgPath'=>$UPImgPath,'type'=>$type,'UserId'=>$Userid,'Content'=>$content,'upLoadType'=>$upLoadType,'CreateTime'=>$arr['addtime']);
 				$push = M('artical');
 				$res = $push->add($data);
 				if($res)
@@ -224,6 +230,25 @@ class UserController extends Controller {
 				default :  $ArticalType = 4;break;
 			}
 		}
+
+		$content = $_POST['content'];
+		$intro = $_POST['ArticalIntro'];
+		$sessid = session('userInfo.UId');
+		$upLoadType = $_POST['upLoadType'];
+		$arr['addtime'] = Date('Y-m-d H:i:s');
+
+		$config = array(
+			'rootPath' => './Public/',
+			'savePath' => './upload/ArticalIndexImg/',
+		);
+		$ULImg = new\Think\Upload($config);
+		$re = $ULImg -> uploadOne($_FILES['ArticalImg']);
+		if($re){
+			$UPImgPath = $re['savepath'].$re['savename'];
+			$_POST['IndexImgPath'] = $UPImgPath;
+		}
+
+
 		$content =  htmlspecialchars(stripslashes($_POST['content']));
 		$sessid = session('userInfo.UId');
 		$upLoadType = $_POST['upLoadType'];
@@ -233,8 +258,13 @@ class UserController extends Controller {
 			$checkUser = M('user')-> where("loginid = '$sessid'")-> find();
 			$Userid = M('user')-> where("loginid = '$sessid'")-> getfield('userid');
 			if(!empty($checkUser)){
-				$data = array('Title'=>$title,'ArticalType'=>$ArticalType,'UserId'=>$Userid,'Content'=>$content,'upLoadType'=>$upLoadType,'CreateTime'=>$arr['addtime']);
-//				$data = array('userid'=>$sessid);
+				if(empty($_POST['IndexImgPath']))
+				{
+						$data = array('Title'=>$title,'intro'=>$intro,'ArticalType'=>$ArticalType,'UserId'=>$Userid,'Content'=>$content,'upLoadType'=>$upLoadType,'CreateTime'=>$arr['addtime']);
+				}
+				else{
+						$data = array('Title'=>$title,'IndexImgPath'=>$UPImgPath,'intro'=>$intro,'ArticalType'=>$ArticalType,'UserId'=>$Userid,'Content'=>$content,'upLoadType'=>$upLoadType,'CreateTime'=>$arr['addtime']);
+				}
 				$push = M('artical');
 				$res = $push->add($data);
 //				var_dump($res);exit;

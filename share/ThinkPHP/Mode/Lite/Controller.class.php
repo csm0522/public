@@ -18,14 +18,14 @@ abstract class Controller {
      * 视图实例对象
      * @var view
      * @access protected
-     */    
+     */
     protected $view     =  null;
 
     /**
      * 控制器参数
      * @var config
      * @access protected
-     */      
+     */
     protected $config   =   array();
 
    /**
@@ -75,7 +75,7 @@ abstract class Controller {
      * @param string $templateFile 指定要调用的模板文件
      * 默认为空 由系统自动定位模板文件
      * @param string $content 模板输出内容
-     * @param string $prefix 模板缓存前缀* 
+     * @param string $prefix 模板缓存前缀*
      * @return string
      */
     protected function fetch($templateFile='',$content='',$prefix='') {
@@ -116,7 +116,7 @@ abstract class Controller {
      * @return mixed
      */
     public function get($name='') {
-        return $this->view->get($name);      
+        return $this->view->get($name);
     }
 
     public function __get($name) {
@@ -201,12 +201,12 @@ abstract class Controller {
                 // 返回JSON数据格式到客户端 包含状态信息
                 header('Content-Type:application/json; charset=utf-8');
                 $handler    =   isset($_GET[C('VAR_JSONP_HANDLER')]) ? $_GET[C('VAR_JSONP_HANDLER')] : C('DEFAULT_JSONP_HANDLER');
-                $data       =   $handler.'('.json_encode($data,$json_option).');'; 
+                $data       =   $handler.'('.json_encode($data,$json_option).');';
                 break;
             case 'EVAL' :
                 // 返回可执行的js脚本
                 header('Content-Type:text/html; charset=utf-8');
-                break;      
+                break;
         }
         exit($data);
     }
@@ -271,5 +271,6 @@ abstract class Controller {
             exit ;
         }
     }
+
 
 }

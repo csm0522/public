@@ -257,10 +257,8 @@
             'directionalityltr', 'directionalityrtl', 'indent', '|',
             'justifyleft', 'justifycenter', 'justifyright', 'justifyjustify', '|', 'touppercase', 'tolowercase', '|',
             'link', 'unlink', 'anchor', '|', 'imagenone', 'imageleft', 'imageright', 'imagecenter', '|',
-            'simpleupload', 'insertimage', 'emotion', 'scrawl', 'insertvideo', 'music', 'attachment', 'map', 'gmap', 'insertframe', 'insertcode', 'webapp', 'pagebreak', 'template', 'background', '|',
-            'horizontal', 'date', 'time', 'spechars', 'snapscreen', 'wordimage', '|',
-            'inserttable', 'deletetable', 'insertparagraphbeforetable', 'insertrow', 'deleterow', 'insertcol', 'deletecol', 'mergecells', 'mergeright', 'mergedown', 'splittocells', 'splittorows', 'splittocols', 'charts', '|',
-            'print', 'preview', 'searchreplace', 'drafts', 'help']],//自定义ueditor工具栏
+            'simpleupload', 'insertimage', 'emotion', 'scrawl', 'insertvideo', 'music', 'attachment','insertcode', 'background', '|',
+            'horizontal', 'date', 'time', 'spechars']],//自定义ueditor工具栏
     initialContent: '<span style="color:#ccc"></span>',
     minFrameHeight: 100,//初始化框架大小
     zIndex:10,
@@ -309,7 +307,7 @@
             </tr>
 
             <tr>
-                <th style="height:70px;vertical-align: top;padding-top:22px;" >作品说明<span style="color:red">*</span></th>
+                <th style="height:70px;vertical-align: top;padding-top:22px;" >作品详情<span style="color:red">*</span></th>
                 <td style="height:70px;">
                 	<script type="text/plain" id="Vent" style="width:800px;height:400px;"></script>
                 </td>

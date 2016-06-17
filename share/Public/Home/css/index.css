@@ -802,6 +802,17 @@ ul.allBoxUI li{
 }
 div.a-title{
 	padding:16px 20px;
+	box-sizing: border-box;
+}
+div.a-title div.a-info h2{
+	display: -webkit-box;
+	display: -moz-box;
+	-webkit-line-clamp: 1;
+	overflow: hidden;
+	 word-break: break-all;
+	-webkit-box-orient: vertical;
+	white-space: wrap;
+	text-overflow:ellipsis;
 }
 div.works-info{
 	margin-top:10px;
@@ -821,7 +832,6 @@ div.artcle {
 }
 div.artical-info ul li{
 	width: 1000px;
-	height:190px;
 	border-bottom:1px solid #cccccc;
 	padding:10px;
 	margin-bottom:10px;
@@ -839,6 +849,8 @@ div.userAInfo div.userATitle a{
 div.artical-info ul li div:last-child {
     display: inline-block;
     width: 720px;
+    padding:0 20px;
+    box-sizing: border-box;
 }
 div.userAInfo div.userATitle a:hover{
 	color:red;
@@ -849,16 +861,26 @@ div.userAInfo div.userAupTime{
 	color:#656F79;
 }
 div.userAInfo div.sortCo{
-	margin-top:10px;
+	margin-top:20px;
 	color:orange;
 }
 div.userAInfo div.userAupTime span.cf30{
 	color:red;
 }
-div.userAInfo div.userAintro{
+div.userAInfo span.userAintro{
+	display: -webkit-box;
+	display: -moz-box;
 	color:rgb(180,180,180);
-	margin-top:10px;
-	font-size: 18px;;
+	margin-top:20px;
+	width: 600px;
+	font-size:20px;
+	-webkit-line-clamp: 3;
+	text-indent: 2rem;
+	overflow: hidden;
+	 word-break: break-all;
+	-webkit-box-orient: vertical;
+	white-space: wrap;
+	text-overflow:ellipsis;
 }
 #layer3 {
 	width: 1100px;

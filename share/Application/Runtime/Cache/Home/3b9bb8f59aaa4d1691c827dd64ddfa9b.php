@@ -101,7 +101,7 @@
 									<?php if(empty(session('userInfo'))){?>
 									<li><a href="/share/index.php/Home/User/loginPage">登录</a></li>
 									<?php }else{?>
-									<li><a href="/share/index.php/Home/User/personalPage">个人中心</a></li>
+									<li><a href="/share/index.php/Home/User/personal">个人中心</a></li>
 									<li><a href="/share/index.php/Home/User/logout">退出登录</a></li>
 									<?php }?>
 								</ul>

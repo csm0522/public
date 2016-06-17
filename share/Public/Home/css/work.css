@@ -242,7 +242,7 @@ input{
 
 .author_content
 {
-  width:60%;
+  width:80%;
   height:auto;
   float: top;
   position:relative;
@@ -251,9 +251,13 @@ input{
 
     color:#8e8e8e;
   font-weight: lighter;
-  font-size: 18px;
+  font-size: 25px!important;
 }
-
+.author_content h1,h2,h3,h4,h5,p{
+	width: 100%;;
+	display: block;
+	font-size: 25px!important;
+}
 .follower
 {
   width:80px;

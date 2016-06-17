@@ -14,7 +14,7 @@ class Ueditor{
 
 	private $st;
 
-//	private $rootpath = '/Uploads';
+	private $rootpath = "http://localhost:8080/share/Public/upload";
 
 	public function __construct($uid = ''){
 		//uid 为空则导入当前会话uid

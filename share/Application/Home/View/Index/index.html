@@ -120,7 +120,16 @@
 					<volist name="Workslist" id="vo">
 
 						<li>
-						<a href="#" class="a-block"><img src="__PUBLIC__/{$vo.indeximgpath}" width="380px" height="200px" class="u_post_img"/></a>
+
+							<empty name="vo.indeximgpath">
+						<a href="http://localhost:8080/share/index.php/Home/Works/works/id/{$vo.ariticalid}" class="userAImg">
+							<img src="__PUBLIC__/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="380px" height="200px" />
+							</a>
+						<else />
+						<a href="http://localhost:8080/share/index.php/Home/Works/works/id/{$vo.ariticalid}" class="a-block">
+							<img src="__PUBLIC__/{$vo.indeximgpath}" width="380px" height="200px" class="u_post_img"/>
+						</a>
+						</empty>
 						<div class="a-title">
 							<div class="a-info">
 								<h2><a href="">{$vo.title|htmlspecialchars_decode}</a></h2>
@@ -153,13 +162,13 @@
 					<volist name="Articallist" id="vo">
 
 					<li>
-						<empty name="$vo.indeximgpath">
+						<empty name="vo.indeximgpath">
 						<a href="" class="userAImg">
-							<img src="__PUBLIC__/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="100%" />
+							<img src="__PUBLIC__/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="260px" height="auto" />
 							</a>
 						<else />
 						<a href="" class="userAImg">
-							<img src="{$vo.indeximgpath}" alt="" />
+							<img src="__PUBLIC__/{$vo.indeximgpath}" alt="" width="260px" height="auto" />
 						</a>
 						</empty>
 						<div class="userAInfo">
@@ -170,30 +179,13 @@
 								<span>{$vo.ArticalType}</span>
 							</div>
 							<div class="userAupTime"><span class="userA_Name">{$vo.username}</span> / {$vo.createtime}</div>
-							<div class="userAintro">
-								{$vo.content|htmlspecialchars_decode}
-							</div>
+							<span class="userAintro">
+								{$vo.intro|htmlspecialchars_decode}
+							</span>
 						</div>
 					</li>
 
 					</volist>
-					<!--<li>
-						<a href="" class="userAImg"><img src="__HomeIMG__/essay/1.png" alt="" /></a>
-						<div class="userAInfo">
-							<div class="userATitle">
-									<a href="">最终，你成为了具有“独立思考”能力的人</a>
-							</div>
-							<div  class="sortCo">
-								<span>设计文章</span>
-							</div>
-							<div class="userAupTime"><span class="userA_Name">用户昵称</span> / 2016-06-05</div>
-							<div class="userAintro">
-								人天生就渴求信息，像需要空气和水一样。信息也的确像空气和水一样包裹着我们.我
-								们吸入，我们呼出.我们无法造一个玻璃盒子来屏蔽这一切.只能身处于这个庞大的体系
-								中,慢慢找到真实的自己.
-							</div>
-						</div>
-					</li>-->
 				</ul>
 			</div>
 		</div>

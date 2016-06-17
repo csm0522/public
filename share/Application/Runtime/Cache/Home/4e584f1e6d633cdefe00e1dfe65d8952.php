@@ -139,8 +139,7 @@
 				<div class="background_middle">
 
 
-
-					<div class="content2">
+					<?php if(is_array($WorksMain)): $i = 0; $__LIST__ = $WorksMain;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="content2">
 
 						<div class="author">
 							<a href="">
@@ -149,7 +148,7 @@
 						</div>
 
 						<div class="author_name">
-							<h>Sonia</h>
+							<h><?php echo ($vo["username"]); ?></h>
 						</div>
 
 						<div class="work_bottom">
@@ -158,25 +157,18 @@
 						</div>
 
 						<div class="author_title">
-							<h>Title</h>
+							<h><?php echo ($vo["title"]); ?></h>
 						</div>
 
 						<div class="author_content">
-							<h>Very cute! love the little details put into the image, Not much of a light source which helps keep the illustration so simple. Nice touch of playfulness with the singing cat and the purple fence. </h>
-						</div>
-
-						<div>
-							<img src="/share/Public/Home/image/work/collect_1.jpg" alt=""  style="width: 600px;height:auto;margin:20px 0;"/>
-							<img src="/share/Public/Home/image/work/work_2.jpg" alt=""  style="width: 600px;height:auto;margin:20px 0;"/>
-							<img src="/share/Public/Home/image/work/work_3.jpg" alt=""  style="width: 600px;height:auto;margin:20px 0;"/>
+							<?php echo ($vo["content"]); ?>
 						</div>
 
 						<div class="follower">
 								<input type="button" class="follower_btn" onclick="alert('赞');" /><span>55</span>
 						</div>
 
-					</div>
-
+						</div><?php endforeach; endif; else: echo "" ;endif; ?>
 					<div class="recommend-line">
 						<a>评论</a>
 					</div>

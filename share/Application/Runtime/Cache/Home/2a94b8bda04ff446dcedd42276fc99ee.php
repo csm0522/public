@@ -235,7 +235,14 @@
 				<ul class="allBoxUI">
 
 					<?php if(is_array($Workslist)): $i = 0; $__LIST__ = $Workslist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
-						<a href="#" class="a-block"><img src="/share/Public/<?php echo ($vo["indeximgpath"]); ?>" width="380px" height="200px" class="u_post_img"/></a>
+
+							<?php if(empty($vo["indeximgpath"])): ?><a href="http://localhost:8080/share/index.php/Home/Works/works/id/<?php echo ($vo["ariticalid"]); ?>" class="userAImg">
+							<img src="/share/Public/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="380px" height="200px" />
+							</a>
+						<?php else: ?>
+						<a href="http://localhost:8080/share/index.php/Home/Works/works/id/<?php echo ($vo["ariticalid"]); ?>" class="a-block">
+							<img src="/share/Public/<?php echo ($vo["indeximgpath"]); ?>" width="380px" height="200px" class="u_post_img"/>
+						</a><?php endif; ?>
 						<div class="a-title">
 							<div class="a-info">
 								<h2><a href=""><?php echo (htmlspecialchars_decode($vo["title"])); ?></a></h2>
@@ -264,12 +271,12 @@
 			<div class="artical-info">
 				<ul>
 					<?php if(is_array($Articallist)): $i = 0; $__LIST__ = $Articallist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
-						<?php if(empty($$vo["indeximgpath"])): ?><a href="" class="userAImg">
-							<img src="/share/Public/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="100%" />
+						<?php if(empty($vo["indeximgpath"])): ?><a href="" class="userAImg">
+							<img src="/share/Public/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="260px" height="auto" />
 							</a>
 						<?php else: ?>
 						<a href="" class="userAImg">
-							<img src="<?php echo ($vo["indeximgpath"]); ?>" alt="" />
+							<img src="/share/Public/<?php echo ($vo["indeximgpath"]); ?>" alt="" width="260px" height="auto" />
 						</a><?php endif; ?>
 						<div class="userAInfo">
 							<div class="userATitle">
@@ -279,28 +286,11 @@
 								<span><?php echo ($vo["ArticalType"]); ?></span>
 							</div>
 							<div class="userAupTime"><span class="userA_Name"><?php echo ($vo["username"]); ?></span> / <?php echo ($vo["createtime"]); ?></div>
-							<div class="userAintro">
-								<?php echo (htmlspecialchars_decode($vo["content"])); ?>
-							</div>
+							<span class="userAintro">
+								<?php echo (htmlspecialchars_decode($vo["intro"])); ?>
+							</span>
 						</div>
 					</li><?php endforeach; endif; else: echo "" ;endif; ?>
-					<!--<li>
-						<a href="" class="userAImg"><img src="/share/Public/Home/image/essay/1.png" alt="" /></a>
-						<div class="userAInfo">
-							<div class="userATitle">
-									<a href="">最终，你成为了具有“独立思考”能力的人</a>
-							</div>
-							<div  class="sortCo">
-								<span>设计文章</span>
-							</div>
-							<div class="userAupTime"><span class="userA_Name">用户昵称</span> / 2016-06-05</div>
-							<div class="userAintro">
-								人天生就渴求信息，像需要空气和水一样。信息也的确像空气和水一样包裹着我们.我
-								们吸入，我们呼出.我们无法造一个玻璃盒子来屏蔽这一切.只能身处于这个庞大的体系
-								中,慢慢找到真实的自己.
-							</div>
-						</div>
-					</li>-->
 				</ul>
 			</div>
 		</div>

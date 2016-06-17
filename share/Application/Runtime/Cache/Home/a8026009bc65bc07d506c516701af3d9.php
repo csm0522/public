@@ -166,111 +166,33 @@
 			<div id="main_body">
 				<div id="main_left">
 					<ul>
-						<li>
-							<a href="" class="userAImg"><img src="/share/Public/Home/image/essay/1.png" alt="" /></a>
-							<div class="userAInfo">
-								<div class="userATitle">
-										<a href="">最终，你成为了具有“独立思考”能力的人</a>
-								</div>
-								<div  class="sortCo">
-									<span>设计文章</span>
-									<span> - 小伙伴经验</span>
-								</div>
-								<div class="userAupTime">2小时前上传 / <span class="cf30">201</span> 人气/ <span class="cf30">16</span> 评论 </div>
-								<div class="userAintro">
-									人天生就渴求信息，像需要空气和水一样。信息也的确像空气和水一样包裹着我们.我
-									们吸入，我们呼出.我们无法造一个玻璃盒子来屏蔽这一切.只能身处于这个庞大的体系
-									中,慢慢找到真实的自己.
-								</div>
+
+						<?php if(is_array($Articallist)): $i = 0; $__LIST__ = $Articallist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
+						<?php if(empty($vo["indeximgpath"])): ?><a href="" class="userAImg"><img src="/share/Public/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="260px" height="auto" /></a>
+						<?php else: ?>
+						<a href="" class="userAImg">
+							<img src="/share/Public/<?php echo ($vo["indeximgpath"]); ?>" alt="" width="260px" height="auto" />
+						</a><?php endif; ?>
+
+						<div class="userAInfo" style="padding:0px 10px 10px 10px;box-sizing: border-box;">
+							<div class="userATitle" style="margin-top: 8px;">
+									<a href="">
+										<?php echo ($vo["title"]); ?>
+
+									</a>
 							</div>
-						</li>
-						<li>
-							<a href="" class="userAImg"><img src="/share/Public/Home/image/essay/2.jpg" alt="" /></a>
-							<div class="userAInfo">
-								<div class="userATitle">
-										<a href="">矢量骷髅兵插画简易教程</a>
-								</div>
-								<div  class="sortCo">
-									<span>设计文章</span>
-									<span> - 原创教程</span>
-								</div>
-								<div class="userAupTime">2小时前上传 / <span class="cf30">201</span> 人气/ <span class="cf30">16</span> 评论 </div>
-								<div class="userAintro">
-									因酷友对矢量插画都比较感兴趣，上次出完视频后还有很多人想了解，所以这次为大家在制作一个小视频，欢迎大家一起来探讨。
-									由于经验不足，录制视频的时候声音不是特别的好，望大家见谅
-								</div>
+							<div class="userAupTime" style="margin: 8px 0 0 0;"><span class="userA_Name" style="color:pink;"><?php echo ($vo["username"]); ?></span> / <span style="color:brown;"><?php echo (substr($vo["createtime"],0,10)); ?></span></div>
+							<div  class="sortCo" style="margin-top: 8px;font-size: 12px;">
+								<span style="color:orange;">
+									<?php if( $vo['articaltype'] == 1) { echo '原创教程'; } else if( $vo['articaltype'] == 2) { echo '观点/见解'; } else if( $vo['articaltype'] == 3) { echo '设计资讯'; } else { echo '其他'; } ?>
+								</span>
 							</div>
-						</li>
-						<li>
-							<a href="" class="userAImg"><img src="/share/Public/Home/image/essay/1.png" alt="" /></a>
-							<div class="userAInfo">
-								<div class="userATitle">
-										<a href="">最终，你成为了具有“独立思考”能力的人</a>
-								</div>
-								<div  class="sortCo">
-									<span>设计文章</span>
-									<span> - 小伙伴经验</span>
-								</div>
-								<div class="userAupTime">2小时前上传 / <span class="cf30">201</span> 人气/ <span class="cf30">16</span> 评论 </div>
-								<div class="userAintro">
-									人天生就渴求信息，像需要空气和水一样。信息也的确像空气和水一样包裹着我们.我
-									们吸入，我们呼出.我们无法造一个玻璃盒子来屏蔽这一切.只能身处于这个庞大的体系
-									中,慢慢找到真实的自己.
-								</div>
-							</div>
-						</li>
-						<li>
-							<a href="" class="userAImg"><img src="/share/Public/Home/image/essay/2.jpg" alt="" /></a>
-							<div class="userAInfo">
-								<div class="userATitle">
-										<a href="">矢量骷髅兵插画简易教程</a>
-								</div>
-								<div  class="sortCo">
-									<span>设计文章</span>
-									<span> - 原创教程</span>
-								</div>
-								<div class="userAupTime">2小时前上传 / <span class="cf30">201</span> 人气/ <span class="cf30">16</span> 评论 </div>
-								<div class="userAintro">
-									因酷友对矢量插画都比较感兴趣，上次出完视频后还有很多人想了解，所以这次为大家在制作一个小视频，欢迎大家一起来探讨。
-									由于经验不足，录制视频的时候声音不是特别的好，望大家见谅
-								</div>
-							</div>
-						</li>
-						<li>
-							<a href="" class="userAImg"><img src="/share/Public/Home/image/essay/1.png" alt="" /></a>
-							<div class="userAInfo">
-								<div class="userATitle">
-										<a href="">最终，你成为了具有“独立思考”能力的人</a>
-								</div>
-								<div  class="sortCo">
-									<span>设计文章</span>
-									<span> - 小伙伴经验</span>
-								</div>
-								<div class="userAupTime">2小时前上传 / <span class="cf30">201</span> 人气/ <span class="cf30">16</span> 评论 </div>
-								<div class="userAintro">
-									人天生就渴求信息，像需要空气和水一样。信息也的确像空气和水一样包裹着我们.我
-									们吸入，我们呼出.我们无法造一个玻璃盒子来屏蔽这一切.只能身处于这个庞大的体系
-									中,慢慢找到真实的自己.
-								</div>
-							</div>
-						</li>
-						<li>
-							<a href="" class="userAImg"><img src="/share/Public/Home/image/essay/2.jpg" alt="" /></a>
-							<div class="userAInfo">
-								<div class="userATitle">
-										<a href="">矢量骷髅兵插画简易教程</a>
-								</div>
-								<div  class="sortCo">
-									<span>设计文章</span>
-									<span> - 原创教程</span>
-								</div>
-								<div class="userAupTime">2小时前上传 / <span class="cf30">201</span> 人气/ <span class="cf30">16</span> 评论 </div>
-								<div class="userAintro">
-									因酷友对矢量插画都比较感兴趣，上次出完视频后还有很多人想了解，所以这次为大家在制作一个小视频，欢迎大家一起来探讨。
-									由于经验不足，录制视频的时候声音不是特别的好，望大家见谅
-								</div>
-							</div>
-						</li>
+
+							<span class="userAintro" style="width: 100%;font-size: 18px;margin-top: 8px;">
+								<?php echo (htmlspecialchars_decode($vo["intro"])); ?>
+							</span>
+						</div>
+					</li><?php endforeach; endif; else: echo "" ;endif; ?>
 					</ul>
 				</div>
 				<div id="main_right">
