@@ -138,7 +138,8 @@ class UserController extends Controller
                     echo '<script>window.history.go(-1); </script>';
                 }
             } else {
-                $this->error('验证码错误', U('User/register'));
+                echo "<script>alert('"."验证码错误"."');</script>";
+                echo '<script>window.history.go(-1); </script>';
             }
         } else {
             $this->display();

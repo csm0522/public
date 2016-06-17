@@ -99,7 +99,7 @@
 							<div id="loginAndLO" onclick="showLogin()" style="float: left;"><img src="/share/Public/Home/image/index/user.png" width="18px" style="margin-left:18px;" />
 								<ul id="LoginMean" style="display: none;">
 									<?php if(empty(session('userInfo'))){?>
-									<li><a href="/share/index.php/Home/User/loginPage">登陆</a></li>
+									<li><a href="/share/index.php/Home/User/loginPage">登录</a></li>
 									<?php }else{?>
 									<li><a href="/share/index.php/Home/User/personal">个人中心</a></li>
 									<li><a href="/share/index.php/Home/User/logout">退出登录</a></li>

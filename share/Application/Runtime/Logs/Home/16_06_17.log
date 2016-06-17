@@ -17344,3 +17344,1123 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000776s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000863s ]
 
+[ 2016-06-17T19:50:55+08:00 ] ::1 /share/index.php/Home/User/personal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `t_user` WHERE ( loginid = '28' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `t_login` WHERE ( loginid = '28' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Users/chenshaomin/web_homework1/share/Application/Home/Controller/UserController.class.php 第 168 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015222s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015286s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000693s ]
+
+[ 2016-06-17T19:52:06+08:00 ] ::1 /share/index.php/Home/User/personal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `t_user` WHERE ( loginid = '28' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `t_login` WHERE ( loginid = '28' )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 /Users/chenshaomin/web_homework1/share/Application/Home/Controller/UserController.class.php 第 168 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2016-06-17T19:52:35+08:00 ] ::1 /share/index.php/Home/User/personal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `t_user` WHERE ( loginid = '28' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `t_login` WHERE ( loginid = '28' )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 /Users/chenshaomin/web_homework1/share/Application/Home/Controller/UserController.class.php 第 168 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012714s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012768s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001537s ]
+
+[ 2016-06-17T19:52:44+08:00 ] ::1 /share/index.php/Home/User/personal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001432s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `t_user` WHERE ( loginid = '28' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `t_login` WHERE ( loginid = '28' )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 /Users/chenshaomin/web_homework1/share/Application/Home/Controller/UserController.class.php 第 168 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013760s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000651s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000738s ]
+
+[ 2016-06-17T19:52:48+08:00 ] ::1 /share/index.php/Home/User/personal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `t_user` WHERE ( loginid = '28' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `t_login` WHERE ( loginid = '28' )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 /Users/chenshaomin/web_homework1/share/Application/Home/Controller/UserController.class.php 第 168 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000734s ]
+
+[ 2016-06-17T19:53:21+08:00 ] ::1 /share/index.php/Home/User/personal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `t_user` WHERE ( loginid = '28' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `t_login` WHERE ( loginid = '28' )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 /Users/chenshaomin/web_homework1/share/Application/Home/Controller/UserController.class.php 第 168 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000932s ]
+
+[ 2016-06-17T19:53:22+08:00 ] ::1 /share/index.php/Home/Ksq/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+SQL: SHOW COLUMNS FROM `t_topic` [ RunTime:0.0022s ]
+SQL: SELECT `topicId`,`content`,`type`,`CreatTime` FROM `t_topic` ORDER BY topicId DESC  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013820s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000752s ]
+
+[ 2016-06-17T19:53:25+08:00 ] ::1 /share/index.php/Home/Ksq/addTopic.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0009s ]
+NOTIC: [8] Use of undefined constant UserId - assumed 'UserId' /Users/chenshaomin/web_homework1/share/Application/Home/Model/UserModel.class.php 第 33 行.
+SQL: SELECT `UserId` FROM `t_user` WHERE `LoginId` = 28 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_topic` [ RunTime:0.0008s ]
+SQL: INSERT INTO `t_topic` (`UserId`,`content`,`CreatTime`,`type`,`ReportTag`) VALUES (NULL,'asdasdasda','2016-06-17 19:53:25','0','0') [ RunTime:0.0190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000541s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000605s ]
+
+[ 2016-06-17T19:53:26+08:00 ] ::1 /share/index.php/Home/ksq/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `t_topic` [ RunTime:0.0019s ]
+SQL: SELECT `topicId`,`content`,`type`,`CreatTime` FROM `t_topic` ORDER BY topicId DESC  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012827s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000631s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000740s ]
+
+[ 2016-06-17T19:54:25+08:00 ] ::1 /share/index.php/Home/Ksq/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+SQL: SHOW COLUMNS FROM `t_topic` [ RunTime:0.0018s ]
+SQL: SELECT `topicId`,`content`,`type`,`CreatTime` FROM `t_topic` ORDER BY topicId DESC  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011264s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011325s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000488s ]
+
+[ 2016-06-17T19:54:33+08:00 ] ::1 /share/index.php/Home/Ksq/addTopic.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0015s ]
+NOTIC: [8] Use of undefined constant UserId - assumed 'UserId' /Users/chenshaomin/web_homework1/share/Application/Home/Model/UserModel.class.php 第 33 行.
+SQL: SELECT `UserId` FROM `t_user` WHERE `LoginId` = 28 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_topic` [ RunTime:0.0012s ]
+SQL: INSERT INTO `t_topic` (`UserId`,`content`,`CreatTime`,`type`,`ReportTag`) VALUES (NULL,'hhhhh','2016-06-17 19:54:33','0','0') [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000580s ]
+
+[ 2016-06-17T19:54:34+08:00 ] ::1 /share/index.php/Home/ksq/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `t_topic` [ RunTime:0.0020s ]
+SQL: SELECT `topicId`,`content`,`type`,`CreatTime` FROM `t_topic` ORDER BY topicId DESC  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013109s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000715s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000814s ]
+
+[ 2016-06-17T19:55:34+08:00 ] ::1 /share/index.php/Home/Ksq/addTopic.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0011s ]
+NOTIC: [8] Use of undefined constant UserId - assumed 'UserId' /Users/chenshaomin/web_homework1/share/Application/Home/Model/UserModel.class.php 第 33 行.
+SQL: SELECT `UserId` FROM `t_user` WHERE `LoginId` = 28 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_topic` [ RunTime:0.0018s ]
+SQL: INSERT INTO `t_topic` (`UserId`,`content`,`CreatTime`,`type`,`ReportTag`) VALUES (NULL,'hhhhh','2016-06-17 19:55:34','0','0') [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000566s ]
+
+[ 2016-06-17T19:55:36+08:00 ] ::1 /share/index.php/Home/ksq/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `t_topic` [ RunTime:0.0021s ]
+SQL: SELECT `topicId`,`content`,`type`,`CreatTime` FROM `t_topic` ORDER BY topicId DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013163s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013242s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000728s ]
+
+[ 2016-06-17T19:55:46+08:00 ] ::1 /share/index.php/Home/Ksq/addTopic.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0019s ]
+NOTIC: [8] Use of undefined constant UserId - assumed 'UserId' /Users/chenshaomin/web_homework1/share/Application/Home/Model/UserModel.class.php 第 33 行.
+SQL: SELECT `UserId` FROM `t_user` WHERE `LoginId` = 28 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `t_topic` [ RunTime:0.0012s ]
+SQL: INSERT INTO `t_topic` (`UserId`,`content`,`CreatTime`,`type`,`ReportTag`) VALUES (NULL,'dddd','2016-06-17 19:55:46','0','0') [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000575s ]
+
+[ 2016-06-17T19:58:40+08:00 ] ::1 /share/index.php/Home/Ksq/addTopic.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0023s ]
+NOTIC: [8] Use of undefined constant LoginTag - assumed 'LoginTag' /Users/chenshaomin/web_homework1/share/Application/Home/Model/UserModel.class.php 第 33 行.
+SQL: SELECT `LoginTag` FROM `t_login` WHERE `LoginId` = 28 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_company` [ RunTime:0.0012s ]
+NOTIC: [8] Use of undefined constant CompanyId - assumed 'CompanyId' /Users/chenshaomin/web_homework1/share/Application/Home/Model/UserModel.class.php 第 36 行.
+SQL: SELECT `CompanyId` FROM `t_company` WHERE `LoginId` = 28 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_topic` [ RunTime:0.0009s ]
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`share`.`t_topic`, CONSTRAINT `FK_Reference_9` FOREIGN KEY (`UserId`) REFERENCES `t_user` (`UserId`))
+ [ SQL语句 ] : INSERT INTO `t_topic` (`UserId`,`content`,`CreatTime`,`type`,`ReportTag`) VALUES ('1','hhhhhddd','2016-06-17 19:58:40','0','0')
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`share`.`t_topic`, CONSTRAINT `FK_Reference_9` FOREIGN KEY (`UserId`) REFERENCES `t_user` (`UserId`))
+ [ SQL语句 ] : INSERT INTO `t_topic` (`UserId`,`content`,`CreatTime`,`type`,`ReportTag`) VALUES ('1','hhhhhddd','2016-06-17 19:58:40','0','0')
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/chenshaomin/web_homework1/share/Application/Home/Model/UserModel.class.php:39) /Users/chenshaomin/web_homework1/share/ThinkPHP/Library/Think/Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/chenshaomin/web_homework1/share/Application/Home/Model/UserModel.class.php:39) /Users/chenshaomin/web_homework1/share/ThinkPHP/Library/Think/Think.class.php 第 230 行.
+
+[ 2016-06-17T20:05:02+08:00 ] ::1 /share/index.php/Home/Ksq/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `t_topic` [ RunTime:0.0017s ]
+SQL: SELECT `topicId`,`content`,`type`,`CreatTime` FROM `t_topic` ORDER BY topicId DESC  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011722s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011784s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000793s ]
+
+[ 2016-06-17T20:05:07+08:00 ] ::1 /share/index.php/Home/Ksq/addTopic.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0023s ]
+NOTIC: [8] Use of undefined constant LoginTag - assumed 'LoginTag' /Users/chenshaomin/web_homework1/share/Application/Home/Controller/KsqController.class.php 第 29 行.
+SQL: SELECT `LoginTag` FROM `t_login` WHERE `LoginId` = 28 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000883s ]
+
+[ 2016-06-17T20:05:27+08:00 ] ::1 /share/index.php/Home/Ksq/addTopic.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0020s ]
+NOTIC: [8] Use of undefined constant LoginTag - assumed 'LoginTag' /Users/chenshaomin/web_homework1/share/Application/Home/Controller/KsqController.class.php 第 29 行.
+SQL: SELECT `LoginTag` FROM `t_login` WHERE `LoginId` = 28 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000561s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000615s ]
+
+[ 2016-06-17T20:05:38+08:00 ] ::1 /share/index.php/Home/Ksq/addTopic.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0033s ]
+NOTIC: [8] Use of undefined constant LoginTag - assumed 'LoginTag' /Users/chenshaomin/web_homework1/share/Application/Home/Controller/KsqController.class.php 第 29 行.
+SQL: SELECT `LoginTag` FROM `t_login` WHERE `LoginId` = 28 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000622s ]
+
+[ 2016-06-17T20:06:09+08:00 ] ::1 /share/index.php/Home/User/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000710s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+
+[ 2016-06-17T20:06:09+08:00 ] ::1 /share/index.php/Home/User/loginPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000927s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010786s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001083s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001194s ]
+
+[ 2016-06-17T20:06:11+08:00 ] ::1 /share/index.php/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0028s ]
+NOTIC: [8] Undefined index: Reg_verify /Users/chenshaomin/web_homework1/share/Application/Home/Controller/UserController.class.php 第 95 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010440s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000518s ]
+
+[ 2016-06-17T20:06:11+08:00 ] ::1 /share/index.php/Home/User/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000931s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001058s ]
+
+[ 2016-06-17T20:06:12+08:00 ] ::1 /share/index.php/Home/User/loginPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007866s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007936s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000467s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000518s ]
+
+[ 2016-06-17T20:06:24+08:00 ] ::1 /share/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0012s ]
+SQL: select * from t_login where LoginName='chan123' and LoginPwd='86a749c27d7a62258788052bcaafec1e' [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+NOTIC: [8] Undefined variable: Workslist /Users/chenshaomin/web_homework1/share/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 237 行.
+NOTIC: [8] Undefined variable: Articallist /Users/chenshaomin/web_homework1/share/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 273 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000198s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/chenshaomin/web_homework1/share/Application/Home/Controller/UserController.class.php:55) /Users/chenshaomin/web_homework1/share/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/chenshaomin/web_homework1/share/Application/Home/Controller/UserController.class.php:55) /Users/chenshaomin/web_homework1/share/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/chenshaomin/web_homework1/share/Application/Home/Controller/UserController.class.php:55) /Users/chenshaomin/web_homework1/share/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000704s ]
+
+[ 2016-06-17T20:06:29+08:00 ] ::1 /share/index.php/Home/User/loginPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000502s ]
+
+[ 2016-06-17T20:06:37+08:00 ] ::1 /share/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0015s ]
+SQL: select * from t_login where LoginName='chan123' and LoginPwd='4297f44b13955235245b2497399d7a93' [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_login` WHERE ( LoginName='chan123' )  [ RunTime:0.0002s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Users/chenshaomin/web_homework1/share/ThinkPHP/Common/functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+NOTIC: [8] Undefined variable: Workslist /Users/chenshaomin/web_homework1/share/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 237 行.
+NOTIC: [8] Undefined variable: Articallist /Users/chenshaomin/web_homework1/share/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 273 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016249s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016303s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014705s ]
+NOTIC: [8] Undefined variable: Workslist /Users/chenshaomin/web_homework1/share/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 237 行.
+NOTIC: [8] Undefined variable: Articallist /Users/chenshaomin/web_homework1/share/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 273 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015845s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000396s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.016126s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/chenshaomin/web_homework1/share/ThinkPHP/Library/Think/View.class.php:95) /Users/chenshaomin/web_homework1/share/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/chenshaomin/web_homework1/share/ThinkPHP/Library/Think/View.class.php:95) /Users/chenshaomin/web_homework1/share/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/chenshaomin/web_homework1/share/ThinkPHP/Library/Think/View.class.php:95) /Users/chenshaomin/web_homework1/share/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001141s ]
+
+[ 2016-06-17T20:06:40+08:00 ] ::1 /share/index.php/Home/User/personal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `t_user` WHERE ( loginid = '26' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_login` WHERE ( loginid = '26' )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+NOTIC: [8] Use of undefined constant username - assumed 'username' /Users/chenshaomin/web_homework1/share/Application/Runtime/Cache/Home/e5bcc763655a5b42cd142dc37666baac.php 第 261 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013033s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000706s ]
+
+[ 2016-06-17T20:06:41+08:00 ] ::1 /share/index.php/Home/Ksq/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `t_topic` [ RunTime:0.0017s ]
+SQL: SELECT `topicId`,`content`,`type`,`CreatTime` FROM `t_topic` ORDER BY topicId DESC  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012889s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012952s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000659s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000772s ]
+
+[ 2016-06-17T20:06:43+08:00 ] ::1 /share/index.php/Home/Ksq/addTopic.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant LoginTag - assumed 'LoginTag' /Users/chenshaomin/web_homework1/share/Application/Home/Controller/KsqController.class.php 第 29 行.
+SQL: SELECT `LoginTag` FROM `t_login` WHERE `LoginId` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0019s ]
+NOTIC: [8] Use of undefined constant UserId - assumed 'UserId' /Users/chenshaomin/web_homework1/share/Application/Home/Model/UserModel.class.php 第 33 行.
+SQL: SELECT `UserId` FROM `t_user` WHERE `LoginId` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_topic` [ RunTime:0.0011s ]
+SQL: INSERT INTO `t_topic` (`UserId`,`content`,`CreatTime`,`type`,`ReportTag`) VALUES ('6','dddddd','2016-06-17 20:06:43','0','0') [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000752s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000873s ]
+
+[ 2016-06-17T20:07:59+08:00 ] ::1 /share/index.php/Home/Ksq/addTopic.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0017s ]
+NOTIC: [8] Use of undefined constant LoginTag - assumed 'LoginTag' /Users/chenshaomin/web_homework1/share/Application/Home/Controller/KsqController.class.php 第 30 行.
+SQL: SELECT `LoginTag` FROM `t_login` WHERE `LoginId` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0013s ]
+NOTIC: [8] Use of undefined constant UserId - assumed 'UserId' /Users/chenshaomin/web_homework1/share/Application/Home/Model/UserModel.class.php 第 33 行.
+SQL: SELECT `UserId` FROM `t_user` WHERE `LoginId` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_topic` [ RunTime:0.0008s ]
+SQL: INSERT INTO `t_topic` (`UserId`,`content`,`CreatTime`,`type`,`ReportTag`) VALUES ('6','dddddd','2016-06-17 20:07:59','0','0') [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000619s ]
+
+[ 2016-06-17T20:08:00+08:00 ] ::1 /share/index.php/Home/ksq/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001122s ]
+SQL: SHOW COLUMNS FROM `t_topic` [ RunTime:0.0017s ]
+SQL: SELECT `topicId`,`content`,`type`,`CreatTime` FROM `t_topic` ORDER BY topicId DESC  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013473s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013537s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000775s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000872s ]
+
+[ 2016-06-17T20:08:05+08:00 ] ::1 /share/index.php/Home/Ksq/addTopic.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0029s ]
+NOTIC: [8] Use of undefined constant LoginTag - assumed 'LoginTag' /Users/chenshaomin/web_homework1/share/Application/Home/Controller/KsqController.class.php 第 30 行.
+SQL: SELECT `LoginTag` FROM `t_login` WHERE `LoginId` = 26 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0063s ]
+NOTIC: [8] Use of undefined constant UserId - assumed 'UserId' /Users/chenshaomin/web_homework1/share/Application/Home/Model/UserModel.class.php 第 33 行.
+SQL: SELECT `UserId` FROM `t_user` WHERE `LoginId` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_topic` [ RunTime:0.0077s ]
+SQL: INSERT INTO `t_topic` (`UserId`,`content`,`CreatTime`,`type`,`ReportTag`) VALUES ('6','666666','2016-06-17 20:08:05','0','0') [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000753s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000865s ]
+
+[ 2016-06-17T20:08:07+08:00 ] ::1 /share/index.php/Home/ksq/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001253s ]
+SQL: SHOW COLUMNS FROM `t_topic` [ RunTime:0.0010s ]
+SQL: SELECT `topicId`,`content`,`type`,`CreatTime` FROM `t_topic` ORDER BY topicId DESC  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016482s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016555s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000857s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000985s ]
+
+[ 2016-06-17T20:08:51+08:00 ] ::1 /share/index.php/Home/Zhaop/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000950s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001083s ]
+
+[ 2016-06-17T20:10:01+08:00 ] ::1 /share/index.php/Home/Works/showUi.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000387s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000459s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026488s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000787s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000943s ]
+
+[ 2016-06-17T20:10:01+08:00 ] ::1 /share/index.php/Home/javascript/login.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+ERR: 无法加载控制器:Javascript
+
+[ 2016-06-17T20:10:01+08:00 ] ::1 /share/index.php/Home/javascript/jquery-1.11.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+ERR: 无法加载控制器:Javascript
+
+[ 2016-06-17T20:10:03+08:00 ] ::1 /share/index.php/Home/Essay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `t_artical` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `t_artical` INNER JOIN t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 2 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+NOTIC: [8] Undefined index: intro /Users/chenshaomin/web_homework1/share/Application/Runtime/Cache/Home/a8026009bc65bc07d506c516701af3d9.php 第 192 行.
+NOTIC: [8] Undefined index: intro /Users/chenshaomin/web_homework1/share/Application/Runtime/Cache/Home/a8026009bc65bc07d506c516701af3d9.php 第 192 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012831s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000618s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000708s ]
+
+[ 2016-06-17T20:10:12+08:00 ] ::1 /share/index.php/Home/Ksq/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `t_topic` [ RunTime:0.0019s ]
+SQL: SELECT `topicId`,`content`,`type`,`CreatTime` FROM `t_topic` ORDER BY topicId DESC  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012256s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012316s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000757s ]
+
+[ 2016-06-17T20:10:19+08:00 ] ::1 /share/index.php/Home/Ksq/index.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+SQL: SHOW COLUMNS FROM `t_topic` [ RunTime:0.0018s ]
+SQL: SELECT `topicId`,`content`,`type`,`CreatTime` FROM `t_topic` ORDER BY topicId DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013702s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013786s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000818s ]
+
+[ 2016-06-17T20:10:22+08:00 ] ::1 /share/index.php/Home/Works/showUi.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000351s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000428s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000642s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000752s ]
+
+[ 2016-06-17T20:10:22+08:00 ] ::1 /share/index.php/Home/javascript/jquery-1.11.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+ERR: 无法加载控制器:Javascript
+
+[ 2016-06-17T20:10:22+08:00 ] ::1 /share/index.php/Home/javascript/login.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001543s ]
+ERR: 无法加载控制器:Javascript
+
+[ 2016-06-17T20:10:25+08:00 ] ::1 /share/index.php/Home/Essay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `t_artical` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `t_artical` INNER JOIN t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 2 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined index: intro /Users/chenshaomin/web_homework1/share/Application/Runtime/Cache/Home/a8026009bc65bc07d506c516701af3d9.php 第 192 行.
+NOTIC: [8] Undefined index: intro /Users/chenshaomin/web_homework1/share/Application/Runtime/Cache/Home/a8026009bc65bc07d506c516701af3d9.php 第 192 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014031s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014087s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000635s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000714s ]
+
+[ 2016-06-17T20:10:28+08:00 ] ::1 /share/index.php/Home/Essay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+SQL: SHOW COLUMNS FROM `t_artical` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `t_artical` INNER JOIN t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 2 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Undefined index: intro /Users/chenshaomin/web_homework1/share/Application/Runtime/Cache/Home/a8026009bc65bc07d506c516701af3d9.php 第 192 行.
+NOTIC: [8] Undefined index: intro /Users/chenshaomin/web_homework1/share/Application/Runtime/Cache/Home/a8026009bc65bc07d506c516701af3d9.php 第 192 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2016-06-17T20:10:30+08:00 ] ::1 /share/index.php/Home/Works/showGDesign.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000306s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000375s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000774s ]
+
+[ 2016-06-17T20:10:30+08:00 ] ::1 /share/index.php/Home/javascript/jquery-1.11.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+ERR: 无法加载控制器:Javascript
+
+[ 2016-06-17T20:10:30+08:00 ] ::1 /share/index.php/Home/javascript/login.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+ERR: 无法加载控制器:Javascript
+
+[ 2016-06-17T20:10:31+08:00 ] ::1 /share/index.php/Home/Essay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `t_artical` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `t_artical` INNER JOIN t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 2 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined index: intro /Users/chenshaomin/web_homework1/share/Application/Runtime/Cache/Home/a8026009bc65bc07d506c516701af3d9.php 第 192 行.
+NOTIC: [8] Undefined index: intro /Users/chenshaomin/web_homework1/share/Application/Runtime/Cache/Home/a8026009bc65bc07d506c516701af3d9.php 第 192 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015675s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015745s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000855s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001008s ]
+
+[ 2016-06-17T20:10:37+08:00 ] ::1 /share/index.php/Home/Essay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `t_artical` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `t_artical` INNER JOIN t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 2 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+NOTIC: [8] Undefined index: intro /Users/chenshaomin/web_homework1/share/Application/Runtime/Cache/Home/a8026009bc65bc07d506c516701af3d9.php 第 192 行.
+NOTIC: [8] Undefined index: intro /Users/chenshaomin/web_homework1/share/Application/Runtime/Cache/Home/a8026009bc65bc07d506c516701af3d9.php 第 192 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013529s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013583s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000718s ]
+
+[ 2016-06-17T20:10:38+08:00 ] ::1 /share/index.php/Home/Essay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+SQL: SHOW COLUMNS FROM `t_artical` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `t_artical` INNER JOIN t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 2 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+NOTIC: [8] Undefined index: intro /Users/chenshaomin/web_homework1/share/Application/Runtime/Cache/Home/a8026009bc65bc07d506c516701af3d9.php 第 192 行.
+NOTIC: [8] Undefined index: intro /Users/chenshaomin/web_homework1/share/Application/Runtime/Cache/Home/a8026009bc65bc07d506c516701af3d9.php 第 192 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012464s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000793s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000904s ]
+
+[ 2016-06-17T20:10:38+08:00 ] ::1 /share/index.php/Home/Ksq/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+SQL: SHOW COLUMNS FROM `t_topic` [ RunTime:0.0018s ]
+SQL: SELECT `topicId`,`content`,`type`,`CreatTime` FROM `t_topic` ORDER BY topicId DESC  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012122s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000689s ]
+
+[ 2016-06-17T20:10:55+08:00 ] ::1 /share/index.php/Home/Ksq/addTopic.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0020s ]
+NOTIC: [8] Use of undefined constant LoginTag - assumed 'LoginTag' /Users/chenshaomin/web_homework1/share/Application/Home/Controller/KsqController.class.php 第 30 行.
+SQL: SELECT `LoginTag` FROM `t_login` WHERE `LoginId` = 26 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0018s ]
+NOTIC: [8] Use of undefined constant UserId - assumed 'UserId' /Users/chenshaomin/web_homework1/share/Application/Home/Model/UserModel.class.php 第 33 行.
+SQL: SELECT `UserId` FROM `t_user` WHERE `LoginId` = 26 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_topic` [ RunTime:0.0010s ]
+SQL: INSERT INTO `t_topic` (`UserId`,`content`,`CreatTime`,`type`,`ReportTag`) VALUES ('6','点点滴滴的','2016-06-17 20:10:55','1','0') [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000890s ]
+
+[ 2016-06-17T20:10:56+08:00 ] ::1 /share/index.php/Home/ksq/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+SQL: SHOW COLUMNS FROM `t_topic` [ RunTime:0.0018s ]
+SQL: SELECT `topicId`,`content`,`type`,`CreatTime` FROM `t_topic` ORDER BY topicId DESC  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012678s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000634s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000751s ]
+
