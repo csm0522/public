@@ -63,6 +63,9 @@ class UserController extends Controller {
 	 */
 	public function register() {
 
+		$model = new \Think\Model();
+		$model->startTrans();//事务开始
+
 		$xinxi = M('login');
 		$verify = new \Think\Verify();
 		$v = $verify -> check($_POST['Reg_verify']);
@@ -75,8 +78,23 @@ class UserController extends Controller {
 				}
 				$arr['addtime'] = Date('Y-m-d H:i:s');
 				$data = array('LoginName' => I('Reg_un'), 'LoginPwd' => md5(I('Reg_pwd')), 'LoginStatus' => 0, 'LoginTag' => $LoginTag,'regDate'=>$arr['addtime']);
-				$xinxi -> data($data) -> add();
-				$this -> success('register success', U('loginPage'));
+				if($xinxi -> data($data) -> add()){
+					$model->commit();
+					$condition['LoginName']=I('Reg_un');
+					$loginid=M('Login')->where($condition)->getField(LoginId);
+					$datas['LoginId']=$loginid;
+					if(M('user')->add($datas)){
+						$model->commit();
+						$this -> success('register success', U('loginPage'));
+					}
+					else{
+						$model->rollback();
+						$this -> error('网络错误请稍后再试。', U('User/register'));
+					}
+				}
+				else{
+					$this -> error('网络错误请稍后再试。', U('User/register'));
+				}
 			} else {
 				$this -> error('验证码错误', U('User/register'));
 			}

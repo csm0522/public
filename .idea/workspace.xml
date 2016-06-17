@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cecd4fa-2759-4e81-a222-6570d0e820ff" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/0426adf2fcde2d1e3c18e97c67750e0c.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/bc47c2996ddb279fedd4eb8d49b4d364.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/c588ba18ec2793a2e43b2caea0f3e899.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/e8ed6e90f1cc7ddfb4db3d7a3a904d6f.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/Application/Runtime/Logs/Common/16_06_17.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Home/Controller/KsqController.class.php" afterPath="$PROJECT_DIR$/share/Application/Home/Controller/KsqController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Home/Controller/UserController.class.php" afterPath="$PROJECT_DIR$/share/Application/Home/Controller/UserController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Home/Model/UserModel.class.php" afterPath="$PROJECT_DIR$/share/Application/Home/Model/UserModel.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Home/View/Ksq/index.html" afterPath="$PROJECT_DIR$/share/Application/Home/View/Ksq/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/e7dd3e42588eacd55f2881f534634680.php" afterPath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/e7dd3e42588eacd55f2881f534634680.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Runtime/Logs/Home/16_06_17.log" afterPath="$PROJECT_DIR$/share/Application/Runtime/Logs/Home/16_06_17.log" />
     </list>
     <ignored path="web_homework1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,8 +39,8 @@
       <file leaf-file-name="KsqController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/KsqController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+            <state relative-caret-position="675">
+              <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -43,8 +52,38 @@
             <state relative-caret-position="480">
               <caret line="32" column="63" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
               <folding>
-                <marker date="1466145232000" expanded="true" signature="137:202" placeholder="select * fro... t_login" />
+                <marker date="1466154170000" expanded="true" signature="137:202" placeholder="select * fro... t_login" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/IndexController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/UserController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="81" column="37" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -52,33 +91,13 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Ksq/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="606">
-              <caret line="62" column="56" selection-start-line="62" selection-start-column="56" selection-end-line="62" selection-end-column="56" />
+            <state relative-caret-position="553">
+              <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
               <folding>
                 <element signature="n#style#0;n#select#0;n#form#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#form#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#!!top" expanded="true" />
-                <marker date="1466145744000" expanded="false" signature="3891:3920" placeholder="..." />
-                <marker date="1466145744000" expanded="false" signature="4000:4013" placeholder="..." />
-                <marker date="1466145744000" expanded="false" signature="4169:4268" placeholder="..." />
-                <marker date="1466145744000" expanded="false" signature="4401:4435" placeholder="..." />
-                <marker date="1466145744000" expanded="false" signature="4567:4581" placeholder="..." />
-                <marker date="1466145744000" expanded="false" signature="4983:5012" placeholder="..." />
-                <marker date="1466145744000" expanded="false" signature="5091:5104" placeholder="..." />
-                <marker date="1466145744000" expanded="false" signature="5231:5330" placeholder="..." />
-                <marker date="1466145744000" expanded="false" signature="5463:5497" placeholder="..." />
-                <marker date="1466145744000" expanded="false" signature="6023:6052" placeholder="..." />
-                <marker date="1466145744000" expanded="false" signature="6131:6144" placeholder="..." />
-                <marker date="1466145744000" expanded="false" signature="6269:6368" placeholder="..." />
-                <marker date="1466145744000" expanded="false" signature="6501:6535" placeholder="..." />
-                <marker date="1466145744000" expanded="false" signature="6667:6681" placeholder="..." />
-                <marker date="1466145744000" expanded="false" signature="7083:7112" placeholder="..." />
-                <marker date="1466145744000" expanded="false" signature="7191:7204" placeholder="..." />
-                <marker date="1466145744000" expanded="false" signature="7331:7430" placeholder="..." />
-                <marker date="1466145744000" expanded="false" signature="7563:7597" placeholder="..." />
-                <marker date="1466145744000" expanded="false" signature="7729:7743" placeholder="..." />
-                <marker date="1466145744000" expanded="false" signature="8145:8174" placeholder="..." />
-                <marker date="1466145744000" expanded="false" signature="8253:8266" placeholder="..." />
+                <element signature="n#style#0;n#span#0;n#div#0;n#header#0;n#article#0;n#volist#0;n#div#1;n#div#2;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,14 +105,23 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/share/Application/Home/Model/UserModel.class.php" />
+        <option value="$PROJECT_DIR$/share/Application/Home/View/Ksq/addTopic.html" />
         <option value="$PROJECT_DIR$/share/Application/Home/Controller/KsqController.class.php" />
+        <option value="$PROJECT_DIR$/share/Application/Home/Controller/UserController.class.php" />
+        <option value="$PROJECT_DIR$/share/Application/Home/Model/UserModel.class.php" />
         <option value="$PROJECT_DIR$/share/Application/Home/View/Ksq/index.html" />
       </list>
     </option>
@@ -112,6 +140,22 @@
     <option name="x" value="1280" />
     <option name="width" value="1920" />
     <option name="height" value="1080" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Blade files</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -138,6 +182,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -310,14 +356,41 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FullScreen" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -334,34 +407,35 @@
       <updated>1466069269061</updated>
       <workItem from="1466069271376" duration="117000" />
       <workItem from="1466128300086" duration="36000" />
-      <workItem from="1466143093989" duration="2019000" />
+      <workItem from="1466143093989" duration="2113000" />
+      <workItem from="1466146106074" duration="7935000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2172000" />
+    <option name="totallyTimeSpent" value="10201000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17039403" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -382,6 +456,37 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/KsqController.class.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share/Application/Home/Model/UserModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="63" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
+          <folding>
+            <marker date="1466154170000" expanded="true" signature="137:202" placeholder="select * fro... t_login" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Ksq/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#select#0;n#form#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#header#0;n#article#0;n#volist#0;n#div#1;n#div#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/KsqController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
@@ -393,7 +498,7 @@
         <state relative-caret-position="675">
           <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
           <folding>
-            <marker date="1466145232000" expanded="true" signature="137:202" placeholder="select * fro... t_login" />
+            <marker date="1466154170000" expanded="true" signature="137:202" placeholder="select * fro... t_login" />
           </folding>
         </state>
       </provider>
@@ -406,27 +511,7 @@
             <element signature="n#style#0;n#select#0;n#form#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#form#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#!!top" expanded="true" />
-            <marker date="1466145744000" expanded="false" signature="3891:3920" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="4000:4013" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="4169:4268" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="4401:4435" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="4567:4581" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="4983:5012" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="5091:5104" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="5231:5330" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="5463:5497" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="6023:6052" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="6131:6144" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="6269:6368" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="6501:6535" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="6667:6681" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="7083:7112" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="7191:7204" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="7331:7430" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="7563:7597" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="7729:7743" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="8145:8174" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="8253:8266" placeholder="..." />
+            <element signature="n#style#0;n#span#0;n#div#0;n#header#0;n#article#0;n#volist#0;n#div#1;n#div#2;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -444,7 +529,7 @@
         <state relative-caret-position="675">
           <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
           <folding>
-            <marker date="1466145232000" expanded="true" signature="137:202" placeholder="select * fro... t_login" />
+            <marker date="1466154170000" expanded="true" signature="137:202" placeholder="select * fro... t_login" />
           </folding>
         </state>
       </provider>
@@ -457,27 +542,7 @@
             <element signature="n#style#0;n#select#0;n#form#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#form#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#!!top" expanded="true" />
-            <marker date="1466145744000" expanded="false" signature="3891:3920" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="4000:4013" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="4169:4268" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="4401:4435" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="4567:4581" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="4983:5012" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="5091:5104" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="5231:5330" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="5463:5497" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="6023:6052" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="6131:6144" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="6269:6368" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="6501:6535" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="6667:6681" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="7083:7112" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="7191:7204" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="7331:7430" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="7563:7597" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="7729:7743" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="8145:8174" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="8253:8266" placeholder="..." />
+            <element signature="n#style#0;n#span#0;n#div#0;n#header#0;n#article#0;n#volist#0;n#div#1;n#div#2;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -486,6 +551,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Ksq/addTopic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="10" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/IndexController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -495,48 +583,36 @@
         <state relative-caret-position="480">
           <caret line="32" column="63" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
           <folding>
-            <marker date="1466145232000" expanded="true" signature="137:202" placeholder="select * fro... t_login" />
+            <marker date="1466154170000" expanded="true" signature="137:202" placeholder="select * fro... t_login" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/KsqController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+        <state relative-caret-position="675">
+          <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/UserController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="81" column="37" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Ksq/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="62" column="56" selection-start-line="62" selection-start-column="56" selection-end-line="62" selection-end-column="56" />
+        <state relative-caret-position="553">
+          <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
           <folding>
             <element signature="n#style#0;n#select#0;n#form#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#form#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#!!top" expanded="true" />
-            <marker date="1466145744000" expanded="false" signature="3891:3920" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="4000:4013" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="4169:4268" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="4401:4435" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="4567:4581" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="4983:5012" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="5091:5104" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="5231:5330" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="5463:5497" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="6023:6052" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="6131:6144" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="6269:6368" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="6501:6535" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="6667:6681" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="7083:7112" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="7191:7204" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="7331:7430" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="7563:7597" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="7729:7743" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="8145:8174" placeholder="..." />
-            <marker date="1466145744000" expanded="false" signature="8253:8266" placeholder="..." />
+            <element signature="n#style#0;n#span#0;n#div#0;n#header#0;n#article#0;n#volist#0;n#div#1;n#div#2;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

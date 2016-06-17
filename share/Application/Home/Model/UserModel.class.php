@@ -28,7 +28,7 @@ class UserModel extends Model{
     );
     //添加话题标题
     function addTopic($data=array()){
-        $datas=array("","");
+//        $datas=array("","");
         $condition['LoginId']=$data['id'];
         $userid=M('user')->where($condition)->getfield(UserId);
         $datas['UserId']=$userid;
@@ -46,6 +46,3 @@ class UserModel extends Model{
     }
 
 }
-
-
-

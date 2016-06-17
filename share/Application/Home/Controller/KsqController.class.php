@@ -5,10 +5,13 @@ class KsqController extends Controller
 {
     public function index()
     {
-        $ksq=M("Topic");
-        $data=$ksq->field('topicId,content,type,CreatTime')->select();
-        $data['type']=$this->getType($data['type']);
-        $this->assign("topic",$data);
+        $ksq=M('topic');
+        $data=$ksq->field('topicId,content,type,CreatTime')->order("topicId DESC")->select();
+        for($i=0;$i<count($data);$i++){
+            $data[$i]['type']=$this->getType($data[$i]['type']);
+        }
+//        $data['type']=$this->getType($data['type']);
+        $this->assign('topis',$data);
         $this->display();
     }
 
@@ -18,7 +21,6 @@ class KsqController extends Controller
         if ($sessid == "") {
             echo '<script>alert("请先登录");window.history.go(-1); </script>';
         } else {
-//            echo $sessid;
             if (empty($_POST)) {
                 echo '<script>alert("请填写吐槽内容哟~");window.history.go(-1); </script>';
             } else {
@@ -27,14 +29,20 @@ class KsqController extends Controller
                 $data['time'] = Date('Y-m-d H:i:s');
                 $data['type'] = $_POST['types'];
                 $rs = D('User')->addTopic($data);
+                $URL=U("ksq/index");
+//                echo $URL;
                 if ($rs == 0) {
-                    echo '<script>alert("发布成功");window.history.go(-1); </script>';
+                    echo '<script>alert("发布成功");</script>';
+//                    echo "asd";
+                    echo "<script>location.href='".$URL."';</script>";
+//                    echo '<script>location.href("{U(\'Ksq/index\')});</script>';
                 } else {
                     echo '<script>alert("发布失败,请稍后重试");window.history.go(-1); </script>';
                 }
-            }
+            }  
         }
     }
+    public
     function getType($typeid){
         switch ($typeid){
             case "0":$type="学校生活";break;
