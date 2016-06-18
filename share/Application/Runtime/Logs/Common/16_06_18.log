@@ -22,3 +22,21 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
 ERR: 无法加载模块:Share
 
+[ 2016-06-18T23:34:22+08:00 ] ::1 /share/index.php/share/index.php/Home.Public/SearchArt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+ERR: 无法加载模块:Share
+
+[ 2016-06-18T23:34:46+08:00 ] ::1 /share/index.php/share/index.php/Home.Public/SearchArt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+ERR: 无法加载模块:Share
+
+[ 2016-06-18T23:34:54+08:00 ] ::1 /share/index.php/share/index.php/Home.Public/SearchArt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+ERR: 无法加载模块:Share
+

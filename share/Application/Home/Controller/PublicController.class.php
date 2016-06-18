@@ -6,11 +6,11 @@ class PublicController extends Controller {
     	$this->display();
     }
     public function SearchArt(){
-        $str=$_POST['search'];
-        echo "<script>location.href='".$str."';</script>";
+        $str=$_POST['search1'];
+        echo "<script>alert('".$str."');</script>";
         $con['Title']=array('LIKE',"%$str%");
         $data=M('artical')->where($con)->select();
         dump($data);
-        $this->display();
+        $this->assign("showRes",$data);
     }
 }
