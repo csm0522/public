@@ -54,9 +54,9 @@
 
 					<li>
 						<empty name="vo.indeximgpath">
-							<a href="http://localhost:8080/share/index.php/Home/essay/essay/id/{$vo.ariticalid}" class="userAImg"><img src="__PUBLIC__/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="260px" height="auto" /></a>
+							<a href="__MODULE__/essay/essay/id/{$vo.ariticalid}" class="userAImg"><img src="__PUBLIC__/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="260px" height="auto" /></a>
 						<else />
-						<a href="http://localhost:8080/share/index.php/Home/essay/essay/id/{$vo.ariticalid}" class="userAImg">
+						<a href="__MODULE__/essay/essay/id/{$vo.ariticalid}" class="userAImg">
 							<img src="__PUBLIC__/{$vo.indeximgpath}" alt="" width="260px" height="auto" />
 						</a>
 						</empty>

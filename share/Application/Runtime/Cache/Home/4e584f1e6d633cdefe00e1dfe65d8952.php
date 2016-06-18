@@ -63,8 +63,8 @@
 						<div class="middle-part">
 
 							<div class="middle_s">
-								<input type="text" name="" placeholder="搜索你喜欢的作品" />
-								<input type="submit" value="搜索" />
+								<input type="text" name="" placeholder="搜索你喜欢的作品" id="artname" />
+								<input type="submit" value="搜索" id="searchingbtn"/>
 							</div>
 
 						</div>
@@ -115,7 +115,20 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			$('#searchingbtn').click(function (){
+				var j = $("#artname").val();
+				$.ajax({
+					url:"<?php echo U('Public/SearchArt');?>",
+					type:'post',
+					data:j,
+					success:function(){
+						alert("<?php echo U('Public/SearchArt');?>");
+					}
+				})
+			});
 
+		</script>
 <link href="/share/Public/Home/css/work.css" rel="stylesheet" media="all" />
 <script type="text/javascript">
 	window.onload=function(){

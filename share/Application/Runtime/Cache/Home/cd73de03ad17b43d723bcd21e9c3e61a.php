@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 
 	<head runat="server">
@@ -129,132 +129,8 @@
 			});
 
 		</script>
-<link href="/share/Public/Home/css/i_illustration.css" rel="stylesheet" media="all" />
 
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$(".nice_left").click(function() {
-					$(".nice_right").slideToggle(100);
-				});
-				$(".nice_right").click(function() {
-					$(".nice_left").slideToggle(500);
-				});
-				$(".nice_right").click(function() {
-					$(".nice_right").slideToggle(100);
-				});
-				$(".nice_left").click(function() {
-					$(".nice_left").slideToggle(500);
-				});
-			});
-		</script>
-
-		<script type="text/javascript">
-
-			function sss(i) {
-				var more1 = document.getElementById("more1");
-				more1.style.display = "none";
-				var more2 = document.getElementById("more2");
-				more2.style.display = "none";
-				var more = document.getElementById("more" + i);
-				$("#more" + i).slideDown().fadeIn("slow");
-			}
-
-			function like_show(i) {
-				var like = document.getElementById("like" + i);
-				like.style.display = "block";
-			}
-
-			function like_back(i) {
-				var like = document.getElementById("like" + i);
-				like.style.display = "none";
-			}
-
-			function like_article_show(i) {
-				var like_article = document.getElementById("like_article" + i);
-				like_article.style.display = "block";
-			}
-
-			function like_article_back(i) {
-				var like_article = document.getElementById("like_article" + i);
-				like_article.style.display = "none";
-			}
-
-			function worker_show(i) {
-				var worker_name = document.getElementById("worker_name" + i);
-				worker_name.style.display = "block";
-			}
-
-			function worker_back(i) {
-				var worker_name = document.getElementById("worker_name" + i);
-				worker_name.style.display = "none";
-			}
-		</script>
-
-		<style type="text/css">
-			div.nice_right {
-				display: none;
-			}
-		</style>
-		<div class="body">
-			<div id="container" class="container-min-width" style="display: block;">
-			</div>
-		</div>
-
-
-
-		<div class="title_img">
-
-			<img src="/share/Public/Home/image/index/<?php if( $type == 1) { echo 'UI.png'; } else if( $type == 2) { echo 'graphic_design.png'; } else if( $type == 3) { echo 'illustration.png';} ?>" alt="" />
-
-
-
-		</div>
-
-		<div class="category">
-			<div class="c_1">
-				<img src="/share/Public/Home/image/index/c1.png" height="20" width="80" class="c_img1" id="img1" style="display: block;right:0;" />
-
-			</div>
-			<div class="c_title">
-				<input type="button" class="c_btn" id="title1" value="作品" onclick="show(1)" />
-
-			</div>
-
-			<div id="layer1">
-
-			<ul class="allBoxUI">
-			<?php if(is_array($WorksMain)): $i = 0; $__LIST__ = $WorksMain;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li >
-					<?php if(empty($vo["indeximgpath"])): ?><a href="/share/index.php/Home/Works/works/id/<?php echo ($vo["ariticalid"]); ?>" class="userAImg">
-							<img src="/share/Public/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="380px" height="200px" />
-							</a>
-						<?php else: ?>
-						<a href="/share/index.php/Home/Works/works/id/<?php echo ($vo["ariticalid"]); ?>" class="a-block">
-							<img src="/share/Public/<?php echo ($vo["indeximgpath"]); ?>" width="380px" height="200px" class="u_post_img"/>
-						</a><?php endif; ?>
-						<div class="a-title">
-							<div class="a-info">
-								<h2  style="text-align: left;"><a href="/share/index.php/Home/Works/works/id/<?php echo ($vo["ariticalid"]); ?>"><?php echo (htmlspecialchars_decode($vo["title"])); ?></a></h2>
-								<div class="works-info" style="text-align: left;">
-									<span class="works-author">
-										<a href=""><?php echo ($vo["username"]); ?></a>&nbsp;/&nbsp;
-									</span>
-									<span class="works-time">
-										<?php echo (substr($vo["createtime"],0,10)); ?>
-									</span>
-									&nbsp;/&nbsp;
-									<span class="works-like"><img src="/share/Public/Home/image/index/love.png" alt="" /> 6 &nbsp;
-									</span>
-								</div>
-							</div>
-						</div>
-						</li><?php endforeach; endif; else: echo "" ;endif; ?>
-</ul>
-			</div>
-
-		</div>
-
-		<div class="clear"></div>
-					<div class="clear"></div>
+			<div class="clear"></div>
 			<div id="footer">
 				<div class="wrapper">
 					版权所有：大学生作品发布平台
