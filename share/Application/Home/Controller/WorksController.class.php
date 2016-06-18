@@ -12,7 +12,7 @@ class WorksController extends Controller {
 
 	public function showList(){
 		$type = $_GET['type'];
-		$Works = M('artical') -> join('t_user on t_artical.userid = t_user.userid') -> where("type = $type") ->select();
+		$Works = M('artical') -> join('t_user on t_artical.userid = t_user.userid') -> where("type = $type") ->order("AriticalId DESC")->select();
 		$this->assign("WorksMain",$Works);
 		$this->assign("type",$type);
     	$this->display('showUi');

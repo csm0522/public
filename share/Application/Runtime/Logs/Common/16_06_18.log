@@ -1,0 +1,12 @@
+[ 2016-06-18T10:41:11+08:00 ] ::1 /share/index.php/HomeWorks/works/id/65
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+ERR: 无法加载模块:HomeWorks
+
+[ 2016-06-18T10:41:31+08:00 ] ::1 /share/index.php/HomeWorks/works/id/65
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+ERR: 无法加载模块:HomeWorks
+

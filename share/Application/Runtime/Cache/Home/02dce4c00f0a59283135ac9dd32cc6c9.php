@@ -211,16 +211,16 @@
 
 			<ul class="allBoxUI">
 			<?php if(is_array($WorksMain)): $i = 0; $__LIST__ = $WorksMain;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li >
-					<?php if(empty($vo["indeximgpath"])): ?><a href="http://localhost:8080/share/index.php/Home/Works/works/id/<?php echo ($vo["ariticalid"]); ?>" class="userAImg">
+					<?php if(empty($vo["indeximgpath"])): ?><a href="/share/index.php/Home/Works/works/id/<?php echo ($vo["ariticalid"]); ?>" class="userAImg">
 							<img src="/share/Public/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="380px" height="200px" />
 							</a>
 						<?php else: ?>
-						<a href="http://localhost:8080/share/index.php/Home/Works/works/id/<?php echo ($vo["ariticalid"]); ?>" class="a-block">
+						<a href="/share/index.php/Home/Works/works/id/<?php echo ($vo["ariticalid"]); ?>" class="a-block">
 							<img src="/share/Public/<?php echo ($vo["indeximgpath"]); ?>" width="380px" height="200px" class="u_post_img"/>
 						</a><?php endif; ?>
 						<div class="a-title">
 							<div class="a-info">
-								<h2  style="text-align: left;"><a href="http://localhost:8080/share/index.php/Home/Works/works/id/<?php echo ($vo["ariticalid"]); ?>"><?php echo (htmlspecialchars_decode($vo["title"])); ?></a></h2>
+								<h2  style="text-align: left;"><a href="/share/index.php/Home/Works/works/id/<?php echo ($vo["ariticalid"]); ?>"><?php echo (htmlspecialchars_decode($vo["title"])); ?></a></h2>
 								<div class="works-info" style="text-align: left;">
 									<span class="works-author">
 										<a href=""><?php echo ($vo["username"]); ?></a>&nbsp;/&nbsp;
