@@ -899,7 +899,7 @@ input{
 .biaoti{margin-left:80px;padding:10px;font-family: "方正中等线简体";font-size: 25px;color:#737574;}
 #banner{width:100%;
     min-width:960px;
-    height:600px;background: transparent url('../image/about/lize.jpg') no-repeat;background-size: 100%;
+    height:300px;background: transparent url('../image/about/lize.jpg') no-repeat;background-size: 100%;
   text-align: center;}
 #banner p{width:960px;
     margin-left:auto;

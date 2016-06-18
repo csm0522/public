@@ -3,7 +3,7 @@
 
 	<head runat="server">
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-		<title>index</title>
+		<title>Publish大学生作品分享平台</title>
 		<link href="/share/Public/Home/css/websjy.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" src="/share/Public/Home/javascript/websjy.js"></script>
 		<script src="/share/Public/Home/javascript/jquery-1.11.1.min.js"></script>
