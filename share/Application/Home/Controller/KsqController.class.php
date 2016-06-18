@@ -39,7 +39,7 @@ class KsqController extends Controller
                     echo "<script>location.href='".$URL."';</script>";
                 } else {
                     $data['word'] = $_POST['sword'];
-                    $data['id'] = $sessid;
+                    $data['id'] = 
                     $data['time'] = Date('Y-m-d H:i:s');
                     $data['type'] = $_POST['types'];
                     $rs = D('User')->addTopic($data);

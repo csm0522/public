@@ -1,79 +1,74 @@
 <?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE html>
 <html>
 
-	<head runat="server">
-		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-		<title>Publish大学生作品分享平台</title>
-		<link href="/share/Public/Home/css/websjy.css" rel="stylesheet" type="text/css" />
-		<script type="text/javascript" src="/share/Public/Home/javascript/websjy.js"></script>
-		<script src="/share/Public/Home/javascript/jquery-1.11.1.min.js"></script>
-		<script src="/share/Public/Home/javascript/js.js"></script>
-		<link href="/share/Public/Home/css/index.css" rel="stylesheet" media="all" />
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Publish大学生作品分享平台</title>
+    <link href="/share/Public/Home/css/websjy.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="/share/Public/Home/javascript/websjy.js"></script>
+    <script src="/share/Public/Home/javascript/jquery-1.11.1.min.js"></script>
+    <script src="/share/Public/Home/javascript/js.js"></script>
+    <link href="/share/Public/Home/css/index.css" rel="stylesheet" media="all"/>
 
 
-		<style type="text/css">
-			div.nice_right {
-				display: none;
-			}
+    <style type="text/css">
+        div.nice_right {
+            display: none;
+        }
 
-			input {
-				border: none;
-				outline: none;
-			}
-		</style>
-		<script>
-		var i = 1;
-			function showM(){
-				if(i==1)
-				{
-					$("#mean2").show();
-					i = 0;
-				}
-				else if(i==0)
-				{
-					$("#mean2").hide();
-					i = 1;
-				}
-			}
-		var j = 1;
-			function showLogin(){
-				if(j==1)
-				{
-					$("#LoginMean").show();
-					j = 0;
-				}
-				else if(j==0)
-				{
-					$("#LoginMean").hide();
-					j = 1;
-				}
-			}
-		</script>
-	</head>
+        input {
+            border: none;
+            outline: none;
+        }
+    </style>
+    <script>
+        var i = 1;
+        function showM() {
+            if (i == 1) {
+                $("#mean2").show();
+                i = 0;
+            }
+            else if (i == 0) {
+                $("#mean2").hide();
+                i = 1;
+            }
+        }
+        var j = 1;
+        function showLogin() {
+            if (j == 1) {
+                $("#LoginMean").show();
+                j = 0;
+            }
+            else if (j == 0) {
+                $("#LoginMean").hide();
+                j = 1;
+            }
+        }
+    </script>
+</head>
 
-	<body>
-		<div id="container" class="container-min-width">
-			<div id="header">
-				<div class="menu-bar">
+<body>
+<div id="container" class="container-min-width">
+    <div id="header">
+        <div class="menu-bar">
 
-					<div class="left-part">
-						<a class="logo" href="<?php echo U('Index/index');?>"><img src="/share/Public/Home/image/index/logo.png" alt="" /></a>
-					</div>
-					<form id="form1" runat="server" method="get" action="" style="height:100%;float: left;">
-						<div class="middle-part">
+            <div class="left-part">
+                <a class="logo" href="<?php echo U('Index/index');?>"><img src="/share/Public/Home/image/index/logo.png" alt=""/></a>
+            </div>
+            <form id="form1" method="get" action="<?php echo U('Public/SearchArt');?>" style="height:100%;float: left;">
+                <div class="middle-part">
 
-							<div class="middle_s">
-								<input type="text" name="" placeholder="搜索你喜欢的作品" id="artname" />
-								<input type="submit" value="搜索" id="searchingbtn"/>
-							</div>
+                        <div class="middle_s">
+                            <input type="text" name="seaid" placeholder="搜索你喜欢的作品" id="artname"/>
+                            <input type="submit" value="搜索" id="searchingbtn"/>
+                        </div>
 
-						</div>
-					</form>
-					<div class="right-part">
-						<div class="title">
+                </div>
+            </form>
+            <div class="right-part">
+                <div class="title">
 
-
-							<span  name="outA" href="#" id="btn_1">
+							<span name="outA" href="#" id="btn_1">
 								<div type="button" id="btn11" onclick="showM();">作品</div>
 								<ul id="mean2">
 									<a href="/share/index.php/Home/Works/showList/type/1"><li>UI/UX</li></a>
@@ -86,49 +81,46 @@
 									<a href=""><li>其他</li></a>
 								</ul>
 							</span>
-							<a name="outA"  href="<?php echo U('Essay/index');?>" id="btn_1"><div type="button" class="btn" id="btn11" value="文章" >文章</div></a>
-							<a name="outA"  href="<?php echo U('Ksq/index');?>"><div type="button" class="btn" id="btn3" value="口水区" >口水区</div></a>
-							<a name="outA"  href="<?php echo U('Zhaop/index');?>"><div type="button" class="btn" id="btn4" value="招聘" >招聘</div></a>
-							<a name="outA"  href="<?php echo U('About/index');?>"><div type="button" class="btn" id="btn5"  value="关于我们" >关于我们</div></a>
+                    <a name="outA" href="<?php echo U('Essay/index');?>" id="btn_1">
+                        <div type="button" class="btn" id="btn11" value="文章">文章</div>
+                    </a>
+                    <a name="outA" href="<?php echo U('Ksq/index');?>">
+                        <div type="button" class="btn" id="btn3" value="口水区">口水区</div>
+                    </a>
+                    <a name="outA" href="<?php echo U('Zhaop/index');?>">
+                        <div type="button" class="btn" id="btn4" value="招聘">招聘</div>
+                    </a>
+                    <a name="outA" href="<?php echo U('About/index');?>">
+                        <div type="button" class="btn" id="btn5" value="关于我们">关于我们</div>
+                    </a>
 
-						</div>
-						<script>
+                </div>
+                <script>
 
-						</script>
-						<div class="login">
-							<div id="loginAndLO" onclick="showLogin()" style="float: left;"><img src="/share/Public/Home/image/index/user.png" width="18px" style="margin-left:18px;" />
-								<ul id="LoginMean" style="display: none;">
-									<?php if(empty(session('userInfo'))){?>
-									<li><a href="/share/index.php/Home/User/loginPage">登录</a></li>
-									<?php }else{?>
-									<li><a href="/share/index.php/Home/User/personal">个人中心</a></li>
-									<li><a href="/share/index.php/Home/User/logout">退出登录</a></li>
-									<?php }?>
-								</ul>
-							</div>
-							<a href="<?php echo U('User/pshWorksPag');?>"><img src="/share/Public/Home/image/index/add.png" width="18px" style="margin-left:18px;" /></a>
-							<!--<img src="/share/Public/Home/image/index/more.png" style="cursor:pointer;margin-left:10px;width:12px;" onclick="openShutManager2(this,'box2',false)" />-->
+                </script>
+                <div class="login">
+                    <div id="loginAndLO" onclick="showLogin()" style="float: left;"><img
+                            src="/share/Public/Home/image/index/user.png" width="18px" style="margin-left:18px;"/>
+                        <ul id="LoginMean" style="display: none;">
+                            <?php if(empty(session('userInfo'))){?>
+                            <li><a href="/share/index.php/Home/User/loginPage">登录</a></li>
+                            <?php }else{?>
+                            <li><a href="/share/index.php/Home/User/personal">个人中心</a></li>
+                            <li><a href="/share/index.php/Home/User/logout">退出登录</a></li>
+                            <?php }?>
+                        </ul>
+                    </div>
+                    <a href="<?php echo U('User/pshWorksPag');?>"><img src="/share/Public/Home/image/index/add.png" width="18px"
+                                                            style="margin-left:18px;"/></a>
+                    <!--<img src="/share/Public/Home/image/index/more.png" style="cursor:pointer;margin-left:10px;width:12px;" onclick="openShutManager2(this,'box2',false)" />-->
 
-						</div>
-					</div>
+                </div>
+            </div>
 
-				</div>
-			</div>
-		</div>
-		<script>
-			$('#searchingbtn').click(function (){
-				var j = $("#artname").val();
-				$.ajax({
-					url:"<?php echo U('Public/SearchArt');?>",
-					type:'post',
-					data:j,
-					success:function(){
-						alert("<?php echo U('Public/SearchArt');?>");
-					}
-				})
-			});
+        </div>
+    </div>
+</div>
 
-		</script>
 <link href="/share/Public/Home/css/personal.css" rel="stylesheet" media="all" />
 <script type="text/javascript" language="javascript">
 
@@ -320,16 +312,16 @@
 						<ul style="width: 100%;margin:0 auto;text-align: left;">
 							<?php if(is_array($userWorks)): $i = 0; $__LIST__ = $userWorks;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li style="width: 380px;height:290px;display: inline-block;margin:0 20px 20px 0;border:1px solid #eee;text-align: left;">
 
-						<?php if(empty($vo["indeximgpath"])): ?><a href="http://localhost:8080/share/index.php/Home/Works/works/id/<?php echo ($vo["ariticalid"]); ?>" class="userAImg">
+						<?php if(empty($vo["indeximgpath"])): ?><a href="/share/index.php/Home/Works/works/id/<?php echo ($vo["ariticalid"]); ?>" class="userAImg">
 							<img src="/share/Public/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="380px" height="200px" />
 							</a>
 						<?php else: ?>
-						<a href="http://localhost:8080/share/index.php/Home/Works/works/id/<?php echo ($vo["ariticalid"]); ?>" class="a-block">
+						<a href="/share/index.php/Home/Works/works/id/<?php echo ($vo["ariticalid"]); ?>" class="a-block">
 							<img src="/share/Public/<?php echo ($vo["indeximgpath"]); ?>" width="380px" height="200px" class="u_post_img"/>
 						</a><?php endif; ?>
 						<div class="a-title">
 							<div class="a-info">
-								<h2><a href="http://localhost:8080/share/index.php/Home/Works/works/id/<?php echo ($vo["ariticalid"]); ?>"><?php echo (htmlspecialchars_decode($vo["title"])); ?></a></h2>
+								<h2><a href="/share/index.php/Home/Works/works/id/<?php echo ($vo["ariticalid"]); ?>"><?php echo (htmlspecialchars_decode($vo["title"])); ?></a></h2>
 								<div class="works-info">
 									<span class="works-author">
 										<a href=""><?php echo ($vo["username"]); ?></a>&nbsp;/&nbsp;

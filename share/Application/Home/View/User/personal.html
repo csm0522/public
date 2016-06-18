@@ -202,17 +202,17 @@
 						<li style="width: 380px;height:290px;display: inline-block;margin:0 20px 20px 0;border:1px solid #eee;text-align: left;">
 
 						<empty name="vo.indeximgpath">
-						<a href="http://localhost:8080/share/index.php/Home/Works/works/id/{$vo.ariticalid}" class="userAImg">
+						<a href="__MODULE__/Works/works/id/{$vo.ariticalid}" class="userAImg">
 							<img src="__PUBLIC__/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="380px" height="200px" />
 							</a>
 						<else />
-						<a href="http://localhost:8080/share/index.php/Home/Works/works/id/{$vo.ariticalid}" class="a-block">
+						<a href="__MODULE__/Works/works/id/{$vo.ariticalid}" class="a-block">
 							<img src="__PUBLIC__/{$vo.indeximgpath}" width="380px" height="200px" class="u_post_img"/>
 						</a>
 						</empty>
 						<div class="a-title">
 							<div class="a-info">
-								<h2><a href="http://localhost:8080/share/index.php/Home/Works/works/id/{$vo.ariticalid}">{$vo.title|htmlspecialchars_decode}</a></h2>
+								<h2><a href="__MODULE__/Works/works/id/{$vo.ariticalid}">{$vo.title|htmlspecialchars_decode}</a></h2>
 								<div class="works-info">
 									<span class="works-author">
 										<a href="">{$vo.username}</a>&nbsp;/&nbsp;

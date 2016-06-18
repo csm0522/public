@@ -170,9 +170,9 @@
                         <div class="author_content">
                             <?php echo (htmlspecialchars_decode($vo["content"])); ?>
                         </div>
-
+                        <!--<?php dump($nums) ?>-->
                         <div class="follower">
-                            <input type="button" class="follower_btn" onclick="uper()"/><span>55</span>
+                            <input type="button" class="follower_btn" onclick="uper()"/><span id="nums" name="nums"><?php echo ($nums["num"]); ?></span>
                         </div>
 
                     </div><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -202,20 +202,19 @@
         <div class="clear"></div>
         <script>
             function uper() {
-                alert("up!");
+                alert("谢谢关注!");
                 var url = window.location.href;
                 var st = url.split("/");
-
                 var i =st.length;
                 var j = st[i-1];
-                alert(j);
                 $.ajax({
                     type: "get", //请求的方式
-                    dataType: "json", //数据的格式 建议大家使用json格式
-                    url: "<?php echo U('Ksq/addTopic');?>", //请求的url地址
+//                    dataType: "json", //数据的格式 建议大家使用json格式
+                    url: "/share/index.php/Home/Essay/upessay/id/"+j, //请求的url地址
                     success: function (data) { //请求成功时，处理返回来的数据
-                        var themeName = data.num;
-                        $("#curtheme").html(themeName);
+                        var numbers = data.num;
+                        $("#nums").html(numbers);
+//                        alert(url)
                     }
                 })
             }

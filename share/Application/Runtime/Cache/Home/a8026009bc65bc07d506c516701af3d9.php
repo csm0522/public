@@ -181,7 +181,7 @@
 
 						<div class="userAInfo" style="padding:0px 10px 10px 10px;box-sizing: border-box;">
 							<div class="userATitle" style="margin-top: 8px;">
-									<a href="http://localhost:8080/share/index.php/Home/essay/essay/id/<?php echo ($vo["ariticalid"]); ?>">
+									<a href="/share/index.php/Home/essay/essay/id/<?php echo ($vo["ariticalid"]); ?>">
 										<?php echo ($vo["title"]); ?>
 
 									</a>
