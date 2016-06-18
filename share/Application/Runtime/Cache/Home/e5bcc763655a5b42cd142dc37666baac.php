@@ -241,12 +241,13 @@
 			}
 		</script>
 				<div class="dynamic">
-					<div class="dynamic_1">
-						<div class="d_head" style="width: 110px;height:110px;margin:0 auto;">
-							<img src="/share/Public<?php echo ($userTX); ?>" width="110px" height="110px" style="border-radius: 90px;">
-						</div>
-
-					</div>
+						<?php if(empty($userTX)): ?><div class="d_head" style="width: 110px;height:110px;margin:0 auto;">
+								<img src="/share/Public/upload/userTX/default/person.png" width="110px" height="110px" style="border-radius: 90px;margin-top:150px;;">
+							</div>
+						<?php else: ?>
+							<div class="d_head" style="width: 110px;height:110px;margin:0 auto;">
+								<img src="/share/Public<?php echo ($userTX); ?>" width="110px" height="110px" style="border-radius: 90px;margin-top:150px;">
+							</div><?php endif; ?>
 
 				</div>
 				<div class="category">
@@ -302,10 +303,9 @@
 
 					</div>
 
-					<div id="layer1">
-
-
-							<?php if(is_array($userWorks)): $i = 0; $__LIST__ = $userWorks;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li style="width: 380px;height:290px;display: inline-block;margin:0 20px 20px 0;">
+					<div id="layer1" style="padding:2% 5%;box-sizing: border-box;width: 100%;">
+						<ul style="width: 100%;margin:0 auto;text-align: left;">
+							<?php if(is_array($userWorks)): $i = 0; $__LIST__ = $userWorks;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li style="width: 380px;height:290px;display: inline-block;margin:0 20px 20px 0;border:1px solid #eee;text-align: left;">
 
 						<?php if(empty($vo["indeximgpath"])): ?><a href="http://localhost:8080/share/index.php/Home/Works/works/id/<?php echo ($vo["ariticalid"]); ?>" class="userAImg">
 							<img src="/share/Public/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="380px" height="200px" />
@@ -331,11 +331,8 @@
 							</div>
 						</div>
 					</li><?php endforeach; endif; else: echo "" ;endif; ?>
-<div class="work_add"  style="text-decoration: none;display: inline-block;"><a href="<?php echo U('User/pshWorksPag');?>">
-								<div class="add"></div>
-								<div class="add_text">上传作品</div></a>
-							</div>
 
+</ul>
 					</div>
 
 

@@ -3,7 +3,7 @@
 
 	<head runat="server">
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-		<title>index</title>
+		<title>Publish大学生作品分享平台</title>
 		<link href="/share/Public/Home/css/websjy.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" src="/share/Public/Home/javascript/websjy.js"></script>
 		<script src="/share/Public/Home/javascript/jquery-1.11.1.min.js"></script>
@@ -123,7 +123,7 @@
 				<a href="<?php echo U('User/register');?>"><span id="Rbtn" class="Rbtn">注册</span></a>
 			</div>
 			<div class="LoginMain">
-				<form action="<?php echo U('User/login',array());?>" onsubmit="return submit_login()" method="post">
+				<form action="<?php echo U('User/login');?>" onsubmit="return submit_login()" method="post">
 					<input type="text" value="admin123" id="login_un" name="login_un" placeholder="用户名" required="required" onblur="check_login(this)" />
 					<input type="password" id="login_pwd" value="admin123"  name="login_pwd" placeholder="密码" required="required"  onblur="check_login_pwd(this)" />
 					<div>

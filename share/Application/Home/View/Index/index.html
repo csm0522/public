@@ -82,9 +82,15 @@
 	</div>
 
 	<a href="{:U('User/personal')}">
-		<div id="worker">
+		<empty name="userTX">
+			<div id="worker">
+					<img src="__PUBLIC__/upload/userTX/default/person.png" alt="" style="width: 76px;height:76px;border-radius: 90px;"/>
+				</div>
+		<else />
+			<div id="worker">
 			<img src="__PUBLIC__{$userTX}" alt="" style="width: 76px;height:76px;border-radius: 90px;"/>
-		</div>
+				</div>
+		</empty>
 	</a>
 
 	<div class="dynamic_2">

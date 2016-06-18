@@ -41,11 +41,14 @@ class UserController extends Controller {
 				$arr=array('user'=>$user[0]['loginname'], 'UId'=>$user[0]['loginid'], );
 				session(array('name'=>'userInfo'));
 				session('userInfo',$arr);
-				$this -> display('Index/index');
-			} else {
+				redirect(U('Index/index'));
+			}
+			else {
 				echo "<script>alert('error');</script>";
 			}
-			$this -> display('Index/index');
+		}
+		else{
+			$this -> display('User/login');
 		}
 	}
 	/*

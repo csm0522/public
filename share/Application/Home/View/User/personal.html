@@ -124,12 +124,15 @@
 			}
 		</script>
 				<div class="dynamic">
-					<div class="dynamic_1">
-						<div class="d_head" style="width: 110px;height:110px;margin:0 auto;">
-							<img src="__PUBLIC__{$userTX}" width="110px" height="110px" style="border-radius: 90px;">
-						</div>
-
-					</div>
+						<empty name="userTX">
+							<div class="d_head" style="width: 110px;height:110px;margin:0 auto;">
+								<img src="__PUBLIC__/upload/userTX/default/person.png" width="110px" height="110px" style="border-radius: 90px;margin-top:150px;;">
+							</div>
+						<else />
+							<div class="d_head" style="width: 110px;height:110px;margin:0 auto;">
+								<img src="__PUBLIC__{$userTX}" width="110px" height="110px" style="border-radius: 90px;margin-top:150px;">
+							</div>
+						</empty>
 
 				</div>
 				<div class="category">
@@ -192,12 +195,11 @@
 
 					</div>
 
-					<div id="layer1">
-
-
+					<div id="layer1" style="padding:2% 5%;box-sizing: border-box;width: 100%;">
+						<ul style="width: 100%;margin:0 auto;text-align: left;">
 							<volist name="userWorks" id="vo">
 
-						<li style="width: 380px;height:290px;display: inline-block;margin:0 20px 20px 0;">
+						<li style="width: 380px;height:290px;display: inline-block;margin:0 20px 20px 0;border:1px solid #eee;text-align: left;">
 
 						<empty name="vo.indeximgpath">
 						<a href="http://localhost:8080/share/index.php/Home/Works/works/id/{$vo.ariticalid}" class="userAImg">
@@ -227,11 +229,8 @@
 					</li>
 
 					</volist>
-<div class="work_add"  style="text-decoration: none;display: inline-block;"><a href="{:U('User/pshWorksPag')}">
-								<div class="add"></div>
-								<div class="add_text">上传作品</div></a>
-							</div>
 
+</ul>
 					</div>
 
 

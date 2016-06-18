@@ -199,9 +199,13 @@
 	</div>
 
 	<a href="<?php echo U('User/personal');?>">
-		<div id="worker">
+		<?php if(empty($userTX)): ?><div id="worker">
+					<img src="/share/Public/upload/userTX/default/person.png" alt="" style="width: 76px;height:76px;border-radius: 90px;"/>
+				</div>
+		<?php else: ?>
+			<div id="worker">
 			<img src="/share/Public<?php echo ($userTX); ?>" alt="" style="width: 76px;height:76px;border-radius: 90px;"/>
-		</div>
+				</div><?php endif; ?>
 	</a>
 
 	<div class="dynamic_2">
