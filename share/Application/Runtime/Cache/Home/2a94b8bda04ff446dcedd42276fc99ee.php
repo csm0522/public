@@ -59,7 +59,7 @@
                 <div class="middle-part">
 
                         <div class="middle_s">
-                            <input type="text" name="search1" placeholder="搜索你喜欢的作品" id="artname"/>
+                            <input type="text" name="seaid" placeholder="搜索你喜欢的作品" id="artname"/>
                             <input type="submit" value="搜索" id="searchingbtn"/>
                         </div>
 

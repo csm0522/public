@@ -55,15 +55,13 @@
             <div class="left-part">
                 <a class="logo" href="<?php echo U('Index/index');?>"><img src="/share/Public/Home/image/index/logo.png" alt=""/></a>
             </div>
-            <form id="form1" runat="server" method="get" action="" style="height:100%;float: left;">
+            <form id="form1" method="get" action="<?php echo U('Public/SearchArt');?>" style="height:100%;float: left;">
                 <div class="middle-part">
 
-                    <form action="<?php echo U('/share/index.php/Home/Public/SearchArt');?>" method="post">
                         <div class="middle_s">
-                            <input type="text" name="" placeholder="搜索你喜欢的作品" id="artname"/>
+                            <input type="text" name="seaid" placeholder="搜索你喜欢的作品" id="artname"/>
                             <input type="submit" value="搜索" id="searchingbtn"/>
                         </div>
-                    </form>
 
                 </div>
             </form>

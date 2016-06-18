@@ -59,7 +59,7 @@
                 <div class="middle-part">
 
                         <div class="middle_s">
-                            <input type="text" name="search1" placeholder="搜索你喜欢的作品" id="artname"/>
+                            <input type="text" name="seaid" placeholder="搜索你喜欢的作品" id="artname"/>
                             <input type="submit" value="搜索" id="searchingbtn"/>
                         </div>
 
@@ -121,84 +121,106 @@
     </div>
 </div>
 
-<link href="/share/Public/Home/css/work.css" rel="stylesheet" media="all" />
+<link href="/share/Public/Home/css/work.css" rel="stylesheet" media="all"/>
 <script type="text/javascript">
-	window.onload=function(){
-		document.getElementById('subCom').click=function() {
-			var now = new Date();
-			var layer = document.getElementById("layer");
-			var divlayer = document.createElement("div");
-			var con = document.getElementById("content").value;
-			con = con.replace(/\n/g, "<br />");
-			divlayer.innerHTML = "<img src='/share/Public/Home/image/index/person_2.png' width='40px' class='header'/>" + con + "<div class='stime'>" + now.toLocaleString() + "</div><div class='clear'></div>";
-			divlayer.className = "content";
-			layer.appendChild(divlayer);
-			document.getElementById("content").value = "";
-		}
-	}
+    window.onload = function () {
+        document.getElementById('subCom').click = function () {
+            var now = new Date();
+            var layer = document.getElementById("layer");
+            var divlayer = document.createElement("div");
+            var con = document.getElementById("content").value;
+            con = con.replace(/\n/g, "<br />");
+            divlayer.innerHTML = "<img src='/share/Public/Home/image/index/person_2.png' width='40px' class='header'/>" + con + "<div class='stime'>" + now.toLocaleString() + "</div><div class='clear'></div>";
+            divlayer.className = "content";
+            layer.appendChild(divlayer);
+            document.getElementById("content").value = "";
+        }
+    }
 
-	</script>
-		<div id="container" class="container-min-width" style="display: block;">
-			<div class="dynamic">
-				<div class="background_top"></div>
-				<div class="background_middle">
-
-
-					<?php if(is_array($ArticalMain)): $i = 0; $__LIST__ = $ArticalMain;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="content2">
-
-						<div class="author">
-							<a href="">
-								<img src="/share/Public/Home/image/index/person_1.png" width="100%" />
-							</a>
-						</div>
-
-						<div class="author_name">
-							<h><?php echo ($vo["username"]); ?></h>
-						</div>
-
-						<div class="work_bottom">
-						<div class="bottom_1"></div>
-						<div class="bottom_2"></div>
-						</div>
-
-						<div class="author_title">
-							<h style="color: black!important;"><?php echo ($vo["title"]); ?></h>
-						</div>
-
-						<div class="author_content">
-							<?php echo (htmlspecialchars_decode($vo["content"])); ?>
-						</div>
-
-						<div class="follower">
-								<input type="button" class="follower_btn" onclick="alert('赞');" /><span>55</span>
-						</div>
-
-						</div><?php endforeach; endif; else: echo "" ;endif; ?>
-					<div class="recommend-line">
-						<a>评论</a>
-					</div>
-
-					<div class="view">
-
-						<div class="view_me">
-							<a href="">
-								<img src="/share/Public/Home/image/index/person_1.png" width="80%" />
-							</a>
-						</div>
-
-						<textarea id="content" rows="1" cols="100" placeholder="添加评论" name="caption" style="runat：server；"></textarea>
-
-						<div id="view_submit" >
-							<input type="button" value="提交" class="submit" id="subCom"/>
-						</div>
-					</div>
-
-				</div>
+</script>
+<div id="container" class="container-min-width" style="display: block;">
+    <div class="dynamic">
+        <div class="background_top"></div>
+        <div class="background_middle">
 
 
+            <?php if(is_array($ArticalMain)): $i = 0; $__LIST__ = $ArticalMain;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div id="atrid" style="display:none"><?php echo ($vo["ariticalid"]); ?> </div>
 
-							<div class="clear"></div>
-					<div class="clear"></div>
+                    <div class="content2">
+
+                        <div class="author">
+                            <a href="">
+                                <img src="/share/Public/Home/image/index/person_1.png" width="100%"/>
+                            </a>
+                        </div>
+
+                        <div class="author_name">
+                            <h><?php echo ($vo["username"]); ?></h>
+                        </div>
+
+                        <div class="work_bottom">
+                            <div class="bottom_1"></div>
+                            <div class="bottom_2"></div>
+                        </div>
+
+                        <div class="author_title">
+                            <h style="color: black!important;"><?php echo ($vo["title"]); ?></h>
+                        </div>
+
+                        <div class="author_content">
+                            <?php echo (htmlspecialchars_decode($vo["content"])); ?>
+                        </div>
+
+                        <div class="follower">
+                            <input type="button" class="follower_btn" onclick="uper()"/><span>55</span>
+                        </div>
+
+                    </div><?php endforeach; endif; else: echo "" ;endif; ?>
+            <div class="recommend-line">
+                <a>评论</a>
+            </div>
+
+            <div class="view">
+
+                <div class="view_me">
+                    <a href="">
+                        <img src="/share/Public/Home/image/index/person_1.png" width="80%"/>
+                    </a>
+                </div>
+
+                <textarea id="content" rows="1" cols="100" placeholder="添加评论" name="caption"
+                          style="runat：server；"></textarea>
+
+                <div id="view_submit">
+                    <input type="button" value="提交" class="submit" id="subCom"/>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="clear"></div>
+        <script>
+            function uper() {
+                alert("up!");
+                var url = window.location.href;
+                var st = url.split("/");
+
+                var i =st.length;
+                var j = st[i-1];
+                alert(j);
+                $.ajax({
+                    type: "get", //请求的方式
+                    dataType: "json", //数据的格式 建议大家使用json格式
+                    url: "<?php echo U('Ksq/addTopic');?>", //请求的url地址
+                    success: function (data) { //请求成功时，处理返回来的数据
+                        var themeName = data.num;
+                        $("#curtheme").html(themeName);
+                    }
+                })
+            }
+        </script>
+        			<div class="clear"></div>
 			<div id="footer">
 				<div class="wrapper">
 					版权所有：大学生作品发布平台

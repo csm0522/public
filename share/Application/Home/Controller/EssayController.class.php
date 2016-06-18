@@ -13,9 +13,14 @@ class EssayController extends Controller {
 		$this->assign("ArticalMain",$Artical);
 //		var_dump($Works);exit;
     	$this->display();
+//		dump($$Artical)
 	}
 	public  function changeessay(){
 		
+	}
+	public function UpEssay(){
+		$id=$_GET['id'];
+		$userid=session(Use)
 	}
 
 }

@@ -9,7 +9,7 @@ class PublicController extends Controller {
         $str=$_GET['seaid'];
 //        echo "<script>alert('".$str."');</script>";
         $con['Title']=array('LIKE',"%$str%");
-        $data=M('artical')->where($con)->field('ariticalid,userid,title,indeximgpath,upLoadType,intro,CreateTime')->select();
+        $data=M('artical')->where($con)->field('ariticalid,userid,title,indeximgpath,upLoadType,intro,CreateTime')->order("ariticalid DESC")->select();
         for ($i = 0; $i < count($data); $i++) {
             $con2['UserId']=$data[$i]['userid'];
             $data[$i]['username']=M('user')->where($con2)->getField(UserName);
@@ -23,7 +23,14 @@ class PublicController extends Controller {
             }
         }
 //        dump($data);
+//        dump($data);
         $this->assign("showRes",$data);
         $this->display();
+    }
+    public function showArt(){
+        $str=$_GET['seaid'];
+        $type=$_GET['type'];
+        echo $str;
+        echo $type;
     }
 }

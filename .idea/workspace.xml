@@ -3,16 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="5d817e73-2b80-4dd0-9f98-13692c558795" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Home/Controller/EssayController.class.php" afterPath="$PROJECT_DIR$/share/Application/Home/Controller/EssayController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Home/Controller/PublicController.class.php" afterPath="$PROJECT_DIR$/share/Application/Home/Controller/PublicController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Home/View/Essay/essay.html" afterPath="$PROJECT_DIR$/share/Application/Home/View/Essay/essay.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Home/View/Public/SearchArt.html" afterPath="$PROJECT_DIR$/share/Application/Home/View/Public/SearchArt.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Home/View/Public/header.html" afterPath="$PROJECT_DIR$/share/Application/Home/View/Public/header.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/02dce4c00f0a59283135ac9dd32cc6c9.php" afterPath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/02dce4c00f0a59283135ac9dd32cc6c9.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php" afterPath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/4e584f1e6d633cdefe00e1dfe65d8952.php" afterPath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/4e584f1e6d633cdefe00e1dfe65d8952.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/5c1031162a06e1cb2e4588b4f7e077da.php" afterPath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/5c1031162a06e1cb2e4588b4f7e077da.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/a8026009bc65bc07d506c516701af3d9.php" afterPath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/a8026009bc65bc07d506c516701af3d9.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/ad75979cc36b25e0af98a29206883cab.php" afterPath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/ad75979cc36b25e0af98a29206883cab.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/cd73de03ad17b43d723bcd21e9c3e61a.php" afterPath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/cd73de03ad17b43d723bcd21e9c3e61a.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Runtime/Logs/Home/16_06_18.log" afterPath="$PROJECT_DIR$/share/Application/Runtime/Logs/Home/16_06_18.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Runtime/Logs/Home/16_06_19.log" afterPath="$PROJECT_DIR$/share/Application/Runtime/Logs/Home/16_06_19.log" />
     </list>
     <ignored path="web_homework1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +38,7 @@
       <file leaf-file-name="KsqController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/KsqController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="915">
+            <state relative-caret-position="870">
               <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
               <folding />
             </state>
@@ -47,30 +48,10 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Ksq/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="54" column="60" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Public/header.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="61" column="58" selection-start-line="61" selection-start-column="58" selection-end-line="61" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchArt.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Public/SearchArt.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+            <state relative-caret-position="420">
+              <caret line="35" column="116" selection-start-line="35" selection-start-column="116" selection-end-line="35" selection-end-column="134" />
               <folding>
-                <element signature="n#style#0;n#spqn#0;n#a#0;n#div#0;n#div#0;n#li#0;n#volist#0;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#h3#0;n#header#0;n#article#0;n#volist#0;n#div#1;n#div#2;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,9 +60,43 @@
       <file leaf-file-name="PublicController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/PublicController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="25" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="25" />
+            <state relative-caret-position="465">
+              <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EssayController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/EssayController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="essay.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Essay/essay.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="97" column="36" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="36" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#volist#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchArt.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Public/SearchArt.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="547">
+              <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="87" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#spqn#0;n#a#0;n#div#0;n#div#0;n#li#0;n#volist#0;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -109,14 +124,15 @@
         <option value="$PROJECT_DIR$/share/Public/Home/css/about.css" />
         <option value="$PROJECT_DIR$/share/Application/Home/Controller/IndexController.class.php" />
         <option value="$PROJECT_DIR$/share/Application/Home/View/User/personal.html" />
-        <option value="$PROJECT_DIR$/share/Application/Home/Controller/EssayController.class.php" />
         <option value="$PROJECT_DIR$/share/Application/Home/Controller/WorksController.class.php" />
         <option value="$PROJECT_DIR$/share/Application/Home/View/Works/showUi.html" />
         <option value="$PROJECT_DIR$/share/Application/Home/View/Index/index.html" />
         <option value="$PROJECT_DIR$/share/Application/Home/View/Essay/index.html" />
-        <option value="$PROJECT_DIR$/share/Application/Home/View/Public/SearchArt.html" />
-        <option value="$PROJECT_DIR$/share/Application/Home/Controller/PublicController.class.php" />
         <option value="$PROJECT_DIR$/share/Application/Home/View/Public/header.html" />
+        <option value="$PROJECT_DIR$/share/Application/Home/Controller/PublicController.class.php" />
+        <option value="$PROJECT_DIR$/share/Application/Home/Controller/EssayController.class.php" />
+        <option value="$PROJECT_DIR$/share/Application/Home/View/Essay/essay.html" />
+        <option value="$PROJECT_DIR$/share/Application/Home/View/Public/SearchArt.html" />
       </list>
     </option>
   </component>
@@ -708,12 +724,12 @@
       <workItem from="1466165625692" duration="4441000" />
       <workItem from="1466174144422" duration="555000" />
       <workItem from="1466215616547" duration="1424000" />
-      <workItem from="1466255097592" duration="5196000" />
+      <workItem from="1466255097592" duration="8441000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13383000" />
+    <option name="totallyTimeSpent" value="16628000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -754,14 +770,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/IndexController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Index/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -806,7 +814,7 @@
             <element signature="n#style#0;n#img#0;n#li#7;n#ul#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="false" />
             <element signature="n#style#0;n#a#0;n#li#7;n#ul#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="false" />
             <element signature="n#style#0;n#article#0;n#volist#0;n#div#1;n#div#2;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#a#0;n#h3#0;n#header#0;n#article#0;n#volist#0;n#div#1;n#div#2;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#a#0;n#h3#0;n#header#0;n#article#0;n#volist#0;n#div#1;n#div#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#1;n#h3#0;n#header#0;n#article#0;n#volist#0;n#div#1;n#div#2;n#!!top" expanded="false" />
             <element signature="n#style#0;n#span#0;n#div#0;n#header#0;n#article#0;n#volist#0;n#div#1;n#div#2;n#!!top" expanded="false" />
           </folding>
@@ -817,6 +825,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -889,7 +898,7 @@
             <element signature="n#style#0;n#img#0;n#li#7;n#ul#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="false" />
             <element signature="n#style#0;n#a#0;n#li#7;n#ul#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="false" />
             <element signature="n#style#0;n#article#0;n#volist#0;n#div#1;n#div#2;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#a#0;n#h3#0;n#header#0;n#article#0;n#volist#0;n#div#1;n#div#2;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#a#0;n#h3#0;n#header#0;n#article#0;n#volist#0;n#div#1;n#div#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#1;n#h3#0;n#header#0;n#article#0;n#volist#0;n#div#1;n#div#2;n#!!top" expanded="false" />
             <element signature="n#style#0;n#span#0;n#div#0;n#header#0;n#article#0;n#volist#0;n#div#1;n#div#2;n#!!top" expanded="false" />
           </folding>
@@ -998,6 +1007,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16410">
           <caret line="1094" column="10" selection-start-line="1094" selection-start-column="10" selection-end-line="1094" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1021,14 +1031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2940">
           <caret line="196" column="0" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/EssayController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -1141,14 +1143,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Essay/essay.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Works/showUi.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
@@ -1165,14 +1159,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Essay/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="56" column="48" selection-start-line="0" selection-start-column="0" selection-end-line="134" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Index/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1950">
@@ -1181,45 +1167,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Ksq/index.html">
+    <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Public/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="54" column="60" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="60" />
+        <state relative-caret-position="105">
+          <caret line="61" column="58" selection-start-line="61" selection-start-column="58" selection-end-line="61" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Essay/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="802">
+          <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/KsqController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
+        <state relative-caret-position="870">
           <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Public/SearchArt.html">
+    <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Ksq/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        <state relative-caret-position="420">
+          <caret line="35" column="116" selection-start-line="35" selection-start-column="116" selection-end-line="35" selection-end-column="134" />
           <folding>
-            <element signature="n#style#0;n#spqn#0;n#a#0;n#div#0;n#div#0;n#li#0;n#volist#0;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#h3#0;n#header#0;n#article#0;n#volist#0;n#div#1;n#div#2;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/PublicController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="25" />
+        <state relative-caret-position="465">
+          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Public/header.html">
+    <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/EssayController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="61" column="58" selection-start-line="61" selection-start-column="58" selection-end-line="61" selection-end-column="58" />
+        <state relative-caret-position="330">
+          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Essay/essay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="97" column="36" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#volist#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Public/SearchArt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="87" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#spqn#0;n#a#0;n#div#0;n#div#0;n#li#0;n#volist#0;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

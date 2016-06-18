@@ -144,8 +144,8 @@
                             <dl>
                                 <dt>类别：</dt>
                                 <dd>
-                                    <a href="" class="select">作品</a>
-                                    <a href="">文章</a>
+                                    <a class="select" onclick="typing(1)">作品</a>
+                                    <a onclick="typing(2)">文章</a>
                                 </dd>
 
                             </dl>
@@ -188,6 +188,22 @@
         </div>
 
     </div>
+    <script>
+//        var str;
+//        $(document).ready(function() {
+//           var url=window.location.href;
+//            var st = url.split("?");
+////            alert(st[1])
+//        });
+//
+//       function  typing(i) {
+//           $.get({
+//               url:"/share/index.php/Home/Public/showArt/uploadtype/1",
+//           });
+//       }
+
+
+    </script>
     			<div class="clear"></div>
 			<div id="footer">
 				<div class="wrapper">
