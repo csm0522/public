@@ -55,11 +55,11 @@
             <div class="left-part">
                 <a class="logo" href="{:U('Index/index')}"><img src="__HomeIMG__/index/logo.png" alt=""/></a>
             </div>
-            <form id="form1" method="post" action="{:U('Public/SearchArt')}" style="height:100%;float: left;">
+            <form id="form1" method="get" action="{:U('Public/SearchArt')}" style="height:100%;float: left;">
                 <div class="middle-part">
 
                         <div class="middle_s">
-                            <input type="text" name="search1" placeholder="搜索你喜欢的作品" id="artname"/>
+                            <input type="text" name="seaid" placeholder="搜索你喜欢的作品" id="artname"/>
                             <input type="submit" value="搜索" id="searchingbtn"/>
                         </div>
 

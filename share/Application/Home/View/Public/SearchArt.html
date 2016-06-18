@@ -1,5 +1,74 @@
 <include file="Public/header" title="Index" />
-<volist name="showRes">
+<link href="__HomeCSS__/essay.css" rel="stylesheet" type="text/css" />
+<style>
+    .userATitle a:hover,a:link{
+        color:#814e51;
+        text-decoration: none;
+    }
 
-</volist>
-<include file="Public/footer" title="Index" />
+</style>
+<div class="body">
+
+    <div id="main">
+        <div id="main_head">
+            Hi，看了童鞋们的设计文章涨姿势了吗？马上&nbsp;<a href="{:U('User/pshWorksPag')}">上传一篇</a>&nbsp;你的原创文章，和大家一起分享吧！
+        </div>
+        <div class="borderTop">
+            <table width="100%">
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="sort">
+                            <dl>
+                                <dt>类别：</dt>
+                                <dd>
+                                    <a href="" class="select">作品</a>
+                                    <a href="">文章</a>
+                                </dd>
+
+                            </dl>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="main_body">
+            <div id="main_left">
+                <ul>
+                    <volist name="showRes" id="vo" empty="暂时没有找到包含您输入的关键字文章或作品哦~">
+
+                        <li>
+                            <empty name="vo.indeximgpath">
+                                <a href="__MODULE__/essay/essay/id/{$vo.ariticalid}" class="userAImg"><img src="__PUBLIC__/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="260px" height="auto" /></a>
+                                <else />
+                                <a href="__MODULE__/essay/essay/id/{$vo.ariticalid}" class="userAImg">
+                                    <img src="__PUBLIC__/{$vo.indeximgpath}" alt="" width="260px" height="auto" />
+                                </a>
+                            </empty>
+
+                            <div class="userAInfo" style="padding:0px 10px 10px 10px;box-sizing: border-box;">
+                                <div class="userATitle" style="margin-top: 8px;">
+                                    <a href="__MODULE__/essay/essay/id/{$vo.ariticalid}">
+                                        <spqn style="color:#814e51">『{$vo.uploadtype}』</spqn>{$vo.title}
+                                    </a>
+                                </div>
+                                <div class="userAupTime" style="margin: 8px 0 0 0;"><span class="userA_Name" style="color:pink;">{$vo.username}</span> / <span style="color:brown;">{$vo.createtime|substr=0,10}</span></div>
+                                <div  class="sortCo" style="margin-top: 8px;font-size: 12px;">
+								<span style="color:orange;">
+
+								</span>
+                                </div>
+
+							<span class="userAintro" style="width: 100%;font-size: 18px;margin-top: 8px;">
+								{$vo.intro|htmlspecialchars_decode}
+							</span>
+                            </div>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <include file="Public/footer" title="Index" />

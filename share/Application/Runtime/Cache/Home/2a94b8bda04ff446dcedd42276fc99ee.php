@@ -55,7 +55,7 @@
             <div class="left-part">
                 <a class="logo" href="<?php echo U('Index/index');?>"><img src="/share/Public/Home/image/index/logo.png" alt=""/></a>
             </div>
-            <form id="form1" method="post" action="<?php echo U('Public/SearchArt');?>" style="height:100%;float: left;">
+            <form id="form1" method="get" action="<?php echo U('Public/SearchArt');?>" style="height:100%;float: left;">
                 <div class="middle-part">
 
                         <div class="middle_s">

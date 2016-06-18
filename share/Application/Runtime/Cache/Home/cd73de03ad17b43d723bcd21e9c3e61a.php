@@ -59,7 +59,7 @@
                 <div class="middle-part">
 
                         <div class="middle_s">
-                            <input type="text" name="search" placeholder="搜索你喜欢的作品" id="artname"/>
+                            <input type="text" name="seaid" placeholder="搜索你喜欢的作品" id="artname"/>
                             <input type="submit" value="搜索" id="searchingbtn"/>
                         </div>
 
@@ -121,8 +121,74 @@
     </div>
 </div>
 
+<link href="/share/Public/Home/css/essay.css" rel="stylesheet" type="text/css" />
+<style>
+    .userATitle a:hover,a:link{
+        color:#814e51;
+        text-decoration: none;
+    }
 
-			<div class="clear"></div>
+</style>
+<div class="body">
+
+    <div id="main">
+        <div id="main_head">
+            Hi，看了童鞋们的设计文章涨姿势了吗？马上&nbsp;<a href="<?php echo U('User/pshWorksPag');?>">上传一篇</a>&nbsp;你的原创文章，和大家一起分享吧！
+        </div>
+        <div class="borderTop">
+            <table width="100%">
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="sort">
+                            <dl>
+                                <dt>类别：</dt>
+                                <dd>
+                                    <a href="" class="select">作品</a>
+                                    <a href="">文章</a>
+                                </dd>
+
+                            </dl>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="main_body">
+            <div id="main_left">
+                <ul>
+                    <?php if(is_array($showRes)): $i = 0; $__LIST__ = $showRes;if( count($__LIST__)==0 ) : echo "暂时没有找到包含您输入的关键字文章或作品哦~" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
+                            <?php if(empty($vo["indeximgpath"])): ?><a href="/share/index.php/Home/essay/essay/id/<?php echo ($vo["ariticalid"]); ?>" class="userAImg"><img src="/share/Public/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="260px" height="auto" /></a>
+                                <?php else: ?>
+                                <a href="/share/index.php/Home/essay/essay/id/<?php echo ($vo["ariticalid"]); ?>" class="userAImg">
+                                    <img src="/share/Public/<?php echo ($vo["indeximgpath"]); ?>" alt="" width="260px" height="auto" />
+                                </a><?php endif; ?>
+
+                            <div class="userAInfo" style="padding:0px 10px 10px 10px;box-sizing: border-box;">
+                                <div class="userATitle" style="margin-top: 8px;">
+                                    <a href="/share/index.php/Home/essay/essay/id/<?php echo ($vo["ariticalid"]); ?>">
+                                        <spqn style="color:#814e51">『<?php echo ($vo["uploadtype"]); ?>』</spqn><?php echo ($vo["title"]); ?>
+                                    </a>
+                                </div>
+                                <div class="userAupTime" style="margin: 8px 0 0 0;"><span class="userA_Name" style="color:pink;"><?php echo ($vo["username"]); ?></span> / <span style="color:brown;"><?php echo (substr($vo["createtime"],0,10)); ?></span></div>
+                                <div  class="sortCo" style="margin-top: 8px;font-size: 12px;">
+								<span style="color:orange;">
+
+								</span>
+                                </div>
+
+							<span class="userAintro" style="width: 100%;font-size: 18px;margin-top: 8px;">
+								<?php echo (htmlspecialchars_decode($vo["intro"])); ?>
+							</span>
+                            </div>
+                        </li><?php endforeach; endif; else: echo "暂时没有找到包含您输入的关键字文章或作品哦~" ;endif; ?>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    			<div class="clear"></div>
 			<div id="footer">
 				<div class="wrapper">
 					版权所有：大学生作品发布平台
