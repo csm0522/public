@@ -244,7 +244,18 @@ function yanghaiqiang(){
 					</div>
 				</div>
 			</div>
-			<div clear:both></div>
+			<div class="clear"></div>
+			<div class="clear"></div>
+			<div id="footer" style="margin-bottom:0px;width:100%;background: #333131;">
+				<div class="wrapper">
+					<p style="font-size:14px;margin-top:5px;">版权所有：大学生作品发布平台</p>
+					<p style="font-size:14px;margin-top: 5px;">开发团队:杨海强、吴欣、刘泽珊、陈少敏</p>
+				</div>
+			</div>
+
+	</body>
+</html>
+
 	</body>
 
 </html>

@@ -415,11 +415,11 @@ input {
 	height: 100%;
 	float: left;
 	position: relative;
-	font-size: 20px;
+	font-size: 15px;
 	background-color: #fff;
 	color: #5e5e5e;
 	text-align: right;
-
+	margin-left:10px;
 }
 
 .f_right {
@@ -433,7 +433,7 @@ input {
 	background-color: #fff;
 }
 .f_right input[class="f_text"]{
-	height:40px;
+	height:30px;
 	background: #f4f4f4;
 	border:none;
 	width: 50%;
@@ -492,7 +492,7 @@ input[class="f_touxiang"] {
 
 #content {
 	width: 85%;
-	height:80px;
+	height:65px;
 	background-color: #eee;
 	border: none;
 	border-radius: 5px;
@@ -501,9 +501,9 @@ input[class="f_touxiang"] {
 	overflow: auto;
 	resize: vertical;
 	color: #aaa;
-	font-size: 18px;
+	font-size: 14px;
 	resize: none;
-	margin-top:5px;
+	margin-top:10px;
 }
 
 .clear {
