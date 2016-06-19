@@ -11,7 +11,7 @@ class KsqController extends Controller
         $data = $ksq->field('topicId,userId,content,type,CreatTime')->order("topicId DESC")->select();
 
         for ($i = 0; $i < count($data); $i++) {
-            $con2['userid']=$data[$i]['userid'];
+            $con2['UserId']=$data[$i]['userid'];
             $data[$i]['username']=M('user')->where($con2)->getField(UserName);
             if(empty($data[$i]['username'])){
                 $data[$i]['username']="游客";
@@ -26,6 +26,7 @@ class KsqController extends Controller
     {
         $sessid = session('userInfo.UId');
         $URL = U("ksq/index");
+//        echo $sessid;
         if ($sessid == "") {
             echo '<script>alert("请先登录");window.history.go(-1); </script>';
         } else {
@@ -39,9 +40,10 @@ class KsqController extends Controller
                     echo "<script>location.href='".$URL."';</script>";
                 } else {
                     $data['word'] = $_POST['sword'];
-                    $data['id'] = 
+                    $data['id'] = $sessid;
                     $data['time'] = Date('Y-m-d H:i:s');
                     $data['type'] = $_POST['types'];
+
                     $rs = D('User')->addTopic($data);
 
                     if ($rs == 0) {

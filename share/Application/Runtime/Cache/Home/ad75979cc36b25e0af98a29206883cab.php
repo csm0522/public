@@ -100,7 +100,7 @@
                 </script>
                 <div class="login">
                     <div id="loginAndLO" onclick="showLogin()" style="float: left;"><img
-                            src="/share/Public/Home/image/index/personal.png" width="30px" style="margin-left:4px;vertical-align: middle;"/><p style="padding-top:4px;color:#40220f;">
+                            src="/share/Public/Home/image/index/personal.png" width="30px" style="margin-left:4px;vertical-align: middle;"/><p style="font-size:16px!important ;padding-top:4px;color:#40220f;">
                             	 <?php if(empty(session('userInfo.UN'))){?>
                             	游客
                             	<?php }else{?>

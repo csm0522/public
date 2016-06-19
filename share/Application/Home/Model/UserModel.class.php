@@ -28,10 +28,9 @@ class UserModel extends Model{
         );
     //添加话题标题
     function addTopic($data=array()){
-//        $datas=array("","");
         $condition['LoginId']=$data['id'];
         $userid=M('user')->where($condition)->getfield(UserId);
-        $datas['UserId']=$userid;
+        $datas['UserId']= $userid;
         $datas['content']=$data['word'];
         $datas['CreatTime']=$data['time'];
         $datas['type']=$data['type'];
