@@ -149,38 +149,38 @@
         <div class="background_middle">
 
 
-            <?php if(is_array($ArticalMain)): $i = 0; $__LIST__ = $ArticalMain;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div id="atrid" style="display:none"><?php echo ($vo["ariticalid"]); ?> </div>
+            <?php if(is_array($ArticalMain)): $i = 0; $__LIST__ = $ArticalMain;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div id="atrid" style="display:none"><?php echo ($vo["ariticalid"]); ?></div>
 
-                    <div class="content2">
+                <div class="content2">
 
-                        <div class="author">
-                            <a href="">
-                                <img src="/share/Public/Home/image/index/person_1.png" width="100%"/>
-                            </a>
-                        </div>
+                    <div class="author">
+                        <a href="">
+                            <img src="/share/Public/Home/image/index/person_1.png" width="100%"/>
+                        </a>
+                    </div>
 
-                        <div class="author_name">
-                            <h><?php echo ($vo["username"]); ?></h>
-                        </div>
+                    <div class="author_name">
+                        <h><?php echo ($vo["username"]); ?></h>
+                    </div>
 
-                        <div class="work_bottom">
-                            <div class="bottom_1"></div>
-                            <div class="bottom_2"></div>
-                        </div>
+                    <div class="work_bottom">
+                        <div class="bottom_1"></div>
+                        <div class="bottom_2"></div>
+                    </div>
 
-                        <div class="author_title">
-                            <h style="color: black!important;"><?php echo ($vo["title"]); ?></h>
-                        </div>
+                    <div class="author_title">
+                        <h style="color: black!important;"><?php echo ($vo["title"]); ?></h>
+                    </div>
 
-                        <div class="author_content">
-                            <?php echo (htmlspecialchars_decode($vo["content"])); ?>
-                        </div>
-                        <!--<?php dump($nums) ?>-->
-                        <div class="follower">
-                            <input type="button" class="follower_btn" onclick="uper()"/><span id="nums" name="nums"><?php echo ($nums["num"]); ?></span>
-                        </div>
+                    <div class="author_content">
+                        <?php echo (htmlspecialchars_decode($vo["content"])); ?>
+                    </div>
+                    <!--<?php dump($nums) ?>-->
+                    <div class="follower">
+                        <input type="button" class="follower_btn" onclick="uper()"/><span id="nums" name="nums"><?php echo ($nums["num"]); ?></span>
+                    </div>
 
-                    </div><?php endforeach; endif; else: echo "" ;endif; ?>
+                </div><?php endforeach; endif; else: echo "" ;endif; ?>
             <div class="recommend-line">
                 <a>评论</a>
             </div>
@@ -203,28 +203,44 @@
 
         </div>
 
-
-        <div class="clear"></div>
-        <script>
-            function uper() {
-                alert("谢谢关注!");
-                var url = window.location.href;
-                var st = url.split("/");
-                var i =st.length;
-                var j = st[i-1];
-                $.ajax({
-                    type: "get", //请求的方式
+        <?php if(is_array($artmsg)): $i = 0; $__LIST__ = $artmsg;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$amsg): $mod = ($i % 2 );++$i;?><div class="other">
+                <div class="view_top">
+                    <div class="view_l">
+                        <a href=""><img src="/share/Public/Home/image/index/person_2.png" width="40px"/></a>
+                    </div>
+                    <div class="other_name">
+                        <h style="font-size:14px;color:#aaa;">shaomin-</h>
+                        <a href="" style="text-decoration:none;font-size:18px">
+                            <h id="identity3" onmousemove="identity_color(3)" onmouseout="identity_back(3)">学霸</h>
+                        </a>
+                    </div>
+                </div>
+                <div class="view_m">
+                    <h style="font-size:14px;color:#aaa;">赞赞赞赞赞赞赞</h>
+                </div>
+            </div><?php endforeach; endif; else: echo "" ;endif; ?>
+    </div>
+    <div class="clear"></div>
+    <script>
+        function uper() {
+            alert("谢谢关注!");
+            var url = window.location.href;
+            var st = url.split("/");
+            var i = st.length;
+            var j = st[i - 1];
+            $.ajax({
+                type: "get", //请求的方式
 //                    dataType: "json", //数据的格式 建议大家使用json格式
-                    url: "/share/index.php/Home/Essay/upessay/id/"+j, //请求的url地址
-                    success: function (data) { //请求成功时，处理返回来的数据
-                        var numbers = data.num;
-                        $("#nums").html(numbers);
+                url: "/share/index.php/Home/Essay/upessay/id/" + j, //请求的url地址
+                success: function (data) { //请求成功时，处理返回来的数据
+                    var numbers = data.num;
+                    $("#nums").html(numbers);
 //                        alert(url)
-                    }
-                })
-            }
-        </script>
-        			<div class="clear"></div>
+                }
+            })
+        }
+    </script>
+    			<div class="clear"></div>
 			<div id="footer">
 				<div class="wrapper">
 					版权所有：大学生作品发布平台

@@ -23,38 +23,38 @@
 
 
             <volist name="ArticalMain" id="vo">
-                <div id="atrid" style="display:none">{$vo.ariticalid} </div>
+                <div id="atrid" style="display:none">{$vo.ariticalid}</div>
 
-                    <div class="content2">
+                <div class="content2">
 
-                        <div class="author">
-                            <a href="">
-                                <img src="__HomeIMG__/index/person_1.png" width="100%"/>
-                            </a>
-                        </div>
-
-                        <div class="author_name">
-                            <h>{$vo.username}</h>
-                        </div>
-
-                        <div class="work_bottom">
-                            <div class="bottom_1"></div>
-                            <div class="bottom_2"></div>
-                        </div>
-
-                        <div class="author_title">
-                            <h style="color: black!important;">{$vo.title}</h>
-                        </div>
-
-                        <div class="author_content">
-                            {$vo.content|htmlspecialchars_decode}
-                        </div>
-                        <!--<?php dump($nums) ?>-->
-                        <div class="follower">
-                            <input type="button" class="follower_btn" onclick="uper()"/><span id="nums" name="nums">{$nums.num}</span>
-                        </div>
-
+                    <div class="author">
+                        <a href="">
+                            <img src="__HomeIMG__/index/person_1.png" width="100%"/>
+                        </a>
                     </div>
+
+                    <div class="author_name">
+                        <h>{$vo.username}</h>
+                    </div>
+
+                    <div class="work_bottom">
+                        <div class="bottom_1"></div>
+                        <div class="bottom_2"></div>
+                    </div>
+
+                    <div class="author_title">
+                        <h style="color: black!important;">{$vo.title}</h>
+                    </div>
+
+                    <div class="author_content">
+                        {$vo.content|htmlspecialchars_decode}
+                    </div>
+                    <!--<?php dump($nums) ?>-->
+                    <div class="follower">
+                        <input type="button" class="follower_btn" onclick="uper()"/><span id="nums" name="nums">{$nums.num}</span>
+                    </div>
+
+                </div>
             </volist>
             <div class="recommend-line">
                 <a>评论</a>
@@ -78,26 +78,44 @@
 
         </div>
 
-
-        <div class="clear"></div>
-        <script>
-            function uper() {
-                alert("谢谢关注!");
-                var url = window.location.href;
-                var st = url.split("/");
-                var i =st.length;
-                var j = st[i-1];
-                $.ajax({
-                    type: "get", //请求的方式
+        <volist name="artmsg" id="amsg">
+            <div class="other">
+                <div class="view_top">
+                    <div class="view_l">
+                        <a href=""><img src="__HomeIMG__/index/person_2.png" width="40px"/></a>
+                    </div>
+                    <div class="other_name">
+                        <h style="font-size:14px;color:#aaa;">shaomin-</h>
+                        <a href="" style="text-decoration:none;font-size:18px">
+                            <h id="identity3" onmousemove="identity_color(3)" onmouseout="identity_back(3)">学霸</h>
+                        </a>
+                    </div>
+                </div>
+                <div class="view_m">
+                    <h style="font-size:14px;color:#aaa;">赞赞赞赞赞赞赞</h>
+                </div>
+            </div>
+        </volist>
+    </div>
+    <div class="clear"></div>
+    <script>
+        function uper() {
+            alert("谢谢关注!");
+            var url = window.location.href;
+            var st = url.split("/");
+            var i = st.length;
+            var j = st[i - 1];
+            $.ajax({
+                type: "get", //请求的方式
 //                    dataType: "json", //数据的格式 建议大家使用json格式
-                    url: "__MODULE__/Essay/upessay/id/"+j, //请求的url地址
-                    success: function (data) { //请求成功时，处理返回来的数据
-                        var numbers = data.num;
-                        $("#nums").html(numbers);
+                url: "__MODULE__/Essay/upessay/id/" + j, //请求的url地址
+                success: function (data) { //请求成功时，处理返回来的数据
+                    var numbers = data.num;
+                    $("#nums").html(numbers);
 //                        alert(url)
-                    }
-                })
-            }
-        </script>
-        <include file="Public/footer" title="Index"/>
+                }
+            })
+        }
+    </script>
+    <include file="Public/footer" title="Index"/>
 
