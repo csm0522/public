@@ -59,6 +59,7 @@ class UserController extends Controller {
 
 			else{
 				echo "<script>alert('"."账号被锁定"."');</script>";
+
 				echo '<script>window.history.go(-1); </script>';
 			}
 		}
