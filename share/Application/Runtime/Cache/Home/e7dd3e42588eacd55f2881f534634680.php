@@ -186,7 +186,7 @@
                         <span class="date" style="color:#814e51;"><?php echo ($datas['creattime']); ?></span>
                         <span class="category"><a href="# " ><?php echo ($datas['type']); ?></a></span>
                         <!--<span class="comments"><a href="# " ><?php echo ($datas['topicid']); ?> 回复</a></span>-->
-                        <span class="like-count">66</span>
+                        <!--<span style="float:right;margin-right: 30px;">回复</span>-->
                     </div>
                 </header>
             </article><?php endforeach; endif; else: echo "暂无数据" ;endif; ?>

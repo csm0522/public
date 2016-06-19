@@ -3,13 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="5d817e73-2b80-4dd0-9f98-13692c558795" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Home/Controller/IndexController.class.php" afterPath="$PROJECT_DIR$/share/Application/Home/Controller/IndexController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Home/Controller/WorksController.class.php" afterPath="$PROJECT_DIR$/share/Application/Home/Controller/WorksController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Home/View/Index/index.html" afterPath="$PROJECT_DIR$/share/Application/Home/View/Index/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Home/View/Works/showUi.html" afterPath="$PROJECT_DIR$/share/Application/Home/View/Works/showUi.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/02dce4c00f0a59283135ac9dd32cc6c9.php" afterPath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/02dce4c00f0a59283135ac9dd32cc6c9.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php" afterPath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/cd73de03ad17b43d723bcd21e9c3e61a.php" afterPath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/cd73de03ad17b43d723bcd21e9c3e61a.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Home/Controller/KsqController.class.php" afterPath="$PROJECT_DIR$/share/Application/Home/Controller/KsqController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Home/View/Ksq/index.html" afterPath="$PROJECT_DIR$/share/Application/Home/View/Ksq/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/29488455c38344fc02110141b698c6a5.php" afterPath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/29488455c38344fc02110141b698c6a5.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/e5bcc763655a5b42cd142dc37666baac.php" afterPath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/e5bcc763655a5b42cd142dc37666baac.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/e7dd3e42588eacd55f2881f534634680.php" afterPath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/e7dd3e42588eacd55f2881f534634680.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/ee95cea3f12ce0a17e979865e4775e01.php" afterPath="$PROJECT_DIR$/share/Application/Runtime/Cache/Home/ee95cea3f12ce0a17e979865e4775e01.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/Application/Runtime/Logs/Home/16_06_19.log" afterPath="$PROJECT_DIR$/share/Application/Runtime/Logs/Home/16_06_19.log" />
     </list>
     <ignored path="web_homework1.iws" />
@@ -32,61 +31,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WorksController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/WorksController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="27" column="9" selection-start-line="24" selection-start-column="8" selection-end-line="27" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="works.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Works/works.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1742">
-              <caret line="161" column="50" selection-start-line="161" selection-start-column="50" selection-end-line="161" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="showUi.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Works/showUi.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="100" column="33" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Index/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
-              <caret line="142" column="124" selection-start-line="142" selection-start-column="124" selection-end-line="142" selection-end-column="124" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/IndexController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KsqController.class.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="KsqController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/KsqController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="53" column="89" selection-start-line="53" selection-start-column="89" selection-end-line="53" selection-end-column="89" />
+            <state relative-caret-position="165">
+              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Ksq/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="60" column="88" selection-start-line="60" selection-start-column="88" selection-end-line="62" selection-end-column="86" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#h3#0;n#header#0;n#article#0;n#volist#0;n#div#1;n#div#2;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="infoEdit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/share/Application/Home/View/User/infoEdit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-30">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -95,8 +66,8 @@
       <file leaf-file-name="EssayController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/EssayController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+            <state relative-caret-position="105">
+              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -131,8 +102,6 @@
         <option value="$PROJECT_DIR$/share/Public/Home/ueditor/php/config.json" />
         <option value="$PROJECT_DIR$/share/Application/Home/View/Essay/essay.html" />
         <option value="$PROJECT_DIR$/share/Application/Home/Model/UserModel.class.php" />
-        <option value="$PROJECT_DIR$/share/Application/Home/Controller/KsqController.class.php" />
-        <option value="$PROJECT_DIR$/share/Application/Home/View/Ksq/index.html" />
         <option value="$PROJECT_DIR$/share/Application/Home/View/Works/works.html" />
         <option value="$PROJECT_DIR$/share/Public/Home/css/loginAndRegister.css" />
         <option value="$PROJECT_DIR$/share/Public/Home/css/index.css" />
@@ -142,6 +111,8 @@
         <option value="$PROJECT_DIR$/share/Application/Home/View/Works/showUi.html" />
         <option value="$PROJECT_DIR$/share/Application/Home/Controller/IndexController.class.php" />
         <option value="$PROJECT_DIR$/share/Application/Home/View/Index/index.html" />
+        <option value="$PROJECT_DIR$/share/Application/Home/Controller/KsqController.class.php" />
+        <option value="$PROJECT_DIR$/share/Application/Home/View/Ksq/index.html" />
       </list>
     </option>
   </component>
@@ -723,12 +694,12 @@
       <workItem from="1466255097592" duration="10676000" />
       <workItem from="1466305561890" duration="2379000" />
       <workItem from="1466310509710" duration="426000" />
-      <workItem from="1466326661539" duration="2244000" />
+      <workItem from="1466326661539" duration="2661000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23912000" />
+    <option name="totallyTimeSpent" value="24329000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="0" width="1920" height="1080" extended-state="0" />
@@ -929,13 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/share/Application/Home/View/User/infoEdit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3113">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/share/Application/Home/View/User/pshAritical.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2490">
@@ -1078,16 +1042,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Ksq/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-210">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="45" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#h3#0;n#header#0;n#article#0;n#volist#0;n#div#1;n#div#2;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/share/Public/Home/css/loginAndRegister.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -1096,42 +1050,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/EssayController.class.php">
+    <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Index/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/KsqController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="53" column="89" selection-start-line="53" selection-start-column="89" selection-end-line="53" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Works/works.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1742">
-          <caret line="161" column="50" selection-start-line="161" selection-start-column="50" selection-end-line="161" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/IndexController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/WorksController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="27" column="9" selection-start-line="24" selection-start-column="8" selection-end-line="27" selection-end-column="9" />
+        <state relative-caret-position="609">
+          <caret line="145" column="38" selection-start-line="145" selection-start-column="38" selection-end-line="145" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -1144,10 +1066,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Index/index.html">
+    <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Works/works.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="142" column="124" selection-start-line="142" selection-start-column="124" selection-end-line="142" selection-end-column="124" />
+        <state relative-caret-position="1742">
+          <caret line="161" column="50" selection-start-line="161" selection-start-column="50" selection-end-line="161" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/WorksController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="27" column="9" selection-start-line="24" selection-start-column="8" selection-end-line="27" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/IndexController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/EssayController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share/Application/Home/View/User/infoEdit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share/Application/Home/View/Ksq/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="60" column="88" selection-start-line="60" selection-start-column="88" selection-end-line="62" selection-end-column="86" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#h3#0;n#header#0;n#article#0;n#volist#0;n#div#1;n#div#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share/Application/Home/Controller/KsqController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
           <folding />
         </state>
       </provider>
