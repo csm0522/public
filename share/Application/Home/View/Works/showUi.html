@@ -97,10 +97,11 @@
 			</div>
 
 			<div id="layer1">
-
+				<!--<?php dump($WorksMain);?>-->
 			<ul class="allBoxUI">
 			<volist name="WorksMain" id="vo">
 					<li >
+
 					<empty name="vo.indeximgpath">
 						<a href="__MODULE__/Works/works/id/{$vo.ariticalid}" class="userAImg">
 							<img src="__PUBLIC__/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="380px" height="200px" />
@@ -121,13 +122,12 @@
 										{$vo.createtime|substr=0,10}
 									</span>
 									&nbsp;/&nbsp;
-									<span class="works-like"><img src="__HomeIMG__/index/love.png" alt="" /> 6 &nbsp;
+									<span class="works-like"><img src="__HomeIMG__/index/love.png" alt="" /> {$vo.num} &nbsp;
 									</span>
 								</div>
 							</div>
 						</div>
 						</li>
-
 
 			</volist>
 </ul>

@@ -261,7 +261,7 @@
 										<span class="works-time">
 										<?php echo (substr($vo["createtime"],0,10)); ?>
 									</span> &nbsp;/&nbsp;
-										<span class="works-like"><img src="/share/Public/Home/image/index/love.png" alt="" /> 6 &nbsp;
+										<span class="works-like"><img src="/share/Public/Home/image/index/love.png" alt="" />&nbsp;&nbsp;<?php echo ($vo["num"]); ?> &nbsp;
 									</span>
 									</div>
 								</div>
@@ -374,8 +374,8 @@
 			<div class="clear"></div>
 			<div id="footer" style="margin-bottom:0px;width:100%;background: #333131;">
 				<div class="wrapper">
-					<p>版权所有：大学生作品发布平台</p>
-					<p style="margin-top: 5px;">开者团队:杨海强、吴欣、刘泽珊、陈少敏</p>
+					<p class="font-size:14px;">版权所有：大学生作品发布平台</p>
+					<p class="font-size:14px;"style="margin-top: 5px;">开者团队:杨海强、吴欣、刘泽珊、陈少敏</p>
 				</div>
 			</div>
 

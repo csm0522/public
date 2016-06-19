@@ -22,6 +22,10 @@ class WorksController extends Controller {
 	public function showList(){
 		$type = $_GET['type'];
 		$Works = M('artical') -> join('t_user on t_artical.userid = t_user.userid') -> where("type = $type") ->order("AriticalId DESC")->select();
+		for($i=0;$i<count($Works);$i++){
+			$con['AriticalId']=$Works[$i]['ariticalid'];
+			$Works[$i]['num']=M('like')->where($con)->count();
+		}
 		$this->assign("WorksMain",$Works);
 		$this->assign("type",$type);
     	$this->display('showUi');

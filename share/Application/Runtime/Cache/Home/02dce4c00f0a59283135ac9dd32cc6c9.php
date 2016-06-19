@@ -218,9 +218,10 @@
 			</div>
 
 			<div id="layer1">
-
+				<!--<?php dump($WorksMain);?>-->
 			<ul class="allBoxUI">
 			<?php if(is_array($WorksMain)): $i = 0; $__LIST__ = $WorksMain;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li >
+
 					<?php if(empty($vo["indeximgpath"])): ?><a href="/share/index.php/Home/Works/works/id/<?php echo ($vo["ariticalid"]); ?>" class="userAImg">
 							<img src="/share/Public/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="380px" height="200px" />
 							</a>
@@ -239,7 +240,7 @@
 										<?php echo (substr($vo["createtime"],0,10)); ?>
 									</span>
 									&nbsp;/&nbsp;
-									<span class="works-like"><img src="/share/Public/Home/image/index/love.png" alt="" /> 6 &nbsp;
+									<span class="works-like"><img src="/share/Public/Home/image/index/love.png" alt="" /> <?php echo ($vo["num"]); ?> &nbsp;
 									</span>
 								</div>
 							</div>
