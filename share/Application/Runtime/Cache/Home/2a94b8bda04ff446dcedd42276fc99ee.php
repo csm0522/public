@@ -100,8 +100,8 @@
                 </script>
                 <div class="login">
                     <div id="loginAndLO" onclick="showLogin()" style="float: left;"><img
-                            src="/share/Public/Home/image/index/personal.png" width="30px" style="margin-left:4px;vertical-align: middle;"/><p style="padding-top:4px;color:#40220f;">
-                            	 <?php if(empty(session('userInfo'))){?>
+                            src="/share/Public/Home/image/index/personal.png" width="30px" style="margin-left:4px;vertical-align: middle;"/><p style="font-size:16px!important ;padding-top:4px;color:#40220f;">
+                            	 <?php if(empty(session('userInfo.UN'))){?>
                             	游客
                             	<?php }else{?>
 
@@ -116,7 +116,7 @@
                             <?php }?>
                         </ul>
                     </div>
-                    <a href="<?php echo U('User/pshWorksPag');?>"><img  src="/share/Public/Home/image/index/add.png" width="34px" style="margin-left:30px;padding-top:0px;"/></a>
+                    <a href="<?php echo U('User/pshWorksPag');?>"><img  src="/share/Public/Home/image/index/add.png" width="34px" style="margin-left:30px;padding-top:8px;"/></a>
                     <!--<img src="/share/Public/Home/image/index/more.png" style="cursor:pointer;margin-left:10px;width:12px;" onclick="openShutManager2(this,'box2',false)" />-->
 
                 </div>
@@ -126,76 +126,71 @@
     </div>
 </div>
 
-<link href="/share/Public/Home/css/index.css" rel="stylesheet" media="all" />
-		<style type="text/css">
-			div.nice_right {
-				display: none;
-			}
+<!--<link href="/share/Public/Home/css/index.css" rel="stylesheet" media="all" />-->
+<style type="text/css">
+	div.nice_right {
+		display: none;
+	}
 
-			input {
-				border: none;
-				outline: none;
-			}
-			.c_title {
-    float: top;
-    width: 500px;
-    height: 50px;
-    margin: 0 auto;
-    text-align: center;
-}
-.c_btn {
-    height: 40px;
-    width: 80px;
-    background-color: #fff;
-    font-size: 14px;
-    position: relative;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    /* text-shadow: 2px 4px 2px #235677; */
-}
-	</style>
-		<script type="text/javascript">
-			function show(i) {
-				if(i==1)
-				{
-					$('#img1').show().siblings().hide();
-					$('#layer1').show();
-					$('#layer2').hide();
-					$('#layer3').hide();
-					$('#layer4').hide();
-					$('#all1').show().siblings().hide();
-				}
-				else if(i==2)
-				{
-					$('#img2').show().siblings().hide();
-					$('#layer2').show();
-					$('#layer1').hide();
-					$('#layer3').hide();
-					$('#layer4').hide();
-					$('#all2').show().siblings().hide();
-				}
-				else if(i==3)
-				{
-					$('#img3').show().siblings().hide();
-					$('#layer3').show();
-					$('#layer1').hide();
-					$('#layer2').hide();
-					$('#layer4').hide();
-					$('#all3').show().siblings().hide();
-				}
-				else if(i==4)
-				{
-					$('#img4').show().siblings().hide();
-					$('#layer4').show();
-					$('#layer2').hide();
-					$('#layer3').hide();
-					$('#layer1').hide();
-					$('#all4').show().siblings().hide();
-				}
+	input {
+		border: none;
+		outline: none;
+	}
 
-			}
-			</script>
+	.c_title {
+		float: top;
+		width: 500px;
+		height: 50px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.c_btn {
+		height: 40px;
+		width: 80px;
+		background-color: #fff;
+		font-size: 14px;
+		position: relative;
+		cursor: pointer;
+		text-decoration: none;
+		text-align: center;
+		/* text-shadow: 2px 4px 2px #235677; */
+	}
+</style>
+<script type="text/javascript">
+	function show(i) {
+		if (i == 1) {
+			$('#img1').show().siblings().hide();
+			$('#layer1').show();
+			$('#layer2').hide();
+			$('#layer3').hide();
+			$('#layer4').hide();
+			$('#all1').show().siblings().hide();
+		} else if (i == 2) {
+			$('#img2').show().siblings().hide();
+			$('#layer2').show();
+			$('#layer1').hide();
+			$('#layer3').hide();
+			$('#layer4').hide();
+			$('#all2').show().siblings().hide();
+		} else if (i == 3) {
+			$('#img3').show().siblings().hide();
+			$('#layer3').show();
+			$('#layer1').hide();
+			$('#layer2').hide();
+			$('#layer4').hide();
+			$('#all3').show().siblings().hide();
+		} else if (i == 4) {
+			$('#img4').show().siblings().hide();
+			$('#layer4').show();
+			$('#layer2').hide();
+			$('#layer3').hide();
+			$('#layer1').hide();
+			$('#all4').show().siblings().hide();
+		}
+
+	}
+</script>
 <div id="dynamic">
 
 	<div class="dynamic_1">
@@ -205,29 +200,28 @@
 			<img src="/share/Public/Home/image/index/title_2.png" />
 		</div>
 
-
 	</div>
 
 	<a href="<?php echo U('User/personal');?>">
 		<?php if(empty($userTX)): ?><div id="worker">
-					<img src="/share/Public/upload/userTX/default/person.png" alt="" style="width: 76px;height:76px;border-radius: 90px;"/>
-				</div>
-		<?php else: ?>
+				<img src="/share/Public/upload/userTX/default/person.png" alt="" style="width: 76px;height:76px;border-radius: 90px;" />
+			</div>
+			<?php else: ?>
 			<div id="worker">
-			<img src="/share/Public<?php echo ($userTX); ?>" alt="" style="width: 76px;height:76px;border-radius: 90px;"/>
-				</div><?php endif; ?>
+				<img src="/share/Public<?php echo ($userTX); ?>" alt="" style="width: 76px;height:76px;border-radius: 90px;" />
+			</div><?php endif; ?>
 	</a>
 
 	<div class="dynamic_2">
-		<img src="/share/Public/Home/image/index/bg2.png" width="100%"/>
+		<img src="/share/Public/Home/image/index/bg2.png" width="100%" />
 	</div>
 
 </div>
 <div style="width:100%;text-align: center;">
-<img src="/share/Public/Home/image/index/all.png" width="10%" id="all1"/>
-<img src="/share/Public/Home/image/index/all_article.png" width="10%" id="all2" style="display: none;"/>
-<img src="/share/Public/Home/image/index/all_user.png" width="10%" id="all3" style="display: none;"/>
-<img src="/share/Public/Home/image/index/all_enterprise.png" width="10%" id="all4" style="display: none;"/>
+	<img src="/share/Public/Home/image/index/all.png" width="10%" id="all1" />
+	<img src="/share/Public/Home/image/index/all_article.png" width="10%" id="all2" style="display: none;" />
+	<img src="/share/Public/Home/image/index/all_user.png" width="10%" id="all3" style="display: none;" />
+	<img src="/share/Public/Home/image/index/all_enterprise.png" width="10%" id="all4" style="display: none;" />
 </div>
 <div class="category">
 	<div class="c_1" id="c_1">
@@ -251,33 +245,31 @@
 					<?php if(is_array($Workslist)): $i = 0; $__LIST__ = $Workslist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
 
 							<?php if(empty($vo["indeximgpath"])): ?><a href="/share/index.php/Home/Works/works/id/<?php echo ($vo["ariticalid"]); ?>" class="userAImg">
-							<img src="/share/Public/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="380px" height="200px" />
-							</a>
-						<?php else: ?>
-						<a href="/share/index.php/Home/Works/works/id/<?php echo ($vo["ariticalid"]); ?>" class="a-block">
-							<img src="/share/Public/<?php echo ($vo["indeximgpath"]); ?>" width="380px" height="200px" class="u_post_img"/>
-						</a><?php endif; ?>
-						<div class="a-title">
-							<div class="a-info">
-								<h2><a href="/share/index.php/Home/Works/works/id/<?php echo ($vo["ariticalid"]); ?>"><?php echo (htmlspecialchars_decode($vo["title"])); ?></a></h2>
-								<div class="works-info">
-									<span class="works-author">
+									<img src="/share/Public/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="380px" height="200px" />
+								</a>
+								<?php else: ?>
+								<a href="/share/index.php/Home/Works/works/id/<?php echo ($vo["ariticalid"]); ?>" class="a-block">
+									<img src="/share/Public/<?php echo ($vo["indeximgpath"]); ?>" width="380px" height="200px" class="u_post_img" />
+								</a><?php endif; ?>
+							<div class="a-title">
+								<div class="a-info">
+									<h2><a href="/share/index.php/Home/Works/works/id/<?php echo ($vo["ariticalid"]); ?>"><?php echo (htmlspecialchars_decode($vo["title"])); ?></a></h2>
+									<div class="works-info">
+										<span class="works-author">
 										<a href=""><?php echo ($vo["username"]); ?></a>&nbsp;/&nbsp;
 									</span>
-									<span class="works-time">
+										<span class="works-time">
 										<?php echo (substr($vo["createtime"],0,10)); ?>
+									</span> &nbsp;/&nbsp;
+										<span class="works-like"><img src="/share/Public/Home/image/index/love.png" alt="" /> 6 &nbsp;
 									</span>
-									&nbsp;/&nbsp;
-									<span class="works-like"><img src="/share/Public/Home/image/index/love.png" alt="" /> 6 &nbsp;
-									</span>
+									</div>
 								</div>
 							</div>
-						</div>
-					</li><?php endforeach; endif; else: echo "" ;endif; ?>
+						</li><?php endforeach; endif; else: echo "" ;endif; ?>
 				</ul>
 			</div>
 		</div>
-
 
 	</div>
 	<div id="layer2" style="display:none;">
@@ -285,159 +277,54 @@
 			<div class="artical-info">
 				<ul>
 					<?php if(is_array($Articallist)): $i = 0; $__LIST__ = $Articallist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
-						<?php if(empty($vo["indeximgpath"])): ?><a href="/share/index.php/Home/essay/essay/id/<?php echo ($vo["ariticalid"]); ?>" class="userAImg">
-							<img src="/share/Public/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="260px" height="auto" />
-							</a>
-						<?php else: ?>
-						<a href="/share/index.php/Home/essay/essay/id/<?php echo ($vo["ariticalid"]); ?>" class="userAImg">
-							<img src="/share/Public/<?php echo ($vo["indeximgpath"]); ?>" alt="" width="260px" height="auto" />
-						</a><?php endif; ?>
-						<div class="userAInfo">
-							<div class="userATitle">
+							<?php if(empty($vo["indeximgpath"])): ?><a href="/share/index.php/Home/essay/essay/id/<?php echo ($vo["ariticalid"]); ?>" class="userAImg">
+									<img src="/share/Public/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="260px" height="auto" />
+								</a>
+								<?php else: ?>
+								<a href="/share/index.php/Home/essay/essay/id/<?php echo ($vo["ariticalid"]); ?>" class="userAImg">
+									<img src="/share/Public/<?php echo ($vo["indeximgpath"]); ?>" alt="" width="260px" height="auto" />
+								</a><?php endif; ?>
+							<div class="userAInfo">
+								<div class="userATitle">
 									<a href="/share/index.php/Home/essay/essay/id/<?php echo ($vo["ariticalid"]); ?>"><?php echo ($vo["title"]); ?></a>
-							</div>
-							<div  class="sortCo">
-								<span><?php echo ($vo["ArticalType"]); ?></span>
-							</div>
-							<div class="userAupTime"><span class="userA_Name" style="color:pink"><?php echo ($vo["username"]); ?></span> / <span style="color:brown"><?php echo ($vo["createtime"]); ?></span></div>
-							<span class="userAintro">
+								</div>
+								<div class="sortCo">
+									<span><?php echo ($vo["ArticalType"]); ?></span>
+								</div>
+								<div class="userAupTime"><span class="userA_Name" style="color:pink"><?php echo ($vo["username"]); ?></span> / <span style="color:brown"><?php echo ($vo["createtime"]); ?></span></div>
+								<span class="userAintro">
 								<?php echo (htmlspecialchars_decode($vo["intro"])); ?>
 							</span>
-						</div>
-					</li><?php endforeach; endif; else: echo "" ;endif; ?>
+							</div>
+						</li><?php endforeach; endif; else: echo "" ;endif; ?>
 				</ul>
 			</div>
 		</div>
 	</div>
 
 	<div id="layer3" style="display:none;">
-	<ul><li>
-		<div class="person">
-			<a href="#">
-				<div class="person_1">
-					<img src="/share/Public/Home/image/index/person_1.png" >
-				</div>
-			</a>
-			<div class="person_2">
-				<span>Sonia</span>
-				<span>程序猿</span>
-			</div>
-			<div class="person_3">
-				<span >作品 32</span>
-				<span >关注 6</span>
-				<span >被关注 3459</span>
-			</div>
-			<div class="person_4">
-				<input type="button" name="follow" value="" placeholder="" class="p_btn" />
-			</div>
-		</div>
-	</li>
-	<li>
-		<div class="person">
-			<a href="#">
-				<div class="person_1">
-					<img src="/share/Public/Home/image/index/person_1.png" >
-				</div>
-			</a>
-			<div class="person_2">
-				<span>Sonia</span>
-				<span>程序猿</span>
-			</div>
-			<div class="person_3">
-				<span >作品 32</span>
-				<span >关注 6</span>
-				<span >被关注 3459</span>
-			</div>
-			<div class="person_4">
-				<input type="button" name="follow" value="" placeholder="" class="p_btn" />
-			</div>
-		</div>
-	</li>
-	<li>
-		<div class="person">
-			<a href="#">
-				<div class="person_1">
-					<img src="/share/Public/Home/image/index/person_1.png" >
-				</div>
-			</a>
-			<div class="person_2">
-				<span>Sonia</span>
-				<span>程序猿</span>
-			</div>
-			<div class="person_3">
-				<span >作品 32</span>
-				<span >关注 6</span>
-				<span >被关注 3459</span>
-			</div>
-			<div class="person_4">
-				<input type="button" name="follow" value="" placeholder="" class="p_btn" />
-			</div>
-		</div>
-	</li>
-	<li>
-		<div class="person">
-			<a href="#">
-				<div class="person_1">
-					<img src="/share/Public/Home/image/index/person_1.png" >
-				</div>
-			</a>
-			<div class="person_2">
-				<span>Sonia</span>
-				<span>程序猿</span>
-			</div>
-			<div class="person_3">
-				<span >作品 32</span>
-				<span >关注 6</span>
-				<span >被关注 3459</span>
-			</div>
-			<div class="person_4">
-				<input type="button" name="follow" value="" placeholder="" class="p_btn" />
-			</div>
-		</div>
-	</li>
-	<li>
-		<div class="person">
-			<a href="#">
-				<div class="person_1">
-					<img src="/share/Public/Home/image/index/person_1.png" >
-				</div>
-			</a>
-			<div class="person_2">
-				<span>Sonia</span>
-				<span>程序猿</span>
-			</div>
-			<div class="person_3">
-				<span >作品 32</span>
-				<span >关注 6</span>
-				<span >被关注 3459</span>
-			</div>
-			<div class="person_4">
-				<input type="button" name="follow" value="" placeholder="" class="p_btn" />
-			</div>
-		</div>
-	</li>
-	<li>
-		<div class="person">
-			<a href="#">
-				<div class="person_1">
-					<img src="/share/Public/Home/image/index/person_1.png" >
-				</div>
-			</a>
-			<div class="person_2">
-				<span>Sonia</span>
-				<span>程序猿</span>
-			</div>
-			<div class="person_3">
-				<span >作品 32</span>
-				<span >关注 6</span>
-				<span >被关注 3459</span>
-			</div>
-			<div class="person_4">
-				<input type="button" name="follow" value="" placeholder="" class="p_btn" />
-			</div>
-		</div>
-	</li>
-	</ul>
+		<ul>
+			<?php if(is_array($userlist)): $i = 0; $__LIST__ = $userlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
+
+					<div class="person">
+						<?php if(empty($vo["usertx"])): ?><img src="/share/Public/upload/usertx/default/person.png" alt="" width="120" height="120" style="border-radius: 90px;border:1px solid #eee;margin:20px;"/>
+						<?php else: ?>
+							<img src="/share/Public/<?php echo ($vo["usertx"]); ?>" alt="" width="120" height="120"  style="border-radius: 90px;border:1px solid #eee;margin:20px;"/><?php endif; ?>
+						<div class="person_2">
+							<span><?php echo ($vo["username"]); ?></span>
+						</div>
+						<div class="person_3">
+							<span>作品 32</span>
+							<span>关注 6</span>
+							<span>被关注 3459</span>
+						</div>
+						<div class="person_4">
+							<input type="button" name="follow" value="" placeholder="" class="p_btn" />
+						</div>
+					</div>
+				</li><?php endforeach; endif; else: echo "" ;endif; ?>
+
+		</ul>
 	</div>
 
 	<div id="layer4" style="display:none;">

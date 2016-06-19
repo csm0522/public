@@ -59,7 +59,7 @@
                 <div class="middle-part">
 
                         <div class="middle_s">
-                            <input type="text" name="seaid" placeholder="搜索你喜欢的作品" id="artname"/>
+                            <input type="text" name="seaid" placeholder="搜索你喜欢的作品<?php echo (session('user')); ?>" id="artname"/>
                             <input type="submit" value="搜索" id="searchingbtn"/>
                         </div>
 
@@ -100,7 +100,13 @@
                 </script>
                 <div class="login">
                     <div id="loginAndLO" onclick="showLogin()" style="float: left;"><img
-                            src="/share/Public/Home/image/index/user.png" width="18px" style="margin-left:18px;"/>
+                            src="/share/Public/Home/image/index/personal.png" width="30px" style="margin-left:4px;vertical-align: middle;"/><p style="padding-top:4px;color:#40220f;">
+                            	 <?php if(empty(session('userInfo.UN'))){?>
+                            	游客
+                            	<?php }else{?>
+
+                            		<?php }?>	<?php echo (substr($_SESSION['userInfo']['UN'],0,5)); ?>
+                            </p>
                         <ul id="LoginMean" style="display: none;">
                             <?php if(empty(session('userInfo'))){?>
                             <li><a href="/share/index.php/Home/User/loginPage">登录</a></li>
@@ -110,8 +116,7 @@
                             <?php }?>
                         </ul>
                     </div>
-                    <a href="<?php echo U('User/pshWorksPag');?>"><img src="/share/Public/Home/image/index/add.png" width="18px"
-                                                            style="margin-left:18px;"/></a>
+                    <a href="<?php echo U('User/pshWorksPag');?>"><img  src="/share/Public/Home/image/index/add.png" width="34px" style="margin-left:30px;padding-top:8px;"/></a>
                     <!--<img src="/share/Public/Home/image/index/more.png" style="cursor:pointer;margin-left:10px;width:12px;" onclick="openShutManager2(this,'box2',false)" />-->
 
                 </div>

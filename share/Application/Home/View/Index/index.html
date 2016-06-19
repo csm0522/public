@@ -1,74 +1,69 @@
 <include file="Public/header" title="Index" />
-<link href="__HomeCSS__/index.css" rel="stylesheet" media="all" />
-		<style type="text/css">
-			div.nice_right {
-				display: none;
-			}
+<!--<link href="__HomeCSS__/index.css" rel="stylesheet" media="all" />-->
+<style type="text/css">
+	div.nice_right {
+		display: none;
+	}
 
-			input {
-				border: none;
-				outline: none;
-			}
-			.c_title {
-    float: top;
-    width: 500px;
-    height: 50px;
-    margin: 0 auto;
-    text-align: center;
-}
-.c_btn {
-    height: 40px;
-    width: 80px;
-    background-color: #fff;
-    font-size: 14px;
-    position: relative;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    /* text-shadow: 2px 4px 2px #235677; */
-}
-	</style>
-		<script type="text/javascript">
-			function show(i) {
-				if(i==1)
-				{
-					$('#img1').show().siblings().hide();
-					$('#layer1').show();
-					$('#layer2').hide();
-					$('#layer3').hide();
-					$('#layer4').hide();
-					$('#all1').show().siblings().hide();
-				}
-				else if(i==2)
-				{
-					$('#img2').show().siblings().hide();
-					$('#layer2').show();
-					$('#layer1').hide();
-					$('#layer3').hide();
-					$('#layer4').hide();
-					$('#all2').show().siblings().hide();
-				}
-				else if(i==3)
-				{
-					$('#img3').show().siblings().hide();
-					$('#layer3').show();
-					$('#layer1').hide();
-					$('#layer2').hide();
-					$('#layer4').hide();
-					$('#all3').show().siblings().hide();
-				}
-				else if(i==4)
-				{
-					$('#img4').show().siblings().hide();
-					$('#layer4').show();
-					$('#layer2').hide();
-					$('#layer3').hide();
-					$('#layer1').hide();
-					$('#all4').show().siblings().hide();
-				}
+	input {
+		border: none;
+		outline: none;
+	}
 
-			}
-			</script>
+	.c_title {
+		float: top;
+		width: 500px;
+		height: 50px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.c_btn {
+		height: 40px;
+		width: 80px;
+		background-color: #fff;
+		font-size: 14px;
+		position: relative;
+		cursor: pointer;
+		text-decoration: none;
+		text-align: center;
+		/* text-shadow: 2px 4px 2px #235677; */
+	}
+</style>
+<script type="text/javascript">
+	function show(i) {
+		if (i == 1) {
+			$('#img1').show().siblings().hide();
+			$('#layer1').show();
+			$('#layer2').hide();
+			$('#layer3').hide();
+			$('#layer4').hide();
+			$('#all1').show().siblings().hide();
+		} else if (i == 2) {
+			$('#img2').show().siblings().hide();
+			$('#layer2').show();
+			$('#layer1').hide();
+			$('#layer3').hide();
+			$('#layer4').hide();
+			$('#all2').show().siblings().hide();
+		} else if (i == 3) {
+			$('#img3').show().siblings().hide();
+			$('#layer3').show();
+			$('#layer1').hide();
+			$('#layer2').hide();
+			$('#layer4').hide();
+			$('#all3').show().siblings().hide();
+		} else if (i == 4) {
+			$('#img4').show().siblings().hide();
+			$('#layer4').show();
+			$('#layer2').hide();
+			$('#layer3').hide();
+			$('#layer1').hide();
+			$('#all4').show().siblings().hide();
+		}
+
+	}
+</script>
 <div id="dynamic">
 
 	<div class="dynamic_1">
@@ -78,31 +73,30 @@
 			<img src="__HomeIMG__/index/title_2.png" />
 		</div>
 
-
 	</div>
 
 	<a href="{:U('User/personal')}">
 		<empty name="userTX">
 			<div id="worker">
-					<img src="__PUBLIC__/upload/userTX/default/person.png" alt="" style="width: 76px;height:76px;border-radius: 90px;"/>
-				</div>
-		<else />
+				<img src="__PUBLIC__/upload/userTX/default/person.png" alt="" style="width: 76px;height:76px;border-radius: 90px;" />
+			</div>
+			<else />
 			<div id="worker">
-			<img src="__PUBLIC__{$userTX}" alt="" style="width: 76px;height:76px;border-radius: 90px;"/>
-				</div>
+				<img src="__PUBLIC__{$userTX}" alt="" style="width: 76px;height:76px;border-radius: 90px;" />
+			</div>
 		</empty>
 	</a>
 
 	<div class="dynamic_2">
-		<img src="__HomeIMG__/index/bg2.png" width="100%"/>
+		<img src="__HomeIMG__/index/bg2.png" width="100%" />
 	</div>
 
 </div>
 <div style="width:100%;text-align: center;">
-<img src="__HomeIMG__/index/all.png" width="10%" id="all1"/>
-<img src="__HomeIMG__/index/all_article.png" width="10%" id="all2" style="display: none;"/>
-<img src="__HomeIMG__/index/all_user.png" width="10%" id="all3" style="display: none;"/>
-<img src="__HomeIMG__/index/all_enterprise.png" width="10%" id="all4" style="display: none;"/>
+	<img src="__HomeIMG__/index/all.png" width="10%" id="all1" />
+	<img src="__HomeIMG__/index/all_article.png" width="10%" id="all2" style="display: none;" />
+	<img src="__HomeIMG__/index/all_user.png" width="10%" id="all3" style="display: none;" />
+	<img src="__HomeIMG__/index/all_enterprise.png" width="10%" id="all4" style="display: none;" />
 </div>
 <div class="category">
 	<div class="c_1" id="c_1">
@@ -128,37 +122,35 @@
 						<li>
 
 							<empty name="vo.indeximgpath">
-						<a href="__MODULE__/Works/works/id/{$vo.ariticalid}" class="userAImg">
-							<img src="__PUBLIC__/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="380px" height="200px" />
-							</a>
-						<else />
-						<a href="__MODULE__/Works/works/id/{$vo.ariticalid}" class="a-block">
-							<img src="__PUBLIC__/{$vo.indeximgpath}" width="380px" height="200px" class="u_post_img"/>
-						</a>
-						</empty>
-						<div class="a-title">
-							<div class="a-info">
-								<h2><a href="__MODULE__/Works/works/id/{$vo.ariticalid}">{$vo.title|htmlspecialchars_decode}</a></h2>
-								<div class="works-info">
-									<span class="works-author">
+								<a href="__MODULE__/Works/works/id/{$vo.ariticalid}" class="userAImg">
+									<img src="__PUBLIC__/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="380px" height="200px" />
+								</a>
+								<else />
+								<a href="__MODULE__/Works/works/id/{$vo.ariticalid}" class="a-block">
+									<img src="__PUBLIC__/{$vo.indeximgpath}" width="380px" height="200px" class="u_post_img" />
+								</a>
+							</empty>
+							<div class="a-title">
+								<div class="a-info">
+									<h2><a href="__MODULE__/Works/works/id/{$vo.ariticalid}">{$vo.title|htmlspecialchars_decode}</a></h2>
+									<div class="works-info">
+										<span class="works-author">
 										<a href="">{$vo.username}</a>&nbsp;/&nbsp;
 									</span>
-									<span class="works-time">
+										<span class="works-time">
 										{$vo.createtime|substr=0,10}
+									</span> &nbsp;/&nbsp;
+										<span class="works-like"><img src="__HomeIMG__/index/love.png" alt="" /> 6 &nbsp;
 									</span>
-									&nbsp;/&nbsp;
-									<span class="works-like"><img src="__HomeIMG__/index/love.png" alt="" /> 6 &nbsp;
-									</span>
+									</div>
 								</div>
 							</div>
-						</div>
-					</li>
+						</li>
 
 					</volist>
 				</ul>
 			</div>
 		</div>
-
 
 	</div>
 	<div id="layer2" style="display:none;">
@@ -167,29 +159,29 @@
 				<ul>
 					<volist name="Articallist" id="vo">
 
-					<li>
-						<empty name="vo.indeximgpath">
-						<a href="__MODULE__/essay/essay/id/{$vo.ariticalid}" class="userAImg">
-							<img src="__PUBLIC__/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="260px" height="auto" />
-							</a>
-						<else />
-						<a href="__MODULE__/essay/essay/id/{$vo.ariticalid}" class="userAImg">
-							<img src="__PUBLIC__/{$vo.indeximgpath}" alt="" width="260px" height="auto" />
-						</a>
-						</empty>
-						<div class="userAInfo">
-							<div class="userATitle">
+						<li>
+							<empty name="vo.indeximgpath">
+								<a href="__MODULE__/essay/essay/id/{$vo.ariticalid}" class="userAImg">
+									<img src="__PUBLIC__/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="260px" height="auto" />
+								</a>
+								<else />
+								<a href="__MODULE__/essay/essay/id/{$vo.ariticalid}" class="userAImg">
+									<img src="__PUBLIC__/{$vo.indeximgpath}" alt="" width="260px" height="auto" />
+								</a>
+							</empty>
+							<div class="userAInfo">
+								<div class="userATitle">
 									<a href="__MODULE__/essay/essay/id/{$vo.ariticalid}">{$vo.title}</a>
-							</div>
-							<div  class="sortCo">
-								<span>{$vo.ArticalType}</span>
-							</div>
-							<div class="userAupTime"><span class="userA_Name" style="color:pink">{$vo.username}</span> / <span style="color:brown">{$vo.createtime}</span></div>
-							<span class="userAintro">
+								</div>
+								<div class="sortCo">
+									<span>{$vo.ArticalType}</span>
+								</div>
+								<div class="userAupTime"><span class="userA_Name" style="color:pink">{$vo.username}</span> / <span style="color:brown">{$vo.createtime}</span></div>
+								<span class="userAintro">
 								{$vo.intro|htmlspecialchars_decode}
 							</span>
-						</div>
-					</li>
+							</div>
+						</li>
 
 					</volist>
 				</ul>
@@ -198,133 +190,35 @@
 	</div>
 
 	<div id="layer3" style="display:none;">
-	<ul><li>
-		<div class="person">
-			<a href="#">
-				<div class="person_1">
-					<img src="__HomeIMG__/index/person_1.png" >
-				</div>
-			</a>
-			<div class="person_2">
-				<span>Sonia</span>
-				<span>程序猿</span>
-			</div>
-			<div class="person_3">
-				<span >作品 32</span>
-				<span >关注 6</span>
-				<span >被关注 3459</span>
-			</div>
-			<div class="person_4">
-				<input type="button" name="follow" value="" placeholder="" class="p_btn" />
-			</div>
-		</div>
-	</li>
-	<li>
-		<div class="person">
-			<a href="#">
-				<div class="person_1">
-					<img src="__HomeIMG__/index/person_1.png" >
-				</div>
-			</a>
-			<div class="person_2">
-				<span>Sonia</span>
-				<span>程序猿</span>
-			</div>
-			<div class="person_3">
-				<span >作品 32</span>
-				<span >关注 6</span>
-				<span >被关注 3459</span>
-			</div>
-			<div class="person_4">
-				<input type="button" name="follow" value="" placeholder="" class="p_btn" />
-			</div>
-		</div>
-	</li>
-	<li>
-		<div class="person">
-			<a href="#">
-				<div class="person_1">
-					<img src="__HomeIMG__/index/person_1.png" >
-				</div>
-			</a>
-			<div class="person_2">
-				<span>Sonia</span>
-				<span>程序猿</span>
-			</div>
-			<div class="person_3">
-				<span >作品 32</span>
-				<span >关注 6</span>
-				<span >被关注 3459</span>
-			</div>
-			<div class="person_4">
-				<input type="button" name="follow" value="" placeholder="" class="p_btn" />
-			</div>
-		</div>
-	</li>
-	<li>
-		<div class="person">
-			<a href="#">
-				<div class="person_1">
-					<img src="__HomeIMG__/index/person_1.png" >
-				</div>
-			</a>
-			<div class="person_2">
-				<span>Sonia</span>
-				<span>程序猿</span>
-			</div>
-			<div class="person_3">
-				<span >作品 32</span>
-				<span >关注 6</span>
-				<span >被关注 3459</span>
-			</div>
-			<div class="person_4">
-				<input type="button" name="follow" value="" placeholder="" class="p_btn" />
-			</div>
-		</div>
-	</li>
-	<li>
-		<div class="person">
-			<a href="#">
-				<div class="person_1">
-					<img src="__HomeIMG__/index/person_1.png" >
-				</div>
-			</a>
-			<div class="person_2">
-				<span>Sonia</span>
-				<span>程序猿</span>
-			</div>
-			<div class="person_3">
-				<span >作品 32</span>
-				<span >关注 6</span>
-				<span >被关注 3459</span>
-			</div>
-			<div class="person_4">
-				<input type="button" name="follow" value="" placeholder="" class="p_btn" />
-			</div>
-		</div>
-	</li>
-	<li>
-		<div class="person">
-			<a href="#">
-				<div class="person_1">
-					<img src="__HomeIMG__/index/person_1.png" >
-				</div>
-			</a>
-			<div class="person_2">
-				<span>Sonia</span>
-				<span>程序猿</span>
-			</div>
-			<div class="person_3">
-				<span >作品 32</span>
-				<span >关注 6</span>
-				<span >被关注 3459</span>
-			</div>
-			<div class="person_4">
-				<input type="button" name="follow" value="" placeholder="" class="p_btn" />
-			</div>
-		</div>
-	</li>
-	</ul>
+		<ul>
+			<volist name="userlist" id="vo">
+
+				<li>
+
+					<div class="person">
+						<empty name="vo.usertx">
+							<img src="__PUBLIC__/upload/usertx/default/person.png" alt="" width="120" height="120" style="border-radius: 90px;border:1px solid #eee;margin:20px;"/>
+						<else />
+							<img src="__PUBLIC__/{$vo.usertx}" alt="" width="120" height="120"  style="border-radius: 90px;border:1px solid #eee;margin:20px;"/>
+					</empty>
+						<div class="person_2">
+							<span>{$vo.username}</span>
+						</div>
+						<div class="person_3">
+							<span>作品 32</span>
+							<span>关注 6</span>
+							<span>被关注 3459</span>
+						</div>
+						<div class="person_4">
+							<input type="button" name="follow" value="" placeholder="" class="p_btn" />
+						</div>
+					</div>
+				</li>
+
+
+			</volist>
+
+		</ul>
 	</div>
 
 	<div id="layer4" style="display:none;">

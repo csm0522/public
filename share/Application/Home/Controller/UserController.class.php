@@ -24,6 +24,7 @@ class UserController extends Controller {
 				$this -> display('User/pshWorks');
 			}
 		else if(empty(session('userInfo'))){
+				echo "<script>alert('"."请先登陆~"."');</script>";
 				$this -> display('User/login');
 			}
 	}

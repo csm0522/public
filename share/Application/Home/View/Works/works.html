@@ -26,12 +26,15 @@
 
 
 					<div class="content2">
-
-						<div class="author">
-							<a href="">
-								<img src="__HomeIMG__/index/person_1.png" width="100%" />
-							</a>
+					<empty name="userTX">
+			<div class="author">
+								<img src="__HomeIMG__/index/person_1.png" width="100px" height="auto" />
 						</div>
+		<else />
+			<div class="author">
+									<a href=""><img src="__PUBLIC__{$userTX}" width="100px" height="auto" /></a>
+								</div>
+		</empty>
 
 						<div class="author_name">
 							<h>{$vo.username}</h>
@@ -84,6 +87,7 @@
 
 						<div class="other">
 							<div class="view_top">
+
 								<div class="view_l">
 									<a href=""><img src="__HomeIMG__/index/person_2.png" width="40px" /></a>
 								</div>
@@ -97,7 +101,7 @@
 							</div>
 
 							<div class="view_m">
-								<h style="font-size:14px;color:#aaa;">猴赛雷猴赛雷猴赛雷猴赛雷猴赛雷猴赛雷</h>
+								<h style="font-size:14px;color:#aaa;">w(ﾟДﾟ)w</h>
 							</div>
 
 						</div>
@@ -117,7 +121,7 @@
 							</div>
 
 							<div class="view_m">
-								<h style="font-size:14px;color:#aaa;">6666666666666666666666</h>
+								<h style="font-size:14px;color:#aaa;">666666</h>
 							</div>
 
 						</div>

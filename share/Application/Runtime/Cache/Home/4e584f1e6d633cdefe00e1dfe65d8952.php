@@ -59,7 +59,7 @@
                 <div class="middle-part">
 
                         <div class="middle_s">
-                            <input type="text" name="seaid" placeholder="搜索你喜欢的作品" id="artname"/>
+                            <input type="text" name="seaid" placeholder="搜索你喜欢的作品<?php echo (session('user')); ?>" id="artname"/>
                             <input type="submit" value="搜索" id="searchingbtn"/>
                         </div>
 
@@ -100,7 +100,13 @@
                 </script>
                 <div class="login">
                     <div id="loginAndLO" onclick="showLogin()" style="float: left;"><img
-                            src="/share/Public/Home/image/index/user.png" width="18px" style="margin-left:18px;"/>
+                            src="/share/Public/Home/image/index/personal.png" width="30px" style="margin-left:4px;vertical-align: middle;"/><p style="font-size:16px!important ;padding-top:4px;color:#40220f;">
+                            	 <?php if(empty(session('userInfo.UN'))){?>
+                            	游客
+                            	<?php }else{?>
+
+                            		<?php }?>	<?php echo (substr($_SESSION['userInfo']['UN'],0,5)); ?>
+                            </p>
                         <ul id="LoginMean" style="display: none;">
                             <?php if(empty(session('userInfo'))){?>
                             <li><a href="/share/index.php/Home/User/loginPage">登录</a></li>
@@ -110,8 +116,7 @@
                             <?php }?>
                         </ul>
                     </div>
-                    <a href="<?php echo U('User/pshWorksPag');?>"><img src="/share/Public/Home/image/index/add.png" width="18px"
-                                                            style="margin-left:18px;"/></a>
+                    <a href="<?php echo U('User/pshWorksPag');?>"><img  src="/share/Public/Home/image/index/add.png" width="34px" style="margin-left:30px;padding-top:8px;"/></a>
                     <!--<img src="/share/Public/Home/image/index/more.png" style="cursor:pointer;margin-left:10px;width:12px;" onclick="openShutManager2(this,'box2',false)" />-->
 
                 </div>
@@ -145,12 +150,13 @@
 
 
 					<?php if(is_array($WorksMain)): $i = 0; $__LIST__ = $WorksMain;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="content2">
-
-						<div class="author">
-							<a href="">
-								<img src="/share/Public/Home/image/index/person_1.png" width="100%" />
-							</a>
+					<?php if(empty($userTX)): ?><div class="author">
+								<img src="/share/Public/Home/image/index/person_1.png" width="100px" height="auto" />
 						</div>
+		<?php else: ?>
+			<div class="author">
+									<a href=""><img src="/share/Public<?php echo ($userTX); ?>" width="100px" height="auto" /></a>
+								</div><?php endif; ?>
 
 						<div class="author_name">
 							<h><?php echo ($vo["username"]); ?></h>
@@ -202,6 +208,7 @@
 
 						<div class="other">
 							<div class="view_top">
+
 								<div class="view_l">
 									<a href=""><img src="/share/Public/Home/image/index/person_2.png" width="40px" /></a>
 								</div>
@@ -215,7 +222,7 @@
 							</div>
 
 							<div class="view_m">
-								<h style="font-size:14px;color:#aaa;">猴赛雷猴赛雷猴赛雷猴赛雷猴赛雷猴赛雷</h>
+								<h style="font-size:14px;color:#aaa;">w(ﾟДﾟ)w</h>
 							</div>
 
 						</div>
@@ -235,7 +242,7 @@
 							</div>
 
 							<div class="view_m">
-								<h style="font-size:14px;color:#aaa;">6666666666666666666666</h>
+								<h style="font-size:14px;color:#aaa;">666666</h>
 							</div>
 
 						</div>

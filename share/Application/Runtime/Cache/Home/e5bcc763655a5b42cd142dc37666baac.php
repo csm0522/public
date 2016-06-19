@@ -100,8 +100,8 @@
                 </script>
                 <div class="login">
                     <div id="loginAndLO" onclick="showLogin()" style="float: left;"><img
-                            src="/share/Public/Home/image/index/personal.png" width="30px" style="margin-left:4px;vertical-align: middle;"/><p style="padding-top:4px;color:#40220f;">
-                            	 <?php if(empty(session('userInfo'))){?>
+                            src="/share/Public/Home/image/index/personal.png" width="30px" style="margin-left:4px;vertical-align: middle;"/><p style="font-size:16px!important ;padding-top:4px;color:#40220f;">
+                            	 <?php if(empty(session('userInfo.UN'))){?>
                             	游客
                             	<?php }else{?>
 
@@ -116,7 +116,7 @@
                             <?php }?>
                         </ul>
                     </div>
-                    <a href="<?php echo U('User/pshWorksPag');?>"><img  src="/share/Public/Home/image/index/add.png" width="34px" style="margin-left:30px;padding-top:0px;"/></a>
+                    <a href="<?php echo U('User/pshWorksPag');?>"><img  src="/share/Public/Home/image/index/add.png" width="34px" style="margin-left:30px;padding-top:8px;"/></a>
                     <!--<img src="/share/Public/Home/image/index/more.png" style="cursor:pointer;margin-left:10px;width:12px;" onclick="openShutManager2(this,'box2',false)" />-->
 
                 </div>
@@ -268,7 +268,7 @@
 								<a href="" style="text-decoration: none;">
 									<h style="font-size:28px;color:#444;font-weight:bolder;">
 										<?php
- if($userInfo == '') { echo('昵称'); } else{ echo $userInfo[username]; } ?>
+ if($userInfo['username'] == '') { echo('昵称'); } else{ echo $userInfo[username]; } ?>
 									</h>
 								</a>
 							</div>
