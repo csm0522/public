@@ -126,174 +126,157 @@
     </div>
 </div>
 
-<link href="/share/Public/Home/css/work.css" rel="stylesheet" media="all" />
+<link href="/share/Public/Home/css/work.css" rel="stylesheet" media="all"/>
 <script type="text/javascript">
-	window.onload=function(){
-		document.getElementById('subCom').click=function() {
-			var now = new Date();
-			var layer = document.getElementById("layer");
-			var divlayer = document.createElement("div");
-			var con = document.getElementById("content").value;
-			con = con.replace(/\n/g, "<br />");
-			divlayer.innerHTML = "<img src='/share/Public/Home/image/index/person_2.png' width='40px' class='header'/>" + con + "<div class='stime'>" + now.toLocaleString() + "</div><div class='clear'></div>";
-			divlayer.className = "content";
-			layer.appendChild(divlayer);
-			document.getElementById("content").value = "";
-		}
-	}
+    window.onload = function () {
+        document.getElementById('subCom').click = function () {
+            var now = new Date();
+            var layer = document.getElementById("layer");
+            var divlayer = document.createElement("div");
+            var con = document.getElementById("content").value;
+            con = con.replace(/\n/g, "<br />");
+            divlayer.innerHTML = "<img src='/share/Public/Home/image/index/person_2.png' width='40px' class='header'/>" + con + "<div class='stime'>" + now.toLocaleString() + "</div><div class='clear'></div>";
+            divlayer.className = "content";
+            layer.appendChild(divlayer);
+            document.getElementById("content").value = "";
+        }
+    }
 
-	</script>
-		<div id="container" class="container-min-width" style="display: block;">
-			<div class="dynamic">
-				<div class="background_top"></div>
-				<div class="background_middle">
-
-
-					<?php if(is_array($WorksMain)): $i = 0; $__LIST__ = $WorksMain;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="content2">
-					<?php if(empty($userTX)): ?><div class="author">
-								<img src="/share/Public/Home/image/index/person_1.png" width="100px" height="auto" />
-						</div>
-		<?php else: ?>
-			<div class="author">
-									<a href=""><img src="/share/Public<?php echo ($userTX); ?>" width="100px" height="auto" /></a>
-								</div><?php endif; ?>
-
-						<div class="author_name">
-							<h><?php echo ($vo["username"]); ?></h>
-						</div>
-
-						<div class="work_bottom">
-						<div class="bottom_1"></div>
-						<div class="bottom_2"></div>
-						</div>
-
-						<div class="author_title">
-							<h><?php echo ($vo["title"]); ?></h>
-						</div>
-
-						<div class="author_content">
-							<?php echo ($vo["content"]); ?>
-						</div>
-
-						<div class="follower">
-								<input type="button" class="follower_btn" onclick="uper()" /><span id="nums" name="nums"><?php echo ($nums["num"]); ?></span>
-						</div>
-
-						</div><?php endforeach; endif; else: echo "" ;endif; ?>
-					<div class="recommend-line">
-						<a>评论</a>
-					</div>
-
-					<div class="view">
-
-						<div class="view_me">
-							<a href="">
-								<img src="/share/Public/Home/image/index/person_1.png" width="80%" />
-							</a>
-						</div>
-
-						<textarea id="content" rows="1" cols="100" placeholder="添加评论" name="caption" style="runat：server；"></textarea>
-
-						<div id="view_submit" >
-							<input type="button" value="提交" class="submit" id="subCom"/>
-						</div>
-					</div>
-
-				</div>
-
-				<div class="view_more">
+</script>
+<div id="container" class="container-min-width" style="display: block;">
+    <div class="dynamic">
+        <div class="background_top"></div>
+        <div class="background_middle">
 
 
-					<div class="view_others">
+            <?php if(is_array($WorksMain)): $i = 0; $__LIST__ = $WorksMain;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="content2">
+                    <?php if(empty($userTX)): ?><div class="author">
+                            <img src="/share/Public/Home/image/index/person_1.png" width="100px" height="auto"/>
+                        </div>
+                        <?php else: ?>
+                        <div class="author">
+                            <a href=""><img src="/share/Public<?php echo ($userTX); ?>" width="100px" height="auto"/></a>
+                        </div><?php endif; ?>
 
-						<div class="other">
-							<div class="view_top">
+                    <div class="author_name">
+                        <h><?php echo ($vo["username"]); ?></h>
+                    </div>
 
-								<div class="view_l">
-									<a href=""><img src="/share/Public/Home/image/index/person_2.png" width="40px" /></a>
-								</div>
+                    <div class="work_bottom">
+                        <div class="bottom_1"></div>
+                        <div class="bottom_2"></div>
+                    </div>
 
-								<div class="other_name">
-									<h style="font-size:14px;color:#aaa;">haifn-</h>
-									<a href="" style="text-decoration:none;font-size:18px">
-										<h id="identity1" onmousemove="identity_color(1)" onmouseout="identity_back(1)">设计师</h>
-									</a>
-								</div>
-							</div>
+                    <div class="author_title">
+                        <h><?php echo ($vo["title"]); ?></h>
+                    </div>
 
-							<div class="view_m">
-								<h style="font-size:14px;color:#aaa;">w(ﾟДﾟ)w</h>
-							</div>
+                    <div class="author_content">
+                        <?php echo ($vo["content"]); ?>
+                    </div>
 
-						</div>
+                    <div class="follower">
+                        <input type="button" class="follower_btn" onclick="uper()"/><span id="nums" name="nums"><?php echo ($nums["num"]); ?></span>
+                    </div>
 
-						<div class="other">
-							<div class="view_top">
-								<div class="view_l">
-									<a href=""><img src="/share/Public/Home/image/index/person_1.png" width="40px" /></a>
-								</div>
+                </div><?php endforeach; endif; else: echo "" ;endif; ?>
 
-								<div class="other_name">
-									<h style="font-size:14px;color:#aaa;">xuxin-</h>
-									<a href="" style="text-decoration:none;font-size:18px">
-										<h id="identity2" onmousemove="identity_color(2)" onmouseout="identity_back(2)">党员</h>
-									</a>
-								</div>
-							</div>
+            <div class="recommend-line">
+                <a>评论</a>
+            </div>
 
-							<div class="view_m">
-								<h style="font-size:14px;color:#aaa;">666666</h>
-							</div>
+            <div class="view">
 
-						</div>
+                <div class="view_me">
+                    <a href="">
+                        <img src="/share/Public/Home/image/index/person_1.png" width="80%"/>
+                    </a>
+                </div>
 
-						<div class="other">
-							<div class="view_top">
-								<div class="view_l">
-									<a href=""><img src="/share/Public/Home/image/index/person_2.png" width="40px" /></a>
-								</div>
+                    <textarea id="content" rows="1" cols="100" placeholder="添加评论" name="caption"></textarea>
+                    <div id="view_submit">
+                        <input type="button" value="提交" class="submit" id="subCom" onclick="addcomment()"/>
+                    </div>
+            </div>
 
-								<div class="other_name">
-									<h style="font-size:14px;color:#aaa;">shaomin-</h>
-									<a href="" style="text-decoration:none;font-size:18px">
-										<h id="identity3" onmousemove="identity_color(3)" onmouseout="identity_back(3)">学霸</h>
-									</a>
-								</div>
-							</div>
+        </div>
 
-							<div class="view_m">
-								<h style="font-size:14px;color:#aaa;">赞赞赞赞赞赞赞</h>
-							</div>
+        <div class="view_more">
 
-						</div>
-					</div>
 
-				</div>
-				<div class="clear"></div>
-				<script>
-					function uper() {
-						alert("谢谢关注!");
-						var url = window.location.href;
-						var st = url.split("/");
-						var i = st.length;
-						var j = st[i - 1];
-						$.ajax({
-							type: "get", //请求的方式
+            <div class="view_others">
+                <!--<?php dump($comment); ?>-->
+                <?php if(is_array($comment)): $i = 0; $__LIST__ = $comment;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$com): $mod = ($i % 2 );++$i;?><div class="other">
+                    <div class="view_top" >
+
+                        <div class="view_l">
+                            <a href=""><img src="/share/Public/Home/image/index/person_2.png" width="40px"/></a>
+                        </div>
+
+                        <!--<div class="other_name" >-->
+                        <span style="font-size:16px;color:#666;float: left;margin-left: 5%;margin-top: 10px;"><?php echo ($com["username"]); ?></span>
+                        <div style="float: right;font-size: 14px;color:#aaa;display: inline-block;margin-top: 10px;"><?php echo ($com["creattime"]); ?></div>
+                        <!--</div>-->
+
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="view_m">
+                        <h style="font-size:14px;color:#aaa;"><?php echo ($com["content"]); ?></h>
+                    </div>
+
+                </div><?php endforeach; endif; else: echo "" ;endif; ?>
+            </div>
+
+        </div>
+        <div class="clear"></div>
+        <script>
+            var url = window.location.href;
+            var st = url.split("/");
+            var i = st.length;
+            var j = st[i - 1];
+
+            function uper() {
+                alert("谢谢关注!");
+                $.ajax({
+                    type: "get", //请求的方式
 //                    dataType: "json", //数据的格式 建议大家使用json格式
-							url: "/share/index.php/Home/Works/upwork/id/" + j, //请求的url地址
-							success: function (data) { //请求成功时，处理返回来的数据
-								var numbers = data.num;
-								$("#nums").html(numbers);
+                    url: "/share/index.php/Home/Works/upwork/id/" + j, //请求的url地址
+                    success: function (data) { //请求成功时，处理返回来的数据
+                        var numbers = data.num;
+                        $("#nums").html(numbers);
 //                        alert(url)
-							}
-						})
-					}
-				</script>
-					<div class="clear"></div>
-			<div id="footer" style="margin-bottom:0px;width:100%;background: #333131;">
+                    }
+                })
+            }
+            function addcomment() {
+                var comment = {id: j, comment: $("#content").val()};
+                if ($("#content").val() == "") {
+                    alert("请输入吐槽内容");
+                }
+                else {
+                $.ajax({
+                    type: "post", //请求的方式
+                    dataType: "json", //数据的格式 建议大家使用json格式
+                    data: comment,
+                    url: "/share/index.php/Home/Works/addcomment", //请求的url地址
+                    success: function (data) {
+                        if(data==0){
+                            window.location.href=window.location.href;
+                        }
+                        else{
+                            alert("网络繁忙,请稍后再试。");
+                        }
+                    }
+                })
+            }
+            }
+        </script>
+        <div style="clear: both"></div>
+			<div id="footer" style="margin-top:10px;width:100%;background: #333131;">
 				<div class="wrapper">
-					<p class="font-size:14px;">版权所有：大学生作品发布平台</p>
-					<p class="font-size:14px;"style="margin-top: 5px;">开者团队:杨海强、吴欣、刘泽珊、陈少敏</p>
+					<p style="font-size:14px;margin-top:5px;">版权所有：大学生作品发布平台</p>
+					<p style="font-size:14px;margin-top: 5px;">开发团队:杨海强、吴欣、刘泽珊、陈少敏</p>
 				</div>
 			</div>
 

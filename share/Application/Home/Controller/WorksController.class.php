@@ -14,8 +14,11 @@ class WorksController extends Controller {
 
 		$con3['AriticalId'] = $id;
 		$data['num'] = M('like')->where($con3)->count();
+		//评论
+		$mag=M('artical_comment')->join('t_user on t_artical_comment.userid = t_user.userid')->where("ariticalid = '$id'")->order("ACommendId DESC")->select();
+//		dump($mag);
 		$this->assign("nums",$data);
-
+		$this->assign("comment",$mag);
     	$this->display();
     }
 
@@ -53,5 +56,29 @@ class WorksController extends Controller {
 		$this->ajaxReturn($data);
 	}
 
+	public function addcomment(){
+		$sessid = session('userInfo.UId');
+		if(!empty($sessid)){
+			$con2['LoginId']=$sessid;
+			$con['UserId'] = M('user')->where($con2)->getField(UserId);
+			$con['AriticalId']=$_POST['id'];
+			$con['content']=$_POST['comment'];
+			$con['CreatTime'] = Date('Y-m-d H:i:s');
+
+			if(M('artical_comment')->add($con)){
+				$data=0;
+//				redirect(U('User/login'));
+			}
+			else{
+				$data=1;
+			}
+		}
+		else{
+			echo "<script>alert('"."请先登陆"."');</script>";
+			$data=1;
+		}
+		$this->ajaxReturn($data);
+
+	}
 
 }
