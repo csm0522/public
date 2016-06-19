@@ -172,7 +172,7 @@
         </div>
     </div>
     <div class="rightpart">
-        <?php dump($topis) ?>
+        <!--<?php dump($topis) ?>-->
         <?php if(is_array($topis)): $i = 0; $__LIST__ = $topis;if( count($__LIST__)==0 ) : echo "暂无数据" ;else: foreach($__LIST__ as $key=>$datas): $mod = ($i % 2 );++$i;?><article class="format-standard type-post hentry clearfix " style="padding-left:50px;padding-top:38px;padding-bottom:25px;height:auto;background:white;margin-top:5px;">
 
                 <header class="clearfix ">
