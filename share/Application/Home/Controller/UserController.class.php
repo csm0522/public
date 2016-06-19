@@ -39,17 +39,19 @@ class UserController extends Controller {
 			if ($loginModel -> login($name, $pwd)) {
 				$user=D('login')->where("LoginName='$name'")->select();
 				$userlogNum = M('login') -> where("LoginName='$name'") ->setInc('loginNum');
-				$arr=array('user'=>$user[0]['loginname'], 'UId'=>$user[0]['loginid'], );
+				$getUN = M('user') -> join('t_login on t_user.loginid=t_login.loginid') -> where("LoginName='$name'")->getfield('username');
+				$arr=array('user'=>$user[0]['loginname'], 'UId'=>$user[0]['loginid'],'UN'=>$getUN );
 				session(array('name'=>'userInfo'));
 				session('userInfo',$arr);
 				redirect(U('Index/index'));
 			}
 			else {
-				echo "<script>alert('error');</script>";
+				echo "<script>alert('"."用户名或密码错误"."');</script>";
+				echo '<script>window.history.go(-1); </script>';
 			}
 		}
 		else{
-			$this -> display('User/login');
+			redirect(U('User/login'));
 		}
 	}
 	/*
