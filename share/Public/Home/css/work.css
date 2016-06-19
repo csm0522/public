@@ -251,12 +251,11 @@ input{
 
     color:#8e8e8e;
   font-weight: lighter;
-  font-size: 25px!important;
 }
-.author_content h1,h2,h3,h4,h5,p{
-	width: 100%;;
+.author_content h1,h2,h3,h4,h5{
+	width: 100%;
 	display: block;
-	font-size: 25px!important;
+	font-size: 25px;
 }
 .follower
 {
@@ -310,7 +309,7 @@ margin-bottom:20px;
     width: 44%;
     content: "";
     border-top: 1px solid #aaa;
-    z-index: ;
+    /*z-index: ;*/
 }
 
 .recommend-line::after
@@ -322,7 +321,7 @@ margin-bottom:20px;
     width: 44%;
     content: "";
     border-top: 1px solid #aaa;
-    z-index: ;
+    /*z-index: ;*/
 }
 
 .view

@@ -765,10 +765,10 @@ div.title span#btn_1 ul li:last-child{
 	/*margin-top:500px;*/
 	width: 100%;
 	padding:10px 0;
-	background: black;
+	background: #333131;
 	color:white;
 	text-align: center;
-	font-size: .6rem;
+	font-size: 14px;
 }
 div.worksList{
 	width: 1220px;
