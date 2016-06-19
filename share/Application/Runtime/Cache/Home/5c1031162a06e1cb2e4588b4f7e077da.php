@@ -203,7 +203,26 @@
 
         </div>
 
+        <div class="other">
+            <div class="view_top">
+                <div class="view_l">
+                    <a href=""><img src="/share/Public/Home/image/index/person_2.png" width="40px" /></a>
+                </div>
 
+                <div class="other_name">
+                    <h style="font-size:14px;color:#aaa;">shaomin-</h>
+                    <a href="" style="text-decoration:none;font-size:18px">
+                        <h id="identity3" onmousemove="identity_color(3)" onmouseout="identity_back(3)">学霸</h>
+                    </a>
+                </div>
+            </div>
+
+            <div class="view_m">
+                <h style="font-size:14px;color:#aaa;">赞赞赞赞赞赞赞</h>
+            </div>
+
+        </div>
+    </div>
         <div class="clear"></div>
         <script>
             function uper() {

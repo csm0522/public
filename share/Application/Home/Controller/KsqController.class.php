@@ -11,7 +11,7 @@ class KsqController extends Controller
         $data = $ksq->field('topicId,userId,content,type,CreatTime')->order("topicId DESC")->select();
 
         for ($i = 0; $i < count($data); $i++) {
-            $con2['UserId']=$data[$i]['userid'];
+            $con2['userid']=$data[$i]['userid'];
             $data[$i]['username']=M('user')->where($con2)->getField(UserName);
             if(empty($data[$i]['username'])){
                 $data[$i]['username']="游客";
