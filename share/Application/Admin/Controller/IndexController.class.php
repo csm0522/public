@@ -9,9 +9,17 @@ class IndexController extends Controller {
 				$name = session('Admin');
 				$this -> assign('name', $name);
 			}
+			$adminid=$_SESSION['Admin']['adminId'];
 			$user = D('login');
-			$list = $user->join('RIGHT JOIN t_user ON t_login.Loginid = t_user.Loginid' )->select();
+			$list = $user->join('t_user ON t_login.LoginId = t_user.LoginId' )->select();
+			$adminInfo = D('login')->where("LoginId = '$adminid'")->find();
+			$worksNum = M('artical') -> where('uploadtype=1') ->select();
+			$essayNum = M('artical') -> where('uploadtype=2') ->select();
+//			var_dump($adminInfo);exit;
 			$this -> assign('list',$list);
+			$this -> assign('worksNum',$worksNum);
+			$this -> assign('essayNum',$essayNum);
+			$this -> assign('adminInfo',$adminInfo);
 			$this -> display('Index/index');
 		}
 		else{

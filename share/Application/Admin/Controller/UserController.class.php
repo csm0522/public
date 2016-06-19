@@ -19,7 +19,7 @@ class UserController extends Controller {
 			}
 			else {
 				echo "<script>alert('用户名或密码不正确');</script>";
-            $this->display('User/login');
+           		 $this->display('User/login');
 			}
 		}
 		else{
@@ -34,11 +34,10 @@ class UserController extends Controller {
 
 	public function UserList() {
 			$user = D('login');
-			$page = D('login')->join('RIGHT JOIN t_user ON t_login.Loginid = t_user.Loginid')->where('t_login.LoginTag = 0') -> count();
-			$ppp = new Page($page, 3);
-			$list = $user -> join('RIGHT JOIN t_user ON t_login.Loginid = t_user.Loginid')->where('t_login.LoginTag = 0 and t_user.tag = 1') ->limit($ppp->firstRow.','.$ppp->listRows)-> select();
+			$page = D('login')->join('t_user ON t_login.Loginid = t_user.Loginid')->where('t_login.loginstatus = 0') -> count();
+			$ppp = new Page($page, 10);
+			$list = $user -> join('RIGHT JOIN t_user ON t_login.Loginid = t_user.Loginid')->where('t_login.LoginTag = 1  and t_user.tag = 1') ->limit($ppp->firstRow.','.$ppp->listRows)-> select();
 			$show = $ppp -> show();
-//			show_bug($show);
 			$this -> assign('list', $list);
 			$this -> assign('page', $show);//分页导航
 			$this -> display();
@@ -48,14 +47,16 @@ class UserController extends Controller {
         $login=D('login');
         $user=D('user');
 		$id=$_GET['id'];
-//		echo "<script>alert('$id');</script>";
-        if($user->join('RIGHT JOIN t_user ON t_login.Loginid = t_user.Loginid')->where("t_user.Loginid = $id")->delete()){
-        	if($login->join('RIGHT JOIN t_user ON t_login.Loginid = t_user.Loginid')->where("t_login.Loginid = $id")->delete()){
-        		$this->success('!!!');
-        }
-        }
+//		echo "<script>alert('$id');</script>";exit;
+		if($id)
+		{
+			$setTag = $user -> where("loginid = '$id'") ->setField('tag',0);
+			$setloginStatus = $login -> where("loginid = '$id'") ->setField('LoginStatus',1);
+			redirect(U('User/userlist'));
+		}
 		else{
-			$this->error('???');
+		echo "<script>alert('$id');</script>";exit;
+
 		}
     }
 

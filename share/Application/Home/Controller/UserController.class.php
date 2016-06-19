@@ -33,21 +33,32 @@ class UserController extends Controller {
 	}
 	public function login() {
 		 if(IS_POST){
+			$data = array('lastip'=>get_client_ip(),'lastdate'=>Date('Y-m-d H:i:s'));
+
 			$name = $_POST['login_un'];
 			$pwd = md5($_POST['login_pwd']);
+			 $status = M('login') -> where("LoginName='$name'")->find();
 			//echo "<script>alert('$pwd');</script>";
 			$loginModel = new \Home\Model\UserModel();
-			if ($loginModel -> login($name, $pwd)) {
+			if($status['loginstatus']==0)
+			{
+				if ($loginModel -> login($name, $pwd)) {
 				$user=D('login')->where("LoginName='$name'")->select();
 				$userlogNum = M('login') -> where("LoginName='$name'") ->setInc('loginNum');
 				$getUN = M('user') -> join('t_login on t_user.loginid=t_login.loginid') -> where("LoginName='$name'")->getfield('username');
+				M('login') ->  where("LoginName='$name'")->setField($data);
 				$arr=array('user'=>$user[0]['loginname'], 'UId'=>$user[0]['loginid'],'UN'=>$getUN );
 				session(array('name'=>'userInfo'));
 				session('userInfo',$arr);
 				redirect(U('Index/index'));
+				}else {
+					echo "<script>alert('"."用户名或密码错误"."');</script>";
+					echo '<script>window.history.go(-1); </script>';
+				}
 			}
-			else {
-				echo "<script>alert('"."用户名或密码错误"."');</script>";
+
+			else{
+				echo "<script>alert('"."账号被锁定"."');</script>";
 				echo '<script>window.history.go(-1); </script>';
 			}
 		}
@@ -101,7 +112,8 @@ class UserController extends Controller {
 							break;
 					}
 					$arr['addtime'] = Date('Y-m-d H:i:s');
-					$data = array('LoginName' => I('Reg_un'), 'LoginPwd' => md5(I('Reg_pwd')), 'LoginStatus' => 0, 'LoginTag' => $LoginTag, 'regDate' => $arr['addtime']);
+					$ip=get_client_ip();
+					$data = array('LoginName' => I('Reg_un'),'regip'=>$ip,'lastip'=>$ip, 'LoginPwd' => md5(I('Reg_pwd')), 'LoginStatus' => 0, 'LoginTag' => $LoginTag, 'regDate' => $arr['addtime']);
 					if ($xinxi->data($data)->add()) {
 						$model->commit();
 						$condition['LoginName'] = I('Reg_un');

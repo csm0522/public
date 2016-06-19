@@ -21639,3 +21639,1633 @@ SQL: SELECT `UserId` FROM `t_user` WHERE `LoginId` = 1 LIMIT 1   [ RunTime:0.000
 SQL: SHOW COLUMNS FROM `t_like` [ RunTime:0.0034s ]
 SQL: SELECT COUNT(*) AS tp_count FROM `t_like` WHERE `UserId` = 2 AND `AriticalId` = 56 LIMIT 1   [ RunTime:0.0003s ]
 
+[ 2016-06-19T12:04:33+08:00 ] ::1 /share/index.php/Home/User/loginPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001588s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000336s ]
+NOTIC: [8] Undefined variable: Workslist E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 245 行.
+NOTIC: [8] Undefined variable: Articallist E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 279 行.
+NOTIC: [8] Undefined variable: userlist E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 307 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025512s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000994s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001718s ]
+
+[ 2016-06-19T12:04:36+08:00 ] ::1 /share/index.php/Home/User/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001737s ]
+
+[ 2016-06-19T12:04:36+08:00 ] ::1 /share/index.php/Home/User/loginPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001171s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+NOTIC: [8] Undefined index: userInfo E:\wamp\wwww\share\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012034s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012138s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000968s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001158s ]
+
+[ 2016-06-19T12:06:16+08:00 ] ::1 /share/index.php/Home/User/loginPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001251s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+NOTIC: [8] Undefined index: userInfo E:\wamp\wwww\share\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012484s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012587s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000896s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000994s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001151s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001251s ]
+
+[ 2016-06-19T12:07:00+08:00 ] ::1 /share/index.php/Home/User/pshWorksPag.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001299s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+NOTIC: [8] Undefined index: userInfo E:\wamp\wwww\share\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000996s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001134s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001233s ]
+
+[ 2016-06-19T12:07:02+08:00 ] ::1 /share/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0092s ]
+SQL: select * from t_login where LoginName='admin123' and LoginPwd='0192023a7bbd73250516f069df18b500' [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `t_login` WHERE ( LoginName='admin123' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0029s ]
+SQL: UPDATE `t_login` SET `loginNum`=loginNum+1 WHERE ( LoginName='admin123' ) [ RunTime:0.0734s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0040s ]
+SQL: SELECT `username` FROM `t_user` INNER JOIN t_login on t_user.loginid=t_login.loginid  WHERE ( LoginName='admin123' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\wwww\share\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2016-06-19T12:07:02+08:00 ] ::1 /share/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001204s ]
+SQL: SHOW COLUMNS FROM `t_artical` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `t_artical` right join t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 1 ) ORDER BY AriticalId DESC  [ RunTime:0.0042s ]
+SQL: SELECT * FROM `t_artical` INNER JOIN t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 2 ) ORDER BY AriticalId DESC  [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0035s ]
+SQL: SELECT `usertx` FROM `t_user` WHERE ( loginid = '1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `t_user` WHERE ( loginid = '1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `t_user`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000217s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000325s ]
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020387s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020495s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000996s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001108s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001213s ]
+
+[ 2016-06-19T12:07:05+08:00 ] ::1 /share/index.php/Home/User/personal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001056s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `t_user` WHERE ( loginid = '1' )  [ RunTime:0.0003s ]
+SQL: SELECT `usertx` FROM `t_user` WHERE ( loginid = '1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `t_login` WHERE ( loginid = '1' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_artical` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `t_artical` INNER JOIN t_user on t_user.userid = t_artical.userid  WHERE ( t_user.loginid = '1' AND t_artical.uploadtype = '1' )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_artical` INNER JOIN t_user on t_user.userid = t_artical.userid  WHERE ( t_user.loginid = '1' AND t_artical.uploadtype = '1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_artical` INNER JOIN t_user on t_user.userid = t_artical.userid  WHERE ( t_user.loginid = '1' AND t_artical.uploadtype = '2' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000225s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000340s ]
+NOTIC: [8] Use of undefined constant username - assumed 'username' E:\wamp\wwww\share\Application\Runtime\Cache\Home\e5bcc763655a5b42cd142dc37666baac.php 第 271 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016857s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016993s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000957s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001139s ]
+
+[ 2016-06-19T12:07:05+08:00 ] ::1 /share/index.php/Home/User/infoEdit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `t_user` WHERE ( loginid = '1' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013739s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013854s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000919s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001026s ]
+
+[ 2016-06-19T12:07:13+08:00 ] ::1 /share/index.php/Home/User/Editinfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001122s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\wamp\wwww\share\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined variable: position E:\wamp\wwww\share\Application\Home\Controller\UserController.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `t_user` WHERE ( loginid = '1' )  [ RunTime:0.0003s ]
+SQL: UPDATE `t_user` SET `LoginId`='1',`userTX`='./upload/userTX/2016-06-19/57661a717a40f.jpeg',`UserName`='haifnn',`UserSex`='1',`Userphone`='13631270809',`UserEmail`='562139460@qq.com',`position`=NULL,`userIntro`='不知道说点什么才好????' WHERE ( loginid = '1' ) [ RunTime:0.0352s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008687s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000899s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000996s ]
+
+[ 2016-06-19T12:07:14+08:00 ] ::1 /share/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001115s ]
+SQL: SHOW COLUMNS FROM `t_artical` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `t_artical` right join t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 1 ) ORDER BY AriticalId DESC  [ RunTime:0.0044s ]
+SQL: SELECT * FROM `t_artical` INNER JOIN t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 2 ) ORDER BY AriticalId DESC  [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0033s ]
+SQL: SELECT `usertx` FROM `t_user` WHERE ( loginid = '1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `t_user` WHERE ( loginid = '1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `t_user`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000224s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000341s ]
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019923s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000920s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001026s ]
+
+[ 2016-06-19T12:07:18+08:00 ] ::1 /share/index.php/Home/User/personal
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `t_user` WHERE ( loginid = '1' )  [ RunTime:0.0003s ]
+SQL: SELECT `usertx` FROM `t_user` WHERE ( loginid = '1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `t_login` WHERE ( loginid = '1' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_artical` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `t_artical` INNER JOIN t_user on t_user.userid = t_artical.userid  WHERE ( t_user.loginid = '1' AND t_artical.uploadtype = '1' )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_artical` INNER JOIN t_user on t_user.userid = t_artical.userid  WHERE ( t_user.loginid = '1' AND t_artical.uploadtype = '1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_artical` INNER JOIN t_user on t_user.userid = t_artical.userid  WHERE ( t_user.loginid = '1' AND t_artical.uploadtype = '2' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000336s ]
+NOTIC: [8] Use of undefined constant username - assumed 'username' E:\wamp\wwww\share\Application\Runtime\Cache\Home\e5bcc763655a5b42cd142dc37666baac.php 第 271 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016423s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016529s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000887s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000944s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001048s ]
+
+[ 2016-06-19T12:15:51+08:00 ] ::1 /share/index.php/Home/User/loginPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000258s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000432s ]
+NOTIC: [8] Undefined variable: Workslist E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 245 行.
+NOTIC: [8] Undefined variable: Articallist E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 279 行.
+NOTIC: [8] Undefined variable: userlist E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 307 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019362s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019472s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000891s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000962s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001091s ]
+
+[ 2016-06-19T12:15:58+08:00 ] ::1 /share/index.php/Home/Public/SearchArt.html?seaid=s
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+SQL: SHOW COLUMNS FROM `t_artical` [ RunTime:0.0038s ]
+SQL: SELECT `ariticalid`,`userid`,`title`,`indeximgpath`,`upLoadType`,`intro`,`CreateTime` FROM `t_artical` WHERE `Title` LIKE '%s%' ORDER BY ariticalid DESC  [ RunTime:0.0602s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0046s ]
+NOTIC: [8] Use of undefined constant UserName - assumed 'UserName' E:\wamp\wwww\share\Application\Home\Controller\PublicController.class.php 第 15 行.
+SQL: SELECT `UserName` FROM `t_user` WHERE `UserId` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant UserName - assumed 'UserName' E:\wamp\wwww\share\Application\Home\Controller\PublicController.class.php 第 15 行.
+SQL: SELECT `UserName` FROM `t_user` WHERE `UserId` = 4 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant UserName - assumed 'UserName' E:\wamp\wwww\share\Application\Home\Controller\PublicController.class.php 第 15 行.
+SQL: SELECT `UserName` FROM `t_user` WHERE `UserId` = 4 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant UserName - assumed 'UserName' E:\wamp\wwww\share\Application\Home\Controller\PublicController.class.php 第 15 行.
+SQL: SELECT `UserName` FROM `t_user` WHERE `UserId` = 4 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000257s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027681s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027797s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000867s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000921s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001027s ]
+
+[ 2016-06-19T12:16:12+08:00 ] ::1 /share/index.php/Home/Public/SearchArt.html?seaid=haifn
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001648s ]
+SQL: SHOW COLUMNS FROM `t_artical` [ RunTime:0.0033s ]
+SQL: SELECT `ariticalid`,`userid`,`title`,`indeximgpath`,`upLoadType`,`intro`,`CreateTime` FROM `t_artical` WHERE `Title` LIKE '%haifn%' ORDER BY ariticalid DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015128s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015234s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001017s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001377s ]
+
+[ 2016-06-19T12:17:19+08:00 ] ::1 /share/index.php/Home/User/pshWorksPag.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001227s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013163s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013273s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000999s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001166s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001279s ]
+
+[ 2016-06-19T14:25:06+08:00 ] ::1 /share/index.php/Home/User/loginPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001159s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000670s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000787s ]
+NOTIC: [8] Undefined variable: Workslist E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 245 行.
+NOTIC: [8] Undefined variable: Articallist E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 279 行.
+NOTIC: [8] Undefined variable: userlist E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 307 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001025s ]
+
+[ 2016-06-19T14:25:11+08:00 ] ::1 /share/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000996s ]
+SQL: SHOW COLUMNS FROM `t_artical` [ RunTime:0.0601s ]
+SQL: SELECT * FROM `t_artical` right join t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 1 ) ORDER BY AriticalId DESC  [ RunTime:0.0862s ]
+SQL: SELECT * FROM `t_artical` INNER JOIN t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 2 ) ORDER BY AriticalId DESC  [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0029s ]
+SQL: SELECT `usertx` FROM `t_user` WHERE ( loginid = '1' ) LIMIT 1   [ RunTime:0.0094s ]
+SQL: SELECT `username` FROM `t_user` WHERE ( loginid = '1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `t_user`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017856s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000857s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000964s ]
+
+[ 2016-06-19T14:41:04+08:00 ] ::1 /share/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000978s ]
+SQL: SHOW COLUMNS FROM `t_artical` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `t_artical` right join t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 1 ) ORDER BY AriticalId DESC  [ RunTime:0.0036s ]
+SQL: SELECT * FROM `t_artical` INNER JOIN t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 2 ) ORDER BY AriticalId DESC  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0029s ]
+SQL: SELECT `usertx` FROM `t_user` WHERE ( loginid = '1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `t_user` WHERE ( loginid = '1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `t_user`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020444s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000885s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000947s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001053s ]
+
+[ 2016-06-19T14:41:04+08:00 ] ::1 /share/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+SQL: SHOW COLUMNS FROM `t_artical` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `t_artical` right join t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 1 ) ORDER BY AriticalId DESC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `t_artical` INNER JOIN t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 2 ) ORDER BY AriticalId DESC  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0029s ]
+SQL: SELECT `usertx` FROM `t_user` WHERE ( loginid = '1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `t_user` WHERE ( loginid = '1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `t_user`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000327s ]
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019668s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019772s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000867s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000936s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001042s ]
+
+[ 2016-06-19T14:41:07+08:00 ] ::1 /share/index.php/Home/User/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+
+[ 2016-06-19T14:41:07+08:00 ] ::1 /share/index.php/Home/User/loginPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+NOTIC: [8] Undefined index: userInfo E:\wamp\wwww\share\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025763s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000904s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001005s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001110s ]
+
+[ 2016-06-19T14:41:08+08:00 ] ::1 /share/index.php/Home/User/loginPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001101s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+NOTIC: [8] Undefined index: userInfo E:\wamp\wwww\share\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012080s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000874s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000926s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001033s ]
+
+[ 2016-06-19T14:41:10+08:00 ] ::1 /share/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001143s ]
+
+[ 2016-06-19T14:43:13+08:00 ] ::1 /share/index.php/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: Reg_verify E:\wamp\wwww\share\Application\Home\Controller\UserController.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+NOTIC: [8] Undefined index: userInfo E:\wamp\wwww\share\Application\Runtime\Cache\Home\3359adbadf95118621a5c500fb3ff893.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030352s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000993s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000972s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001077s ]
+
+[ 2016-06-19T14:43:14+08:00 ] ::1 /share/index.php/Home/User/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001102s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001332s ]
+
+[ 2016-06-19T14:43:28+08:00 ] ::1 /share/index.php/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000804s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000910s ]
+
+[ 2016-06-19T14:43:29+08:00 ] ::1 /share/index.php/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001141s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0063s ]
+NOTIC: [8] Undefined index: Reg_verify E:\wamp\wwww\share\Application\Home\Controller\UserController.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+NOTIC: [8] Undefined index: userInfo E:\wamp\wwww\share\Application\Runtime\Cache\Home\3359adbadf95118621a5c500fb3ff893.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012595s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012709s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000992s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000938s ]
+
+[ 2016-06-19T14:43:36+08:00 ] ::1 /share/index.php/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000770s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000886s ]
+
+[ 2016-06-19T14:43:37+08:00 ] ::1 /share/index.php/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0089s ]
+NOTIC: [8] Undefined index: Reg_verify E:\wamp\wwww\share\Application\Home\Controller\UserController.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000301s ]
+NOTIC: [8] Undefined index: userInfo E:\wamp\wwww\share\Application\Runtime\Cache\Home\3359adbadf95118621a5c500fb3ff893.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013710s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000970s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000792s ]
+
+[ 2016-06-19T14:43:38+08:00 ] ::1 /share/index.php/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0037s ]
+NOTIC: [8] Undefined index: Reg_verify E:\wamp\wwww\share\Application\Home\Controller\UserController.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+NOTIC: [8] Undefined index: userInfo E:\wamp\wwww\share\Application\Runtime\Cache\Home\3359adbadf95118621a5c500fb3ff893.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010543s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000849s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000618s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2016-06-19T14:43:38+08:00 ] ::1 /share/index.php/Home/User/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000871s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002535s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001206s ]
+
+[ 2016-06-19T14:43:51+08:00 ] ::1 /share/index.php/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001086s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0099s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_login` WHERE `LoginName` = 'adadadad' LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `t_login` (`LoginName`,`LoginPwd`,`LoginStatus`,`LoginTag`) VALUES ('adadadad','135b0ec068a4e196aa776dbe1e951db5','0','1') [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0042s ]
+NOTIC: [8] Use of undefined constant LoginId - assumed 'LoginId' E:\wamp\wwww\share\Application\Home\Controller\UserController.class.php 第 110 行.
+SQL: SELECT `LoginId` FROM `t_login` WHERE `LoginName` = 'adadadad' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0033s ]
+SQL: INSERT INTO `t_user` (`LoginId`) VALUES ('26') [ RunTime:0.0346s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008027s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000882s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000978s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000910s ]
+
+[ 2016-06-19T14:43:52+08:00 ] ::1 /share/index.php/Home/User/loginPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001317s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000257s ]
+NOTIC: [8] Undefined index: userInfo E:\wamp\wwww\share\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013398s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000816s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000917s ]
+
+[ 2016-06-19T14:44:19+08:00 ] ::1 /share/index.php/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0032s ]
+NOTIC: [8] Undefined index: Reg_verify E:\wamp\wwww\share\Application\Home\Controller\UserController.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+NOTIC: [8] Undefined index: userInfo E:\wamp\wwww\share\Application\Runtime\Cache\Home\3359adbadf95118621a5c500fb3ff893.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013309s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000989s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000778s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000880s ]
+
+[ 2016-06-19T14:44:19+08:00 ] ::1 /share/index.php/Home/User/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001059s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001541s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001753s ]
+
+[ 2016-06-19T14:44:30+08:00 ] ::1 /share/index.php/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0079s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_login` WHERE `LoginName` = 'admin123111' LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `t_login` (`LoginName`,`regip`,`LoginPwd`,`LoginStatus`,`LoginTag`) VALUES ('admin123111','::1','27e7197b448941a191a11d216fab007a','0','1') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0042s ]
+NOTIC: [8] Use of undefined constant LoginId - assumed 'LoginId' E:\wamp\wwww\share\Application\Home\Controller\UserController.class.php 第 110 行.
+SQL: SELECT `LoginId` FROM `t_login` WHERE `LoginName` = 'admin123111' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0032s ]
+SQL: INSERT INTO `t_user` (`LoginId`) VALUES ('27') [ RunTime:0.0459s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007852s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007958s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000964s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000766s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000884s ]
+
+[ 2016-06-19T14:44:32+08:00 ] ::1 /share/index.php/Home/User/loginPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+NOTIC: [8] Undefined index: userInfo E:\wamp\wwww\share\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014999s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015144s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000942s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000773s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000874s ]
+
+[ 2016-06-19T14:45:22+08:00 ] ::1 /share/index.php/Home/User/loginPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+NOTIC: [8] Undefined index: userInfo E:\wamp\wwww\share\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012124s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012237s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000980s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000858s ]
+
+[ 2016-06-19T14:45:23+08:00 ] ::1 /share/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001155s ]
+
+[ 2016-06-19T14:48:12+08:00 ] ::1 /share/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001073s ]
+SQL: SHOW COLUMNS FROM `t_artical` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `t_artical` right join t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 1 ) ORDER BY AriticalId DESC  [ RunTime:0.0035s ]
+SQL: SELECT * FROM `t_artical` INNER JOIN t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 2 ) ORDER BY AriticalId DESC  [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0031s ]
+SQL: SELECT `usertx` FROM `t_user` WHERE ( loginid = '' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `t_user` WHERE ( loginid = '' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `t_user`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000221s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000345s ]
+NOTIC: [8] Undefined index: userInfo E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 108 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020031s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020136s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001033s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000892s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001003s ]
+
+[ 2016-06-19T14:48:14+08:00 ] ::1 /share/index.php/Home/User/loginPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001142s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Undefined index: userInfo E:\wamp\wwww\share\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000897s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000995s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000857s ]
+
+[ 2016-06-19T14:48:15+08:00 ] ::1 /share/index.php/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001063s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0063s ]
+NOTIC: [8] Undefined index: Reg_verify E:\wamp\wwww\share\Application\Home\Controller\UserController.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+NOTIC: [8] Undefined index: userInfo E:\wamp\wwww\share\Application\Runtime\Cache\Home\3359adbadf95118621a5c500fb3ff893.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012699s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000988s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000884s ]
+
+[ 2016-06-19T14:48:16+08:00 ] ::1 /share/index.php/Home/User/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001398s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001950s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002179s ]
+
+[ 2016-06-19T14:48:25+08:00 ] ::1 /share/index.php/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001121s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_login` WHERE `LoginName` = 'admin123888' LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `t_login` (`LoginName`,`regip`,`lastip`,`LoginPwd`,`LoginStatus`,`LoginTag`) VALUES ('admin123888','0.0.0.0','0.0.0.0','5ce6f77a168729113ce7d0b5995c8f8e','0','1') [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0037s ]
+NOTIC: [8] Use of undefined constant LoginId - assumed 'LoginId' E:\wamp\wwww\share\Application\Home\Controller\UserController.class.php 第 110 行.
+SQL: SELECT `LoginId` FROM `t_login` WHERE `LoginName` = 'admin123888' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0029s ]
+SQL: INSERT INTO `t_user` (`LoginId`) VALUES ('28') [ RunTime:0.0583s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007946s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000882s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000985s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000965s ]
+
+[ 2016-06-19T14:48:26+08:00 ] ::1 /share/index.php/Home/User/loginPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+NOTIC: [8] Undefined index: userInfo E:\wamp\wwww\share\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013340s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001033s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000815s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000916s ]
+
+[ 2016-06-19T14:51:42+08:00 ] ::1 /share/index.php/Home/User/loginPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+NOTIC: [8] Undefined index: userInfo E:\wamp\wwww\share\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011041s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011198s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000937s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000939s ]
+
+[ 2016-06-19T14:51:43+08:00 ] ::1 /share/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0148s ]
+SQL: select * from t_login where LoginName='admin123' and LoginPwd='0192023a7bbd73250516f069df18b500' [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `t_login` WHERE ( LoginName='admin123' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0030s ]
+SQL: UPDATE `t_login` SET `loginNum`=loginNum+1 WHERE ( LoginName='admin123' ) [ RunTime:0.0457s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0033s ]
+SQL: SELECT `username` FROM `t_user` INNER JOIN t_login on t_user.loginid=t_login.loginid  WHERE ( LoginName='admin123' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\wwww\share\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2016-06-19T14:51:43+08:00 ] ::1 /share/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+SQL: SHOW COLUMNS FROM `t_artical` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `t_artical` right join t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 1 ) ORDER BY AriticalId DESC  [ RunTime:0.0041s ]
+SQL: SELECT * FROM `t_artical` INNER JOIN t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 2 ) ORDER BY AriticalId DESC  [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0032s ]
+SQL: SELECT `usertx` FROM `t_user` WHERE ( loginid = '1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `t_user` WHERE ( loginid = '1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `t_user`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000229s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000372s ]
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019116s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000747s ]
+
+[ 2016-06-19T14:53:16+08:00 ] ::1 /share/index.php/Home/User/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+
+[ 2016-06-19T14:53:17+08:00 ] ::1 /share/index.php/Home/User/loginPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+NOTIC: [8] Undefined index: userInfo E:\wamp\wwww\share\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009706s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009814s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000710s ]
+
+[ 2016-06-19T14:53:18+08:00 ] ::1 /share/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0113s ]
+SQL: select * from t_login where LoginName='admin123' and LoginPwd='0192023a7bbd73250516f069df18b500' [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `t_login` WHERE ( LoginName='admin123' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0028s ]
+SQL: UPDATE `t_login` SET `loginNum`=loginNum+1 WHERE ( LoginName='admin123' ) [ RunTime:0.0567s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0045s ]
+SQL: SELECT `username` FROM `t_user` INNER JOIN t_login on t_user.loginid=t_login.loginid  WHERE ( LoginName='admin123' ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-06-19T14:53:31+08:00 ] ::1 /share/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0066s ]
+SQL: select * from t_login where LoginName='admin123' and LoginPwd='0192023a7bbd73250516f069df18b500' [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `t_login` WHERE ( LoginName='admin123' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0029s ]
+SQL: UPDATE `t_login` SET `loginNum`=loginNum+1 WHERE ( LoginName='admin123' ) [ RunTime:0.0693s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0040s ]
+SQL: SELECT `username` FROM `t_user` INNER JOIN t_login on t_user.loginid=t_login.loginid  WHERE ( LoginName='admin123' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `t_login` SET `lastip`='0.0.0.0' WHERE ( LoginName='admin123' ) [ RunTime:0.0255s ]
+
+[ 2016-06-19T14:53:37+08:00 ] ::1 /share/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001314s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0032s ]
+SQL: select * from t_login where LoginName='admin123' and LoginPwd='0192023a7bbd73250516f069df18b500' [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `t_login` WHERE ( LoginName='admin123' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0032s ]
+SQL: UPDATE `t_login` SET `loginNum`=loginNum+1 WHERE ( LoginName='admin123' ) [ RunTime:0.0742s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0034s ]
+SQL: SELECT `username` FROM `t_user` INNER JOIN t_login on t_user.loginid=t_login.loginid  WHERE ( LoginName='admin123' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `t_login` SET `lastip`='0.0.0.0' WHERE ( LoginName='admin123' ) [ RunTime:0.0723s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\wwww\share\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2016-06-19T14:53:37+08:00 ] ::1 /share/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001028s ]
+SQL: SHOW COLUMNS FROM `t_artical` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `t_artical` right join t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 1 ) ORDER BY AriticalId DESC  [ RunTime:0.0037s ]
+SQL: SELECT * FROM `t_artical` INNER JOIN t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 2 ) ORDER BY AriticalId DESC  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0030s ]
+SQL: SELECT `usertx` FROM `t_user` WHERE ( loginid = '1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `username` FROM `t_user` WHERE ( loginid = '1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `t_user`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000321s ]
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018718s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000935s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001163s ]
+
+[ 2016-06-19T14:57:04+08:00 ] ::1 /share/index.php/Home/User/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000971s ]
+
+[ 2016-06-19T14:57:04+08:00 ] ::1 /share/index.php/Home/User/loginPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] Undefined index: userInfo E:\wamp\wwww\share\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010864s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010968s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000758s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000859s ]
+
+[ 2016-06-19T14:57:05+08:00 ] ::1 /share/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0132s ]
+SQL: select * from t_login where LoginName='admin123' and LoginPwd='0192023a7bbd73250516f069df18b500' [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `t_login` WHERE ( LoginName='admin123' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0036s ]
+SQL: UPDATE `t_login` SET `loginNum`=loginNum+1 WHERE ( LoginName='admin123' ) [ RunTime:0.0768s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0038s ]
+SQL: SELECT `username` FROM `t_user` INNER JOIN t_login on t_user.loginid=t_login.loginid  WHERE ( LoginName='admin123' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `t_login` SET `lastip`='0.0.0.0',`lastdate`='2016-06-19 14:57:05' WHERE ( LoginName='admin123' ) [ RunTime:0.0262s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\wwww\share\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2016-06-19T14:57:05+08:00 ] ::1 /share/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `t_artical` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `t_artical` right join t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 1 ) ORDER BY AriticalId DESC  [ RunTime:0.0042s ]
+SQL: SELECT * FROM `t_artical` INNER JOIN t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 2 ) ORDER BY AriticalId DESC  [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0034s ]
+SQL: SELECT `usertx` FROM `t_user` WHERE ( loginid = '1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `t_user` WHERE ( loginid = '1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `t_user`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000223s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000336s ]
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017879s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2016-06-19T14:58:51+08:00 ] ::1 /share/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+SQL: SHOW COLUMNS FROM `t_artical` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `t_artical` right join t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 1 ) ORDER BY AriticalId DESC  [ RunTime:0.0037s ]
+SQL: SELECT * FROM `t_artical` INNER JOIN t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 2 ) ORDER BY AriticalId DESC  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0035s ]
+SQL: SELECT `usertx` FROM `t_user` WHERE ( loginid = '1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `t_user` WHERE ( loginid = '1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `t_user`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018259s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018373s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000651s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000768s ]
+
+[ 2016-06-19T15:20:16+08:00 ] ::1 /share/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+SQL: SHOW COLUMNS FROM `t_artical` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `t_artical` right join t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 1 ) ORDER BY AriticalId DESC  [ RunTime:0.0037s ]
+SQL: SELECT * FROM `t_artical` INNER JOIN t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 2 ) ORDER BY AriticalId DESC  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0031s ]
+SQL: SELECT `usertx` FROM `t_user` WHERE ( loginid = '1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `t_user` WHERE ( loginid = '1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `t_user`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000337s ]
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018289s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000827s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000742s ]
+
+[ 2016-06-19T16:02:30+08:00 ] ::1 /share/index.php/Home/User/loginPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001207s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+NOTIC: [8] Undefined index: userInfo E:\wamp\wwww\share\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012521s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000876s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-06-19T16:02:31+08:00 ] ::1 /share/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001698s ]
+SQL: SHOW COLUMNS FROM `t_artical` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `t_artical` right join t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 1 ) ORDER BY AriticalId DESC  [ RunTime:0.0037s ]
+SQL: SELECT * FROM `t_artical` INNER JOIN t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 2 ) ORDER BY AriticalId DESC  [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0029s ]
+SQL: SELECT `usertx` FROM `t_user` WHERE ( loginid = '' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `t_user` WHERE ( loginid = '' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `t_user`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000239s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000347s ]
+NOTIC: [8] Undefined index: userInfo E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 108 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020290s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001019s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001151s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001260s ]
+
+[ 2016-06-19T16:02:33+08:00 ] ::1 /share/index.php/Home/User/loginPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001237s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] Undefined index: userInfo E:\wamp\wwww\share\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001013s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001123s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001227s ]
+
+[ 2016-06-19T16:02:46+08:00 ] ::1 /share/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001218s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0122s ]
+SQL: select * from t_login where LoginName='abc12345' and LoginPwd='d6b0ab7f1c8ab8f514db9a6d85de160a' [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `t_login` WHERE ( LoginName='abc12345' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0030s ]
+SQL: UPDATE `t_login` SET `loginNum`=loginNum+1 WHERE ( LoginName='abc12345' ) [ RunTime:0.0781s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0034s ]
+SQL: SELECT `username` FROM `t_user` INNER JOIN t_login on t_user.loginid=t_login.loginid  WHERE ( LoginName='abc12345' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `t_login` SET `lastip`='0.0.0.0',`lastdate`='2016-06-19 16:02:46' WHERE ( LoginName='abc12345' ) [ RunTime:0.0268s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\wwww\share\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2016-06-19T16:02:46+08:00 ] ::1 /share/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001302s ]
+SQL: SHOW COLUMNS FROM `t_artical` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `t_artical` right join t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 1 ) ORDER BY AriticalId DESC  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `t_artical` INNER JOIN t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 2 ) ORDER BY AriticalId DESC  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0029s ]
+SQL: SELECT `usertx` FROM `t_user` WHERE ( loginid = '17' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `t_user` WHERE ( loginid = '17' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `t_user`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019270s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019374s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001174s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001419s ]
+
+[ 2016-06-19T16:02:50+08:00 ] ::1 /share/index.php/Home/User/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000865s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001207s ]
+
+[ 2016-06-19T16:02:50+08:00 ] ::1 /share/index.php/Home/User/loginPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001340s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+NOTIC: [8] Undefined index: userInfo E:\wamp\wwww\share\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001526s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001146s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001246s ]
+
+[ 2016-06-19T16:05:47+08:00 ] ::1 /share/index.php/Home/User/loginPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001269s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+NOTIC: [8] Undefined index: userInfo E:\wamp\wwww\share\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000959s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000888s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000992s ]
+
+[ 2016-06-19T16:05:54+08:00 ] ::1 /share/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000710s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `t_login` WHERE ( LoginName='abc12345' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0033s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001133s ]
+
+[ 2016-06-19T16:06:13+08:00 ] ::1 /share/index.php/Home/User/loginPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+NOTIC: [8] Undefined index: userInfo E:\wamp\wwww\share\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012633s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012745s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000876s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-06-19T16:06:16+08:00 ] ::1 /share/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001013s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `t_login` WHERE ( LoginName='admin123' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0032s ]
+SQL: select * from t_login where LoginName='admin123' and LoginPwd='0192023a7bbd73250516f069df18b500' [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_login` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `t_login` WHERE ( LoginName='admin123' )  [ RunTime:0.0002s ]
+SQL: UPDATE `t_login` SET `loginNum`=loginNum+1 WHERE ( LoginName='admin123' ) [ RunTime:0.0727s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0031s ]
+SQL: SELECT `username` FROM `t_user` INNER JOIN t_login on t_user.loginid=t_login.loginid  WHERE ( LoginName='admin123' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `t_login` SET `lastip`='0.0.0.0',`lastdate`='2016-06-19 16:06:16' WHERE ( LoginName='admin123' ) [ RunTime:0.0837s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\wwww\share\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2016-06-19T16:06:16+08:00 ] ::1 /share/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+SQL: SHOW COLUMNS FROM `t_artical` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `t_artical` right join t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 1 ) ORDER BY AriticalId DESC  [ RunTime:0.0039s ]
+SQL: SELECT * FROM `t_artical` INNER JOIN t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 2 ) ORDER BY AriticalId DESC  [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0031s ]
+SQL: SELECT `usertx` FROM `t_user` WHERE ( loginid = '1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `t_user` WHERE ( loginid = '1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `t_user`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000322s ]
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018996s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000948s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000924s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001035s ]
+
+[ 2016-06-19T16:06:18+08:00 ] ::1 /share/index.php/Home/User/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+
+[ 2016-06-19T16:06:18+08:00 ] ::1 /share/index.php/Home/User/loginPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+NOTIC: [8] Undefined index: userInfo E:\wamp\wwww\share\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000852s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000789s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000890s ]
+
+[ 2016-06-19T16:06:41+08:00 ] ::1 /share/index.php/Home/User/loginPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001329s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+NOTIC: [8] Undefined index: userInfo E:\wamp\wwww\share\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014728s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014923s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001433s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001233s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001407s ]
+
+[ 2016-06-19T16:06:55+08:00 ] ::1 /share/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001429s ]
+SQL: SHOW COLUMNS FROM `t_artical` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `t_artical` right join t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 1 ) ORDER BY AriticalId DESC  [ RunTime:0.0036s ]
+SQL: SELECT * FROM `t_artical` INNER JOIN t_user on t_artical.userid = t_user.userid  WHERE ( upLoadType = 2 ) ORDER BY AriticalId DESC  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0030s ]
+SQL: SELECT `usertx` FROM `t_user` WHERE ( loginid = '' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `t_user` WHERE ( loginid = '' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `t_user`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000328s ]
+NOTIC: [8] Undefined index: userInfo E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 108 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Undefined index: ArticalType E:\wamp\wwww\share\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019231s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019340s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000891s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001083s ]
+

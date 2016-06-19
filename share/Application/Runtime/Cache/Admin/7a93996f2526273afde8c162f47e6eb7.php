@@ -79,28 +79,35 @@
 			<tr>
 				<th>序号</th>
 				<th>用户名</th>
+				<th>昵称</th>
 				<th>用户邮箱</th>
 				<th>创建时间</th>
 				<th>登录次数</th>
 				<th>最后登陆IP</th>
 				<th>用户审核</th>
 				<th>是否禁用</th>
-				<th>删除</th>
+				<th >审核</th>
+				<th >删除</th>
 			</tr>
 		</thead>
 		<tbody>
 			<?php if(is_array($list)): foreach($list as $k=>$C): ?><tr>
 					<td><?php echo ($k+1); ?></td>
+					<td><?php echo ($C["loginname"]); ?></td>
 					<td><?php echo ($C["username"]); ?></td>
 					<td><?php echo ($C["useremail"]); ?></td>
-					<td><?php echo ($C["regtime"]); ?></td>
+					<td><?php echo ($C["regdate"]); ?></td>
 					<td><?php echo ($C["loginnum"]); ?></td>
-					<td><?php echo ($C["loginip"]); ?></td>
+					<td><?php echo ($C["lastip"]); ?></td>
 					<td><?php echo ($C["quantitystatus"]); ?></td>
 					<td><?php echo ($C["tag"]); ?></td>
 					<td>
-						<button class="btn btn-primary" type="button">删除用户</button>
+						<?php if($C['quantitystatus'] == 0 ): ?><button class="btn btn-primary" type="button" style="background: orange;width: 82px;">未审核</button></lable>
+							<?php elseif($C['quantitystatus'] == 1 ): ?> <button class="btn btn-primary" type="button" style="background: green;">审核通过</button></lable>
+							<?php elseif($C['quantitystatus'] == 2 ): ?> <button class="btn btn-primary" type="button" style="background: red;">审核失败</button></lable><?php endif; ?>
+
 					</td>
+					<td><a href="/share/index.php/Admin/User/userDel/id/<?php echo ($C['loginid']); ?>" class="primary" ><button class="btn btn-primary" type="button">删除用户</button></a></td>
 				</tr><?php endforeach; endif; ?>
 
 		</tbody>
