@@ -4,7 +4,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>作品分享管理后台</title>
-		<link rel="stylesheet" href="__AdminPublic__/css/index.css" type="text/css" media="screen" />
+
 		<link rel="stylesheet" href="__AdminPublic__/css/common.css" type="text/css" media="screen" />
 		<script type="text/javascript" src="__AdminPublic__/js/jquery.min.js"></script>
 		<script type="text/javascript" src="__AdminPublic__/js/tendina.min.js"></script>
@@ -12,12 +12,14 @@
 		<link rel="stylesheet" href="__AdminPublic__/css/bootstrap.min.css">
     	<link rel="stylesheet" href="__AdminPublic__/font-awesome/css/font-awesome.min.css">
 		<script src="__AdminPublic__/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="__AdminPublic__/css/index.css" type="text/css" media="screen" />
+
 
 	</head>
 
-	<body>
+	<body style="overflow: auto;">
 		<!--顶部-->
-		<div class="top">
+		<div class="top" style="position: fixed;top:0;z-index: 999;">
 			<div style="float: left"><span>作品分享管理中心</span></div>
 			<div id="ad_setting" class="ad_setting">
 				<span style="margin-right:14px;font-size: 1.8rem;">欢迎您：{$Think.session.Admin.admin}</span>
@@ -27,7 +29,7 @@
 		</div>
 		<!--顶部结束-->
 		<!--菜单-->
-		<div class="left-menu">
+		<div class="left-menu" style="margin-top:60px;">
 			<ul id="menu">
 				<li class="menu-list">
 					<a style="cursor:pointer" class="firsta" href="{:U('Index/Index')}" ><span class="glyphicon glyphicon-home"></span>欢迎</a>
@@ -36,14 +38,13 @@
 					<a style="cursor:pointer" class="firsta"><span  class="glyphicon glyphicon-user"></span>用户管理</a>
 					<ul>
 						<li><a href="{:U('User/UserList')}">个人用户列表</a></li>
-						<li><a href="{:U('Business/BusinessList')}">商家用户列表</a></li>
+						<li><a href="">商家用户列表</a></li>
 					</ul>
 				</li>
 				<li class="menu-list">
 					<a style="cursor:pointer" class="firsta"><span  class="glyphicon glyphicon-th-list"></span>作品文章管理</a>
-					<ul><li><a href="#" >作品列表</a></li>
-						<li><a href="#" >文章列表</a></li>
-						<li><a href="#" >作品文章类型</a></li>
+					<ul><li><a href="{:U('Works/worksList')}" >作品列表</a></li>
+						<li><a href="{:U('Works/essaysList')}" >文章列表</a></li>
 					</ul>
 				</li>
 				<li class="menu-list">
@@ -53,9 +54,9 @@
 				</li>
 				<li class="menu-list">
 					<a style="cursor:pointer" class="firsta"><span  class="glyphicon glyphicon-edit"></span>口水区管理</a>
-					<ul><li><a href="#" >列表项</a></li>
+					<!--<ul><li><a href="#" >列表项</a></li>
 						<li><a href="#" >列表项</a></li>
-					</ul>
+					</ul>-->
 				</li>
 				<li class="menu-list">
 					<a style="cursor:pointer" class="firsta"><span  class="glyphicon glyphicon-leaf"></span>企业管理</a>

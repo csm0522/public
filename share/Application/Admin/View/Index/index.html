@@ -1,9 +1,9 @@
 <include file="Public/header" title="后台主页" />
-<div style="margin-left:180px;padding:15px;">
+<div style="margin-left:180px;margin-top:60px;padding-bottom:50px;overflow: hidden;padding:30px;">
 		<div class="jumbotron" style="padding: 30px;">
-			<h1>Admin</h1>
+			<h1>管理员</h1>
 
-			<p>欢迎登陆XX网站后台管理系统.</p>
+			<p>欢迎登陆大学生作品分享网站后台管理系统.</p>
 
 		</div>
 
@@ -27,8 +27,8 @@
                 </div>
 
 
-                <a href="#">
-                    <div class="panel-footer announcement-bottom">
+                <a href="{:U('User/UserList')}">
+                    <div class="panel-footer announcement-bottom" >
                         <div class="row">
                             <div class="col-xs-6 text-center">
                                 管理用户
@@ -87,7 +87,7 @@
                     <div class="panel-footer announcement-bottom">
                         <div class="row">
                             <div class="col-xs-6 text-center">
-                                管理链接
+                                管理作品
                             </div>
                             <div class="col-xs-6 text-center" style="margin-left:0;">
                                 <i class="fa fa-arrow-circle-right"></i>
@@ -126,9 +126,9 @@
         </div>
     </div>
 
-		<div class="alert alert-success" role="alert" style="width: 40%;">最后登陆时间:&nbsp;<span style="color:black;">{$adminInfo.lastdate}</span></div>
-		<div class="alert alert-info" role="alert" style="width: 40%;">最后登陆IP:&nbsp;<span style="color:black;">{$adminInfo.lastip}</span></div>
-		<div class="alert alert-warning" role="alert" style="width: 40%;">登陆次数:&nbsp;<span style="color:black;">{$adminInfo.loginnum}</span></div>
+		<div class="alert alert-success" role="alert" style="width: 70%;">最后登陆时间:&nbsp;<span style="color:black;">{$adminInfo.lastdate}</span></div>
+		<div class="alert alert-info" role="alert" style="width: 50%;">最后登陆IP:&nbsp;<span style="color:black;">{$adminInfo.lastip}</span></div>
+		<div class="alert alert-warning" role="alert" style="width: 30%;">登陆次数:&nbsp;<span style="color:black;">{$adminInfo.loginnum}</span></div>
 
 </div>
 

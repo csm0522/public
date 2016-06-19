@@ -5,7 +5,7 @@ use Think\Model;
 class UserModel extends Model{
 
 	function login($name,$pwd) {
-		$res = $this -> query("select * from t_login where LoginName='$name' and LoginPwd='$pwd'");
+		$res = $this -> query("select * from t_login where LoginName='$name' and LoginPwd='$pwd' And LoginTag = 0");
         return $res;
 	}
 
