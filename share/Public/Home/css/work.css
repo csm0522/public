@@ -39,9 +39,11 @@ input{
 
 .dynamic{
     width:100%;
+  min-height: 1000px;
     float: top;
     position:relative;
     /*margin:auto;*/
+  margin-top: 75px;
     text-align: center;
     }
 

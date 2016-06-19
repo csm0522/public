@@ -335,7 +335,7 @@
 										<?php echo (substr($vo["createtime"],0,10)); ?>
 									</span>
 									&nbsp;/&nbsp;
-									<span class="works-like"><img src="/share/Public/Home/image/index/love.png" alt="" /> 6 &nbsp;
+									<span class="works-like"><img src="/share/Public/Home/image/index/love.png" alt="" /> <?php echo ($vo["num"]); ?> &nbsp;
 									</span>
 								</div>
 							</div>
@@ -345,93 +345,27 @@
 </ul>
 					</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 					<div id="layer2" style="display:none;">
 
 	    <div class="artcle">
 			<div class="artical-info">
 				<ul>
-					<li>
-						<a href="" class="userAImg"><img src="/share/Public/Home/image/essay/1.png" alt="" /></a>
+					<?php if(is_array($userArt)): $i = 0; $__LIST__ = $userArt;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
+						<a href="/share/index.php/Home/essay/essay/id/<?php echo ($vo["ariticalid"]); ?>" class="userAImg"><img src="/share/Public/<?php echo ($vo["indeximgpath"]); ?>" alt="" /></a>
 						<div class="userAInfo">
 							<div class="userATitle">
-									<a href="">最终，你成为了具有“独立思考”能力的人</a>
+									<a href=""><?php echo (htmlspecialchars_decode($vo["title"])); ?></a>
 							</div>
 							<div  class="sortCo">
-								<span>设计文章</span>
+								<span><?php if( $vo['articaltype'] == 1) { echo '原创教程'; } else if( $vo['articaltype'] == 2) { echo '观点/见解'; } else if( $vo['articaltype'] == 3) { echo '设计资讯'; } else { echo '其他'; } ?></span>
 							</div>
-							<div class="userAupTime"><span class="userA_Name">用户昵称</span> / 2016-06-05</div>
+							<div class="userAupTime"><span class="userA_Name"><?php echo ($vo["username"]); ?></span> /<?php echo (substr($vo["createtime"],0,10)); ?></div>
 							<div class="userAintro">
-								人天生就渴求信息，像需要空气和水一样。信息也的确像空气和水一样包裹着我们.我
-								们吸入，我们呼出.我们无法造一个玻璃盒子来屏蔽这一切.只能身处于这个庞大的体系
-								中,慢慢找到真实的自己.
+								<?php echo (htmlspecialchars_decode($vo["intro"])); ?>
 							</div>
 						</div>
-					</li>
-					<li>
-						<a href="" class="userAImg"><img src="/share/Public/Home/image/essay/1.png" alt="" /></a>
-						<div class="userAInfo">
-							<div class="userATitle">
-									<a href="">最终，你成为了具有“独立思考”能力的人</a>
-							</div>
-							<div  class="sortCo">
-								<span>设计文章</span>
-							</div>
-							<div class="userAupTime"><span class="userA_Name">用户昵称</span> / 2016-06-05</div>
-							<div class="userAintro">
-								人天生就渴求信息，像需要空气和水一样。信息也的确像空气和水一样包裹着我们.我
-								们吸入，我们呼出.我们无法造一个玻璃盒子来屏蔽这一切.只能身处于这个庞大的体系
-								中,慢慢找到真实的自己.
-							</div>
-						</div>
-					</li>
-					<li>
-						<a href="" class="userAImg"><img src="/share/Public/Home/image/essay/1.png" alt="" /></a>
-						<div class="userAInfo">
-							<div class="userATitle">
-									<a href="">最终，你成为了具有“独立思考”能力的人</a>
-							</div>
-							<div  class="sortCo">
-								<span>设计文章</span>
-							</div>
-							<div class="userAupTime"><span class="userA_Name">用户昵称</span> / 2016-06-05</div>
-							<div class="userAintro">
-								人天生就渴求信息，像需要空气和水一样。信息也的确像空气和水一样包裹着我们.我
-								们吸入，我们呼出.我们无法造一个玻璃盒子来屏蔽这一切.只能身处于这个庞大的体系
-								中,慢慢找到真实的自己.
-							</div>
-						</div>
-					</li>
-					<li>
-						<a href="" class="userAImg"><img src="/share/Public/Home/image/essay/1.png" alt="" /></a>
-						<div class="userAInfo">
-							<div class="userATitle">
-									<a href="">最终，你成为了具有“独立思考”能力的人</a>
-							</div>
-							<div  class="sortCo">
-								<span>设计文章</span>
-							</div>
-							<div class="userAupTime"><span class="userA_Name">用户昵称</span> / 2016-06-05</div>
-							<div class="userAintro">
-								人天生就渴求信息，像需要空气和水一样。信息也的确像空气和水一样包裹着我们.我
-								们吸入，我们呼出.我们无法造一个玻璃盒子来屏蔽这一切.只能身处于这个庞大的体系
-								中,慢慢找到真实的自己.
-							</div>
-						</div>
-					</li>
+					</li><?php endforeach; endif; else: echo "" ;endif; ?>
+
 				</ul>
 			</div>
 		</div>`
@@ -466,8 +400,8 @@
 
 				</div>
 	<div class="clear"></div>
-					<div class="clear"></div>
-			<div id="footer" style="margin-bottom:0px;width:100%;background: #333131;">
+		<div style="clear: both"></div>
+			<div id="footer" style="margin-top:10px;width:100%;background: #333131;">
 				<div class="wrapper">
 					<p style="font-size:14px;margin-top:5px;">版权所有：大学生作品发布平台</p>
 					<p style="font-size:14px;margin-top: 5px;">开发团队:杨海强、吴欣、刘泽珊、陈少敏</p>

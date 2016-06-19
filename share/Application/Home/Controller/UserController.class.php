@@ -173,12 +173,18 @@ class UserController extends Controller {
 		$userTX = M('user')-> where("loginid = '$sessid'")-> getfield('usertx');
 		$use = M('login')-> where("loginid = '$sessid'")-> select();
 		$userWorks = M('artical')-> join('t_user on t_user.userid = t_artical.userid')->where("t_user.loginid = '$sessid' AND t_artical.uploadtype = '1'")  -> select() ;
+		$userArt = M('artical')-> join('t_user on t_user.userid = t_artical.userid')->where("t_user.loginid = '$sessid' AND t_artical.uploadtype = '2'")  -> select() ;
 		$userWorksNum = M('artical')-> join('t_user on t_user.userid = t_artical.userid')->where("t_user.loginid = '$sessid' AND t_artical.uploadtype = '1'")  -> count() ;
 		$userArticalNum = M('artical')-> join('t_user on t_user.userid = t_artical.userid')->where("t_user.loginid = '$sessid' AND t_artical.uploadtype = '2'")  -> count() ;
+		for($i=0;$i<count($userWorks);$i++){
+			$con['AriticalId']=$userWorks[$i]['ariticalid'];
+			$userWorks[$i]['num']=M('like')->where($con)->count();
+		}
 		$this -> assign('userInfo',$userInfo[0]);
 		$this -> assign('userTX',$userTX);
 		$this -> assign('use',$use);
 		$this -> assign('userWorks',$userWorks);
+		$this -> assign('userArt',$userArt);
 		$this -> assign('userWorksNum',$userWorksNum);
 		$this -> assign('userArticalNum',$userArticalNum);
 		$this->display();

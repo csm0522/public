@@ -221,7 +221,7 @@
 										{$vo.createtime|substr=0,10}
 									</span>
 									&nbsp;/&nbsp;
-									<span class="works-like"><img src="__HomeIMG__/index/love.png" alt="" /> 6 &nbsp;
+									<span class="works-like"><img src="__HomeIMG__/index/love.png" alt="" /> {$vo.num} &nbsp;
 									</span>
 								</div>
 							</div>
@@ -233,93 +233,37 @@
 </ul>
 					</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 					<div id="layer2" style="display:none;">
 
 	    <div class="artcle">
 			<div class="artical-info">
 				<ul>
+					<volist name="userArt" id="vo">
 					<li>
-						<a href="" class="userAImg"><img src="__HomeIMG__/essay/1.png" alt="" /></a>
+						<a href="__MODULE__/essay/essay/id/{$vo.ariticalid}" class="userAImg"><img src="__PUBLIC__/{$vo.indeximgpath}" alt="" /></a>
 						<div class="userAInfo">
 							<div class="userATitle">
-									<a href="">最终，你成为了具有“独立思考”能力的人</a>
+									<a href="">{$vo.title|htmlspecialchars_decode}</a>
 							</div>
 							<div  class="sortCo">
-								<span>设计文章</span>
+								<span><?php if( $vo['articaltype'] == 1)
+										{  echo '原创教程';  }
+										 else if( $vo['articaltype'] == 2)
+										{  echo '观点/见解';  }
+										else if( $vo['articaltype'] == 3)
+										{  echo '设计资讯';  }
+										else
+										{  echo '其他';  }
+										?></span>
 							</div>
-							<div class="userAupTime"><span class="userA_Name">用户昵称</span> / 2016-06-05</div>
+							<div class="userAupTime"><span class="userA_Name">{$vo.username}</span> /{$vo.createtime|substr=0,10}</div>
 							<div class="userAintro">
-								人天生就渴求信息，像需要空气和水一样。信息也的确像空气和水一样包裹着我们.我
-								们吸入，我们呼出.我们无法造一个玻璃盒子来屏蔽这一切.只能身处于这个庞大的体系
-								中,慢慢找到真实的自己.
+								{$vo.intro|htmlspecialchars_decode}
 							</div>
 						</div>
 					</li>
-					<li>
-						<a href="" class="userAImg"><img src="__HomeIMG__/essay/1.png" alt="" /></a>
-						<div class="userAInfo">
-							<div class="userATitle">
-									<a href="">最终，你成为了具有“独立思考”能力的人</a>
-							</div>
-							<div  class="sortCo">
-								<span>设计文章</span>
-							</div>
-							<div class="userAupTime"><span class="userA_Name">用户昵称</span> / 2016-06-05</div>
-							<div class="userAintro">
-								人天生就渴求信息，像需要空气和水一样。信息也的确像空气和水一样包裹着我们.我
-								们吸入，我们呼出.我们无法造一个玻璃盒子来屏蔽这一切.只能身处于这个庞大的体系
-								中,慢慢找到真实的自己.
-							</div>
-						</div>
-					</li>
-					<li>
-						<a href="" class="userAImg"><img src="__HomeIMG__/essay/1.png" alt="" /></a>
-						<div class="userAInfo">
-							<div class="userATitle">
-									<a href="">最终，你成为了具有“独立思考”能力的人</a>
-							</div>
-							<div  class="sortCo">
-								<span>设计文章</span>
-							</div>
-							<div class="userAupTime"><span class="userA_Name">用户昵称</span> / 2016-06-05</div>
-							<div class="userAintro">
-								人天生就渴求信息，像需要空气和水一样。信息也的确像空气和水一样包裹着我们.我
-								们吸入，我们呼出.我们无法造一个玻璃盒子来屏蔽这一切.只能身处于这个庞大的体系
-								中,慢慢找到真实的自己.
-							</div>
-						</div>
-					</li>
-					<li>
-						<a href="" class="userAImg"><img src="__HomeIMG__/essay/1.png" alt="" /></a>
-						<div class="userAInfo">
-							<div class="userATitle">
-									<a href="">最终，你成为了具有“独立思考”能力的人</a>
-							</div>
-							<div  class="sortCo">
-								<span>设计文章</span>
-							</div>
-							<div class="userAupTime"><span class="userA_Name">用户昵称</span> / 2016-06-05</div>
-							<div class="userAintro">
-								人天生就渴求信息，像需要空气和水一样。信息也的确像空气和水一样包裹着我们.我
-								们吸入，我们呼出.我们无法造一个玻璃盒子来屏蔽这一切.只能身处于这个庞大的体系
-								中,慢慢找到真实的自己.
-							</div>
-						</div>
-					</li>
+					</volist>
+
 				</ul>
 			</div>
 		</div>`
