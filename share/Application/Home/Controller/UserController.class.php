@@ -38,6 +38,7 @@ class UserController extends Controller {
 			$loginModel = new \Home\Model\UserModel();
 			if ($loginModel -> login($name, $pwd)) {
 				$user=D('login')->where("LoginName='$name'")->select();
+				$userlogNum = M('login') -> where("LoginName='$name'") ->setInc('loginNum');
 				$arr=array('user'=>$user[0]['loginname'], 'UId'=>$user[0]['loginid'], );
 				session(array('name'=>'userInfo'));
 				session('userInfo',$arr);
@@ -354,58 +355,5 @@ class UserController extends Controller {
 			}
 		}
 	}
-//	function pubAritical(){
-//		$title = $_POST['Articalname'];
-//		if($_POST['fenlei']){
-//			switch($_POST['fenlei']){
-//				case "JC" : $ArticalType = 1;break;
-//				case 'GD' : $ArticalType = 2;break;
-//				case 'SJ' : $ArticalType = 3;break;
-//				default :  $ArticalType = 4;break;
-//			}
-//		}
-//		$content = $_POST['ArticalContent'];$sessid = session('userInfo.UId');
-//		$config = array(
-//			'rootPath' => './Public/',
-//			'savePath' => './upload/',
-//		);
-//		$ULImg = new\Think\Upload($config);
-//		$re = $ULImg -> uploadOne($_FILES['ArticalImg']);
-//		if(!$re){
-//			show_bug($ULImg -> getError());
-//		}
-//		else{
-//			$UPImgPath = $re['savepath'].$re['savename'];
-//			$_POST['ReferenceImg'] = $UPImgPath;
-//		}
-//		$upLoadType = $_POST['upLoadType'];
-//		$arr['addtime'] = Date('Y-m-d H:i:s');
-//		if($title != '')
-//		{
-//			$checkUser = M('user')-> where("loginid = '$sessid'")-> find();
-//			$Userid = M('user')-> where("loginid = '$sessid'")-> getfield('userid');
-//			if(!empty($checkUser)){
-//
-//				$data = array('Title'=>$title,'ArticalType'=>$ArticalType,'UserId'=>$Userid,'ReferenceImg'=>$UPImgPath,'Content'=>$content,'upLoadType'=>$upLoadType,'CreateTime'=>$arr['addtime']);
-////				$data = array('userid'=>$sessid);
-//				$push = M('artical');
-//				$res = $push->add($data);
-////				var_dump($res);exit;
-//				if($res)
-//				{
-//					$this -> success('psh success', U('Index/index'));
-//				}
-//				else{
-//					$this -> error('psh error1', U('User/pshArtPag'));
-//				}
-//			}
-//			else{
-//					$this -> error('psh error2', U('User/pshArtPag'));
-//			}
-//		}
-//	}
-	/* function _empty(){
-	 echo "<img src='".IMG_URL.'404.gif'."' alt='' />";
-	 } */
 
 }
