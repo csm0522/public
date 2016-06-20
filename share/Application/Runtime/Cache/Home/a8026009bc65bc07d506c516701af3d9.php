@@ -144,7 +144,8 @@
 										<dd>
 											<a href="" class="select">原创教程</a>
 											<a href="">设计资讯</a>
-											<a href="">小伙伴观点/经验</a>
+											<a href="">观点/经验</a>
+											<a href="">其他</a>
 										</dd>
 
 									</dl>
@@ -152,21 +153,21 @@
 										<dt>排序：</dt>
 										<dd>
 											<a href="" class="select">上传时间</a>
-											<a href="">推荐最多</a>
 											<a href="">人气最高</a>
+											<a href="">点赞最多</a>
 											<a href="">评论最多</a>
 										</dd>
 									</dl>
-									<dl>
-										<dt>时间：</dt>
-										<dd>
-											<a href="" class="select">不限</a>
-											<a href="">1天内</a>
-											<a href="">1周内</a>
-											<a href="">1个月内</a>
-											<a href="">一年内</a>
-										</dd>
-									</dl>
+									<!--<dl>-->
+										<!--<dt>时间：</dt>-->
+										<!--<dd>-->
+											<!--<a href="" class="select">不限</a>-->
+											<!--<a href="">1天内</a>-->
+											<!--<a href="">1周内</a>-->
+											<!--<a href="">1个月内</a>-->
+											<!--<a href="">一年内</a>-->
+										<!--</dd>-->
+									<!--</dl>-->
 								</div>
 							</td>
 						</tr>
