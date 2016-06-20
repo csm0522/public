@@ -1,0 +1,301 @@
+<include file="Public/header" title="Login" />
+<link href="__HomeCSS__/personal.css" rel="stylesheet" media="all" />
+<script type="text/javascript" language="javascript">
+
+    function title_color(i) {
+        var title = document.getElementById("title" + i);
+        title.style.color = "#e52938";
+    }
+
+    function title_back(i) {
+        var title = document.getElementById("title" + i);
+        title.style.color = "#8e8e8e";
+    }
+
+    function show(i) {
+        var layer = document.getElementById("layer" + i);
+        layer.style.display = "block";
+    }
+
+    function search_btn() {
+        var search_btn1 = document.getElementById("search_btn1");
+        search_btn1.style.color = "#e52938";
+    }
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".nice_left").click(function() {
+            $(".nice_right").slideToggle(100);
+        });
+        $(".nice_right").click(function() {
+            $(".nice_left").slideToggle(500);
+        });
+        $(".nice_right").click(function() {
+            $(".nice_right").slideToggle(100);
+        });
+        $(".nice_left").click(function() {
+            $(".nice_left").slideToggle(500);
+        });
+    });
+</script>
+<script type="text/javascript">
+    function show(i) {
+        if(i==1)
+        {
+            $('#layer1').show();
+            $('#layer2').hide();
+            $('#layer3').hide();
+            $('#layer4').hide();
+        }
+        if(i==2)
+        {
+            $('#layer1').hide();
+            $('#layer2').show();
+            $('#layer3').hide();
+            $('#layer4').hide();
+        }
+        if(i==3)
+        {
+            $('#layer1').hide();
+            $('#layer2').hide();
+            $('#layer3').show();
+            $('#layer4').hide();
+        }
+        if(i==4)
+        {
+            $('#layer1').hide();
+            $('#layer2').hide();
+            $('#layer3').hide();
+            $('#layer4').show();
+        }
+    }
+
+    function open_c() {
+        var layer3_a = document.getElementById("layer3_a");
+        layer3_a.style.display = "none";
+        var layer3_b = document.getElementById("layer3_b");
+        layer3_b.style.display = "block";
+    }
+
+    function close_c() {
+        var layer3_a = document.getElementById("layer3_a");
+        layer3_a.style.display = "block";
+        var layer3_b = document.getElementById("layer3_b");
+        layer3_b.style.display = "none";
+    }
+
+    function sss(i) {
+        var more1 = document.getElementById("more1");
+        more1.style.display = "none";
+        var more2 = document.getElementById("more2");
+        more2.style.display = "none";
+        var more = document.getElementById("more" + i);
+        $("#more" + i).slideDown().fadeIn("slow");
+    }
+
+    function like_show(i) {
+        var like = document.getElementById("like" + i);
+        like.style.display = "block";
+    }
+
+    function like_back(i) {
+        var like = document.getElementById("like" + i);
+        like.style.display = "none";
+    }
+
+    function like_article_show(i) {
+        var like_article = document.getElementById("like_article" + i);
+        like_article.style.display = "block";
+    }
+
+    function like_article_back(i) {
+        var like_article = document.getElementById("like_article" + i);
+        like_article.style.display = "none";
+    }
+
+    function worker_show(i) {
+        var worker_name = document.getElementById("worker_name" + i);
+        worker_name.style.display = "block";
+    }
+
+    function worker_back(i) {
+        var worker_name = document.getElementById("worker_name" + i);
+        worker_name.style.display = "none";
+    }
+</script>
+<div class="dynamic">
+    <empty name="userTX">
+        <div class="d_head" style="width: 110px;height:110px;margin:0 auto;">
+            <img src="__PUBLIC__/upload/userTX/default/person.png" width="110px" height="110px" style="border-radius: 90px;margin-top:150px;;">
+        </div>
+        <else />
+        <div class="d_head" style="width: 110px;height:110px;margin:0 auto;">
+            <img src="__PUBLIC__{$userTX}" width="110px" height="110px" style="border-radius: 90px;margin-top:150px;">
+        </div>
+    </empty>
+
+</div>
+<div class="category">
+
+    <div class="dynamic_2" style="margin-top:3%;">
+        <div class="myname">
+            <div class="recommend-line">
+                <a href="" style="text-decoration: none;">
+                    <h style="font-size:28px;color:#444;font-weight:bolder;">
+                        <?php
+											if($userInfo['username'] == '')
+											{
+												echo('昵称');
+											}
+											else{
+												echo $userInfo[username];
+											}
+										?>
+                    </h>
+                </a>
+            </div>
+        </div>
+        <div class="info">
+            <h style="font-size:14px;color:#666;padding-top:5%;">简介:介绍一下自己</h>
+        </div>
+        <div class="more">
+            <a href="{:U('User/infoEdit')}"><span>编辑信息</span></a>
+        </div>
+    </div>
+
+    <div class="c_box">
+
+        <div class="c_title">
+            <div class="t_1" id="title1" onclick="show(1)">
+
+                <input type="button" class="c_btn" value="{$userWorksNum}" />
+                <h class="c_text" id="title1">作品</h>
+
+            </div>
+
+            <div class="t_1" id="title2" onclick="show(2)">
+
+                <input type="button" class="c_btn" value="{$userArticalNum}" />
+                <h class="c_text" id="title2">文章</h>
+
+            </div>
+
+
+            <div class="t_1" id="title4" onclick="show(4)">
+                <input type="button" class="c_btn" value="45" />
+                <h class="c_text" id="title4">关注</h>
+            </div>
+
+            <div class="t_1" id="title5" onclick="show(5)">
+                <input type="button" class="c_btn" value="231" />
+                <h class="c_text" id="title5">粉丝</h>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="layer1" style="padding:2% 5%;box-sizing: border-box;width: 100%;">
+        <ul style="width: 100%;margin:0 auto;text-align: left;">
+            <volist name="userWorks" id="vo">
+
+                <li style="width: 380px;height:290px;display: inline-block;margin:0 20px 20px 0;border:1px solid #eee;text-align: left;">
+
+                    <empty name="vo.indeximgpath">
+                        <a href="__MODULE__/Works/works/id/{$vo.ariticalid}" class="userAImg">
+                            <img src="__PUBLIC__/upload/ArticalIndexImg/defaultImg.jpg" alt="" width="380px" height="200px" />
+                        </a>
+                        <else />
+                        <a href="__MODULE__/Works/works/id/{$vo.ariticalid}" class="a-block">
+                            <img src="__PUBLIC__/{$vo.indeximgpath}" width="380px" height="200px" class="u_post_img"/>
+                        </a>
+                    </empty>
+                    <div class="a-title">
+                        <div class="a-info">
+                            <h2><a href="__MODULE__/Works/works/id/{$vo.ariticalid}">{$vo.title|htmlspecialchars_decode}</a></h2>
+                            <div class="works-info">
+									<span class="works-author">
+										<a href="">{$vo.username}</a>&nbsp;/&nbsp;
+									</span>
+									<span class="works-time">
+										{$vo.createtime|substr=0,10}
+									</span>
+                                &nbsp;/&nbsp;
+									<span class="works-like"><img src="__HomeIMG__/index/love.png" alt="" /> {$vo.num} &nbsp;
+									</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </volist>
+
+        </ul>
+    </div>
+
+    <div id="layer2" style="display:none;">
+
+        <div class="artcle">
+            <div class="artical-info">
+                <ul>
+                    <volist name="userArt" id="vo">
+                        <li>
+                            <a href="__MODULE__/essay/essay/id/{$vo.ariticalid}" class="userAImg"><img src="__PUBLIC__/{$vo.indeximgpath}" alt="" /></a>
+                            <div class="userAInfo">
+                                <div class="userATitle">
+                                    <a href="">{$vo.title|htmlspecialchars_decode}</a>
+                                </div>
+                                <div  class="sortCo">
+								<span><?php if( $vo['articaltype'] == 1)
+										{  echo '原创教程';  }
+										 else if( $vo['articaltype'] == 2)
+										{  echo '观点/见解';  }
+										else if( $vo['articaltype'] == 3)
+										{  echo '设计资讯';  }
+										else
+										{  echo '其他';  }
+										?></span>
+                                </div>
+                                <div class="userAupTime"><span class="userA_Name">{$vo.username}</span> /{$vo.createtime|substr=0,10}</div>
+                                <div class="userAintro">
+                                    {$vo.intro|htmlspecialchars_decode}
+                                </div>
+                            </div>
+                        </li>
+                    </volist>
+
+                </ul>
+            </div>
+        </div>`
+
+
+    </div>
+
+
+
+    <div id="layer4" style="display:none;">
+
+        <div class="person">
+            <div class="person_1">
+                <img src="__HomeIMG__/index/person_1.png" height="109" width="110" style="margin-top:20px;">
+            </div>
+            <div class="person_2">
+                <h style="font-size:18px;color:#3a3a3a;font-weight:bolder;">Sonia</h>
+                <h style="font-size:14px;color:#808080;">程序猿</h>
+            </div>
+            <div class="person_3">
+                <h style="font-size:12px;color:#808080;">作品 32</h>
+                <h style="font-size:12px;color:#808080;">文章 6</h>
+                <h style="font-size:12px;color:#808080;">人气 3459</h>
+            </div>
+            <div class="person_4">
+                <input type="button" name="follow" value="" placeholder="" class="p_btn" />
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+<div class="clear"></div>
+<include file="Public/footer" title="Index" />
