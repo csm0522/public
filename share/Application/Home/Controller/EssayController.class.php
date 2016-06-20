@@ -5,9 +5,9 @@ class EssayController extends Controller {
     public function index(){
 		$con['uploadType']=2;
 		$con['RepTag']=array("NEQ",1);
-		$con['status']=1;
+//		$con['status']=1;
     	$Artical = M('artical') -> join('t_user on t_artical.userid = t_user.userid') -> where($con) ->order("AriticalId DESC")->select();
-		$artrang=M('artical') -> where($con) -> order('clickNum DESC')->limit(4)->select();
+		$artrang=M('artical') -> where('status = 1 And upLoadType = 2') -> order('clickNum DESC')->limit(4)->select();
 //		dump($artrang);
 		$this->assign("Articallist",$Artical);
 		$this->assign("artrange",$artrang);
