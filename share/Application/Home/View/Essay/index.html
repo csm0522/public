@@ -68,7 +68,10 @@
 
 									</a>
 							</div>
-							<div class="userAupTime" style="margin: 8px 0 0 0;"><span class="userA_Name" style="color:pink;">{$vo.username}</span> / <span style="color:brown;">{$vo.createtime|substr=0,10}</span></div>
+							<div class="userAupTime" style="margin: 8px 0 0 0;"><span class="userA_Name" style="color:pink;">{$vo.username}</span> /
+								<span style="color:brown;">{$vo.createtime|substr=0,10}</span>
+								<span style="font-size: 14px;">&nbsp;&nbsp;&nbsp;人气:</span><span class="works-like"  style="font-size: 14px;">&nbsp;&nbsp;{$vo.clicknum} &nbsp;</span>
+							</div>
 							<div  class="sortCo" style="margin-top: 8px;font-size: 12px;">
 								<span style="color:orange;">
 									<?php if( $vo['articaltype'] == 1)
@@ -98,34 +101,16 @@
 					</div>
 					<div  id="main_right_container">
 						<ul>
+							<volist name='artrange' id="vo">
 							<li>
-								<a href=""><img src="__HomeIMG__/essay/3.jpg" alt="枯水生 - 东方风格的UI"/> </a>
+								<a href="__MODULE__/essay/essay/id/{$vo.ariticalid}">
+									<img src="__PUBLIC__/{$vo.indeximgpath}" /> </a>
 								<div>
-									<p>枯水生 - 东方风格的UI</p>
-									<p>人气: <span style="color:red">2650</span></p>
+									<p>{$vo.title}</p>
+									<p>人气: <span style="color:red">{$vo.clicknum}</span></p>
 								</div>
 							</li>
-							<li>
-								<a href=""><img src="__HomeIMG__/essay/2.jpg"/> </a>
-								<div>
-									<p>2016-设计大事件</p>
-									<p>人气: <span style="color:red">2650</span></p>
-								</div>
-							</li>
-							<li>
-								<a href=""><img src="__HomeIMG__/essay/1.png"/> </a>
-								<div>
-									<p>【字言字语】设计中常用的手写体总结</p>
-									<p>人气: <span style="color:red">2650</span></p>
-								</div>
-							</li>
-							<li>
-								<a href=""><img src="__HomeIMG__/essay/3.jpg"/> </a>
-								<div>
-									<p >最新研发——设计师防窥神器，打造全新工作体验！</p>
-									<p>人气: <span style="color:red">2650</span></p>
-								</div>
-							</li>
+							</volist>
 						</ul>
 					</div>
 				</div>

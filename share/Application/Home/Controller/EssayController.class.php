@@ -4,12 +4,15 @@ use Think\Controller;
 class EssayController extends Controller {
     public function index(){
     	$Artical = M('artical') -> join('t_user on t_artical.userid = t_user.userid') -> where('upLoadType = 2') ->order("AriticalId DESC")->select();
+		$artrang=M('artical')->where("uploadType = 2")->order('clickNum DESC')->limit(4)->select();
 		$this->assign("Articallist",$Artical);
+		$this->assign("artrange",$artrang);
     	$this->display('');
     }
 	public function essay(){
 		$id=$_GET['id'];
-    	$Artical = M('artical') -> join('t_user on t_artical.userid = t_user.userid') -> where("ariticalid = '$id'") ->select();
+		$cons['ariticalid']=$id;
+    	$Artical = M('artical') -> join('t_user on t_artical.userid = t_user.userid') -> where("ariticalid = '$id'")->select();
 		$clickNum = M('artical') -> where("ariticalid = '$id'") ->setInc('clickNum');
 		$con3['AriticalId'] = $id;
 		$data['num'] = M('like')->where($con3)->count();
