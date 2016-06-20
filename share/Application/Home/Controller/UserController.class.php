@@ -19,7 +19,6 @@ class UserController extends Controller
         if (!empty(session('userInfo'))) {
             $this->display('Index/index');
         } else if (empty(session('userInfo'))) {
-
             $this->display('User/login');
         }
     }
@@ -41,7 +40,9 @@ class UserController extends Controller
 
     public function login()
     {
+//  	var_dump($_POST);exit;
         if (IS_POST) {
+
             $data = array('lastip' => get_client_ip(), 'lastdate' => Date('Y-m-d H:i:s'));
 
             $name = $_POST['login_un'];
@@ -54,10 +55,10 @@ class UserController extends Controller
                     $user = D('login')->where("LoginName='$name'")->select();
                     $userlogNum = M('login')->where("LoginName='$name'")->setInc('loginNum');
                     $getUN = M('user')->join('t_login on t_user.loginid=t_login.loginid')->where("LoginName='$name'")->getfield('username');
-                    M('login')->where("LoginName='$name'")->setField($data);
+				    M('login')->where("LoginName='$name'")->setField($data);
                     $arr = array('user' => $user[0]['loginname'], 'UId' => $user[0]['loginid'], 'UN' => $getUN);
                     session(array('name' => 'userInfo'));
-                    session('userInfo', $arr);
+					session('userInfo',$arr);
                     redirect(U('Index/index'));
                 } else {
                     echo "<script>alert('" . "用户名或密码错误" . "');</script>";
@@ -252,6 +253,7 @@ class UserController extends Controller
     {
         $sessid = session('userInfo.UId');
         $userInfo = M('user')->where("loginid = '$sessid'")->select();
+
         $this->assign('userInfo', $userInfo[0])->display();
     }
 
@@ -295,10 +297,11 @@ class UserController extends Controller
                 } else {
                     $this->error('save error1', U('User/infoEdit'));
                 }
-            } else if (!empty($checkUserInfo)) {
+             } else if (!empty($checkUserInfo)) {
 //					var_dump($sessid);exit;
                 $userInfo = M('user')->where("loginid = '$sessid'")->save($data);
                 if ($userInfo) {
+					$_SESSION['userInfo']['UN'] = I('UserName');
                     $this->success('save success2', U('Index/index'));
                 } else {
                     $this->error('save error2', U('User/infoEdit'));
