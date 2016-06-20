@@ -1,19 +1,5 @@
 ﻿<include file="Public/header" title="Login"/>
 <link href="__HomeCSS__/work.css" rel="stylesheet" media="all"/>
-<script type="text/javascript">
-    window.onload = function () {
-        document.getElementById('subCom').click = function () {
-            var now = new Date();
-            var layer = document.getElementById("layer");
-            var divlayer = document.createElement("div");
-            var con = document.getElementById("content").value;
-            con = con.replace(/\n/g, "<br />");
-            divlayer.innerHTML = "<img src='__HomeIMG__/index/person_2.png' width='40px' class='header'/>" + con + "<div class='stime'>" + now.toLocaleString() + "</div><div class='clear'></div>";
-            divlayer.className = "content";
-            layer.appendChild(divlayer);
-            document.getElementById("content").value = "";
-        }
-    }
 
 </script>
 <div id="container" class="container-min-width" style="display: block;">
@@ -28,11 +14,11 @@
                 <div class="content2">
                     <empty name="userTX">
                         <div class="author">
-                            <img src="__HomeIMG__/index/person_1.png" width="100px" height="auto"/>
+                            <img src="__HomeIMG__/index/person_1.png" width="100px" height="100px" style="border-radius: 90px;border:4px solid white"/>
                         </div>
                         <else/>
                         <div class="author">
-                            <a href=""><img src="__PUBLIC__{$userTX}" width="100px" height="auto"/></a>
+                            <a href=""><img src="__PUBLIC__{$userTX}" width="100px" height="100px" style="border-radius: 90px;border:4px solid white"/></a>
                         </div>
                     </empty>
 
@@ -86,8 +72,8 @@
             <div class="view_others">
                 <!--<?php dump($comment); ?>-->
                 <volist name="comment" id="com">
-                <div class="other">
-                    <div class="view_top" >
+                <div class="other"style="border-bottom:1px solid gray;" >
+                    <div class="view_top">
 
                         <div class="view_l">
                             <a href=""><img src="__HomeIMG__/index/person_2.png" width="40px"/></a>
