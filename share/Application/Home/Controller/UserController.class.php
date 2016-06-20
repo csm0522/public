@@ -179,6 +179,7 @@ class UserController extends Controller
     public function personal()
     {
         $sessid = session('userInfo.UId');
+
         $userInfo = M('user')->where("loginid = '$sessid'")->select();
         $userTX = M('user')->where("loginid = '$sessid'")->getfield('usertx');
         $use = M('login')->where("loginid = '$sessid'")->select();
@@ -190,6 +191,13 @@ class UserController extends Controller
             $con['AriticalId'] = $userWorks[$i]['ariticalid'];
             $userWorks[$i]['num'] = M('like')->where($con)->count();
         }
+        $userid=$userInfo[0]['userid'];
+
+        $beuser = M('concern')->join('t_user on t_user.userid = t_concern.coid ')->where("beid = '$userid'")->select();
+        $couser = M('concern')->join('t_user on t_user.userid = t_concern.beid ')->where("coid = '$userid'")->select();
+        $count['beconcern']=count($beuser);
+        $count['concern']=count($couser);
+
         $this->assign('userInfo', $userInfo[0]);
         $this->assign('userTX', $userTX);
         $this->assign('use', $use);
@@ -197,6 +205,7 @@ class UserController extends Controller
         $this->assign('userArt', $userArt);
         $this->assign('userWorksNum', $userWorksNum);
         $this->assign('userArticalNum', $userArticalNum);
+        $this->assign('counts', $count);
         $this->display('personal');
     }
 
@@ -205,7 +214,7 @@ class UserController extends Controller
         $sessid = session('userInfo.UId');
         $id = $_GET['id'];
         $userInfos = M('user')->where("loginid = '$sessid'")->select();
-
+//        $userid = $userInfos[0]['userid']
         echo $id;
         if ($userInfos[0]['userid'] == $id) {
             $this->personal();
@@ -216,11 +225,20 @@ class UserController extends Controller
             $userArt = M('artical')->join('t_user on t_user.userid = t_artical.userid')->where("t_user.userid = '$id' AND t_artical.uploadtype = '2'")->select();
             $userWorksNum = M('artical')->join('t_user on t_user.userid = t_artical.userid')->where("t_user.userid = '$id' AND t_artical.uploadtype = '1'")->count();
             $userArticalNum = M('artical')->join('t_user on t_user.userid = t_artical.userid')->where("t_user.userid = '$id' AND t_artical.uploadtype = '2'")->count();
+            $userid=$userInfos[0]['userid'];
+//            $beuser = M('user')->join('t_concern.beid = t_user.userid')->where("t_concern.coid = '$userid'")->select();
+
+            //被关注,
+            $beuser = M('concern')->join('t_user on t_user.userid = t_concern.coid ')->where("beid = '$id'")->select();
+            $couser = M('concern')->join('t_user on t_user.userid = t_concern.beid ')->where("coid = '$id'")->select();
+            $count['beconcern']=count($beuser);
+            $count['concern']=count($couser);
             for ($i = 0; $i < count($userWorks); $i++) {
                 $con['AriticalId'] = $userWorks[$i]['ariticalid'];
                 $userWorks[$i]['num'] = M('like')->where($con)->count();
             }
             $this->assign('userInfo', $userInfo[0]);
+            $this->assign('counts', $count);
             $this->assign('userTX', $userTX);
             $this->assign('userWorks', $userWorks);
             $this->assign('userArt', $userArt);
