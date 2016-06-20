@@ -27,6 +27,7 @@ input{
 	background-clip: border-box;
 	background-origin: padding-box;
 	background-size: auto auto;
+	z-index: -1;
 }
 
 .container-min-width {

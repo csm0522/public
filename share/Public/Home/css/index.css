@@ -983,3 +983,6 @@ div#loginAndLO ul li a:hover{
 	background: #6A2F1D;
 	cursor:pointer;
 }
+.author_content img{
+	width: 100%;
+}
