@@ -156,10 +156,11 @@
             </div>
         </div>
         <div class="info">
-            <h style="font-size:14px;color:#666;padding-top:5%;">简介:介绍一下自己</h>
+            <h style="font-size:14px;color:#666;padding-top:5%;">{$userInfo['username']}的个人主页</h>
         </div>
         <div class="more">
-            <a href="{:U('User/infoEdit')}"><span>编辑信息</span></a>
+            <a>
+                <span onclick="concern()"><p id="conres"></p></span></a>
         </div>
     </div>
 
@@ -263,7 +264,6 @@
                             </div>
                         </li>
                     </volist>
-
                 </ul>
             </div>
         </div>`
@@ -298,4 +298,45 @@
 
 </div>
 <div class="clear"></div>
+<script>
+    var url = window.location.href;
+    var st = url.split("/");
+    var i = st.length;
+    var j = st[i - 1];
+    $(window).ready(function() {
+        $.ajax({
+            type: "get", //请求的方式
+            url: "__MODULE__/user/checkcon/id/" + j, //请求的url地址
+            success: function (data) { //请求成功时，处理返回来的数据
+                var msg = data.msg;
+                $("#conres").html(msg);
+            }
+        })
+    });
+
+    function concern(){
+        var res=$("#conres").html();
+        if(res=="关注"){
+            $.ajax({
+                type: "get", //请求的方式
+                url: "__MODULE__/user/concern/id/" + j, //请求的url地址
+                success: function (data) { //请求成功时，处理返回来的数据
+                    var msg = data.msg;
+                    $("#conres").html(msg);
+                }
+            })
+        }
+        else{
+            $.ajax({
+                type: "get", //请求的方式
+                url: "__MODULE__/user/delcon/id/" + j, //请求的url地址
+                success: function (data) { //请求成功时，处理返回来的数据
+                    var msg = data.msg;
+                    $("#conres").html(msg);
+                }
+            })
+        }
+
+    }
+</script>
 <include file="Public/footer" title="Index" />

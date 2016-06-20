@@ -3,10 +3,9 @@ namespace Home\Controller;
 use Think\Controller;
 class EssayController extends Controller {
     public function index(){
-    	$Artical = M('artical') -> join('t_user on t_artical.userid = t_user.userid') -> where('upLoadType = 2 And status = 1') ->order("AriticalId DESC")->select();
-		$artrang=M('artical')->where("uploadType = 2")->order('clickNum DESC')->limit(4)->select();
 		$con['uploadType']=2;
 		$con['RepTag']=array("NEQ",1);
+		$con['status']=1;
     	$Artical = M('artical') -> join('t_user on t_artical.userid = t_user.userid') -> where($con) ->order("AriticalId DESC")->select();
 		$artrang=M('artical') -> where($con) -> order('clickNum DESC')->limit(4)->select();
 //		dump($artrang);
