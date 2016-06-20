@@ -4,6 +4,7 @@ use Think\Controller;
 use Think\Page;
 class worksController extends Controller {
 	public function worksList() {
+//			print_r(get_defined_constants());exit;
 			$user = D('login');
 			$page = D('login')->join('RIGHT JOIN t_user ON t_login.Loginid = t_user.Loginid')->join('RIGHT JOIN t_artical ON t_user.userid = t_artical.userid')->where('upLoadType = 1')-> count();
 			$ppp = new Page($page,5);
@@ -12,6 +13,7 @@ class worksController extends Controller {
 			$this -> assign('list', $list);
 			$this -> assign('page', $show);//分页导航
 			$this -> display();
+
 	}
 
 	public function essaysList() {
@@ -99,7 +101,17 @@ class worksController extends Controller {
 //
 		}
 	}
-
+	public function unRepWorks() {
+		if(IS_GET)
+		{
+			$id = $_GET['id'];
+			$reptag = 0;
+			$data = M('artical')->where("ariticalid = '$id'")->setField('RepTag',$reptag);
+			$this->assign('data',$data);
+			redirect(U('Works/Workslist'));
+//
+		}
+	}
 	public function editEssay() {
 		if(IS_GET)
 		{
