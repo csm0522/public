@@ -52,6 +52,7 @@
                     <!--<?php dump($nums) ?>-->
                     <div class="follower">
                         <input type="button" class="follower_btn" onclick="uper()"/><span id="nums" name="nums">{$nums.num}</span>
+
                     </div>
 
                 </div>
@@ -69,10 +70,11 @@
                 </div>
 
                 <textarea id="content" rows="1" cols="100" placeholder="添加评论" name="caption"
-                          style="runat：server；"></textarea>
+                          style=""></textarea>
 
                 <div id="view_submit">
-                    <input type="button" value="提交" class="submit" id="subCom" onclick="addcomment()"/>
+                    <input type="button" value="提交" class="submit" style="background-color: #814e51;" id="subCom" onclick="addcomment()"/>
+                    <input type="button" id="report" class="submit" style="background-color: #F59319;" value="举报" onclick="report()">
                 </div>
             </div>
 
@@ -147,6 +149,17 @@
                 }
             })
         }
+    }
+    function report(){
+        $.ajax({
+            type: "get", //请求的方式
+            url: "__MODULE__/Essay/report/id/" + j, //请求的url地址
+            success: function (data) { //请求成功时，处理返回来的数据
+                var msg = data.msg;
+//                $("#report").backgroundColor=gray;
+                alert(msg)
+            }
+        })
     }
 </script>
 <include file="Public/footer" title="Index"/>

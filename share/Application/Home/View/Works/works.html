@@ -1,7 +1,6 @@
 ﻿<include file="Public/header" title="Login"/>
 <link href="__HomeCSS__/work.css" rel="stylesheet" media="all"/>
 
-</script>
 <div id="container" class="container-min-width" style="display: block;">
     <div class="dynamic">
         <div class="background_top"></div>
@@ -14,11 +13,13 @@
                 <div class="content2">
                     <empty name="userTX">
                         <div class="author">
-                            <img src="__HomeIMG__/index/person_1.png" width="100px" height="100px" style="border-radius: 90px;border:4px solid white"/>
+                            <img src="__HomeIMG__/index/person_1.png" width="100px" height="100px"
+                                 style="border-radius: 90px;border:4px solid white"/>
                         </div>
                         <else/>
                         <div class="author">
-                            <a href=""><img src="__PUBLIC__{$userTX}" width="100px" height="100px" style="border-radius: 90px;border:4px solid white"/></a>
+                            <a href=""><img src="__PUBLIC__{$userTX}" width="100px" height="100px"
+                                            style="border-radius: 90px;border:4px solid white"/></a>
                         </div>
                     </empty>
 
@@ -58,10 +59,11 @@
                     </a>
                 </div>
 
-                    <textarea id="content" rows="1" cols="100" placeholder="添加评论" name="caption"></textarea>
-                    <div id="view_submit">
-                        <input type="button" value="提交" class="submit" id="subCom" onclick="addcomment()"/>
-                    </div>
+                <textarea id="content" rows="1" cols="100" placeholder="添加评论" name="caption"></textarea>
+                <div id="view_submit">
+                    <input type="button" value="提交" class="submit" style="background-color: #814e51;" id="subCom" onclick="addcomment()"/>
+                    <input type="button" id="report" class="submit" style="background-color: #F59319;" value="举报" onclick="report()">
+                </div>
             </div>
 
         </div>
@@ -72,26 +74,28 @@
             <div class="view_others">
                 <!--<?php dump($comment); ?>-->
                 <volist name="comment" id="com">
-                <div class="other"style="border-bottom:1px solid gray;" >
-                    <div class="view_top">
+                    <div class="other" style="border-bottom:1px solid gray;">
+                        <div class="view_top">
 
-                        <div class="view_l">
-                            <a href=""><img src="__HomeIMG__/index/person_2.png" width="40px"/></a>
+                            <div class="view_l">
+                                <a href=""><img src="__HomeIMG__/index/person_2.png" width="40px"/></a>
+                            </div>
+
+                            <!--<div class="other_name" >-->
+                            <span style="font-size:16px;color:#666;float: left;margin-left: 5%;margin-top: 10px;">{$com.username}</span>
+                            <div style="float: right;font-size: 14px;color:#aaa;display: inline-block;margin-top: 10px;">
+                                {$com.creattime}
+                            </div>
+                            <!--</div>-->
+
+                            <div class="clear"></div>
                         </div>
 
-                        <!--<div class="other_name" >-->
-                        <span style="font-size:16px;color:#666;float: left;margin-left: 5%;margin-top: 10px;">{$com.username}</span>
-                        <div style="float: right;font-size: 14px;color:#aaa;display: inline-block;margin-top: 10px;">{$com.creattime}</div>
-                        <!--</div>-->
+                        <div class="view_m">
+                            <h style="font-size:14px;color:#aaa;">{$com.content}</h>
+                        </div>
 
-                        <div class="clear"></div>
                     </div>
-
-                    <div class="view_m">
-                        <h style="font-size:14px;color:#aaa;">{$com.content}</h>
-                    </div>
-
-                </div>
                 </volist>
             </div>
 
@@ -122,22 +126,32 @@
                     alert("请输入吐槽内容");
                 }
                 else {
+                    $.ajax({
+                        type: "post", //请求的方式
+                        dataType: "json", //数据的格式 建议大家使用json格式
+                        data: comment,
+                        url: "__MODULE__/Works/addcomment", //请求的url地址
+                        success: function (data) {
+                            if (data == 0) {
+                                window.location.href = window.location.href;
+                            }
+                            else {
+                                alert("网络繁忙,请稍后再试。");
+                            }
+                        }
+                    })
+                }
+            }
+            function report() {
                 $.ajax({
-                    type: "post", //请求的方式
-                    dataType: "json", //数据的格式 建议大家使用json格式
-                    data: comment,
-                    url: "__MODULE__/Works/addcomment", //请求的url地址
-                    success: function (data) {
-                        if(data==0){
-                            window.location.href=window.location.href;
-                        }
-                        else{
-                            alert("网络繁忙,请稍后再试。");
-                        }
+                    type: "get", //请求的方式
+                    url: "__MODULE__/Essay/report/id/" + j, //请求的url地址
+                    success: function (data) { //请求成功时，处理返回来的数据
+                        var msg = data.msg;
+//                $("#report").backgroundColor=gray;
+                        alert(msg)
                     }
                 })
             }
-            }
         </script>
         <include file="Public/footer" title="Index"/>
-
