@@ -24,7 +24,7 @@ class WorksController extends Controller {
 
 	public function showList(){
 		$type = $_GET['type'];
-		$Works = M('artical') -> join('t_user on t_artical.userid = t_user.userid') -> where("type = $type") ->order("AriticalId DESC")->select();
+		$Works = M('artical') -> join('t_user on t_artical.userid = t_user.userid') -> where("type = $type And status = 1") ->order("AriticalId DESC")->select();
 		for($i=0;$i<count($Works);$i++){
 			$con['AriticalId']=$Works[$i]['ariticalid'];
 			$Works[$i]['num']=M('like')->where($con)->count();
@@ -33,7 +33,7 @@ class WorksController extends Controller {
 		$this->assign("type",$type);
     	$this->display('showUi');
 	}
-	
+
 	public function upwork(){
 		$sessid = session('userInfo.UId');
 		if(!empty($sessid)){

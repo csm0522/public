@@ -55,6 +55,51 @@ class worksController extends Controller {
 			redirect(U('Works/workslist'));
 		}
 	}
+	public function deleEssay() {
+		if(IS_GET)
+		{
+			$id = $_GET['id'];
+			$status = 0;
+			$data = M('artical')->where("ariticalid = '$id'")->setField('status',$status);
+			$this->assign('data',$data);
+			redirect(U('Works/essayslist'));
+//
+		}
+	}
+	public function unDeleEssay() {
+		if(IS_GET)
+		{
+			$id = $_GET['id'];
+			$status = 1;
+			$data = M('artical')->where("ariticalid = '$id'")->setField('status',$status);
+			$this->assign('data',$data);
+			redirect(U('Works/essayslist'));
+//
+		}
+	}
+	public function deleWorks() {
+		if(IS_GET)
+		{
+			$id = $_GET['id'];
+			$status = 0;
+			$data = M('artical')->where("ariticalid = '$id'")->setField('status',$status);
+			$this->assign('data',$data);
+			redirect(U('Works/Workslist'));
+//
+		}
+	}
+	public function unDeleWorks() {
+		if(IS_GET)
+		{
+			$id = $_GET['id'];
+			$status = 1;
+			$data = M('artical')->where("ariticalid = '$id'")->setField('status',$status);
+			$this->assign('data',$data);
+			redirect(U('Works/Workslist'));
+//
+		}
+	}
+
 	public function editEssay() {
 		if(IS_GET)
 		{

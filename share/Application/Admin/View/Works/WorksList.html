@@ -14,6 +14,7 @@
 				<th style="width:160px;;text-align: center;">发布时间</th>
 				<th style="width:60px;;text-align: center;">点击量</th>
 				<th style="width:80px;;text-align: center;">编辑</th>
+				<th style="width:80px;;text-align: center;">删除</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -48,6 +49,13 @@
 					<td>
 						<a href="__MODULE__/Works/editWorks/id/{$C.ariticalid}"><button class="btn btn-primary" type="button" style="background: lightskyblue;width: 82px;border:none">编辑</button></a>
 
+					</td>
+					<td>
+						<if condition="$C['status'] eq 0 ">
+							<label class="btn btn-primary" type="button" style="background: black;color:white;width: 82px;">已删除</label>
+							<a href="__MODULE__/Works/unDeleWorks/id/{$C.ariticalid}" class="primary" ><button class="btn btn-primary" type="button"style="background: orange;color:white;width: 82px;">解除</button></a>
+							<elseif condition="$C['status'] eq 1 "/> <a href="__MODULE__/Works/deleWorks/id/{$C.ariticalid}" class="primary" ><button class="btn btn-primary" type="button">删除文章</button></a>
+						</if>
 					</td>
 				</tr>
 			</foreach>
