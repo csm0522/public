@@ -914,3 +914,47 @@ div.dynamic_2 div.more a span:hover{
 	color:brown;
 	border-color:brown;
 }
+div.artical-info ul li {
+    width: 45%;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 10px;
+    text-align: left;
+    border:1px solid #eee;
+    margin-right:20px;
+    margin-bottom:20px;
+}
+div.artical-info ul li a.userAImg {
+    display: inline-block;
+	width: 100%;
+    vertical-align: top;
+}
+div.artical-info ul li img{
+	width: 100%;
+    display: inline-block;
+}
+div.artical-info ul li div:last-child {
+    display: inline-block;
+    width: 100%;
+     padding:0;
+    box-sizing: border-box;
+}
+div.userAInfo div.userATitle {
+    margin-top: 10px;
+    font-weight: 800;
+}
+div.userAInfo div.sortCo {
+    margin-top: 10px;
+    color: orange;
+}
+div.artical-info ul li div.userAintro {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	text-indent: 2rem;
+}

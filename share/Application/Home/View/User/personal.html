@@ -239,13 +239,13 @@
 			<div class="artical-info">
 				<ul>
 					<volist name="userArt" id="vo">
-					<li>
-						<a href="__MODULE__/essay/essay/id/{$vo.ariticalid}" class="userAImg"><img src="__PUBLIC__/{$vo.indeximgpath}" alt="" /></a>
+					<li style="display: inline-block;">
+						<a href="__MODULE__/essay/essay/id/{$vo.ariticalid}" class="userAImg"><img src="__PUBLIC__/{$vo.indeximgpath}" alt="" width="100%" height="300px;"/></a>
 						<div class="userAInfo">
 							<div class="userATitle">
-									<a href="">{$vo.title|htmlspecialchars_decode}</a>
+									<a href="__MODULE__/essay/essay/id/{$vo.ariticalid}">{$vo.title|htmlspecialchars_decode}</a>
 							</div>
-							<div  class="sortCo">
+							<div  class="sortCo" style="display: inline-block;">
 								<span><?php if( $vo['articaltype'] == 1)
 										{  echo '原创教程';  }
 										 else if( $vo['articaltype'] == 2)
@@ -256,7 +256,7 @@
 										{  echo '其他';  }
 										?></span>
 							</div>
-							<div class="userAupTime"><span class="userA_Name">{$vo.username}</span> /{$vo.createtime|substr=0,10}</div>
+							<div class="userAupTime" style="display: inline-block;"><span class="userA_Name">{$vo.username}</span> /{$vo.createtime|substr=0,10}</div>
 							<div class="userAintro">
 								{$vo.intro|htmlspecialchars_decode}
 							</div>
