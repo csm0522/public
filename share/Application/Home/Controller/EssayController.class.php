@@ -3,8 +3,11 @@ namespace Home\Controller;
 use Think\Controller;
 class EssayController extends Controller {
     public function index(){
-    	$Artical = M('artical') -> join('t_user on t_artical.userid = t_user.userid') -> where('upLoadType = 2') ->order("AriticalId DESC")->select();
-		$artrang=M('artical')->where("uploadType = 2")->order('clickNum DESC')->limit(4)->select();
+		$con['uploadType']=2;
+		$con['RepTag']=array("NEQ",1);
+    	$Artical = M('artical') -> join('t_user on t_artical.userid = t_user.userid') -> where($con) ->order("AriticalId DESC")->select();
+		$artrang=M('artical') -> where($con) -> order('clickNum DESC')->limit(4)->select();
+//		dump($artrang);
 		$this->assign("Articallist",$Artical);
 		$this->assign("artrange",$artrang);
     	$this->display('');
@@ -69,6 +72,27 @@ class EssayController extends Controller {
 			$data=1;
 		}
 		$this->ajaxReturn($data);
-
 	}
+	public function report(){
+		$sessid = session('userInfo.UId');
+		if(!empty($sessid)){
+			$con2['LoginId']=$sessid;
+
+			$con['RepUserid'] = M('user')->where($con2)->getField(UserId);
+			$con['AriticalId']=$_GET['id'];
+			$con['RepTag']=2;
+			if(M('artical')->save($con)){
+				$data['msg']="举报成功,等待管理员审核";
+//				redirect(U('User/login'));
+			}
+			else{
+				$data['msg']="正在等待管理员审核";
+			}
+		}
+		else{
+			$data['msg']="请先登录";
+		}
+		$this->ajaxReturn($data);
+	}
+
 }

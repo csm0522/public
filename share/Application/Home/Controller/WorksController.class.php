@@ -6,7 +6,6 @@ class WorksController extends Controller {
 		$id=$_GET['id'];
     	$Works = M('artical') -> join('t_user on t_artical.userid = t_user.userid') -> where("ariticalid = '$id'") ->order("AriticalId DESC")->select();
 		$clickNum = M('artical') -> where("ariticalid = '$id'") ->setInc('clickNum');
-//		$userTX = M('artical') -> join('t_user on t_artical.userid = t_user.userid')-> where("loginid = '$id'")-> getfield('usertx');
 		$userTX = M('artical') -> join('right join t_user on t_artical.userid = t_user.userid')-> join('right join t_login on t_user.loginid = t_login.loginid')-> where("ariticalid = '$id'") -> getfield('usertx');
 
 		$this->assign("WorksMain",$Works);
@@ -23,8 +22,11 @@ class WorksController extends Controller {
     }
 
 	public function showList(){
-		$type = $_GET['type'];
-		$Works = M('artical') -> join('t_user on t_artical.userid = t_user.userid') -> where("type = $type") ->order("AriticalId DESC")->select();
+		$type =$_GET['type'];
+		$con['type']=$_GET['type'];
+		$con['RepTag']=array("NEQ",1);
+		
+		$Works = M('artical') -> join('t_user on t_artical.userid = t_user.userid') -> where($con) ->order("AriticalId DESC")->select();
 		for($i=0;$i<count($Works);$i++){
 			$con['AriticalId']=$Works[$i]['ariticalid'];
 			$Works[$i]['num']=M('like')->where($con)->count();
@@ -78,7 +80,28 @@ class WorksController extends Controller {
 			$data=1;
 		}
 		$this->ajaxReturn($data);
+	}
 
+	public function report(){
+		$sessid = session('userInfo.UId');
+		if(!empty($sessid)){
+			$con2['LoginId']=$sessid;
+
+			$con['RepUserid'] = M('user')->where($con2)->getField(UserId);
+			$con['AriticalId']=$_GET['id'];
+			$con['RepTag']=2;
+			if(M('artical')->save($con)){
+				$data['msg']="举报成功,等待管理员审核";
+//				redirect(U('User/login'));
+			}
+			else{
+				$data['msg']="正在等待管理员审核";
+			}
+		}
+		else{
+			$data['msg']="请先登录";
+		}
+		$this->ajaxReturn($data);
 	}
 
 }
