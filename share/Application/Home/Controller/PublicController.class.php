@@ -33,4 +33,8 @@ class PublicController extends Controller {
         echo $str;
         echo $type;
     }
+	public function _empty()
+    {
+		redirect(U('Error/index'));
+    }
 }

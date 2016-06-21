@@ -1,0 +1,1 @@
+a:9:{i:0;s:7:"topicId";i:1;s:6:"UserId";i:2;s:12:"ReportUserId";i:3;s:7:"content";i:4;s:4:"type";i:5;s:9:"CreatTime";i:6;s:9:"ReportTag";s:3:"_pk";s:7:"topicId";s:5:"_type";a:7:{s:7:"topicId";s:7:"int(11)";s:6:"UserId";s:7:"int(11)";s:12:"ReportUserId";s:7:"int(11)";s:7:"content";s:4:"text";s:4:"type";s:7:"int(11)";s:9:"CreatTime";s:4:"text";s:9:"ReportTag";s:7:"int(11)";}}

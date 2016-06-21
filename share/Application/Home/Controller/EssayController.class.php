@@ -29,6 +29,10 @@ class EssayController extends Controller {
     	$this->display();
 //		dump($$Artical)
 	}
+	public function _empty()
+    {
+		redirect(U('Error/index'));
+    }
 
 	public function upessay(){
 		$sessid = session('userInfo.UId');

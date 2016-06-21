@@ -20,14 +20,17 @@ class WorksController extends Controller {
 		$this->assign("comment",$mag);
     	$this->display();
     }
-
+public function _empty()
+    {
+		redirect(U('Error/index'));
+    }
 	public function showList(){
 		$type = $_GET['type'];
 		$Works = M('artical') -> join('t_user on t_artical.userid = t_user.userid') -> where("type = $type And status = 1") ->order("AriticalId DESC")->select();
 		$type =$_GET['type'];
 		$con['type']=$_GET['type'];
 		$con['RepTag']=array("NEQ",1);
-		
+
 		$Works = M('artical') -> join('t_user on t_artical.userid = t_user.userid') -> where($con) ->order("AriticalId DESC")->select();
 		for($i=0;$i<count($Works);$i++){
 			$con['AriticalId']=$Works[$i]['ariticalid'];

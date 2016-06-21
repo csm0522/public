@@ -5,4 +5,8 @@ class AboutController extends Controller {
     public function index(){
     	$this->display();
     }
+	public function _empty()
+    {
+		redirect(U('Error/index'));
+    }
 }

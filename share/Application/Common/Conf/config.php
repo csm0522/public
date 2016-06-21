@@ -1,11 +1,13 @@
 <?php
 return array(
     //让页面显示追踪日志信息
-//    'SHOW_PAGE_TRACE'   => true,
+      'SHOW_PAGE_TRACE'   => true,
+
+	'URL_MODEL' => 0,//先关掉debug
 
     //url地址大小写不敏感设置
     'URL_CASE_INSENSITIVE'  =>  false,
-
+	'URL_ROUTER_ON'   => true,
 	'TMPL_PARSE_STRING' => array(
         '__HomeJS__' => __ROOT__ . '/Public/Home/javascript',
         '__HomeCSS__' => __ROOT__ . '/Public/Home/css',
@@ -24,7 +26,6 @@ return array(
         'use_only_cookies'    =>  0,                               //是否只开启基于cookies的session的会话方式
     ),
 	 'SESSION_AUTO_START' => true,
-
     //数据库连接配置
     'DB_TYPE'               =>  'mysql',     // 数据库类型
     'DB_HOST'               =>  'localhost', // 服务器地址

@@ -22,6 +22,10 @@ class IndexController extends Controller {
 		$this->assign("Articallist",$Artical);
     	$this->display('');
     }
+public function _empty()
+    {
+		redirect(U('Error/index'));
+    }
 }
 
 

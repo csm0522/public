@@ -1,7 +1,6 @@
 <?php
 
 namespace Home\Controller;
-
 use Think\Controller;
 
 class UserController extends Controller
@@ -103,7 +102,6 @@ class UserController extends Controller
 
     public function register()
     {
-
         $model = new \Think\Model();
         $model->startTrans();//事务开始
 
@@ -123,8 +121,8 @@ class UserController extends Controller
                     }
                     $arr['addtime'] = Date('Y-m-d H:i:s');
                     $ip = get_client_ip();
-                    $data = array('LoginName' => I('Reg_un'), 'regip' => $ip, 'lastip' => $ip, 'LoginPwd' => md5(I('Reg_pwd')), 'LoginStatus' => 0, 'LoginTag' => $LoginTag, 'regDate' => $arr['addtime']);
-                    if ($xinxi->data($data)->add()) {
+                    $data = array('LoginName' => I('Reg_un'), 'regip' => $ip, 'lastip' => $ip, 'LoginPwd' => md5(I('Reg_pwd')), 'LoginStatus' => 0, 'LoginTag' => $LoginTag, 'regdate' => $arr['addtime']);
+				    if ($xinxi->data($data)->add()) {
                         $model->commit();
                         $condition['LoginName'] = I('Reg_un');
                         $loginid = M('Login')->where($condition)->getField(LoginId);
@@ -133,19 +131,21 @@ class UserController extends Controller
                             case 1:
                                 if (M('user')->add($datas)) {
                                     $model->commit();
-                                    $this->success('register success', U('loginPage'));
+									echo "<script>alert('" . "注册成功" . "');</script>";
+									redirect(U('User/loginPage'));
                                 } else {
                                     $model->rollback();
-                                    $this->error('网络错误请稍后再试。', U('User/register'));
+                                    $this->error('网络错误...请稍后再试。', U('User/register'));
                                 }
                                 break;
                             case 2:
                                 if (M('company')->add($datas)) {
                                     $model->commit();
-                                    $this->success('register success', U('loginPage'));
+									echo "<script>alert('" . "注册成功" . "');</script>";
+									redirect(U('User/loginPage'));
                                 } else {
                                     $model->rollback();
-                                    $this->error('网络错误请稍后再试。', U('User/register'));
+                                    $this->error('网络错误////请稍后再试。', U('User/register'));
                                 }
                                 break;
                         }
@@ -293,18 +293,22 @@ class UserController extends Controller
             if (empty($checkUserInfo)) {
                 $userInfo = M('user')->data($data)->add();
                 if ($userInfo) {
-                    $this->success('save success1', U('Index/index'));
+                	echo "<script>alert('" . "信息修改成功" . "');</script>";
+					redirect(U('Index/index'));
                 } else {
-                    $this->error('save error1', U('User/infoEdit'));
+                	echo "<script>alert('" . "信息修改失败" . "');</script>";
+					$this->display('Index/infoEdit');
                 }
              } else if (!empty($checkUserInfo)) {
 //					var_dump($sessid);exit;
                 $userInfo = M('user')->where("loginid = '$sessid'")->save($data);
                 if ($userInfo) {
 					$_SESSION['userInfo']['UN'] = I('UserName');
-                    $this->success('save success2', U('Index/index'));
+                    echo "<script>alert('" . "信息修改成功" . "');</script>";
+					redirect(U('Index/index'));
                 } else {
-                    $this->error('save error2', U('User/infoEdit'));
+                   echo "<script>alert('" . "信息修改失败" . "');</script>";
+					$this->display('Index/infoEdit');
                 }
             }
 
@@ -515,5 +519,9 @@ class UserController extends Controller
         }
 
     }
+
+//	public function _empty(){
+//		 echo "<script>alert('"."请先登陆"."');</script>";
+//	}
 
 }

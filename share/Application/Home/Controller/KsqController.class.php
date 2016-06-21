@@ -9,7 +9,7 @@ class KsqController extends Controller
     {
         $ksq = M('topic');
         $data = $ksq->field('topicId,userId,content,type,CreatTime')->order("topicId DESC")->select();
-        
+
         for ($i = 0; $i < count($data); $i++) {
             $con2['UserId']=$data[$i]['userid'];
             $data[$i]['username']=M('user')->where($con2)->getField(UserName);
@@ -21,7 +21,10 @@ class KsqController extends Controller
         $this->assign('topis', $data);
         $this->display();
     }
-
+public function _empty()
+    {
+		redirect(U('Error/index'));
+    }
     public function addTopic()
     {
         $sessid = session('userInfo.UId');

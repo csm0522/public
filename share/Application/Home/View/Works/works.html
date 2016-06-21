@@ -1,6 +1,14 @@
 ﻿<include file="Public/header" title="Login"/>
 <link href="__HomeCSS__/work.css" rel="stylesheet" media="all"/>
-
+<style type="text/css">
+	div.author_content *{
+		background: none!important;
+	}
+	div.author_content img{
+		width: 100%;
+		height:auto;
+	}
+</style>
 <div id="container" class="container-min-width" style="display: block;">
     <div class="dynamic">
         <div class="background_top"></div>
@@ -37,7 +45,7 @@
                     </div>
 
                     <div class="author_content">
-                        {$vo.content}
+                        {$vo.content|htmlspecialchars_decode}
                     </div>
 
                     <div class="follower">

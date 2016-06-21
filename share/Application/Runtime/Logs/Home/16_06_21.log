@@ -1,0 +1,212 @@
+[ 2016-06-21T10:18:24+08:00 ] ::1 /share/index.php?m=Home&c=Index&a=index11
+ERR: 非法操作:index11
+
+[ 2016-06-21T10:37:05+08:00 ] ::1 /share/index.php?m=Home&c=Zhaop&a=111
+ERR: 非法操作:111
+
+[ 2016-06-21T11:37:27+08:00 ] ::1 /share/index.php?m=Home&c=Index&a=index1
+ERR: 非法操作:index1
+
+[ 2016-06-21T11:56:11+08:00 ] ::1 /share/index.php?m=Home&c=Zhaop&a=ind1ex
+ERR: 非法操作:ind1ex
+
+[ 2016-06-21T11:57:54+08:00 ] ::1 /share/index.php/Home/User/perso1nal
+ERR: 模板不存在:./Application/Home/View/Empty/_empty.html
+
+[ 2016-06-21T11:58:34+08:00 ] ::1 /share/index.php/Home/User/p1ersonal
+ERR: 模板不存在:./Application/Home/View/Empty/_empty.html
+
+[ 2016-06-21T11:58:41+08:00 ] ::1 /share/index.php/Home/User/p1ersonal
+ERR: 模板不存在:./Application/Home/View/User/Empty.html
+
+[ 2016-06-21T11:59:22+08:00 ] ::1 /share/index.php/Home/User/p1ersonal
+ERR: 模板不存在:./Application/Home/View/Error/index.html
+
+[ 2016-06-21T11:59:37+08:00 ] ::1 /share/index.php/Home/User/personal1
+ERR: 模板不存在:./Application/Home/View/Error/index.html
+
+[ 2016-06-21T12:00:06+08:00 ] ::1 /share/index.php/Home/User/personal1
+ERR: 模板不存在:./Application/Home/View/Error/index.html
+
+[ 2016-06-21T12:00:07+08:00 ] ::1 /share/index.php/Home/User/personal1
+ERR: 模板不存在:./Application/Home/View/Error/index.html
+
+[ 2016-06-21T12:00:35+08:00 ] ::1 /share/index.php/Home/User/p11ersonal1
+ERR: 模板不存在:./Application/Home/View/Error/index.html
+
+[ 2016-06-21T12:00:36+08:00 ] ::1 /share/index.php/Home/User/p11ersonal1
+ERR: 模板不存在:./Application/Home/View/Error/index.html
+
+[ 2016-06-21T12:17:12+08:00 ] ::1 /share/index.php?m=Home&c=User&a=register
+ERR: 模板不存在:./Application/Home/View/User/loginPage.html
+
+[ 2016-06-21T12:19:42+08:00 ] ::1 /share/index.php?m=Home&c=User&a=register
+ERR: 模板不存在:./Application/Home/View/User/loginPage.html
+
+[ 2016-06-21T12:20:59+08:00 ] ::1 /share/index.php?m=Home&c=User&a=register
+ERR: 模板不存在:./Application/Home/View/User/loginPage.html
+
+[ 2016-06-21T12:24:40+08:00 ] ::1 /share/index.php?m=Home&c=User&a=register
+ERR: 模板不存在:./Application/Home/View/User/loginPage.html
+
+[ 2016-06-21T12:25:33+08:00 ] ::1 /share/index.php?m=Home&c=User&a=register
+ERR: 模板不存在:./Application/Home/View/User/loginPage.html
+
+[ 2016-06-21T12:49:44+08:00 ] ::1 /share/index.php/Home/Works/upwork/id/12
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001748s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0034s ]
+NOTIC: [8] Use of undefined constant UserId - assumed 'UserId' E:\wamp\wwww\share\Application\Home\Controller\WorksController.class.php 第 48 行.
+SQL: SELECT `UserId` FROM `t_user` WHERE `LoginId` = 30 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_like` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_like` WHERE `UserId` = 11 AND `AriticalId` = 12 LIMIT 1   [ RunTime:0.0480s ]
+SQL: INSERT INTO `t_like` (`UserId`,`AriticalId`) VALUES ('11','12') [ RunTime:0.0596s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_like` WHERE `AriticalId` = 12 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-06-21T12:49:49+08:00 ] ::1 /share/index.php/Home/Works/addcomment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001478s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0032s ]
+NOTIC: [8] Use of undefined constant UserId - assumed 'UserId' E:\wamp\wwww\share\Application\Home\Controller\WorksController.class.php 第 70 行.
+SQL: SELECT `UserId` FROM `t_user` WHERE `LoginId` = 30 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_artical_comment` [ RunTime:0.0028s ]
+SQL: INSERT INTO `t_artical_comment` (`UserId`,`AriticalId`,`content`,`CreatTime`) VALUES ('11','12','赞一个','2016-06-21 12:49:49') [ RunTime:0.0796s ]
+
+[ 2016-06-21T12:50:08+08:00 ] ::1 /share/index.php/Home/Works/upwork/id/12
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001927s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0068s ]
+NOTIC: [8] Use of undefined constant UserId - assumed 'UserId' E:\wamp\wwww\share\Application\Home\Controller\WorksController.class.php 第 48 行.
+SQL: SELECT `UserId` FROM `t_user` WHERE `LoginId` = 34 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_like` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_like` WHERE `UserId` = 15 AND `AriticalId` = 12 LIMIT 1   [ RunTime:0.0005s ]
+SQL: INSERT INTO `t_like` (`UserId`,`AriticalId`) VALUES ('15','12') [ RunTime:0.0601s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_like` WHERE `AriticalId` = 12 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-06-21T12:50:17+08:00 ] ::1 /share/index.php/Home/Works/addcomment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001491s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0034s ]
+NOTIC: [8] Use of undefined constant UserId - assumed 'UserId' E:\wamp\wwww\share\Application\Home\Controller\WorksController.class.php 第 70 行.
+SQL: SELECT `UserId` FROM `t_user` WHERE `LoginId` = 34 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_artical_comment` [ RunTime:0.0032s ]
+SQL: INSERT INTO `t_artical_comment` (`UserId`,`AriticalId`,`content`,`CreatTime`) VALUES ('15','12','文章写的很棒。顶','2016-06-21 12:50:17') [ RunTime:0.0629s ]
+
+[ 2016-06-21T13:30:30+08:00 ] ::1 /share/index.php/Home/Works/upwork/id/12
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003551s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0043s ]
+NOTIC: [8] Use of undefined constant UserId - assumed 'UserId' E:\wamp\wwww\share\Application\Home\Controller\WorksController.class.php 第 48 行.
+SQL: SELECT `UserId` FROM `t_user` WHERE `LoginId` = 30 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_like` [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_like` WHERE `UserId` = 11 AND `AriticalId` = 12 LIMIT 1   [ RunTime:0.0230s ]
+
+[ 2016-06-21T13:30:35+08:00 ] ::1 /share/index.php/Home/Essay/report/id/12
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003552s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0041s ]
+NOTIC: [8] Use of undefined constant UserId - assumed 'UserId' E:\wamp\wwww\share\Application\Home\Controller\EssayController.class.php 第 86 行.
+SQL: SELECT `UserId` FROM `t_user` WHERE `LoginId` = 30 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_artical` [ RunTime:0.0034s ]
+SQL: UPDATE `t_artical` SET `RepUserid`='11',`RepTag`='2' WHERE `AriticalId` = 12 [ RunTime:0.0389s ]
+
+[ 2016-06-21T13:31:10+08:00 ] ::1 /share/index.php/Home/user/checkcon/id/15
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006133s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0068s ]
+NOTIC: [8] Use of undefined constant UserId - assumed 'UserId' E:\wamp\wwww\share\Application\Home\Controller\UserController.class.php 第 465 行.
+SQL: SELECT `UserId` FROM `t_user` WHERE `LoginId` = 30 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_concern` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_concern` WHERE `coid` = 11 AND `beid` = 15 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-06-21T13:31:12+08:00 ] ::1 /share/index.php/Home/user/concern/id/15
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003582s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0079s ]
+NOTIC: [8] Use of undefined constant UserId - assumed 'UserId' E:\wamp\wwww\share\Application\Home\Controller\UserController.class.php 第 484 行.
+SQL: SELECT `UserId` FROM `t_user` WHERE `LoginId` = 30 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_concern` [ RunTime:0.0041s ]
+SQL: INSERT INTO `t_concern` (`coid`,`beid`,`Concern_time`) VALUES ('11','15','2016-06-21 13:31:12') [ RunTime:0.0554s ]
+
+[ 2016-06-21T13:31:15+08:00 ] ::1 /share/index.php/Home/user/checkcon/id/15
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002144s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0076s ]
+NOTIC: [8] Use of undefined constant UserId - assumed 'UserId' E:\wamp\wwww\share\Application\Home\Controller\UserController.class.php 第 465 行.
+SQL: SELECT `UserId` FROM `t_user` WHERE `LoginId` = 30 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_concern` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_concern` WHERE `coid` = 11 AND `beid` = 15 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-06-21T13:34:46+08:00 ] ::1 /share/index.php/Home/user/checkcon/id/15
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003024s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0074s ]
+NOTIC: [8] Use of undefined constant UserId - assumed 'UserId' E:\wamp\wwww\share\Application\Home\Controller\UserController.class.php 第 465 行.
+SQL: SELECT `UserId` FROM `t_user` WHERE `LoginId` = 48 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_concern` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_concern` WHERE `coid` = 29 AND `beid` = 15 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-06-21T13:34:48+08:00 ] ::1 /share/index.php/Home/user/concern/id/15
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002461s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0067s ]
+NOTIC: [8] Use of undefined constant UserId - assumed 'UserId' E:\wamp\wwww\share\Application\Home\Controller\UserController.class.php 第 484 行.
+SQL: SELECT `UserId` FROM `t_user` WHERE `LoginId` = 48 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_concern` [ RunTime:0.0033s ]
+SQL: INSERT INTO `t_concern` (`coid`,`beid`,`Concern_time`) VALUES ('29','15','2016-06-21 13:34:48') [ RunTime:0.0984s ]
+
+[ 2016-06-21T13:34:54+08:00 ] ::1 /share/index.php/Home/user/checkcon/id/15
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004110s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0069s ]
+NOTIC: [8] Use of undefined constant UserId - assumed 'UserId' E:\wamp\wwww\share\Application\Home\Controller\UserController.class.php 第 465 行.
+SQL: SELECT `UserId` FROM `t_user` WHERE `LoginId` = 48 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_concern` [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_concern` WHERE `coid` = 29 AND `beid` = 15 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-06-21T13:36:56+08:00 ] ::1 /share/index.php/Home/Works/addcomment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001288s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0071s ]
+NOTIC: [8] Use of undefined constant UserId - assumed 'UserId' E:\wamp\wwww\share\Application\Home\Controller\WorksController.class.php 第 70 行.
+SQL: SELECT `UserId` FROM `t_user` WHERE `LoginId` = 48 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_artical_comment` [ RunTime:0.0035s ]
+SQL: INSERT INTO `t_artical_comment` (`UserId`,`AriticalId`,`content`,`CreatTime`) VALUES ('29','16','好可爱','2016-06-21 13:36:56') [ RunTime:0.0882s ]
+
+[ 2016-06-21T13:37:00+08:00 ] ::1 /share/index.php/Home/Works/upwork/id/16
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001014s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0044s ]
+NOTIC: [8] Use of undefined constant UserId - assumed 'UserId' E:\wamp\wwww\share\Application\Home\Controller\WorksController.class.php 第 48 行.
+SQL: SELECT `UserId` FROM `t_user` WHERE `LoginId` = 48 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_like` [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_like` WHERE `UserId` = 29 AND `AriticalId` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `t_like` (`UserId`,`AriticalId`) VALUES ('29','16') [ RunTime:0.0784s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_like` WHERE `AriticalId` = 16 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-06-21T13:37:24+08:00 ] ::1 /share/index.php/Home/Works/upwork/id/16
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000994s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0044s ]
+NOTIC: [8] Use of undefined constant UserId - assumed 'UserId' E:\wamp\wwww\share\Application\Home\Controller\WorksController.class.php 第 48 行.
+SQL: SELECT `UserId` FROM `t_user` WHERE `LoginId` = 30 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_like` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_like` WHERE `UserId` = 11 AND `AriticalId` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `t_like` (`UserId`,`AriticalId`) VALUES ('11','16') [ RunTime:0.0866s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_like` WHERE `AriticalId` = 16 LIMIT 1   [ RunTime:0.0003s ]
+
