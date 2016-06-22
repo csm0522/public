@@ -17,7 +17,7 @@ class PublicController extends Controller {
                 $data[$i]['username']="游客";
             }
 //            $data[$i]['articaltype'] = $this->getType($data[$i]['articaltype']);
-            switch ($data[$i]['uploadtype']){
+           	 switch ($data[$i]['uploadtype']){
                 case 1:$data[$i]['uploadtype']="文章";break;
                 case 2:$data[$i]['uploadtype']="作品";break;
             }
@@ -33,8 +33,8 @@ class PublicController extends Controller {
         echo $str;
         echo $type;
     }
-	public function _empty()
-    {
-		redirect(U('Error/index'));
-    }
+//	public function _empty()
+//  {
+//		redirect(U('Error/index'));
+//  }
 }

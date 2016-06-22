@@ -997,13 +997,15 @@ body{
 
 }
 .leftpart{
-    width:16%;
-    min-width:200px;
+    width:191px;
+    box-sizing: border-box;
+    margin-top:5px;
     padding-bottom:30px;
-    margin-left:5px;
+    margin-left:27px;
     background:white;
     font-family: "微软雅黑";
 float:left;
+
 }
 
 .leftpart a{
@@ -1096,10 +1098,10 @@ list-style: none;
     height:auto;
 }
 .rightpart{
-    width:60%;
-    min-width:900px;
+    width:800px;
+    box-sizing: border-box;
     float:left;
-    margin-left:17px;
+    margin-left:7px;
     font-family: "微软雅黑";
 
 }
@@ -1146,10 +1148,9 @@ background:white;
     line-height: 22px;
 }
 .hentry .post-meta {
-    padding: 14px 8px 6px 36px;
+    padding: 14px 8px 14px 36px;
     border-top: 1px solid #f2f2f2;
     border-bottom: 1px solid #f2f2f2;
-    margin-bottom: 15px;
     font-size: 12px;
     margin-top:13px;
 }

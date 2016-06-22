@@ -12,7 +12,7 @@
 <div class="take">
     <form id="searchform " class="in" method="Post" action="{:U('Ksq/addTopic')}" target="_blank" style="height:143px;margin-bottom:20px;">
         <select class="search-select"
-                style="width:10%;height: 45px;background-color: #923030;color:white;padding-left:10px;outline:none;text-align: center;"
+                style="width:190px;height: 45px;background-color: #923030;color:white;padding-left:10px;outline:none;text-align: center;"
                 name="types">
             <option value="0">学校生活</option>
             <option value="1">八卦新闻</option>
@@ -22,7 +22,7 @@
             <option value="5">寻求伙伴</option>
             <option value="6">寻找兼职</option>
         </select>
-        <input class="search-term required" style="width:70%;height:45px;margin-top:20px;padding-left:35px;"
+        <input class="search-term required" style="width:796px;box-sizing: border-box; height:45px;margin-top:20px;padding-left:35px;"
                type="text " id="s " name="sword" placeholder="请输入你想说的 " title="* Please enter a search term! "/>
         <input class="search-btn " style="width:70px;height:40px;margin-top:46px;text-align:center;" type="submit"
                value="发送 "/>
@@ -47,7 +47,7 @@
     <div class="rightpart">
         <!--<?php dump($topis) ?>-->
         <volist name='topis' id='datas' empty='暂无数据'>
-            <article class="format-standard type-post hentry clearfix " style="padding-left:50px;padding-top:38px;padding-bottom:25px;height:auto;background:white;margin-top:5px;">
+            <article class="format-standard type-post hentry clearfix " style="padding-left:50px;padding-top:38px;height:auto;background:white;margin-top:5px;">
 
                 <header class="clearfix ">
 
@@ -59,10 +59,20 @@
                     <div class="post-meta clearfix ">
                         <span class="date" style="color:#814e51;">{$datas['creattime']}</span>
                         <span class="category"><a href="# " >{$datas['type']}</a></span>
-                        <!--<span class="comments"><a href="# " >{$datas['topicid']} 回复</a></span>-->
-                        <!--<span style="float:right;margin-right: 30px;">回复</span>-->
+                        <span class="comments"><a href="# " >{$datas['topicid']} 回复</a></span>
+
                     </div>
                 </header>
+                <div style="height:40px;line-height: 40px;border-bottom: 1px solid #eee;">
+                	<div style="width: 50%;float: right;">
+                		<span style="width: 48%;display:inline-block; text-align: center;box-sizing: border-box;border-left:1px solid #eee;cursor: pointer;">赞</span>
+                		<span style="width: 48%;display:inline-block;text-align: center;box-sizing: border-box;border-left:1px solid #eee;cursor: pointer;">回复</span>
+                	</div>
+
+                </div>
+                <!--<div style="padding:10px 0;font-size: 1.2rem;">
+                	<img src="__PUBLIC__/upload/userTX/default/person.png" alt="" style="vertical-align: middle;margin-right: 8px;;" width="40px" height="auto" />{$Think.SESSION.userInfo.UN}:
+                	<input type="text" style="border:1px solid gray;height:30px;width: 350px;padding-left: 10px;border-color:lightgray;" /></div>-->
             </article>
         </volist>
 

@@ -3,7 +3,7 @@ return array(
     //让页面显示追踪日志信息
       'SHOW_PAGE_TRACE'   => true,
 
-	'URL_MODEL' => 0,//先关掉debug
+	'URL_MODEL' =>1,//先关掉debug
 
     //url地址大小写不敏感设置
     'URL_CASE_INSENSITIVE'  =>  false,
